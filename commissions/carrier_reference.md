@@ -182,6 +182,24 @@ When a new carrier is added or a format changes, update this file.
 
 ---
 
+### Steadily
+- **Canonical name:** Steadily
+- **Aliases:** Steadily Insurance
+- **Network:** Direct
+- **Statement format:** Excel
+- **LOB:** P/L (landlord/property insurance)
+- **Key data location:**
+  - Headers: `Effective Date`, `Payee & ID`, `Producer`, `Agent`, `Insured Name`, `Policy`, `New or Renewal Business`, `Premium (Current Term)`, `Premium Collected`, `Commission Rate`, `Total Commission Owed`, `Previously Paid`, `Net Due`
+  - **Commission column:** `Total Commission Owed` or `Net Due` (use Net Due for cashflow — it's total owed minus previously paid)
+  - **Premium column:** `Premium (Current Term)`
+  - Commission rate: 15%
+  - Producer: Yalu Pao
+- **March 2026:** 3 policies, $6,833 premium, $1,024.95 total commission owed
+  - Jinfu Liang: $392.55
+  - YiSui Wu: $185.70
+  - Bing Liang: $446.70
+- **Notes:** Clean Excel format. Auto-ingestion script can handle this. New carrier as of March 2026.
+
 ---
 
 ## MGA / Wholesalers / Brokers
@@ -205,6 +223,21 @@ When a new carrier is added or a format changes, update this file.
   - Net balance due to carrier: $44,974.88
 - **CRITICAL — Payment timing:** Cochrane commissions are **accrued, not received**. Due to AR days, the balance does not true up until the policy renews. Track as `payment_status = "accrued"` in the Commissions tab. Do NOT include in net income until actually paid.
 - **Notes:** Alice receives these reconciliations at baosinsurance@gmail.com. One reconciliation per policy per month. May have multiple Cochrane policies — sum across all reconciliations for the monthly total.
+
+### MGT Insurance (via Ascend)
+- **Canonical name:** MGT Insurance
+- **Aliases:** MGT, Ascend
+- **Network:** MGA/Wholesale
+- **Statement format:** CSV (emailed via Ascend payment platform, payables@useascend.com)
+- **LOB:** C/L (Commercial)
+- **Key data location:**
+  - Email subject: `[Baos Insurance LLC] Payout of $X to Commission account - MM/DD/YY`
+  - Email body: Payment amount, remittance date, partner name, ACH reference
+  - CSV attachment: Policy-level detail with columns `identifier`, `payable_account_type`, `invoice_number`, `invoice_payer`, `invoice_memo`, `insured_name`, `gross_amount`, `net_amount`
+  - Total payout = sum of `net_amount` column
+- **April 2026 example:** $238.39 payout (3 line items: Tokyo Tuo $63.57, Asian Buffet $87.41 x2)
+- **Payment timing:** `received` — ACH deposits directly, no AR delay
+- **Notes:** Emails go to baosinsurance@gmail.com and ehsyeh88@gmail.com. Ascend is the payment processor, MGT Insurance is the actual MGA. The attachment_saver.js script auto-saves the CSV to Drive.
 
 <!-- TODO: Edward to add other MGA/wholesaler carriers as they come in -->
 

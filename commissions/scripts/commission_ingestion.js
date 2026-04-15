@@ -42,6 +42,7 @@ const CONFIG = {
 
   // Tab names (must match sheet_schema.md)
   COMMISSIONS_TAB: 'Commissions',
+  POLICY_DETAIL_TAB: 'Policy Detail',
   CARRIERS_TAB: 'Carriers',
 
   // Trigger interval
@@ -76,8 +77,9 @@ function setupTrigger() {
 // ============================================================
 
 function processNewFiles() {
-  const sheet = SpreadsheetApp.openById(CONFIG.SHEET_ID)
-    .getSheetByName(CONFIG.COMMISSIONS_TAB);
+  const ss = SpreadsheetApp.openById(CONFIG.SHEET_ID);
+  const sheet = ss.getSheetByName(CONFIG.COMMISSIONS_TAB);
+  const detailSheet = ss.getSheetByName(CONFIG.POLICY_DETAIL_TAB);
   const carrierConfig = loadCarrierConfig();
   const processedIds = getProcessedIds();
 
@@ -101,6 +103,20 @@ function processNewFiles() {
       continue;
     }
 
+    // Skip Excel files from carriers with formats too complex for auto-parsing.
+    // These are handled by Claude during monthly Cowork sessions.
+    const skipPatterns = [
+      /trv pi|travelers.*personal/i,      // TRV PI: fixed-width layout in Excel
+      /progressive/i,                      // Progressive: detail + summary double-counts
+      /nationwide|nw.*commission/i,         // Nationwide: merged-cell PDF layout in Excel
+    ];
+    const fileName = file.getName();
+    if (isCsvOrExcel(mimeType) && skipPatterns.some(p => p.test(fileName))) {
+      Logger.log('Skipping complex format (Claude handles): ' + fileName);
+      skipCount++;
+      continue;
+    }
+
     // Only process CSV and Excel
     if (!isCsvOrExcel(mimeType)) {
       continue;
@@ -109,9 +125,14 @@ function processNewFiles() {
     Logger.log('Processing: ' + file.getName());
 
     try {
-      const rows = parseFile(file, mimeType, carrierConfig);
-      for (const row of rows) {
+      const result = parseFile(file, mimeType, carrierConfig);
+      for (const row of result.summaryRows) {
         sheet.appendRow(row);
+      }
+      if (detailSheet && result.detailRows) {
+        for (const row of result.detailRows) {
+          detailSheet.appendRow(row);
+        }
       }
       processedIds.add(fileId);
       newCount++;
@@ -124,11 +145,12 @@ function processNewFiles() {
         '',                            // lob
         0,                             // premium_volume
         0,                             // gross_commission
-        '',                            // commission_rate (auto-calc)
+        '',                            // commission_rate
         '',                            // network
         file.getMimeType().includes('csv') ? 'csv' : 'xlsx', // source_type
         file.getName(),                // source_file
         'needs_review',                // parse_status
+        '',                            // payment_status
         'Parse error: ' + error.message, // notes
         new Date(),                    // ingestion_date
       ]);
@@ -170,10 +192,9 @@ function parseFile(file, mimeType, carrierConfig) {
     throw new Error('Could not find commission column. Headers: ' + headers.join(', '));
   }
 
-  // Build output rows
-  // If the file has LOB information, create separate rows per LOB
-  // Otherwise, create a single summary row
+  // Build summary rows (one per LOB) and detail rows (one per policy)
   const lobTotals = {};
+  const detailRows = [];
 
   for (let i = 1; i < data.length; i++) {
     const row = data[i];
@@ -181,18 +202,46 @@ function parseFile(file, mimeType, carrierConfig) {
     if (isNaN(commission)) continue;
 
     const premium = colMap.premium !== -1 ? parseCurrency(String(row[colMap.premium] || '')) : 0;
-    const lob = colMap.lob !== -1 ? normalizeLob(String(row[colMap.lob] || '')) : 'Both';
+    const lob = colMap.lob !== -1 ? normalizeLob(String(row[colMap.lob] || '')) : carrier.lob || 'Both';
 
     if (!lobTotals[lob]) {
       lobTotals[lob] = { premium: 0, commission: 0 };
     }
     lobTotals[lob].premium += isNaN(premium) ? 0 : premium;
     lobTotals[lob].commission += commission;
+
+    // Build policy detail row
+    const insured = colMap.insuredName !== -1 ? String(row[colMap.insuredName] || '') : '';
+    const policyNum = colMap.policyNumber !== -1 ? String(row[colMap.policyNumber] || '') : '';
+    const transType = colMap.transactionType !== -1 ? String(row[colMap.transactionType] || '') : '';
+    const effDate = colMap.effectiveDate !== -1 ? String(row[colMap.effectiveDate] || '') : '';
+    const commRate = colMap.commissionRate !== -1 ? parseCurrency(String(row[colMap.commissionRate] || '')) : '';
+
+    if (insured || policyNum) {
+      detailRows.push([
+        month,                                      // A: report_month
+        carrier.name || 'UNKNOWN',                  // B: carrier
+        lob,                                        // C: lob
+        insured,                                    // D: insured_name
+        policyNum,                                  // E: policy_number
+        transType,                                  // F: transaction_type
+        effDate,                                    // G: effective_date
+        isNaN(premium) ? 0 : premium,               // H: premium
+        commRate,                                   // I: commission_rate
+        commission,                                 // J: commission_amount
+        '',                                         // K: producer
+        file.getName(),                             // L: source_file
+        '',                                         // M: notes
+      ]);
+    }
   }
 
-  const outputRows = [];
+  // Determine payment status based on carrier config
+  const paymentStatus = carrier.network === 'MGA/Wholesale' ? 'received' : 'received';
+
+  const summaryRows = [];
   for (const [lob, totals] of Object.entries(lobTotals)) {
-    outputRows.push([
+    summaryRows.push([
       month,                                        // A: report_month
       carrier.name || 'UNKNOWN',                    // B: carrier
       lob,                                          // C: lob
@@ -205,12 +254,13 @@ function parseFile(file, mimeType, carrierConfig) {
       fileType,                                      // H: source_type
       file.getName(),                                // I: source_file
       'auto_parsed',                                 // J: parse_status
-      '',                                            // K: notes
-      new Date(),                                    // L: ingestion_date
+      paymentStatus,                                 // K: payment_status
+      '',                                            // L: notes
+      new Date(),                                    // M: ingestion_date
     ]);
   }
 
-  return outputRows;
+  return { summaryRows: summaryRows, detailRows: detailRows };
 }
 
 function parseCsv(file) {
@@ -243,15 +293,38 @@ function detectColumns(headers) {
     commission: findColumn(headers, [
       'commission', 'comm', 'commission amount', 'gross commission',
       'net commission', 'agency commission', 'commission earned',
-      'comm. due', 'comm due', 'total commission',
+      'comm. due', 'comm due', 'total commission', 'commission due',
+      'net_amount', 'net amount',       // MGT/Ascend format
+      'gross_comm', 'comm_amount',
     ]),
     premium: findColumn(headers, [
       'premium', 'premium volume', 'written premium', 'net written premium',
       'transaction premium', 'policy premium', 'premium collected',
+      'gross_amount', 'gross amount',   // MGT/Ascend format
     ]),
     lob: findColumn(headers, [
       'lob', 'line of business', 'line', 'product', 'product type',
       'coverage', 'policy type',
+    ]),
+    // Additional columns for policy detail extraction
+    insuredName: findColumn(headers, [
+      'insured name', 'insured_name', 'named insured', 'name of insured',
+      'policyholder name', 'policyholder', 'insured',
+    ]),
+    policyNumber: findColumn(headers, [
+      'policy number', 'policy_number', 'policy no', 'policy #',
+      'policy', 'invoice_number', 'invoice number',
+    ]),
+    transactionType: findColumn(headers, [
+      'transaction type', 'transaction_type', 'trans type', 'tran code',
+      'transaction', 'type', 'invoice_memo',
+    ]),
+    effectiveDate: findColumn(headers, [
+      'effective date', 'effective_date', 'eff date', 'policy eff date',
+      'policy effective date', 'transaction date',
+    ]),
+    commissionRate: findColumn(headers, [
+      'commission rate', 'comm rate', 'rate', 'comm_rate',
     ]),
   };
 }
