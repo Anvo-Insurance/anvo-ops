@@ -101,10 +101,23 @@ This repo is shared across multiple Claude Cowork sessions — Edward and Alice 
 - If a git lock file error occurs (`.git/index.lock` or `.git/HEAD.lock`), the human must delete it manually from their machine before git operations will work.
 
 ### Git Auth From Cowork Sandbox
-- Remote is SSH: `git@github.com:Anvo-Insurance/anvo-ops.git`. Auth uses a deploy key at `.claude-keys/anvo-ops-deploy` (the whole `.claude-keys/` folder is gitignored).
-- The repo's local `core.sshCommand` config points at the deploy key and the sandbox's HTTP proxy. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
+
+Each Cowork session uses its own SSH deploy key to push/pull from GitHub. The remote is SSH: `git@github.com:Anvo-Insurance/anvo-ops.git`.
+
+**Alice's session:**
+- Key location: `.claude-keys/anvo-ops-deploy` (gitignored via `.claude-keys/` in `.gitignore`)
+- The repo's local `core.sshCommand` config points at this key. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
 - If `.claude-keys/anvo-ops-deploy` is missing (fresh clone, new workspace, etc.), regenerate with `ssh-keygen -t ed25519 -f .claude-keys/anvo-ops-deploy -N "" -C "claude-cowork-deploy-key@anvo-ops"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked. Delete the old deploy key on GitHub after.
-- To revoke access at any time: delete the deploy key on GitHub. The private key in `.claude-keys/` becomes inert immediately.
+
+**Edward's session:**
+- Key location: `~/.ssh/id_ed25519` (lives in the sandbox home directory, not in the repo)
+- Git picks this up automatically as the default SSH key — no `GIT_SSH_COMMAND` override or `unset` needed. Standard `git pull` and `git push origin main` work directly.
+- If the key is missing (new session/sandbox), regenerate with `ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N "" -C "edward-cowork-deploy-key"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub with "Allow write access" checked. Delete the old deploy key on GitHub after.
+
+**Both sessions:**
+- GitHub allows multiple deploy keys per repo, one per session.
+- To revoke access for either session: delete that session's deploy key on GitHub. The private key becomes inert immediately.
+- If the remote URL is set to HTTPS instead of SSH, switch it: `git remote set-url origin git@github.com:Anvo-Insurance/anvo-ops.git`
 
 ## Working Conventions
 
