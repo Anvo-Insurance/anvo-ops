@@ -4,6 +4,40 @@ Running log of work completed across Claude Cowork sessions. Updated at the end 
 
 ---
 
+## 2026-04-16 — Cold Outreach Workflow + Carrier Matrix Migration
+
+### What We Worked On (Part 2: Cold Outreach)
+Built the complete cold email outreach workflow — repo structure, process documentation, email templates, and CSV schema. This enables Edward's Cowork to generate prospect batches and Alice's Cowork to draft Gmail emails from them.
+
+### What Changed
+- **`outreach/README.md`** — New directory + README documenting CSV column schema (13 columns), draft_status codes, processing rules for Alice's Cowork, and git workflow
+- **`outreach/workflow.md`** — End-to-end 4-phase workflow: prospect research (Edward) → email drafting (Alice's Cowork) → review & send (Alice manual) → follow-up (TODO)
+- **`outreach/templates.md`** — 5 email templates with selection logic: Standard, Family/Generational, Growth/Award, Specialty/Niche, WBE/Certification. Includes per-segment value prop customization guide and "never do" rules
+- **`outreach/stage5_outreach_log.csv`** — Copied Edward's existing prospect CSV (30 prospects, mostly KC-area construction and transport/logistics) into the repo as the first batch
+- **`CLAUDE.md`** — Updated repo structure diagram, added self-contained folder convention to Working Conventions
+- **Restructured:** Moved workflow and templates into `outreach/` folder (self-contained). Old locations `workflows/cold_outreach.md` and `templates/cold_email_templates.md` should be deleted
+
+### Key Decisions
+- **Sender = whoever's Cowork drafts**: If Alice's Cowork drafts, email goes from alice@. If Edward's, from edward@
+- **Value prop is customized per prospect**: No canned one-liner — each email tailors Anvo's pitch to the prospect's specific risk profile and segment
+- **Alice updates the CSV**: Her Cowork sets `draft_status` to DRAFTED after creating Gmail drafts, then commits the updated CSV back
+- **CSV lives in repo** (not Google Drive or Sheets) — single source of truth, version controlled
+- **Follow-up cadence**: Still TBD — left as TODO in workflow doc
+
+### Alice Setup Requirements (Not Yet Verified)
+- anvo-ops folder mounted in Alice's Cowork session
+- Gmail connector active
+- Git pull/push access (or Edward handles git on her behalf)
+
+### Next Session
+- Verify Alice's Cowork can access the anvo-ops folder
+- Test the workflow end-to-end: Alice's Cowork reads stage5 CSV → drafts emails → updates statuses
+- Fill in `carriers/submission_preferences.md` (still empty from prior session)
+- Define follow-up cadence and templates (Phase 4 in cold_outreach.md)
+- Add phone numbers to email signature blocks
+
+---
+
 ## 2026-04-16 — Carrier Matrix Migration
 
 ### What We Worked On

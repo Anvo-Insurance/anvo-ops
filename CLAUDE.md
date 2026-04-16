@@ -23,21 +23,26 @@ anvo-ops/
 │   ├── instructions.md    # Universal intake instruction set
 │   ├── email_accounts/    # Per-inbox handling rules
 │   └── checklists/        # By line of business (commercial_auto, bop, workers_comp)
-├── workflows/             # End-to-end process documentation
+├── workflows/             # Cross-cutting process documentation (used by multiple workflows)
 │   ├── new_submission.md
 │   ├── bor_process.md
 │   ├── renewal_timeline.md
 │   └── claims_reporting.md
-├── commissions/           # Monthly commission & bonus reporting system
+├── commissions/           # Monthly commission & bonus reporting (self-contained)
 │   ├── workflow.md        # End-to-end monthly process (collection → processing → report)
 │   ├── sheet_schema.md    # Google Sheet structure (tabs, columns, formulas)
 │   ├── carrier_reference.md # Per-carrier statement formats and parsing notes
 │   └── scripts/           # Google Apps Scripts for auto-ingestion
 │       ├── commission_ingestion.js  # Drive folder watcher (CSV/Excel)
 │       └── bonus_ingestion.js       # Gmail label scanner (MIAA bonuses)
+├── outreach/              # Cold email outreach (self-contained)
+│   ├── README.md          # CSV schema, status codes, processing rules
+│   ├── workflow.md        # End-to-end outreach process (research → draft → send)
+│   ├── templates.md       # Email templates with selection logic
+│   └── stage{N}_outreach_log.csv  # Prospect batches (Edward generates, Alice drafts)
 ├── accounts/              # Running notes on active accounts
 │   └── active_notes.md
-└── templates/             # Reusable email/letter templates
+└── templates/             # Shared templates (used across multiple workflows)
     ├── client_welcome_email.md
     └── acord_cover_letter.md
 ```
@@ -101,3 +106,16 @@ This repo is shared across multiple Claude Cowork sessions — Edward and Alice 
 - Commit after each meaningful change with descriptive messages.
 - Top-level folders = business functions. Subfolders = sub-concerns.
 - Cross-reference other files where relevant rather than duplicating information.
+
+### Self-Contained Workflow Folders
+
+When a workflow has its own data, templates, and instructions, **keep everything in one folder.** The folder should contain:
+
+- `README.md` — what this folder is, schema definitions, processing rules
+- `workflow.md` — end-to-end process documentation
+- `templates.md` (if applicable) — templates specific to this workflow
+- Data files (CSVs, etc.)
+
+**Rule:** If a file is only used by one workflow, it lives in that workflow's folder. If it's used across multiple workflows (e.g., `client_welcome_email.md` is used after any client signs, regardless of source), it stays in the shared `templates/` or `workflows/` folder.
+
+This keeps each workflow self-contained — an agent working on outreach only needs to read `outreach/`, not hunt across three directories. Examples of self-contained folders: `outreach/`, `commissions/`. Examples of shared folders: `templates/`, `workflows/`, `carriers/`.
