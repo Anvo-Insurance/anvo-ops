@@ -4,6 +4,31 @@ Running log of work completed across Claude Cowork sessions. Updated at the end 
 
 ---
 
+## 2026-04-16 — Carrier Matrix Migration
+
+### What We Worked On
+Migrated Edward's full carrier appetite summary (from Desktop/Carrier Appetite Summary) into the shared `anvo-ops` repo. The carrier matrix was previously just an empty template — now it has detailed data for 19 carriers.
+
+### What Changed
+- **`carriers/carrier_matrix.md`** — Replaced empty template with full carrier data (2,800+ lines). Includes:
+  - PMSF compensation reference table (MIAA/SIAA 2026) with quarterly rates and strategic routing notes
+  - 19 detailed carrier entries: GUARD, The Hartford, Travelers, Liberty Mutual, CNA, AmTrust, MGT, Progressive, Simply Business, CRC Group, Burns & Wilcox, RPS, Nationwide, UFG, BHHC, Columbia, Crum & Forster, BTIS
+  - Per-carrier: appetite by class, geographic restrictions, building/risk preferences, submission methods, key contacts, nuances
+  - GUARD restaurant BOP expanded appetite (Feb 2026 update)
+  - Nationwide personal lines note (flagged as not commercial)
+
+### Key Decisions
+- Kept the "How to Use This File" decision process header from the original template and merged it with the uploaded content
+- Added PMSF routing rule to the decision process: "When two carriers have equal appetite, route to the one earning more PMSF"
+- File structure preserves the detailed per-carrier format from Edward's original rather than the table-based template (tables would lose too much detail)
+
+### Next Session
+- Fill in `carriers/submission_preferences.md` with per-carrier submission requirements (now that we know which carriers Anvo uses)
+- Consider breaking the carrier matrix into per-carrier files if it gets unwieldy at 2,800+ lines
+- Add checklists for GL standalone, umbrella, professional liability
+
+---
+
 ## 2026-04-06 — Initial Repo Build + EZLynx Screen-Walk
 
 ### What We Worked On
