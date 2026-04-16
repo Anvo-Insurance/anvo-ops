@@ -72,16 +72,32 @@ Each note in `carriers/market_notes/` is a dated file: `YYYY-MM-DD_carrier_topic
 - **Yalu:** Commission-only contractor (transitioning)
 - **Ling:** Hourly admin while unlicensed → milestone bonuses for licensing → commission splits after licensed
 
-## What to Check on Startup
+## Multi-Session Sync Protocol
 
-1. Read `HANDOFF.md` if it exists — it contains notes from the last session.
-2. Run `git status` and `git log --oneline -5` to see recent changes.
-3. Check which files have `<!-- TODO -->` markers — those need attention.
+This repo is shared across multiple Claude Cowork sessions — Edward and Alice each have their own session, both working against the same repo.
+
+### On Startup (Every Session)
+1. Run `git pull` to get the latest changes.
+2. Read `SESSION_LOG.md` — most recent entry first. This tells you what the other session did last.
+3. Read `HANDOFF.md` if it exists — it may contain in-progress work or urgent context from the last session.
+4. Run `git log --oneline -5` to see recent commits.
+5. Check which files have `<!-- TODO -->` markers — those need attention.
+
+### Before Ending a Session
+1. Update `SESSION_LOG.md` with a new entry (most recent first). Include: what you worked on, key decisions, files changed, remaining TODOs, what to pick up next.
+2. If there's in-progress work the next session should know about immediately, write a `HANDOFF.md`.
+3. Commit all changes with descriptive messages.
+4. Push to `origin/main` so the other session can pull the latest.
+
+### Avoiding Conflicts
+- **Edward's session** primarily handles: carrier strategy, workflow design, escalations, repo structure changes.
+- **Alice's session** primarily handles: intake processing, certificate issuance, day-to-day operations, client communications.
+- If both sessions need to edit the same file, one should push before the other pulls. Do not edit the same file simultaneously.
+- If a git lock file error occurs (`.git/index.lock` or `.git/HEAD.lock`), the human must delete it manually from their machine before git operations will work.
 
 ## Working Conventions
 
 - All files written as if Claude is the primary reader. Be explicit, not implicit.
 - Commit after each meaningful change with descriptive messages.
-- Before ending a session, write a `HANDOFF.md`.
 - Top-level folders = business functions. Subfolders = sub-concerns.
 - Cross-reference other files where relevant rather than duplicating information.
