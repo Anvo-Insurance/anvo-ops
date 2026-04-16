@@ -100,6 +100,12 @@ This repo is shared across multiple Claude Cowork sessions — Edward and Alice 
 - If both sessions need to edit the same file, one should push before the other pulls. Do not edit the same file simultaneously.
 - If a git lock file error occurs (`.git/index.lock` or `.git/HEAD.lock`), the human must delete it manually from their machine before git operations will work.
 
+### Git Auth From Cowork Sandbox
+- Remote is SSH: `git@github.com:Anvo-Insurance/anvo-ops.git`. Auth uses a deploy key at `.claude-keys/anvo-ops-deploy` (the whole `.claude-keys/` folder is gitignored).
+- The repo's local `core.sshCommand` config points at the deploy key and the sandbox's HTTP proxy. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
+- If `.claude-keys/anvo-ops-deploy` is missing (fresh clone, new workspace, etc.), regenerate with `ssh-keygen -t ed25519 -f .claude-keys/anvo-ops-deploy -N "" -C "claude-cowork-deploy-key@anvo-ops"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked. Delete the old deploy key on GitHub after.
+- To revoke access at any time: delete the deploy key on GitHub. The private key in `.claude-keys/` becomes inert immediately.
+
 ## Working Conventions
 
 - All files written as if Claude is the primary reader. Be explicit, not implicit.
