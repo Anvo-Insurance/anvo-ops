@@ -113,6 +113,11 @@ Each Cowork session uses its own SSH deploy key to push/pull from GitHub. The re
 - Key location: `~/.ssh/id_ed25519` (lives in the sandbox home directory, not in the repo)
 - Git picks this up automatically as the default SSH key — no `GIT_SSH_COMMAND` override or `unset` needed. Standard `git pull` and `git push origin main` work directly.
 - If the key is missing (new session/sandbox), regenerate with `ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N "" -C "edward-cowork-deploy-key"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub with "Allow write access" checked. Delete the old deploy key on GitHub after.
+- **Mounted folder git workaround:** The Cowork sandbox cannot delete `.git` lock files on the mounted folder, which causes git operations to fail and leave stale locks behind. To avoid this, maintain a clean clone at `/tmp/anvo-ops-push` and use it for all git operations:
+  - **To commit and push:** Edit files in the mounted folder → copy changed files to `/tmp/anvo-ops-push` → commit and push from there.
+  - **To pull latest:** Pull in `/tmp/anvo-ops-push` → copy updated files back to the mounted folder.
+  - **Setup (once per session):** `git clone git@github.com:Anvo-Insurance/anvo-ops.git /tmp/anvo-ops-push` then set `git config user.name "Edward Hsyeh"` and `git config user.email "edward@anvo-insurance.com"` in that clone.
+  - Never run `git pull`, `git commit`, or `git push` directly in the mounted folder — it will create lock files that require Edward to manually delete from his terminal.
 
 **Both sessions:**
 - GitHub allows multiple deploy keys per repo, one per session.
