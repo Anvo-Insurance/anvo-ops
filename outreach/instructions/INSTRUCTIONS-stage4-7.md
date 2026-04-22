@@ -58,7 +58,7 @@ If any tool is unavailable at session start, alert Edward before proceeding.
 | `stage3_results.csv` | Revealed contacts from Apollo. Columns: `rank,company,contact_name,title,email,phone,city,state,tier,segment,reveal_status,skip_reason,apollo_employees,revenue` |
 | `INSTRUCTIONS-v5.md` | Master reference — carrier routing tables, scoring criteria, industry multipliers. **Read the relevant sections before scoring.** |
 | `nightly-run-state.json` | Pipeline state tracker. Read at session start to understand context. |
-| `pipeline-learnings.json` | Accumulated operational learnings. Read if you encounter issues. |
+| `reports/pipeline-learnings.json` | Accumulated operational learnings. Read if you encounter issues. |
 
 ### Output Files (you create and maintain these)
 

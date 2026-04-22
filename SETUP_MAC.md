@@ -1,220 +1,126 @@
-# Setup Guide — macOS
+# SETUP_MAC.md — Brief for First-Time anvo-brain Setup on macOS
 
-This guide gets you from "fresh Mac" to "working anvo-brain repo with commissions tracker running." Follow steps in order. Each step has a verification command so you know it worked before moving on.
+**Primary reader:** Claude (Cowork agent on the user's Mac).
+**Secondary reader:** the human user, narrated to in real time by Claude.
 
-**Audience:** Alice (or anyone setting up the repo on a Mac for the first time).
-**Time:** ~20 minutes.
-
----
-
-## What You'll End Up With
-
-```
-~/dev/anvo-brain/              ← the repo (cloned from GitHub)
-~/.anvo-secrets/                ← your private credentials (NOT in the repo)
-   ├─ anvo-oauth-credentials.json
-   ├─ anvo-oauth-token.json
-   └─ anvo-service-account.json
-
-Environment variable set:
-   ANVO_SECRETS_DIR=/Users/<your-username>/.anvo-secrets
-```
+This is a brief, not a script. It gives you the goal, the constraints, the verification checkpoints, and the context you need. Sequence the actual commands yourself, adapted to what's already installed and what isn't.
 
 ---
 
-## Step 1 — Install Prerequisites
+## Who You're Helping
 
-Open **Terminal** (Cmd+Space → type "Terminal" → Enter).
+Most likely Alice — Anvo Insurance operations lead, ~10 years in insurance, non-technical. She's confident with software but doesn't read shell output, doesn't parse error messages, and doesn't want to. Translate everything for her in plain English and confirm before anything irreversible.
 
-### 1a. Install Homebrew (if you don't already have it)
+If it's not Alice, ask their name and adjust.
 
-Check first:
+## What She Has on Day One
 
-```bash
-brew --version
+- A Mac (assume modern macOS, possibly fresh).
+- The repo cloned at `~/dev/anvo-brain` (Edward confirmed).
+- `anvo-oauth-credentials.json` from Edward, sent over Signal, saved somewhere on her machine (probably `~/Downloads`).
+- Login credentials for her Anvo Google account (`alice@anvo-insurance.com` or similar).
+- Claude Desktop installed, Cowork mode active in the `~/dev/anvo-brain` folder.
+
+## End State ("Done" Looks Like)
+
+```
+~/.anvo-secrets/
+   ├─ anvo-oauth-credentials.json    (provided by Edward, moved here from Downloads)
+   └─ anvo-oauth-token.json          (generated automatically during OAuth flow)
+
+~/.zshrc contains: export ANVO_SECRETS_DIR="$HOME/.anvo-secrets"
+
+Verification: in a fresh Terminal, all three of these succeed via the MCP server —
+  - A Sheets read (e.g., list spreadsheets)
+  - A Drive read (e.g., list ISM Remittances folder)
+  - A Gmail read (e.g., list "MGA Commissions" label threads, last 5)
 ```
 
-If you see a version number, skip to 1b. If you see "command not found":
+If those three reads work, setup is complete.
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+## Capability Boundary (Important)
 
-Follow the on-screen prompts. After it finishes, the installer prints two commands you need to copy-paste to add Homebrew to your PATH. Run them. Then restart Terminal.
+You're running in Cowork's sandbox. You can read/write files in mounted folders, but you cannot execute commands against Alice's actual macOS shell. In particular:
 
-Verify:
+- **You cannot install software on her Mac** (Homebrew, git, uv) — your sandbox's brew is not her brew. She must run installers in her Terminal.
+- **You cannot trigger the OAuth browser flow** — that has to happen in her browser, initiated from her actual shell.
+- **Your `$ANVO_SECRETS_DIR` is not her `$ANVO_SECRETS_DIR`** — checking env vars in your sandbox tells you nothing about her shell. Read `~/.zshrc` to verify the export is there.
 
-```bash
-brew --version
-```
+What you CAN do directly in mounted paths: create `~/.anvo-secrets/`, move the credentials file into it, append the export to `~/.zshrc`, read state of any file.
 
-### 1b. Install Git
+The cleanest pattern: ask Alice to run the install/OAuth commands in her Terminal and paste the output back to you. You read the output and decide what's next.
 
-```bash
-brew install git
-git --version
-```
+## Phases (Goals, Not Scripts)
 
-### 1c. Install uv (Python package manager — needed for the MCP server)
+### Phase 1 — Orient
 
-```bash
-brew install uv
-uv --version
-```
+Find out what's already done. Don't assume. Read filesystem state, check `~/.zshrc` for the env var, ask Alice to confirm anything you can't observe (e.g., "Have you ever installed Homebrew on this Mac before?"). Then tell her in plain English what's done and what's left.
 
----
+**Verification before moving on:** you have a confident picture of which of these are already in place: Homebrew, git, uv, `~/.anvo-secrets/` folder, credentials file location, `ANVO_SECRETS_DIR` in `~/.zshrc`.
 
-## Step 2 — Clone the Repo
+### Phase 2 — Prerequisites
 
-```bash
-mkdir -p ~/dev
-cd ~/dev
-git clone https://github.com/Anvo-Insurance/anvo-brain.git
-cd anvo-brain
-ls
-```
+Goal: Homebrew, git, and uv all return version numbers when Alice runs `--version` in her Terminal.
 
-You should see folders like `carriers/`, `commissions/`, `intake/`, `outreach/`, plus files like `README.md` and `CLAUDE.md`.
+What you do: tell Alice what's missing, give her the install commands one at a time, wait for output, verify. The Homebrew installer takes 5-10 minutes and prints PATH-setup commands at the end — make sure she runs those too and reopens Terminal before checking the version.
 
-If the clone fails with an authentication prompt: GitHub no longer accepts password-based HTTPS. You'll need a personal access token. Ask Edward.
+**Verification:** she pastes back `brew --version`, `git --version`, `uv --version` outputs that all show real version numbers.
 
----
+### Phase 3 — Secrets folder + credentials file
 
-## Step 3 — Set Up the Secrets Folder
+Goal: `~/.anvo-secrets/` exists with permissions `700`, contains `anvo-oauth-credentials.json` and nothing else.
 
-The `.mcp.json` in the repo points at `${ANVO_SECRETS_DIR}/anvo-oauth-credentials.json` and `${ANVO_SECRETS_DIR}/anvo-oauth-token.json`. You need to create that folder and put the credential files in it.
+You can do this directly via mounted file ops if her home directory is mounted. If it isn't, ask her to do it in Terminal. Either way, confirm the file is in place and ask her where she got it from — if she says "I opened it to peek at it" or "I emailed it to myself," flag that as a security concern and tell her to re-Signal Edward for a fresh copy. The credentials file should never have been opened, forwarded, or duplicated.
 
-### 3a. Create the folder
+**Verification:** `ls -la ~/.anvo-secrets/` shows `drwx------` perms on the folder and one `.json` file inside.
 
-```bash
-mkdir -p ~/.anvo-secrets
-chmod 700 ~/.anvo-secrets   # only you can read it
-```
+### Phase 4 — Environment variable
 
-### 3b. Get the credential files from Edward
+Goal: `ANVO_SECRETS_DIR` is set in `~/.zshrc` to `$HOME/.anvo-secrets` and persists to new Terminal sessions.
 
-Edward will send you three files via a secure channel (Signal, encrypted email — NOT plain Slack/iMessage):
+Append the export line to `~/.zshrc`. Then ask Alice to open a fresh Terminal and run `echo $ANVO_SECRETS_DIR` — the output should be the literal path (`/Users/alice/.anvo-secrets`), not the string `$HOME`.
 
-- `anvo-oauth-credentials.json`
-- `anvo-oauth-token.json`
-- `anvo-service-account.json`
+**Verification:** her fresh-shell `echo` returns the resolved path.
 
-**Save them directly into `~/.anvo-secrets/`.** Do not put them in the repo or anywhere else.
+### Phase 5 — OAuth login (human-in-the-loop)
 
-### 3c. Verify
+Goal: `~/.anvo-secrets/anvo-oauth-token.json` exists, generated by Alice completing the Google OAuth flow with her Anvo account.
 
-```bash
-ls -la ~/.anvo-secrets/
-```
+What happens: Alice runs `claude` in `~/dev/anvo-brain`, prompts something Sheets-related ("List the spreadsheets I have access to"), and the MCP server detects no token and pops open a browser. She logs in with her Anvo Google account (NOT personal), approves the scopes, gets through the "Google hasn't verified this app" warning (Advanced → Go to (app) (unsafe) — reassure her this is normal for internal apps), and the token file gets written automatically.
 
-You should see all three `.json` files. Permissions should look like `-rw-------` (only you can read).
+You cannot do any of this for her. Brief her thoroughly before she starts, walk her through what each screen will look like, and stand by to interpret any errors.
 
----
+**Verification:** `ls ~/.anvo-secrets/` now shows two `.json` files. Sheets call returned a list (not an error).
 
-## Step 4 — Set the ANVO_SECRETS_DIR Environment Variable
+### Phase 6 — End-to-end verification
 
-This tells the repo's `.mcp.json` where to find the credentials. The variable needs to persist across Terminal sessions.
+Goal: confirm reads work across all three Google services the MCP needs.
 
-### 4a. Add it to your shell config
+Have Alice (still in her `claude` session) prompt three reads — one Sheets, one Drive, one Gmail. Examples in the End State section above. If all three return real data, setup is complete. If any fail, capture the error verbatim and surface to Edward — don't try to fix it yourself.
 
-macOS uses **zsh** by default. Add the variable to `~/.zshrc`:
+### Phase 7 — Handoff
 
-```bash
-echo 'export ANVO_SECRETS_DIR="$HOME/.anvo-secrets"' >> ~/.zshrc
-```
+Tell Alice she's done. Suggest she skim `README.md` and `CLAUDE.md` (especially the Multi-Session Sync Protocol) before starting real work. Offer to open them for her.
 
-### 4b. Reload your shell
+## Guardrails (Never Cross These)
 
-```bash
-source ~/.zshrc
-```
+- **Do not write to or modify the credentials JSON files** under any circumstance. They're treated as opaque tokens.
+- **Do not commit or push to the repo during setup.** No setup action should produce a git commit.
+- **Do not take any write action against Anvo's Google services** — no Sheet edits, no email sends, no Drive uploads, no Calendar changes. Reads only, and only as part of verification.
+- **Do not modify files outside `~/dev/anvo-brain`, `~/.anvo-secrets/`, and `~/.zshrc`.**
+- **Do not guess on errors.** If an error message is ambiguous, surface it to Alice in plain English and offer to send Edward the exact text via her Signal.
+- **Do not skip the OAuth browser warnings explanation.** Non-technical users often abandon setup at the "Google hasn't verified this app" screen because it looks dangerous. Reassure proactively.
 
-### 4c. Verify
+## When to Stop and Escalate
 
-```bash
-echo $ANVO_SECRETS_DIR
-```
+- Alice has done something with the credentials file you can't undo (opened, forwarded, duplicated to multiple locations).
+- The OAuth flow fails twice in a row.
+- A verification read returns auth errors after the token file appears (suggests Anvo Google account permissions issue — Edward needs to fix).
+- Alice asks a question about Anvo operations or the repo's content that goes beyond setup ("Should I try the commissions workflow?"). Setup is done; redirect her to read `README.md` and start a fresh Cowork session for actual work.
+- Anything ambiguous. Stop, surface, ask. The cost of asking is 30 seconds; the cost of guessing wrong on a credential or env-var setup is hours of debugging later.
 
-Expected output: `/Users/<your-username>/.anvo-secrets` (not the literal `$HOME` — if you see `$HOME`, something went wrong).
+## Notes for Future Maintainers
 
----
-
-## Step 5 — Test the MCP Connection
-
-The repo's `.mcp.json` configures a Google Sheets MCP server. Test that it can read your credentials and connect.
-
-### 5a. From the repo root
-
-```bash
-cd ~/dev/anvo-brain
-uvx mcp-google-sheets@latest --help
-```
-
-This downloads the MCP server and prints its help text. First run takes ~30 seconds (downloading dependencies). Subsequent runs are instant.
-
-### 5b. Test in Claude Code
-
-Open Claude Code in the repo:
-
-```bash
-cd ~/dev/anvo-brain
-claude
-```
-
-In the Claude session, ask:
-
-> "List the spreadsheets I have access to."
-
-If credentials are working, you'll get a list. If you see an authentication error, check:
-
-1. `echo $ANVO_SECRETS_DIR` — is the variable set?
-2. `ls $ANVO_SECRETS_DIR/` — are the three `.json` files there?
-3. The `.mcp.json` file in the repo — does it reference `${ANVO_SECRETS_DIR}` (not a hardcoded path)?
-
----
-
-## Step 6 — Read the Operating Manual
-
-Before starting any real work, read these two files in the repo:
-
-- `README.md` — what the repo is, who uses it, navigation
-- `CLAUDE.md` — sync protocol (when to `git pull`, `git push`, how to avoid conflicts), git auth setup, working conventions
-
-Pay special attention to the **Multi-Session Sync Protocol** section in `CLAUDE.md`. When two people are editing the repo via Cowork sessions, you need to follow it to avoid conflicts.
-
----
-
-## Common Errors
-
-### "Permission denied" when running `git clone`
-
-You're trying SSH but GitHub doesn't have your key. Use HTTPS instead (the URL above is already HTTPS).
-
-### `uvx` says "command not found"
-
-`uv` isn't on your PATH. Run `which uv` — if it returns nothing, the install didn't complete. Try: `brew reinstall uv`. If `which uv` returns a path but `uvx` doesn't work, try restarting Terminal.
-
-### MCP server says "credentials not found"
-
-Either `ANVO_SECRETS_DIR` isn't set, or the JSON files aren't in `~/.anvo-secrets/`. Re-run Step 3 and 4.
-
-### Cowork session can't push (`unset GIT_SSH_COMMAND` error or similar)
-
-See the **Git Auth From Cowork Sandbox** section in `CLAUDE.md` — it has the workaround for the sandbox's SSH key handling.
-
----
-
-## Done
-
-You're ready. Next time you start work:
-
-```bash
-cd ~/dev/anvo-brain
-git pull
-# ... do work ...
-git add -A
-git commit -m "What you changed"
-git push
-```
-
-For day-to-day operations (intake, commissions, outreach), refer to the relevant folder's instructions.
+- This brief assumes Cowork mode with mounted access to the user's home directory (or at least `~/dev/anvo-brain`, `~/.anvo-secrets`, and `~/.zshrc`). If those aren't mounted, every direct file action becomes a "tell the user to run this in Terminal" — still works, just more copy-paste.
+- The OAuth flow is currently triggered by the first MCP Sheets call from Claude Code. If `mcp-google-sheets` adds an explicit `--auth` command in the future, prefer that path.
+- For Personal Access Token (PAT) handling on `git clone`: not addressed here because the repo is assumed already cloned. If a future user lands here without the repo, escalate the PAT step to Edward — don't embed PAT generation, since PATs are per-user and rotate.

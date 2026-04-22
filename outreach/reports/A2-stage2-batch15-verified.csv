@@ -1,0 +1,26 @@
+company,city,state,segment,website,overall_score,priority,apollo_emp,est_premium,in_kc_metro,business_status,location_match,identity_match,recommendation,skip_reason,verification_notes
+Benchmark Custom Home Builders Inc,St. Louis,Missouri,Construction,http://www.benchmarkhomesstl.com,4.4,HIGH,6,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $11.5M
+Laclede Cab,St. Louis,Missouri,Transport/Logistics,http://www.lacledecab.com,4.4,HIGH,14,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse; Revenue $12.9M
+Ricotta Heating and Air,Hillsboro,Missouri,Construction,http://www.ricottaheatingandair.com,4.4,HIGH,13,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade; 2 locations
+JHOOKER Construction,O'Fallon,Missouri,Construction,http://www.jhookerconstruction.com,4.4,HIGH,10,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $13.0M
+Bowers Plumbing Company,Wichita,Kansas,Construction,http://www.bowersplumbingcompany.com,4.4,HIGH,13,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade
+Boone County Lumber Co,Columbia,Missouri,Construction,http://www.boonecountylumber.com,4.4,HIGH,13,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade; Revenue $15.0M
+J & J Drainage Products Co.,Hutchinson,Kansas,Construction,http://www.jjdrainage.com,4.4,HIGH,9,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade; Revenue $12.6M
+"Innovative Construction Services, Inc.",Wichita,Kansas,Construction,http://www.ics-designs.com,4.4,HIGH,14,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs
+"SE Energy, LLC",Sikeston,Missouri,Construction,http://www.se-energy.com,4.4,HIGH,8,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade
+Koehn Building Systems,Rich Hill,Missouri,Construction,http://www.koehnbuildings.com,4.4,HIGH,7,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $34.1M
+BBi Constructors,St. Peters,Missouri,Construction,http://www.bbiconstructors.com,4.4,HIGH,6,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $19.5M
+KAW Services,Pleasant Valley,Missouri,Transport/Logistics,http://www.kawservices.com,4.4,HIGH,8,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse; 2 locations; Revenue $60.8M
+KA Pazdera Hauling and Excavating LLC,Festus,Missouri,Transport/Logistics,http://www.kapazdera.com,4.4,HIGH,12,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse; Revenue $19.9M
+Kay Bee Electric Company Inc,Florissant,Missouri,Construction,http://www.kaybeeelectric.com,4.4,HIGH,14,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $39.3M
+"Phillips Southern Electric Co., Inc.",Wichita,Kansas,Construction,http://www.phillips-southern.org,4.4,HIGH,8,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs
+Deluxe Truck Stop,Saint Joseph,Missouri,Transport/Logistics,http://www.deluxetruckstop.com,4.4,HIGH,9,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse; Revenue $12.1M
+Byrne Electric Company,Saint Louis,Missouri,Construction,http://www.byrne-electric.com,4.4,HIGH,7,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $23.8M
+"Heartland Home Improvements, Inc.",Wichita,Kansas,Construction,http://www.heartlandhomeimp.com,4.4,HIGH,10,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $10.5M
+"C. Rallo Contracting Co., Inc.",St. Louis,Missouri,Construction,http://www.crallo.com,4.4,HIGH,15,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $28.3M
+Champion Floor Company,St. Louis,Missouri,Construction,http://www.championfloor.com,4.4,HIGH,6,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade; Revenue $15.2M
+Accumax Auto Parts,Joplin,Missouri,Transport/Logistics,http://www.accumaxparts.com,4.4,HIGH,6,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet; Revenue $17.6M
+"Bourne Logistics Management, Inc.",Joplin,Missouri,Transport/Logistics,http://www.bournelogistics.com,4.4,HIGH,10,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse
+Big Boy's Towing & Recovery,Pacific,Missouri,Transport/Logistics,http://www.bigboystowing.com,4.4,HIGH,6,$40K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: fleet_and_warehouse
+CW Electric LLC,Lake Lotawana,Missouri,Construction,http://www.cwelectrical.com,4.4,HIGH,9,$30K-$80K+,False,OPEN,YES,YES,REVEAL,,Subtype: gc_with_subs; Revenue $17.6M
+HC Sharp Company,Saint Louis,Missouri,Construction,http://www.hcsharpco.com,4.4,HIGH,11,$20K-$40K,False,OPEN,YES,YES,REVEAL,,Subtype: artisan_trade; Revenue $15.1M

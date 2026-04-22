@@ -16,12 +16,13 @@ Every file in this repo is written for **Claude Cowork agents as the primary rea
 
 ## First-Time Setup
 
-Cloning the repo on a new machine? Follow the platform-specific guide:
+**If you are Alice (or any non-technical user setting up on macOS):** open `ALICE_START_HERE.md`. It's a one-page guide that tells you exactly what to do — no shell commands, no credentials handling on your end. Claude Cowork drives the setup for you.
 
-- **macOS (Alice, anyone on a Mac):** `SETUP_MAC.md`
-- **Windows (Edward, anyone on Windows):** `SETUP_WINDOWS.md`
+**If you are setting up on Windows (Edward, or any future Windows user):** follow `SETUP_WINDOWS.md` — a manual walkthrough using PowerShell.
 
-Both guides walk through installing prerequisites, cloning the repo, configuring the `~/.anvo-secrets/` folder, and setting `ANVO_SECRETS_DIR` so the MCP server can find your credentials.
+**If you are a Cowork agent being asked to set up the repo on someone's Mac:** read `SETUP_MAC.md`. That file is a runbook written for you (Claude) to execute, with explicit narration scripts for talking to the human user.
+
+All three files cover the same end state: cloned repo, `~/.anvo-secrets/` folder populated with the OAuth credentials, `ANVO_SECRETS_DIR` env var set, and a verified Sheets/Drive/Gmail read.
 
 ## How to Use This Repo
 
@@ -65,11 +66,21 @@ anvo-brain/
 │   ├── sheet_schema.md
 │   ├── carrier_reference.md
 │   └── scripts/               ← Google Apps Scripts for auto-ingestion
-├── outreach/                  ← Cold email outreach (self-contained)
-│   ├── README.md
-│   ├── workflow.md
-│   ├── templates.md
-│   └── stage{N}_outreach_log.csv
+├── outreach/                  ← Cold email outreach + prospecting pipeline (self-contained)
+│   ├── README.md                       ← Folder router — start here
+│   ├── email-drafting-workflow.md      ← Alice's Phase 2 drafting flow
+│   ├── templates.md                    ← Email templates with selection logic
+│   ├── instructions/                   ← Source-of-truth instruction sets
+│   │   ├── INSTRUCTIONS-v5.md          ← Multi-industry pipeline (Stages 1–7)
+│   │   ├── INSTRUCTIONS-stage4-7.md    ← Detailed Stage 4–7 logic
+│   │   ├── COWORK-TASK-PROMPTS.md      ← Copy-paste prompts for ad-hoc runs
+│   │   ├── nightly-pipeline.md         ← Runbook for the continuous nightly batch
+│   │   └── scheduled-task-nightly.md   ← Trimmed prompt body for the scheduler
+│   └── reports/                        ← State files + generated batch outputs
+│       ├── nightly-run-state.json      ← Pipeline state (mutated each run)
+│       ├── pipeline-learnings.json     ← Accumulated workarounds (append-only)
+│       ├── stage3_results.csv          ← Ground truth: every revealed contact
+│       └── stage{N}_outreach_log.csv   ← Outputs ready for Alice's drafting flow
 ├── intercom/                  ← Intercom setup, workflows, message templates
 │   ├── setup_notes.md
 │   ├── workflows/

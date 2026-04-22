@@ -43,11 +43,23 @@ anvo-brain/
 │   └── scripts/              # Google Apps Scripts for auto-ingestion
 │       ├── commission_ingestion.js   # Drive folder watcher (CSV/Excel)
 │       └── bonus_ingestion.js        # Gmail label scanner (MIAA bonuses)
-├── outreach/                 # Cold email outreach (self-contained)
-│   ├── README.md             # CSV schema, status codes, processing rules
-│   ├── workflow.md           # End-to-end outreach process (research → draft → send)
+├── outreach/                 # Cold email outreach + prospecting pipeline (self-contained)
+│   ├── README.md             # Folder router — start here
+│   ├── email-drafting-workflow.md  # Alice's drafting flow (Phase 2 of the pipeline)
 │   ├── templates.md          # Email templates with selection logic
-│   └── stage{N}_outreach_log.csv  # Prospect batches (Edward generates, Alice drafts)
+│   ├── instructions/         # Source-of-truth instruction sets
+│   │   ├── INSTRUCTIONS-v5.md          # Multi-industry pipeline (Stages 1–7)
+│   │   ├── INSTRUCTIONS-stage4-7.md    # Detailed Stage 4–7 logic
+│   │   ├── COWORK-TASK-PROMPTS.md      # Copy-paste prompts for ad-hoc runs
+│   │   ├── nightly-pipeline.md         # Runbook for the continuous nightly batch
+│   │   └── scheduled-task-nightly.md   # Trimmed prompt body for the scheduler
+│   └── reports/              # State files + generated batch outputs
+│       ├── nightly-run-state.json      # Pipeline state (mutated each run)
+│       ├── pipeline-learnings.json     # Accumulated workarounds (append-only)
+│       ├── stage3_results.csv          # Ground truth: every revealed contact
+│       ├── A2-stage1-tier1-scored.csv  # Master Tier 1 prospect list
+│       ├── A2-stage2-batch{N}-verified.csv  # Per-batch verification output
+│       └── stage{N}_outreach_log.csv   # Outputs ready for Alice's drafting flow
 ├── business/                 # Strategic analyses, audits, internal briefs
 │   ├── audits/               # E&O content audit, website audit, vertical analyses
 │   └── strategy/             # Middleware risk brief and similar standalone briefs
@@ -114,8 +126,9 @@ This repo is shared across multiple Claude Cowork sessions — Edward and Alice 
 4. Push to `origin/main` so the other session can pull the latest.
 
 ### Avoiding Conflicts
-- **Edward's session** primarily handles: carrier strategy, workflow design, escalations, repo structure changes, business/strategy briefs, marketing project planning.
-- **Alice's session** primarily handles: intake processing, certificate issuance, day-to-day operations, client communications, outreach drafting.
+- **Edward's session** primarily handles: carrier strategy, workflow design, escalations, repo structure changes, business/strategy briefs, marketing project planning, and the nightly prospecting scheduled task (runs every 45 min, 11pm–3am ET, mutating files in `outreach/reports/`).
+- **Alice's session** primarily handles: intake processing, certificate issuance, day-to-day operations, client communications, and Phase 2 of the outreach pipeline (email drafting from `outreach/reports/stage{N}_outreach_log.csv` per `outreach/email-drafting-workflow.md`).
+- **Scheduled task write window:** between 11pm and 3am ET, Edward's nightly task is actively writing to `outreach/reports/nightly-run-state.json`, `outreach/reports/pipeline-learnings.json`, `outreach/reports/stage3_results.csv`, and `outreach/reports/A2-stage2-batch*-verified.csv`. Avoid editing those files from Alice's session during this window — let the scheduled task finish, pull, then edit.
 - If both sessions need to edit the same file, one should push before the other pulls. Do not edit the same file simultaneously.
 - If a git lock file error occurs (`.git/index.lock` or `.git/HEAD.lock`), the human must delete it manually from their machine before git operations will work.
 
@@ -146,13 +159,22 @@ The remote is HTTPS: `https://github.com/Anvo-Insurance/anvo-brain.git`. Each Co
 
 ### Self-Contained Workflow Folders
 
-When a workflow has its own data, templates, and instructions, **keep everything in one folder.** The folder should contain:
+When a workflow has its own data, templates, and instructions, **keep everything in one folder.** A simple workflow folder contains:
 
-- `README.md` — what this folder is, schema definitions, processing rules
+- `README.md` — folder router; what this folder is, schema definitions, processing rules
 - `workflow.md` — end-to-end process documentation
 - `templates.md` (if applicable) — templates specific to this workflow
 - Data files (CSVs, etc.)
 
-**Rule:** If a file is only used by one workflow, it lives in that workflow's folder. If it's used across multiple workflows (e.g., `client_welcome_email.md` is used after any client signs, regardless of source), it stays in the shared `templates/` or `workflows/` folder.
+**Subfolders are allowed and encouraged when the workflow grows.** A complex workflow (multi-stage instruction sets, ongoing state files, batch outputs) should split into subfolders rather than flatten everything into the folder root. Typical subfolder pattern:
+
+- `instructions/` — source-of-truth instruction sets, runbooks, scheduled-task prompt bodies
+- `reports/` (or `data/`) — state files, generated batch outputs, append-only logs
+- `templates/` — workflow-specific templates (only if the workflow has many)
+- `scripts/` — automation scripts owned by this workflow
+
+The `outreach/` folder is the canonical example of the subfolder pattern: `outreach/instructions/` holds the multi-stage prospecting instructions, runbooks, and the scheduled-task prompt body; `outreach/reports/` holds pipeline state, learnings, and per-batch CSV outputs. Compare with `commissions/` which is simpler and uses a flatter structure plus a single `scripts/` subfolder.
+
+**Rule for placement:** If a file is only used by one workflow, it lives in that workflow's folder (root or subfolder, whichever fits). If it's used across multiple workflows (e.g., `client_welcome_email.md` is used after any client signs, regardless of source), it stays in the shared `templates/` or `workflows/` folder.
 
 This keeps each workflow self-contained — an agent working on outreach only needs to read `outreach/`, not hunt across three directories. Examples of self-contained folders: `outreach/`, `commissions/`. Examples of shared folders: `templates/`, `workflows/`, `carriers/`.

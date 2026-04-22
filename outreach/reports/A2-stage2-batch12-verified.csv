@@ -1,0 +1,26 @@
+company,city,state,segment,score,website,apollo_emp,revenue,status,recommendation,notes
+Federal Solutions Company,Blue Springs,Missouri,Construction,4.0,federalsolutionscompany.com,18,,OPEN,REVEAL,Federal/government construction contractor; MEP trades; Design-Build
+USKO Inc.,Independence,Missouri,Transport/Logistics,4.0,uskoinc.com,180,150000000,OPEN,REVEAL,Trucking/logistics; 324 trucks; full truckload expedited auto-haul air ocean
+DS Bus Lines,Bonner Springs,Kansas,Transport/Logistics,4.0,dsbuslines.com,160,,OPEN,REVEAL,School bus and charter transportation; operates in KS MO and 6 other states; part of Beacon Mobility
+"D&L Transport",Overland Park,Kansas,Transport/Logistics,4.0,dltransport.com,190,311750000,OPEN,REVEAL,Freight brokerage; agent-based model; 10540 Marty St Ste 160 OP KS 66212
+Carey of Kansas City,Kansas City,Missouri,Transport/Logistics,4.0,kansascitytransportationgroup.com,3,2819000,OPEN,REVEAL,Luxury ground transportation for corporate/private/social events
+"Pinnacle Plumbing Company, LLC",Mission,Kansas,Construction,4.0,pinnacleplumbingco.com,17,,OPEN,REVEAL,Commercial plumbing construction; 23+ years; PO Box 2407 Mission KS 66202
+"FastCat Freight, Inc.",Overland Park,Kansas,Transport/Logistics,4.0,fastcatfreight.com,170,68200000,OPEN,SKIP,HQ is Charlotte NC not Overland Park KS; division of Armstrong Transport Group; location mismatch
+Efreightship,Overland Park,Kansas,Transport/Logistics,4.0,efreightship.com,18,,OPEN,REVEAL,Freight brokerage; PO Box 26641 OP KS 66225; 44000+ carriers
+"Butler Transport, Inc.",Kansas City,Kansas,Transport/Logistics,4.0,butlertransport.com,130,41700000,OPEN,REVEAL,Refrigerated trucking; 347 N James St KCK 66118; woman-owned WBE; founded 1988
+Budget Self Storage,Belton,Missouri,Transport/Logistics,4.0,abudgetselfstorage.com,18,,OPEN,REVEAL,Self-storage facility; classified as Transport in Apollo but actually storage; insurable for BOP/GL
+Jana Group,De Soto,Missouri,Construction,4.0,janairaq.com,18,,OPEN,SKIP,Iraq-based construction company (Kurdistan Region); NOT in De Soto MO; domain janairaq.com confirms
+Catalyst Construction LLC,Prairie Village,Kansas,Construction,4.0,catalystconstructionllc.com,5,3800000,OPEN,REVEAL,Remodeling and new home building; KC area
+"Capital Electric Construction Co., Inc.",Kansas City,Kansas,Construction,4.0,capitalelectric.com,170,46700000,OPEN,REVEAL,Electrical contractor; 2801 Fairfax Trafficway KCK; member of Everus; top 30 national; 500+ employees
+Best Way Distribution,Kansas City,Missouri,Transport/Logistics,4.0,bwdst.com,18,,OPEN,REVEAL,3PL warehousing; 1705 Kansas Ave KCK 66105; 750000 sq ft facility
+"Austin Hardware & Supply, Inc",Lee's Summit,Missouri,Transport/Logistics,4.0,austinhardware.com,160,15000000,OPEN,REVEAL,Wholesale hardware distributor; classified as Transport in Apollo but actually wholesale distribution
+Black Oak Construction LLC,Overland Park,Kansas,Construction,4.0,blackoakkc.com,17,,OPEN,REVEAL,Residential/commercial construction; 16123 Foster St OP KS 66085; veteran-owned SDVOB
+Heartland Trailways,Kansas City,Kansas,Transport/Logistics,4.0,heartlandtrailways.com,17,,OPEN,REVEAL,Charter bus company; HQ KC MO (KC Downtown Airport); founded 1989; 35+ years
+Freightview,Kansas City,Missouri,Transport/Logistics,4.0,freightview.com,19,3800000,OPEN,REVEAL,SaaS freight management software; 901 Carondelet Dr KC MO 64114; BOP/cyber/E&O potential
+"LEADER Worldwide Chauffeured Services",Kansas City,Missouri,Transport/Logistics,4.0,leaderlimo.com,19,,OPEN,REVEAL,Executive limo/chauffeur services; HQ at KC Downtown Airport; also in Omaha
+Whipz,Kansas City,Missouri,Manufacturing,4.0,whipz.com,19,,OPEN,REVEAL,Buy Here Pay Here auto dealer; 3923 N Oak Trafficway KC MO 64116; classified as Mfg but actually auto dealer
+IBC,Kansas City,Missouri,Construction,4.0,ibccarpentry.com,150,22332000,OPEN,REVEAL,Commercial carpentry contractor; woman-owned; notable KC projects
+Miler,Overland Park,Kansas,Transport/Logistics,4.0,miler.com,18,,OPEN,REVEAL,Cloud-based TMS software; 10895 Lowell Ave Ste 205 OP KS 66210; SaaS BOP/cyber/E&O
+"MyFreightWorld Inc.",Overland Park,Kansas,Transport/Logistics,4.0,myfreightworld.com,140,13674000,OPEN,REVEAL,3PL freight brokerage; 6130 Sprint Pkwy Ste 160 OP KS 66211; 25+ years
+Design Mechanical Inc,Kansas City,Kansas,Manufacturing,4.0,dmi-kc.com,160,22000000,OPEN,REVEAL,Commercial HVAC contractor; 100 Greystone Ave KCK 66103; ~200 employees; classified as Mfg but actually HVAC
+Barts Electric,Liberty,Missouri,Construction,4.0,bartselectric.com,190,38927000,OPEN,REVEAL,Nationwide electrical contractor; 7103 Stewart Rd Liberty MO 64068; founded 1992

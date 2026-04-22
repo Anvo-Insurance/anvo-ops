@@ -1,0 +1,416 @@
+phase,reveal_order,priority,overall,company,city,state,biz_type,apollo_emp,revenue,est_premium,likely_asian,in_kc_metro,is_food,website,phone
+Phase 1 - Asian-owned,1,HIGH,4.8,"Nationwide Transportation and Logistics Services, Inc.",Shawnee,Kansas,contractor,25,"$10,442,000",$20K+,Yes,Yes,No,http://www.nationwidetransportation.com,'+1 913-888-1685
+Phase 1 - Asian-owned,2,HIGH,4.8,Bo Lings Chinese Restaurant,Kansas City,Missouri,asian restaurant,41,"$11,901,000",$20K+,Yes,Yes,Yes,http://www.bolings.com,'+1 816-753-1718
+Phase 1 - Asian-owned,3,HIGH,4.8,Lulu's Thai Noodle Shop,Kansas City,Missouri,asian restaurant,27,"$20,614,000",$20K+,Yes,Yes,Yes,http://www.lulusnoodles.com,'+1 816-474-8424
+Phase 1 - Asian-owned,4,HIGH,4.8,Nara Restaurant,Kansas City,Missouri,restaurant (general),15,"$19,111,000",$20K+,Yes,Yes,Yes,http://www.1617eventspace.com,'+1 816-221-0362
+Phase 1 - Asian-owned,5,HIGH,4.8,Foxx Equipment Company,Kansas City,Kansas,restaurant (general),43,"$23,170,000",$20K+,Yes,Yes,Yes,http://www.foxxequipment.com,'+1 816-421-3600
+Phase 1 - Asian-owned,6,HIGH,4.8,Happy Wok Chinese,Kansas City,Missouri,asian restaurant,19,,$20K+,Yes,Yes,Yes,http://www.happywokchinese.com,'+1 973-300-1536
+Phase 1 - Asian-owned,7,HIGH,4.8,Twin Dragon,Saint Joseph,Missouri,restaurant (general),24,"$13,752,000",$20K+,Yes,,Yes,http://www.twindragonsj.com,'+1 816-689-0061
+Phase 1 - Asian-owned,8,HIGH,4.7,"NCES, Inc",Olathe,Kansas,"health, wellness & fitness",24,"$11,959,000",$20K+,Yes,Yes,No,http://www.ncescatalog.com,'+1 877-623-7266
+Phase 1 - Asian-owned,9,HIGH,4.7,Baird Realty Group,Lee's Summit,Missouri,real estate,16,"$16,980,000",$20K+,Yes,Yes,No,http://www.bairdrealtygrp.com,'+1 816-524-1923
+Phase 1 - Asian-owned,10,HIGH,4.7,Fulfillment Plus,North Kansas City,Missouri,nonprofit,14,"$10,247,000",$20K+,Yes,Yes,No,http://www.fulfillment-kc.com,'+1 816-221-4700
+Phase 1 - Asian-owned,11,HIGH,4.6,Fuji Japanese Steak House,Liberty,Missouri,asian restaurant,23,,$10K-$20K,Yes,Yes,Yes,http://www.fujilibertytogo.com,'+1 816-439-5150
+Phase 1 - Asian-owned,12,HIGH,4.6,Chinese Grocery Store,Manhattan,Kansas,asian restaurant,25,,$10K-$20K,Yes,Yes,Yes,http://www.crunchbearmarket.com,'+1 785-802-5040
+Phase 1 - Asian-owned,13,HIGH,4.6,Summit Hospitality Group,Lee's Summit,Missouri,restaurant (general),29,,$10K-$20K,Yes,Yes,Yes,http://www.summitgrillkc.com,'+1 816-795-1299
+Phase 1 - Asian-owned,14,HIGH,4.6,The Point Bar & Grill,Kansas City,Missouri,bar/nightclub,36,,$20K+,Yes,Yes,Yes,http://www.thepointkc.com,
+Phase 1 - Asian-owned,15,HIGH,4.5,Naka-Kon Anime Convention,Overland Park,Kansas,entertainment,14,"$5,767,000",$20K+,Yes,Yes,No,http://www.naka-kon.com,
+Phase 1 - Asian-owned,16,HIGH,4.5,Kingdom Of Kush,Garnett,Kansas,government administration,30,,$20K+,Yes,,No,http://www.kingdomofkush.org,
+Phase 1 - Asian-owned,17,HIGH,4.4,Prime Sushi,Kansas City,Missouri,asian restaurant,15,,$10K-$20K,Yes,Yes,Yes,http://www.primesushikc.com,'+1 816-931-4829
+Phase 1 - Asian-owned,18,HIGH,4.4,Thai Café,Kansas City,Missouri,asian restaurant,27,,$10K-$20K,Yes,Yes,Yes,http://www.thai.cafe,02/888.80.80
+Phase 1 - Asian-owned,19,HIGH,4.4,Kome Sushi,Parkville,Missouri,asian restaurant,23,,$10K-$20K,Yes,Yes,Yes,http://www.komesushimo.com,'+1 816-587-8882
+Phase 1 - Asian-owned,20,HIGH,4.3,Test Smartly Labs Testing Centers,Overland Park,Kansas,"health, wellness & fitness",21,,$10K-$20K,Yes,Yes,No,http://www.testsmartlylabs.com,'+1 816-777-2977
+Phase 1 - Asian-owned,21,HIGH,4.3,"Mitzi Dulan, LLC- Helping food companies maximize results on Pinterest.",Leawood,Kansas,"health, wellness & fitness",20,"$422,000",$10K-$20K,Yes,Yes,No,http://www.nutritionexpert.com,'+1 310-573-5060
+Phase 1 - Asian-owned,22,HIGH,4.3,Golden palace,Olathe,Kansas,building materials,18,,$10K-$20K,Yes,Yes,No,http://www.goldenpalaceolathe.com,'+1 913-780-1511
+Phase 1 - Asian-owned,23,HIGH,4.3,Curé of Ars Catholic Church,Leawood,Kansas,religious org,20,,$10K-$20K,Yes,Yes,No,http://www.cureofars.com,'+1 913-648-2620
+Phase 1 - Asian-owned,24,HIGH,4.3,Bones Co,Ottawa,Kansas,education management,21,,$10K-$20K,Yes,,No,http://www.bonesdenver.com,'+1 303-860-2929
+Phase 1 - Asian-owned,25,HIGH,4.2,New Vision Photography,Kansas City,Kansas,asian restaurant,13,,$5K-$10K,Yes,Yes,Yes,http://www.newvisionphotokc.com,'+1 913-406-3429
+Phase 1 - Asian-owned,26,HIGH,4.2,Bamboo Penny's,Leawood,Kansas,restaurant (general),13,,$5K-$10K,Yes,Yes,Yes,http://www.bamboopennys.com,'+1 913-232-7695
+Phase 1 - Asian-owned,27,HIGH,4.0,"Applied Marketing Research, Inc.",Lawrence,Kansas,grocery/market,11,,$5K-$10K,Yes,Yes,Yes,http://www.appliedmr.com,'+1 800-381-5599
+Phase 1 - Asian-owned,28,MEDIUM,3.9,Gold China,Independence,Missouri,consumer services,14,,$5K-$10K,Yes,Yes,No,http://www.goldchinamiami.com,'+1 305-233-6501
+Phase 1 - Asian-owned,29,MEDIUM,3.6,Phoenix Catering,Kansas City,Missouri,asian restaurant,14,,$5K-$10K,Yes,Yes,Yes,,
+Phase 1 - Asian-owned,30,MEDIUM,3.6,HUNAN CHINESE RESTAURANT,Topeka,Kansas,asian restaurant,14,,$5K-$10K,Yes,Yes,Yes,,
+Phase 1 - Asian-owned,31,MEDIUM,3.6,Sushi Gin,Overland Park,Kansas,asian restaurant,13,,$5K-$10K,Yes,Yes,Yes,,
+Phase 2 - High revenue,32,HIGH,4.3,"The Williams-Carver Company, Inc.",Kansas City,Kansas,restaurant (general),13,"$5,000,000",$20K+,,Yes,Yes,http://www.williamscarver.com,'+1 913-236-4949
+Phase 2 - High revenue,33,HIGH,4.3,"BSE Structural Engineers, LLC",Lenexa,Kansas,contractor,28,"$6,581,000",$20K+,,Yes,No,http://www.bsestructural.com,'+1 913-492-7400
+Phase 2 - High revenue,34,HIGH,4.3,Food Link USA,Overland Park,Kansas,restaurant (general),16,"$26,826,000",$20K+,,Yes,Yes,http://www.foodlinkusa.com,'+1 913-851-2985
+Phase 2 - High revenue,35,HIGH,4.3,Paul Werner Architects,Lawrence,Kansas,contractor,11,"$13,392,000",$20K+,,Yes,No,http://www.paulwernerarchitects.com,'+1 785-832-0804
+Phase 2 - High revenue,36,HIGH,4.3,Barsto Construction Inc,Kansas City,Missouri,contractor,19,"$9,650,000",$20K+,,Yes,No,http://www.barstoconstruction.com,'+1 816-421-5677
+Phase 2 - High revenue,37,HIGH,4.3,Replay Lounge,Lawrence,Kansas,bar/nightclub,11,"$11,161,000",$20K+,,Yes,Yes,http://www.replaylounge.com,'+1 785-749-7676
+Phase 2 - High revenue,38,HIGH,4.3,Eden Alley Cafe,Kansas City,Missouri,coffee/cafe,11,"$13,810,000",$20K+,,Yes,Yes,http://www.edenalley.com,'+1 816-561-5415
+Phase 2 - High revenue,39,HIGH,4.3,RestaurantLink,Overland Park,Kansas,restaurant (general),12,"$12,000,000",$20K+,,Yes,Yes,http://www.restaurantlink.com,'+1 785-841-3656
+Phase 2 - High revenue,40,HIGH,4.3,Just Like You Films,Kansas City,Missouri,trades contractor,13,"$7,579,000",$20K+,,Yes,No,http://www.justlikeyoufilms.org,'+1 913-240-4269
+Phase 2 - High revenue,41,HIGH,4.3,Stone Canyon Gladstone,Gladstone,Missouri,restaurant (general),22,"$13,323,000",$20K+,,Yes,Yes,http://www.stonecanyonpizza.com,'+1 816-746-8686
+Phase 2 - High revenue,42,HIGH,4.3,"Tiger Cool Express, LLC",Overland Park,Kansas,trades contractor,17,"$9,349,000",$20K+,,Yes,No,http://www.tigercoolexpress.com,'+1 913-305-3510
+Phase 2 - High revenue,43,HIGH,4.3,Headrush Roasters Coffee & Tea,Kansas City,Missouri,coffee/cafe,11,"$12,636,000",$20K+,,Yes,Yes,http://www.headrushroasters.com,'+1 816-888-4675
+Phase 2 - High revenue,44,HIGH,4.3,Radinas Coffeehouse And Roastery,Manhattan,Kansas,coffee/cafe,23,"$13,285,000",$20K+,,Yes,Yes,http://www.radinascoffee.com,'+1 785-537-2345
+Phase 2 - High revenue,45,HIGH,4.3,Kain McArthur,Olathe,Kansas,restaurant (general),18,"$28,922,000",$20K+,,Yes,Yes,http://www.kainmcarthur.com,'+1 913-829-3700
+Phase 2 - High revenue,46,HIGH,4.3,Free State Brewing Co,Lawrence,Kansas,brewery/taproom,37,"$17,545,000",$20K+,,Yes,Yes,http://www.freestatebrewing.com,'+1 785-843-4555
+Phase 2 - High revenue,47,HIGH,4.3,KMDI Inc. MicroLite!,Kansas City,Kansas,contractor,29,"$10,689,000",$20K+,,Yes,No,http://www.kmdi.net,'+1 913-281-4200
+Phase 2 - High revenue,48,HIGH,4.3,Off the Vine Catering,Leavenworth,Kansas,catering,22,"$11,936,000",$20K+,,Yes,Yes,http://www.offthevinecatering.com,'+1 781-762-9770
+Phase 2 - High revenue,49,HIGH,4.3,Riega Foods LLC,Kansas City,Missouri,restaurant (general),22,"$8,506,000",$20K+,,Yes,Yes,http://www.riegafoods.com,'+1 816-744-8260
+Phase 2 - High revenue,50,HIGH,4.3,V's Italiano Ristorante,Independence,Missouri,restaurant (general),17,"$13,084,000",$20K+,,Yes,Yes,http://www.vsrestaurant.com,'+1 816-353-1241
+Phase 2 - High revenue,51,HIGH,4.3,BioStar Renewables,Overland Park,Kansas,contractor,21,"$17,396,000",$20K+,,Yes,No,http://www.biostarrenewables.com,'+1 913-369-4100
+Phase 2 - High revenue,52,HIGH,4.3,Rye KC,Leawood,Kansas,restaurant (general),24,"$19,089,000",$20K+,,Yes,Yes,http://www.ryekc.com,'+1 913-642-5800
+Phase 2 - High revenue,53,HIGH,4.3,"715, L.L.C.",Lawrence,Kansas,restaurant (general),23,"$12,472,000",$20K+,,Yes,Yes,http://www.715mass.com,'+1 785-856-7150
+Phase 2 - High revenue,54,HIGH,4.3,Saints Pub + Patio,Shawnee,Kansas,bar/nightclub,32,"$10,000,000",$20K+,,Yes,Yes,http://www.saintspub.com,'+1 913-600-2977
+Phase 2 - High revenue,55,HIGH,4.3,GROUNDHOUSE COFFEE INC.,Gardner,Kansas,coffee/cafe,16,"$14,519,000",$20K+,,Yes,Yes,http://www.groundhousecoffee.com,'+1 913-856-5711
+Phase 2 - High revenue,56,HIGH,4.3,Grandma's Catering,Kansas City,Missouri,catering,12,"$7,324,000",$20K+,,Yes,Yes,http://www.grandmascatering.com,'+1 913-327-8663
+Phase 2 - High revenue,57,HIGH,4.3,PKC Commercial Construction,Lenexa,Kansas,contractor,19,"$9,089,000",$20K+,,Yes,No,http://www.pkcc.com,'+1 913-782-4646
+Phase 2 - High revenue,58,HIGH,4.3,Custom Control Mfr.,Overland Park,Kansas,contractor,23,"$16,045,000",$20K+,,Yes,No,http://www.customcontrolmfr.com,'+1 913-722-0343
+Phase 2 - High revenue,59,HIGH,4.3,Aladdin Hotel and Spa,Kansas City,Missouri,restaurant (general),39,"$23,072,000",$20K+,,Yes,Yes,http://www.hialaddin.com,'+1 816-421-8888
+Phase 2 - High revenue,60,HIGH,4.3,The Culinary Center of Kansas City,Overland Park,Kansas,restaurant (general),13,"$5,000,000",$20K+,,Yes,Yes,http://www.kcculinary.com,'+1 913-341-4455
+Phase 2 - High revenue,61,HIGH,4.3,Kansas City Barbeque Society,Kansas City,Missouri,restaurant (general),44,"$5,564,000",$20K+,,Yes,Yes,http://www.kcbs.us,'+1 800-963-5227
+Phase 2 - High revenue,62,HIGH,4.3,Sheridan's Unforked,Overland Park,Kansas,restaurant (general),18,"$10,000,000",$20K+,,Yes,Yes,http://www.unforked.com,'+1 913-661-9887
+Phase 2 - High revenue,63,HIGH,4.3,"Wolf Construction, Inc.",Topeka,Kansas,contractor,47,"$9,131,000",$20K+,,Yes,No,http://www.wolfks.com,'+1 888-508-9653
+Phase 2 - High revenue,64,HIGH,4.3,"B & J Peerless Food Service Equipment, Inc.",Kansas City,Kansas,restaurant (general),36,"$13,386,000",$20K+,,Yes,Yes,http://www.bjpeerless.com,'+1 417-782-6165
+Phase 2 - High revenue,65,HIGH,4.3,Look East,Gladstone,Missouri,contractor,35,"$5,300,000",$20K+,,Yes,No,http://www.lookeast.com,'+1 816-880-0204
+Phase 2 - High revenue,66,HIGH,4.3,Brewlab,Overland Park,Kansas,brewery/taproom,25,"$6,589,000",$20K+,,Yes,Yes,http://www.brewlabkc.com,'+1 913-400-2343
+Phase 2 - High revenue,67,HIGH,4.3,"Select Brands, Inc.",Lenexa,Kansas,contractor,18,"$17,469,000",$20K+,,Yes,No,http://www.selectbrands.com,'+1 913-663-4500
+Phase 2 - High revenue,68,HIGH,4.3,WheatFields Bakery Café,Lawrence,Kansas,bakery,20,"$11,538,000",$20K+,,Yes,Yes,http://www.wheatfieldsbakery.com,'+1 785-841-5553
+Phase 2 - High revenue,69,HIGH,4.3,Jess & Jim’s Steak House,Kansas City,Missouri,restaurant (general),13,"$8,561,000",$20K+,,Yes,Yes,http://www.jessandjims.com,'+1 816-941-9499
+Phase 2 - High revenue,70,HIGH,4.3,Room 39,Kansas City,Missouri,restaurant (general),15,"$12,765,000",$20K+,,Yes,Yes,http://www.rm39.com,'+1 816-753-3939
+Phase 2 - High revenue,71,HIGH,4.3,Governor Stumpy's Grill House,Kansas City,Missouri,restaurant (general),12,"$11,956,000",$20K+,,Yes,Yes,http://www.governorstumpys.com,'+1 816-444-2252
+Phase 2 - High revenue,72,HIGH,4.3,"Stuppy Greenhouse, Inc",North Kansas City,Missouri,contractor,41,"$28,000,000",$20K+,,Yes,No,http://www.stuppy.com,'+1 800-733-5025
+Phase 2 - High revenue,73,HIGH,4.3,CGR USA - ISC,North Kansas City,Missouri,trades contractor,24,"$15,796,000",$20K+,,Yes,No,http://www.isckc.com,'+1 816-741-6073
+Phase 2 - High revenue,74,HIGH,4.3,The Majestic Restaurant,Kansas City,Missouri,restaurant (general),28,"$6,650,000",$20K+,,Yes,Yes,http://www.majestickc.com,'+1 816-221-1888
+Phase 2 - High revenue,75,HIGH,4.3,TW Automation LC,Lenexa,Kansas,contractor,11,"$11,400,000",$20K+,,Yes,No,http://www.tw-automation.com,'+1 913-303-9700
+Phase 2 - High revenue,76,HIGH,4.3,Salty Iguana,Prairie Village,Kansas,restaurant (general),20,"$23,228,000",$20K+,,Yes,Yes,http://www.saltyiguana.com,'+1 913-381-3888
+Phase 2 - High revenue,77,HIGH,4.3,New Frontier Technologies,Overland Park,Kansas,contractor,41,"$13,704,000",$20K+,,Yes,No,http://www.newfrontiertech.com,'+1 816-842-0786
+Phase 2 - High revenue,78,HIGH,4.3,RAOULS,Shawnee,Kansas,restaurant (general),21,"$18,729,000",$20K+,,Yes,Yes,http://www.raouls.com,'+1 212-966-3518
+Phase 2 - High revenue,79,HIGH,4.3,Mr. Dell Foods,Kearney,Missouri,restaurant (general),23,"$32,852,000",$20K+,,Yes,Yes,http://www.lls.com,'+44 1780 471800
+Phase 2 - High revenue,80,HIGH,4.3,Topsy's Popcorn,Kansas City,Missouri,restaurant (general),20,"$14,697,000",$20K+,,Yes,Yes,http://www.topsyspopcorn.com,'+1 816-523-5555
+Phase 2 - High revenue,81,HIGH,4.3,Chateau Avalon Hotel Spa and Bar,Kansas City,Kansas,restaurant (general),27,"$6,736,000",$20K+,,Yes,Yes,http://www.chateauavalonhotel.com,'+1 913-596-6000
+Phase 2 - High revenue,82,HIGH,4.3,Cupini's Inc.,Kansas City,Missouri,restaurant (general),22,"$12,600,000",$20K+,,Yes,Yes,http://www.cupinis.com,'+1 816-753-7662
+Phase 2 - High revenue,83,HIGH,4.3,"Humphrey, Farrington & McClain, P.C.",Independence,Missouri,contractor,39,"$12,591,000",$20K+,,Yes,No,http://www.hfmlegal.com,'+1 888-353-0491
+Phase 2 - High revenue,84,HIGH,4.3,"Harmon Construction, Inc.",Olathe,Kansas,contractor,47,"$140,000,000",$20K+,,Yes,No,http://www.harmonconst.com,'+1 913-962-5888
+Phase 2 - High revenue,85,HIGH,4.3,Sunflower Foundation,Topeka,Kansas,contractor,17,"$6,491,000",$20K+,,Yes,No,http://www.sunflowerfoundation.org,'+1 785-232-3000
+Phase 2 - High revenue,86,HIGH,4.3,Pizza 51,Kansas City,Missouri,pizza restaurant,18,"$8,426,000",$20K+,,Yes,Yes,http://www.pizza51.com,'+1 816-531-1151
+Phase 2 - High revenue,87,HIGH,4.3,SubTech,Lee's Summit,Missouri,restaurant (general),19,"$7,215,000",$20K+,,Yes,Yes,http://www.ifgsupplies.com,'+1 913-232-4471
+Phase 2 - High revenue,88,HIGH,4.3,Hereford House - Shawnee,Shawnee,Kansas,restaurant (general),37,"$17,895,000",$20K+,,Yes,Yes,http://www.herefordhouse.com,'+1 816-842-8718
+Phase 2 - High revenue,89,HIGH,4.3,Village Interiors,Kansas City,Missouri,restaurant (general),11,"$12,187,000",$20K+,,Yes,Yes,http://www.villageinteriors.com,'+1 775-831-8868
+Phase 2 - High revenue,90,HIGH,4.3,TikiTaco,Kansas City,Missouri,mexican restaurant,19,"$17,223,000",$20K+,,Yes,Yes,http://www.tikitaco.com,'+1 609-492-2328
+Phase 2 - High revenue,91,HIGH,4.3,"BC Engineers, Inc.",Shawnee,Kansas,contractor,19,"$13,983,000",$20K+,,Yes,No,http://www.bcengineer.com,'+1 913-262-1772
+Phase 2 - High revenue,92,HIGH,4.3,Canyon Cafe LLC,Kansas City,Missouri,coffee/cafe,32,"$17,505,000",$20K+,,Yes,Yes,http://www.canyoncafe.com,'+1 602-954-7100
+Phase 2 - High revenue,93,HIGH,4.3,CASCONES,Kansas City,Missouri,restaurant (general),21,"$10,000,000",$20K+,,Yes,Yes,http://www.cascones.com,'+1 816-454-7977
+Phase 2 - High revenue,94,HIGH,4.3,Winsteads,Overland Park,Kansas,restaurant (general),34,"$12,743,000",$20K+,,Yes,Yes,http://www.winsteadssteakburger.com,'+1 816-753-2244
+Phase 2 - High revenue,95,HIGH,4.3,Old Shawnee Pizza,Shawnee,Kansas,pizza restaurant,26,"$8,493,000",$20K+,,Yes,Yes,http://www.shawneepizza.com,'+1 913-677-1844
+Phase 2 - High revenue,96,HIGH,4.3,Rollstock™,Kansas City,Missouri,restaurant (general),21,"$40,925,000",$20K+,,Yes,Yes,http://www.rollstock.com,'+1 800-954-6020
+Phase 2 - High revenue,97,HIGH,4.3,"Realm Construction, Inc.",Blue Springs,Missouri,contractor,26,"$22,241,000",$20K+,,Yes,No,http://www.realmconstruction.com,'+1 502-581-9191
+Phase 2 - High revenue,98,HIGH,4.3,Trezo Mare Restaurant and Lounge,Kansas City,Missouri,bar/nightclub,25,"$9,014,000",$20K+,,Yes,Yes,http://www.trezomare.com,'+1 816-505-3200
+Phase 2 - High revenue,99,HIGH,4.3,Swagat Fine Indian Cuisine,Kansas City,Missouri,restaurant (general),14,"$14,552,000",$20K+,,Yes,Yes,http://www.swagatkc.com,'+1 816-746-9400
+Phase 2 - High revenue,100,HIGH,4.3,"Kansas City Sausage Company, LLC",Kansas City,Missouri,restaurant (general),32,"$16,000,000",$20K+,,Yes,Yes,http://www.kcsausageco.com,'+1 816-891-9600
+Phase 2 - High revenue,101,HIGH,4.3,Bill Barr & Co.,Overland Park,Kansas,restaurant (general),31,"$12,822,000",$20K+,,Yes,Yes,http://www.billbarr.com,'+1 913-599-6668
+Phase 2 - High revenue,102,HIGH,4.3,Noble Hospitality,Kansas City,Missouri,restaurant (general),36,"$17,341,000",$20K+,,Yes,Yes,http://www.noblehospitality.com,'+1 785-539-3800
+Phase 2 - High revenue,103,HIGH,4.3,ROMA BAKERY,Kansas City,Missouri,bakery,25,"$20,612,000",$20K+,,Yes,Yes,http://www.romabakerykc.com,'+1 816-455-8888
+Phase 2 - High revenue,104,HIGH,4.3,Guaranteed Foods Inc,Shawnee,Kansas,restaurant (general),11,"$9,221,000",$20K+,,Yes,Yes,http://www.guaranteedfoods.com,'+1 913-888-5000
+Phase 2 - High revenue,105,HIGH,4.3,Great Plains Analytical Laboratory - GPAL,Kansas City,Missouri,restaurant (general),30,"$6,098,000",$20K+,,Yes,Yes,http://www.gpalab.com,'+1 816-891-7337
+Phase 2 - High revenue,106,HIGH,4.3,Lakewood Property Owners Association,Lee's Summit,Missouri,restaurant (general),14,"$10,774,000",$20K+,,Yes,Yes,http://www.lpoa.com,'+1 816-373-4326
+Phase 2 - High revenue,107,HIGH,4.3,Coaches Bar & Grill,Overland Park,Kansas,bar/nightclub,38,"$11,901,000",$20K+,,Yes,Yes,http://www.coach-s.com,'+1 816-941-2286
+Phase 2 - High revenue,108,HIGH,4.3,"WESTAR FOODS, INC.",Overland Park,Kansas,restaurant (general),26,"$8,204,000",$20K+,,Yes,Yes,http://www.westarfoods.com,'+1 913-648-2148
+Phase 2 - High revenue,109,HIGH,4.3,Paulo and Bill,Shawnee,Kansas,restaurant (general),12,"$17,369,000",$20K+,,Yes,Yes,http://www.pauloandbill.com,'+1 913-962-9900
+Phase 2 - High revenue,110,HIGH,4.2,4 Hands Brewing Company,St. Louis,Missouri,brewery/taproom,41,"$10,000,000",$20K+,,,Yes,http://www.4handsbrewery.com,'+1 314-436-1559
+Phase 2 - High revenue,111,HIGH,4.2,"Healthy Meals, INC.",Riverside,Missouri,restaurant (general),14,"$6,644,000",$20K+,,,Yes,http://www.healthymealsinc.com,'+1 816-587-6325
+Phase 2 - High revenue,112,HIGH,4.2,Hammons Black Walnuts,Stockton,Missouri,restaurant (general),24,"$20,000,000",$20K+,,,Yes,http://www.black-walnuts.com,'+1 417-276-5181
+Phase 2 - High revenue,113,HIGH,4.2,Morgans Restaurant,Odessa,Missouri,restaurant (general),15,"$5,733,000",$20K+,,,Yes,http://www.morgansrest.net,'+1 610-769-4100
+Phase 2 - High revenue,114,HIGH,4.2,Saint Joe Distributing,Saint Joseph,Missouri,restaurant (general),33,"$17,165,000",$20K+,,,Yes,http://www.saintjoedist.com,'+1 800-892-9072
+Phase 2 - High revenue,115,HIGH,4.2,VIVIANOS FESTA ITALIANO,Fenton,Missouri,restaurant (general),22,"$22,350,000",$20K+,,,Yes,http://www.vivianosmarket.com,'+1 636-305-1474
+Phase 2 - High revenue,116,HIGH,4.2,Burch Food Services,Sikeston,Missouri,restaurant (general),40,"$13,386,000",$20K+,,,Yes,http://www.burchfood.com,'+1 731-627-0280
+Phase 2 - High revenue,117,HIGH,4.2,Reardon Machine,Saint Joseph,Missouri,contractor,11,"$17,774,000",$20K+,,,No,http://www.reardonmachine.com,'+1 816-279-0906
+Phase 2 - High revenue,118,HIGH,4.2,Askinosie Chocolate,Springfield,Missouri,restaurant (general),14,"$21,000,000",$20K+,,,Yes,http://www.askinosie.com,'+1 417-862-9900
+Phase 2 - High revenue,119,HIGH,4.2,Trattoria Marcella,St. Louis,Missouri,restaurant (general),12,"$21,191,000",$20K+,,,Yes,http://www.trattoriamarcella.com,'+1 314-352-7706
+Phase 2 - High revenue,120,HIGH,4.2,Pirtle Winery,Weston,Missouri,restaurant (general),13,"$39,084,000",$20K+,,,Yes,http://www.pirtlewinery.com,'+1 816-640-5728
+Phase 2 - High revenue,121,HIGH,4.2,Flint Oak,Fall River,Kansas,restaurant (general),15,"$13,912,000",$20K+,,,Yes,http://www.flintoak.com,'+1 620-658-4401
+Phase 2 - High revenue,122,HIGH,4.2,Hickory Pit,Rock Port,Missouri,restaurant (general),21,"$19,163,000",$20K+,,,Yes,http://www.hickorypitq.com,'+1 815-344-1444
+Phase 2 - High revenue,123,HIGH,4.2,Reverie Coffee Roasters,Wichita,Kansas,coffee/cafe,13,"$5,332,000",$20K+,,,Yes,http://www.reverieroasters.com,'+1 316-201-1144
+Phase 2 - High revenue,124,HIGH,4.2,Riverwood Winery,Rushville,Missouri,restaurant (general),12,"$5,682,000",$20K+,,,Yes,http://www.riverwoodwinery.com,'+1 816-579-9797
+Phase 2 - High revenue,125,HIGH,4.2,Wells Blue Bunny Dairy Pdts,Kansas City,Missouri,food manufacturing,45,"$70,000,000",$20K+,,Yes,Yes,http://www.bluebunny.com,'+1 800-942-3800
+Phase 2 - High revenue,126,HIGH,4.2,Bissinger's Handcrafted Chocolatier,St. Louis,Missouri,restaurant (general),44,"$11,000,000",$20K+,,,Yes,http://www.bissingers.com,'+1 314-615-2400
+Phase 2 - High revenue,127,HIGH,4.2,Watermark Books & Cafe,Wichita,Kansas,coffee/cafe,13,"$8,582,000",$20K+,,,Yes,http://www.watermarkbooks.com,'+1 316-682-1181
+Phase 2 - High revenue,128,HIGH,4.2,Hog Wild BBQ,Derby,Kansas,bbq restaurant,32,"$13,608,000",$20K+,,,Yes,http://www.hogwildpitbbq.com,'+1 712-256-5421
+Phase 2 - High revenue,129,HIGH,4.2,Frozen & Refrigerated Buyer,Olathe,Kansas,food manufacturing,12,"$25,411,000",$20K+,,Yes,Yes,http://www.frbuyer.com,'+1 913-481-5060
+Phase 2 - High revenue,130,HIGH,4.2,Great Western Manufacturing,,Kansas,contractor,47,"$48,000,000",$20K+,,,No,http://www.gwmfg.com,'+1 913-682-2291
+Phase 2 - High revenue,131,HIGH,4.2,Social Suppers,Riverside,Missouri,restaurant (general),13,"$11,945,000",$20K+,,,Yes,http://www.socialsuppers.com,'+1 816-505-1220
+Phase 2 - High revenue,132,HIGH,4.2,Heartland Waffles,Westwood,Kansas,restaurant (general),12,"$12,000,000",$20K+,,,Yes,http://www.heartlandwaffles.com,'+1 866-571-0222
+Phase 2 - High revenue,133,HIGH,4.1,Generator Studio,Kansas City,Missouri,nonprofit,32,"$8,900,000",$20K+,,Yes,No,http://www.generatorstudio.com,'+1 816-333-6527
+Phase 2 - High revenue,134,HIGH,4.1,"Industrial Sealing & Lubrication, inc.",Olathe,Kansas,oil & energy,26,"$9,260,000",$20K+,,Yes,No,http://www.islgroup.com,'+1 913-334-5823
+Phase 2 - High revenue,135,HIGH,4.1,"Irving Weber Associates, Inc.",Overland Park,Kansas,insurance,11,"$13,127,000",$20K+,,Yes,No,http://www.iwains.com,'+1 855-764-7406
+Phase 2 - High revenue,136,HIGH,4.1,Outlaw Cigar Company Inc,Kansas City,Missouri,apparel & fashion,14,"$7,112,000",$20K+,,Yes,No,http://www.outlawcigar.com,'+1 913-814-9000
+Phase 2 - High revenue,137,HIGH,4.1,Bulldog Bar & Grill,Kansas City,Missouri,bar/nightclub,14,"$13,529,000",$20K+,,Yes,Yes,http://www.kcbulldog.com,'+1 816-421-4799
+Phase 2 - High revenue,138,HIGH,4.1,Kansas City Allergy & Asthma,Overland Park,Kansas,medical practice,29,"$23,463,000",$20K+,,Yes,No,http://www.kcallergy.com,'+1 913-491-5501
+Phase 2 - High revenue,139,HIGH,4.1,Metro Lutheran Ministry,Kansas City,Missouri,nonprofit organization management,23,"$26,558,000",$20K+,,Yes,No,http://www.mlmkc.org,'+1 816-931-0027
+Phase 2 - High revenue,140,HIGH,4.1,Martinous Produce Inc,Pittsburg,Kansas,food distributor,13,"$8,000,000",$20K+,,,Yes,http://www.martinousproduce.com,'+1 800-776-7854
+Phase 2 - High revenue,141,HIGH,4.1,Excel Linen Supply,Kansas City,Kansas,consumer services,11,"$10,000,000",$20K+,,Yes,No,http://www.excellinen.com,'+1 816-842-6565
+Phase 2 - High revenue,142,HIGH,4.1,"Standard Sheet Metal, Inc.",Kansas City,Missouri,non-food (construction),37,"$15,493,000",$20K+,,Yes,No,http://www.standardsheetmetal.com,'+1 816-221-5434
+Phase 2 - High revenue,143,HIGH,4.1,"Interactive Design, Inc.",Lenexa,Kansas,machinery,31,"$27,926,000",$20K+,,Yes,No,http://www.interactivedesign.com,'+1 913-492-0495
+Phase 2 - High revenue,144,HIGH,4.1,The KC Improv Company,Kansas City,Missouri,entertainment,12,"$6,622,000",$20K+,,Yes,No,http://www.kansascitycomedy.com,'+1 816-806-4000
+Phase 2 - High revenue,145,HIGH,4.1,Advanced Sports & Family Chiropractic & Acupuncture,Overland Park,Kansas,"health, wellness & fitness",34,"$7,252,000",$20K+,,Yes,No,http://www.asfca.com,'+1 816-425-7015
+Phase 2 - High revenue,146,HIGH,4.1,"Crosswind Industries, Inc.",Parkville,Missouri,restaurant (general),29,"$25,000,000",$20K+,,Yes,Yes,,'+1 816-891-7979
+Phase 2 - High revenue,147,HIGH,4.1,El Dorado Mexican Grille & Cantina,Topeka,Kansas,mexican restaurant,16,"$11,006,000",$20K+,,Yes,Yes,http://www.eldoradomexicangrille.com,'+1 785-267-1100
+Phase 2 - High revenue,148,HIGH,4.1,"IodiTech, Inc.",Kansas City,Missouri,chemicals,20,"$9,260,000",$20K+,,Yes,No,http://www.ioditech.com,'+1 816-421-0366
+Phase 2 - High revenue,149,HIGH,4.1,"DanCo Systems, Inc.",Shawnee,Kansas,information technology & services,12,"$21,095,000",$20K+,,Yes,No,http://www.dancosystems.com,'+1 913-962-0600
+Phase 2 - High revenue,150,HIGH,4.1,Churchill Container,Lenexa,Kansas,religious org,46,"$41,889,000",$20K+,,Yes,No,http://www.churchillcontainer.com,'+1 800-999-5518
+Phase 2 - High revenue,151,HIGH,4.1,"Klover Architects, Inc.",Lenexa,Kansas,architecture & planning,36,"$17,018,000",$20K+,,Yes,No,http://www.klover.net,'+1 913-649-8181
+Phase 2 - High revenue,152,HIGH,4.1,"Acertus Consulting Group, LLC",Overland Park,Kansas,information technology & services,16,"$19,391,000",$20K+,,Yes,No,http://www.acertusgroup.com,'+1 913-322-5150
+Phase 2 - High revenue,153,HIGH,4.1,Heartland International Ministries,Lenexa,Kansas,nonprofit organization management,11,"$7,462,000",$20K+,,Yes,No,http://www.heartforhim.org,'+1 913-432-1446
+Phase 2 - High revenue,154,HIGH,4.1,JFS of Greater Kansas City (Jewish Family Services),Overland Park,Kansas,individual & family services,30,"$35,272,000",$20K+,,Yes,No,http://www.jfskc.org,'+1 913-327-8250
+Phase 2 - High revenue,155,HIGH,4.1,IPS - Process Innovations,Independence,Missouri,machinery,50,"$17,327,000",$20K+,,Yes,No,http://www.ips-kc.com,'+1 816-221-9944
+Phase 2 - High revenue,156,HIGH,4.1,Modern Catering,Mission,Kansas,catering,11,"$15,885,000",$20K+,,Yes,Yes,http://www.modernartcatering.com,'+1 626-818-0414
+Phase 2 - High revenue,157,HIGH,4.1,Glory Days Pizza,Topeka,Kansas,pizza restaurant,28,"$17,659,000",$20K+,,Yes,Yes,http://www.glorydayspizza.com,'+1 785-266-0373
+Phase 2 - High revenue,158,HIGH,4.1,Love to Travel,Overland Park,Kansas,"leisure, travel & tourism",27,"$7,724,000",$20K+,,Yes,No,http://www.lovetotravel.com,'+1 913-681-3688
+Phase 2 - High revenue,159,HIGH,4.1,Kansas Sampler,Lenexa,Kansas,retail,24,"$9,042,000",$20K+,,Yes,No,http://www.kansassampler.org,'+1 620-585-2374
+Phase 2 - High revenue,160,HIGH,4.1,Warner Robinson LLC,Kansas City,Missouri,accounting,12,"$21,106,000",$20K+,,Yes,No,http://www.warner-robinson.com,'+1 800-792-4861
+Phase 2 - High revenue,161,HIGH,4.1,"HERITAGE ELECTRIC, LLC",Olathe,Kansas,contractor,20,"$13,807,000",$20K+,,Yes,No,http://www.heritage-electric.com,
+Phase 2 - High revenue,162,HIGH,4.1,D. Thomas & Associates,Kansas City,Missouri,packaging & containers,47,"$34,926,000",$20K+,,Yes,No,http://www.dthos.com,'+1 816-361-5522
+Phase 2 - High revenue,163,HIGH,4.1,ARY Inc.,Overland Park,Kansas,mechanical or industrial engineering,14,"$10,000,000",$20K+,,Yes,No,http://www.vacmasterfresh.com,'+1 800-821-7849
+Phase 2 - High revenue,164,HIGH,4.1,Feature Impact,Mission,Kansas,public relations & communications,18,"$45,780,000",$20K+,,Yes,No,http://www.familyfeatures.com,'+1 888-824-3337
+Phase 2 - High revenue,165,HIGH,4.1,Eileen's Colossal Cookies - Kansas City,Kansas City,Missouri,restaurant (general),21,"$36,835,000",$20K+,,Yes,Yes,,'+1 402-421-6609
+Phase 2 - High revenue,166,HIGH,4.1,Ivanhoe Neighborhood Council,Kansas City,Missouri,government administration,17,"$14,099,000",$20K+,,Yes,No,http://www.incthrives.org,'+1 816-921-6611
+Phase 2 - High revenue,167,HIGH,4.1,"MC Power Companies, Inc.",Lee's Summit,Missouri,non-food (renewables & environment),27,"$10,000,000",$20K+,,Yes,No,http://www.mcpower.com,'+1 816-251-4700
+Phase 2 - High revenue,168,HIGH,4.1,"Baldwin Insurance Agency, llc",Kearney,Missouri,insurance,14,"$5,503,000",$20K+,,Yes,No,http://www.baldwininsuranceagency.com,'+1 816-628-0092
+Phase 2 - High revenue,169,HIGH,4.1,MSI GuaranteedWeather,Overland Park,Kansas,financial services,19,"$12,833,000",$20K+,,Yes,No,http://www.guaranteedweather.com,'+1 844-864-8381
+Phase 2 - High revenue,170,HIGH,4.1,SOS Pest Control,Kansas City,Missouri,individual & family services,20,"$15,004,000",$20K+,,Yes,No,http://www.soskc.com,'+1 816-471-5733
+Phase 2 - High revenue,171,HIGH,4.1,TK Architects International,Kansas City,Missouri,architecture & planning,45,"$48,086,000",$20K+,,Yes,No,http://www.tkarch.com,'+1 816-842-7552
+Phase 2 - High revenue,172,HIGH,4.1,Missouri Organic Recycling,Kansas City,Missouri,farming,26,"$5,000,000",$20K+,,Yes,No,http://www.missouriorganic.com,'+1 816-483-0908
+Phase 2 - High revenue,173,HIGH,4.1,Unicorn Theatre,Kansas City,Missouri,performing arts,14,"$12,012,000",$20K+,,Yes,No,http://www.unicorntheatre.org,'+1 816-531-7529
+Phase 2 - High revenue,174,HIGH,4.1,Red Snapper,Kansas City,Missouri,restaurant (general),17,"$11,609,000",$20K+,,Yes,Yes,http://www.kcredsnapper.com,'+1 816-333-8899
+Phase 2 - High revenue,175,HIGH,4.1,Vista Drive In Reasturant,Manhattan,Kansas,retail,28,"$11,751,000",$20K+,,Yes,No,http://www.vistadrivein.com,'+1 785-537-0100
+Phase 2 - High revenue,176,HIGH,4.1,The Merc Co+op,Lawrence,Kansas,retail,34,"$6,215,000",$20K+,,Yes,No,http://www.themerc.coop,'+1 785-843-8544
+Phase 2 - High revenue,177,HIGH,4.1,Fun House Pizza,Lee's Summit,Missouri,pizza restaurant,13,"$9,100,000",$20K+,,Yes,Yes,http://www.funhousepizza.com,'+1 816-254-8000
+Phase 2 - High revenue,178,HIGH,4.1,"SES, Inc.",Lenexa,Kansas,environmental services,21,"$21,658,000",$20K+,,Yes,No,http://www.ses-corp.com,'+1 913-307-0046
+Phase 2 - High revenue,179,HIGH,4.1,American Royal Association,Kansas City,Missouri,entertainment,48,"$6,301,000",$20K+,,Yes,No,http://www.americanroyal.com,'+1 816-221-9800
+Phase 2 - High revenue,180,HIGH,4.1,"eNSYNC Solutions, Inc",Overland Park,Kansas,nonprofit,12,"$16,706,000",$20K+,,Yes,No,http://www.ensyncsolutions.com,'+1 816-416-7500
+Phase 2 - High revenue,181,HIGH,4.1,"SCD Probiotics, LLC",Kansas City,Missouri,research,34,"$12,000,000",$20K+,,Yes,No,http://www.scdprobiotics.com,'+1 913-541-9299
+Phase 2 - High revenue,182,HIGH,4.1,VersaFlex,Kansas City,Kansas,transportation,49,"$62,400,000",$20K+,,Yes,No,http://www.versaflex.com,'+1 913-321-9000
+Phase 2 - High revenue,183,HIGH,4.1,Pack Leader USA,Grandview,Missouri,packaging & containers,18,"$9,000,000",$20K+,,Yes,No,http://www.packleaderusa.com,'+1 816-581-4330
+Phase 2 - High revenue,184,HIGH,4.1,Kissner USA Holdings,Overland Park,Kansas,chemicals,48,"$123,000,000",$20K+,,Yes,No,http://www.kissner.com,'+1 800-434-8248
+Phase 2 - High revenue,185,HIGH,4.1,Express Scale Parts,Lenexa,Kansas,machinery,14,"$6,533,000",$20K+,,Yes,No,http://www.espmfg.com,'+1 913-441-4787
+Phase 2 - High revenue,186,HIGH,4.1,Lon Lane's Inspired Occasions,Kansas City,Missouri,events services,38,"$31,070,000",$20K+,,Yes,No,http://www.inspiredoccasionskc.com,'+1 816-444-8372
+Phase 2 - High revenue,187,HIGH,4.1,Cross-Lines Community Outreach,Kansas City,Kansas,nonprofit,23,"$29,073,000",$20K+,,Yes,No,http://www.cross-lines.org,'+1 913-281-3388
+Phase 2 - High revenue,188,HIGH,4.1,FANESTIL MEATS,Emporia,Kansas,food manufacturing,22,"$17,223,000",$20K+,,,Yes,http://www.fanestils.com,'+1 620-342-6354
+Phase 2 - High revenue,189,HIGH,4.1,Nautical Manufacturing and Fulfillment,Lenexa,Kansas,warehousing,37,"$7,200,000",$20K+,,Yes,No,http://www.nautical-direct.com,'+1 913-261-9491
+Phase 2 - High revenue,190,HIGH,4.1,"His & Her Fitness, LLC",Leawood,Kansas,consumer services,13,"$5,500,000",$20K+,,Yes,No,http://www.hisandherfitness.net,'+1 913-206-7645
+Phase 2 - High revenue,191,HIGH,4.1,Beer Kitchen,Kansas City,Missouri,restaurant (general),17,"$24,209,000",$20K+,,Yes,Yes,http://www.beerkitchenkc.com,'+1 816-389-4180
+Phase 2 - High revenue,192,HIGH,4.1,Submarina California Subs,Topeka,Kansas,restaurant (general),24,"$5,152,000",$20K+,,Yes,Yes,http://www.submarina.com,'+1 760-471-3377
+Phase 2 - High revenue,193,HIGH,4.1,Page Communications,Kansas City,Missouri,public relations & communications,13,"$6,074,000",$20K+,,Yes,No,http://www.pagecomms.com,'+1 816-531-7243
+Phase 2 - High revenue,194,HIGH,4.1,Paradise Locker Meats,Trimble,Missouri,food manufacturing,16,"$265,000,000",$20K+,,,Yes,http://www.paradisemeats.com,'+1 816-370-6328
+Phase 2 - High revenue,195,HIGH,4.1,Scan American Corporation,Kansas City,Missouri,non-food (machinery),18,"$13,004,000",$20K+,,Yes,No,http://www.scanamcorp.com,'+1 816-880-9321
+Phase 2 - High revenue,196,HIGH,4.1,Roca Salon & Spa,Kansas City,Missouri,executive office,12,"$20,170,000",$20K+,,Yes,No,http://www.rocasalon.com,'+1 816-531-8018
+Phase 2 - High revenue,197,HIGH,4.1,C3 | Creative Consumer Concepts,Overland Park,Kansas,marketing & advertising,42,"$5,275,000",$20K+,,Yes,No,http://www.c3brandmarketing.com,'+1 913-491-6444
+Phase 2 - High revenue,198,HIGH,4.1,"DataSource, Inc.",Kansas City,Missouri,management consulting,50,"$6,300,000",$20K+,,Yes,No,http://www.datasourceinc.com,'+1 703-748-7180
+Phase 2 - High revenue,199,HIGH,4.1,Mother Earth News magazine,Topeka,Kansas,publishing,23,"$30,243,000",$20K+,,Yes,No,http://www.motherearthnews.com,'+1 785-274-4300
+Phase 2 - High revenue,200,HIGH,4.1,FINKLE + WILLIAMS Architecture,Lenexa,Kansas,architecture & planning,26,"$9,016,000",$20K+,,Yes,No,http://www.finklewilliams.com,'+1 913-498-1550
+Phase 2 - High revenue,201,HIGH,4.1,CUI Solutions,North Kansas City,Missouri,chemicals,19,"$17,165,000",$20K+,,Yes,No,http://www.cuisolutions.com,'+1 816-471-3602
+Phase 2 - High revenue,202,HIGH,4.1,Cancer Action,Overland Park,Kansas,hospital & health care,12,"$12,096,000",$20K+,,Yes,No,http://www.canceractionkc.org,'+1 913-642-8885
+Phase 2 - High revenue,203,HIGH,4.1,"Camcorp, Inc.",Lenexa,Kansas,machinery,41,"$11,200,000",$20K+,,Yes,No,http://www.camcorpinc.com,'+1 913-831-0740
+Phase 2 - High revenue,204,HIGH,4.1,Tabco,Kansas City,Kansas,printing,23,"$13,428,000",$20K+,,Yes,No,http://www.tabcoinc.com,'+1 913-287-3333
+Phase 2 - High revenue,205,HIGH,4.1,Salvajor Company,Kansas City,Missouri,non-food (mechanical or industrial engineering),32,"$12,434,000",$20K+,,Yes,No,http://www.salvajor.com,'+1 816-363-1030
+Phase 2 - High revenue,206,HIGH,4.1,"Vanguard Shrink Films, Inc.",Lenexa,Kansas,packaging & containers,13,"$10,000,000",$20K+,,Yes,No,http://www.vanguardshrinkfilms.com,'+1 800-772-1187
+Phase 2 - High revenue,207,HIGH,4.1,Mainline Printing,Topeka,Kansas,printing,40,"$6,163,000",$20K+,,Yes,No,http://www.mainlineprinting.com,'+1 785-233-2338
+Phase 2 - High revenue,208,HIGH,4.1,Ballard Center KS,Lawrence,Kansas,non-food (individual & family services),12,"$9,532,000",$20K+,,Yes,No,http://www.ballardcenter.org,'+1 785-842-0729
+Phase 2 - High revenue,209,HIGH,4.1,KC Shepherd's Center,Kansas City,Missouri,individual & family services,12,"$6,284,000",$20K+,,Yes,No,http://www.kcshepherdscenter.org,'+1 816-444-1121
+Phase 2 - High revenue,210,HIGH,4.1,Park Lanes Family Fun Center,Shawnee,Kansas,entertainment,21,"$9,665,000",$20K+,,Yes,No,http://www.parklaneskc.com,'+1 913-248-1110
+Phase 2 - High revenue,211,HIGH,4.1,Equip-Bid Auctions,Overland Park,Kansas,wholesale,22,"$7,729,000",$20K+,,Yes,No,http://www.equip-bid.com,'+1 913-686-6345
+Phase 2 - High revenue,212,HIGH,4.1,"Trimac Industrial Systems, LLC",Kansas City,Kansas,machinery,14,"$41,966,000",$20K+,,Yes,No,http://www.trimacsystems.com,'+1 913-441-0043
+Phase 2 - High revenue,213,HIGH,4.1,Business by Promotion LLC,Lee's Summit,Missouri,nonprofit,13,"$10,518,000",$20K+,,Yes,No,http://www.businessbp.com,'+1 816-350-8811
+Phase 2 - High revenue,214,HIGH,4.1,Omega Door and Hardware,Kansas City,Kansas,construction,21,"$13,901,000",$20K+,,Yes,No,http://www.omega-kc.com,'+1 913-647-3667
+Phase 2 - High revenue,215,HIGH,4.1,Quality Air Solutions,Lenexa,Kansas,wholesale,25,"$7,306,000",$20K+,,Yes,No,http://www.qualityairsolutions.net,'+1 913-735-2920
+Phase 2 - High revenue,216,HIGH,4.1,Palominos Restaurant,Independence,Missouri,restaurant (general),38,"$16,627,000",$20K+,,Yes,Yes,http://www.palomino.com,'+1 415-512-7400
+Phase 2 - High revenue,217,HIGH,4.1,Johnson County Community Health Services,Warrensburg,Missouri,"health, wellness & fitness",23,"$19,811,000",$20K+,,Yes,No,http://www.johnsoncountyhealth.org,'+1 660-747-6121
+Phase 2 - High revenue,218,HIGH,4.1,Kansas Wheat,Manhattan,Kansas,farming,18,"$10,288,000",$20K+,,Yes,No,http://www.kswheat.com,'+1 785-539-0255
+Phase 2 - High revenue,219,HIGH,4.1,Space Perspective,Warrensburg,Missouri,aviation & aerospace,24,"$7,000,000",$20K+,,Yes,No,http://www.spaceperspective.com,'+1 321-985-3018
+Phase 2 - High revenue,220,HIGH,4.1,Paragon Star,Lee's Summit,Missouri,performing arts,15,"$15,312,000",$20K+,,Yes,No,http://www.paragonstar.com,'+1 888-382-2831
+Phase 2 - High revenue,221,HIGH,4.1,Nurture KC,Kansas City,Missouri,nonprofit organization management,11,"$30,436,000",$20K+,,Yes,No,http://www.nurturekc.org,'+1 816-283-6242
+Phase 2 - High revenue,222,HIGH,4.1,Fritz's Railroad Restaurant,Shawnee,Kansas,restaurant (general),19,"$11,209,000",$20K+,,Yes,Yes,http://www.fritzskc.com,'+1 913-375-1000
+Phase 2 - High revenue,223,HIGH,4.1,Best Friends Pet,Leawood,Kansas,restaurant (general),17,"$15,008,000",$20K+,,Yes,Yes,http://www.bestfriendspet.us,
+Phase 2 - High revenue,224,HIGH,4.1,Piropos Restaurant,Kansas City,Missouri,,12,"$13,906,000",$20K+,,Yes,No,http://www.piroposkc.com,'+1 816-741-3600
+Phase 2 - High revenue,225,HIGH,4.0,Rainy Day Books,Fairway,Kansas,retail,22,"$14,113,000",$20K+,,,No,http://www.rainydaybooks.com,'+1 913-384-3126
+Phase 2 - High revenue,226,HIGH,4.0,Wild Hare,Bolivar,Missouri,recreational facilities & services,46,"$5,337,000",$20K+,,,No,http://www.wildharemusic.com,'+1 773-770-3511
+Phase 2 - High revenue,227,HIGH,4.0,ECKAN,Ottawa,Kansas,nonprofit organization management,35,"$5,226,000",$20K+,,,No,http://www.eckan.org,'+1 785-242-7450
+Phase 2 - High revenue,228,HIGH,4.0,"Tilton, Thomas & Morgan, Inc.",Saint Joseph,Missouri,insurance,13,"$17,524,000",$20K+,,,No,http://www.ttminsurance.com,'+1 816-233-0266
+Phase 2 - High revenue,229,HIGH,4.0,St. Joseph (Mo.) Chamber of Commerce,Saint Joseph,Missouri,transportation,12,"$8,079,000",$20K+,,,No,http://www.choosesaintjoseph.com,'+1 816-232-4461
+Phase 2 - High revenue,230,HIGH,4.0,BCI,Sabetha,Kansas,transportation,30,"$20,000,000",$20K+,,,No,http://www.bachelorcontrols.com,'+1 785-284-3482
+Phase 2 - High revenue,231,HIGH,4.0,Prenger Foods,Bucklin,Missouri,marketing & advertising,33,"$12,594,000",$20K+,,,No,http://www.prengerfoods.com,'+1 660-258-2653
+Phase 2 - High revenue,232,HIGH,4.0,Sunnycrest Farm,Blue Mound,Kansas,farming,11,"$16,283,000",$20K+,,,No,http://www.sunnycrestfarmnh.com,'+1 603-432-9652
+Phase 2 - High revenue,233,HIGH,4.0,"TTG, Inc.",Higginsville,Missouri,textiles,26,"$6,000,000",$20K+,,,No,http://www.ttgtech.net,'+1 660-584-2448
+Phase 2 - High revenue,234,HIGH,4.0,"Westin Trading, Inc.",St. Louis,Missouri,wholesale,19,"$14,219,000",$20K+,,,No,http://www.westintrading.com,'+1 314-993-6150
+Phase 2 - High revenue,235,HIGH,4.0,"F & A Food Sales Co., Inc.",Concordia,Kansas,wholesale,38,"$15,361,000",$20K+,,,No,http://www.fafoodsales.com,'+1 785-243-2301
+Phase 2 - High revenue,236,HIGH,4.0,"Show Me Ethanol, LLC",Carrollton,Missouri,research,26,"$9,699,000",$20K+,,,No,http://www.smealcohol.com,'+1 660-542-6493
+Phase 2 - High revenue,237,HIGH,4.0,TREXCON INC.,Saint Joseph,Missouri,oil & energy,20,"$12,210,000",$20K+,,,No,http://www.trexcon.com,'+1 816-232-8494
+Phase 2 - High revenue,238,HIGH,4.0,Midwest Metalcraft,Windsor,Missouri,non-food (machinery),27,"$18,570,000",$20K+,,,No,http://www.4mmc.com,'+1 660-647-3167
+Phase 2 - High revenue,239,HIGH,4.0,Moms Restaurant,Marceline,Missouri,recreational facilities & services,18,"$30,319,000",$20K+,,,No,http://www.momschico.com,'+1 530-893-3447
+Phase 2 - High revenue,240,HIGH,4.0,"Roll Products, Inc.",Saint Marys,Kansas,religious org,16,"$10,000,000",$20K+,,,No,http://www.rollproducts.com,'+1 785-437-6000
+Phase 2 - High revenue,241,HIGH,4.0,St. Joe Petroleum Co.,Saint Joseph,Missouri,oil & energy,30,"$5,119,000",$20K+,,,No,http://www.stjoepetroleum.com,'+1 816-279-0770
+Phase 2 - High revenue,242,HIGH,4.0,Midwest Cabinet Company,Ottawa,Kansas,construction,38,"$5,327,000",$20K+,,,No,http://www.midwestcabinet.com,'+1 785-242-8181
+Phase 2 - High revenue,243,HIGH,4.0,Barlow Truck Lines Inc,Faucett,Missouri,transportation,44,"$32,072,000",$20K+,,,No,http://www.barlowtruckline.com,'+1 816-238-3373
+Phase 2 - High revenue,244,HIGH,4.0,"Prairie Paws Animal Shelter, Inc.",Ottawa,Kansas,nonprofit organization management,12,"$19,512,000",$20K+,,,No,http://www.prairiepaws.org,'+1 785-242-2967
+Phase 2 - High revenue,245,HIGH,4.0,St. Agnes Catholic School,Roeland Park,Kansas,non-food (primary/secondary education),17,"$64,115,000",$20K+,,,No,http://www.stagneskc.org,'+1 913-262-2400
+Phase 2 - High revenue,246,HIGH,4.0,InnovaPrep LLC,Drexel,Missouri,research,24,"$13,431,000",$20K+,,,No,http://www.innovaprep.com,'+1 816-619-3374
+Phase 2 - High revenue,247,HIGH,4.0,Hangar Cinema,Maryville,Missouri,entertainment,14,"$10,759,000",$20K+,,,No,http://www.hangar1.com,'+1 660-582-7100
+Phase 2 - High revenue,248,HIGH,4.0,Johns Farm,Walnut,Kansas,farming,18,"$14,964,000",$20K+,,,No,http://www.johnsfarms.com,'+1 516-933-1444
+Phase 2 - High revenue,249,HIGH,4.0,Huckleberry's,Trenton,Missouri,restaurant (general),20,"$12,769,000",$20K+,,,Yes,,'+1 660-359-5745
+Phase 2 - High revenue,250,HIGH,4.0,Elite Booth LLC,Raytown,Missouri,furniture,12,"$33,331,000",$20K+,,,No,http://www.elitebooth.com,'+1 816-743-8158
+Phase 2 - High revenue,251,HIGH,4.0,"Green Dot Bioplastics, Inc.",Emporia,Kansas,plastics,14,"$5,000,000",$20K+,,,No,http://www.greendotbioplastics.com,'+1 620-273-8919
+Phase 2 - High revenue,252,HIGH,4.0,Second Harvest Community Food Bank,Saint Joseph,Missouri,nonprofit organization management,20,"$5,575,000",$20K+,,,No,http://www.shcfb.org,'+1 816-364-3663
+Phase 3 - Remaining HIGHs,253,HIGH,4.3,The Olivia Collection,Lawrence,Kansas,restaurant (general),29,"$2,030,000",$20K+,,Yes,Yes,http://www.theoread.com,'+1 785-843-1200
+Phase 3 - Remaining HIGHs,254,HIGH,4.3,Timber Creek Bar & Grill,Louisburg,Kansas,bar/nightclub,18,,$20K+,,Yes,Yes,http://www.timbercreeklouisburg.com,'+1 913-837-2600
+Phase 3 - Remaining HIGHs,255,HIGH,4.3,PT's Coffee Roasting Co.,Topeka,Kansas,coffee/cafe,27,"$4,111,000",$20K+,,Yes,Yes,http://www.ptscoffee.com,'+1 785-862-5282
+Phase 3 - Remaining HIGHs,256,HIGH,4.3,Grand Street Cafe,Kansas City,Missouri,coffee/cafe,31,"$2,394,000",$20K+,,Yes,Yes,http://www.grandstreetkc.com,'+1 816-561-8000
+Phase 3 - Remaining HIGHs,257,HIGH,4.3,Eldridge Hotel,Lawrence,Kansas,restaurant (general),30,,$20K+,,Yes,Yes,http://www.eldridgehotel.com,'+1 785-749-5011
+Phase 3 - Remaining HIGHs,258,HIGH,4.3,Dolce Bakery,Prairie Village,Kansas,bakery,37,"$749,000",$20K+,,Yes,Yes,http://www.dolcebakes.com,'+1 913-236-4411
+Phase 3 - Remaining HIGHs,259,HIGH,4.3,Arthur Bryant's Barbeque,Kansas City,Missouri,restaurant (general),15,,$20K+,,Yes,Yes,http://www.arthurbryantsbbq.com,'+1 816-231-1123
+Phase 3 - Remaining HIGHs,260,HIGH,4.3,Christopher Elbow Chocolates,Kansas City,Missouri,restaurant (general),29,"$4,677,000",$20K+,,Yes,Yes,http://www.elbowchocolates.com,'+1 415-355-1105
+Phase 3 - Remaining HIGHs,261,HIGH,4.3,Andre's Confiserie Suisse,Kansas City,Missouri,restaurant (general),12,"$2,043,000",$20K+,,Yes,Yes,http://www.andreschocolates.com,'+1 816-561-3440
+Phase 3 - Remaining HIGHs,262,HIGH,4.3,"Zest Restaurant, LLC",Leawood,Kansas,restaurant (general),44,,$20K+,,Yes,Yes,http://www.zest.ae,043685460
+Phase 3 - Remaining HIGHs,263,HIGH,4.3,Café Des Amis,Parkville,Missouri,coffee/cafe,38,,$20K+,,Yes,Yes,http://www.cafedesamiskc.com,'+1 816-587-6767
+Phase 3 - Remaining HIGHs,264,HIGH,4.3,Complete Construction Service,Shawnee,Kansas,contractor,33,,$20K+,,Yes,No,http://www.ccsconstructionservice.com,'+1 913-387-4796
+Phase 3 - Remaining HIGHs,265,HIGH,4.3,J. Rieger & Co.,Kansas City,Missouri,restaurant (general),50,,$20K+,,Yes,Yes,http://www.jriegerco.com,'+1 816-807-3867
+Phase 3 - Remaining HIGHs,266,HIGH,4.3,Austins Bar & Grill Olathe & Gardner KS,Olathe,Kansas,bar/nightclub,45,,$20K+,,Yes,Yes,http://www.austinsbarandgrill.com,'+1 913-322-2337
+Phase 3 - Remaining HIGHs,267,HIGH,4.3,"JOE'S KANSAS CITY BAR-B-QUE, INC.",Kansas City,Kansas,restaurant (general),36,,$20K+,,Yes,Yes,http://www.joeskc.com,'+1 913-722-3366
+Phase 3 - Remaining HIGHs,268,HIGH,4.3,Fiorella's,Overland Park,Kansas,restaurant (general),35,,$20K+,,Yes,Yes,http://www.fiorellaskc.com,'+1 913-356-5700
+Phase 3 - Remaining HIGHs,269,HIGH,4.3,Hotel Kansas City - in the Unbound Collection by Hyatt,Kansas City,Missouri,restaurant (general),40,,$20K+,,Yes,Yes,http://www.hotelkc.com,'+1 816-685-1228
+Phase 3 - Remaining HIGHs,270,HIGH,4.3,FlexPro Meals,Kansas City,Missouri,restaurant (general),33,,$20K+,,Yes,Yes,http://www.flexpromeals.com,'+1 816-888-3539
+Phase 3 - Remaining HIGHs,271,HIGH,4.3,Brass Rail Sports Bar & Grill,Kansas City,Missouri,bar/nightclub,33,,$20K+,,Yes,Yes,http://www.brassrailkc.com,'+1 816-468-6100
+Phase 3 - Remaining HIGHs,272,HIGH,4.3,Great Day Moving,Kansas City,Missouri,contractor,17,"$4,780,000",$20K+,,Yes,No,http://www.greatdaymoving.com,'+1 877-541-1015
+Phase 3 - Remaining HIGHs,273,HIGH,4.3,Blast It Clean,Kansas City,Missouri,trades contractor,34,,$20K+,,Yes,No,http://www.blastitclean.com,'+1 877-379-4233
+Phase 3 - Remaining HIGHs,274,HIGH,4.3,Build WyCo,Kansas City,Kansas,contractor,38,,$20K+,,Yes,No,http://www.buildwyco.org,'+1 913-342-7580
+Phase 3 - Remaining HIGHs,275,HIGH,4.3,Olive Cafe,Kansas City,Missouri,coffee/cafe,46,,$20K+,,Yes,Yes,http://www.olivecafe.biz,'+1 858-488-1224
+Phase 3 - Remaining HIGHs,276,HIGH,4.3,Waldo Pizza,Lee's Summit,Missouri,pizza restaurant,36,,$20K+,,Yes,Yes,http://www.ordersummitpizza.com,'+1 816-875-2121
+Phase 3 - Remaining HIGHs,277,HIGH,4.3,Eggtc,Kansas City,Missouri,restaurant (general),15,"$1,383,000",$20K+,,Yes,Yes,http://www.eggtckc.com,'+1 816-561-0116
+Phase 3 - Remaining HIGHs,278,HIGH,4.3,Plate,Kansas City,Missouri,restaurant (general),32,,$20K+,,Yes,Yes,http://www.platekc.com,'+1 913-730-7545
+Phase 3 - Remaining HIGHs,279,HIGH,4.3,CORVINO,Kansas City,Missouri,restaurant (general),40,,$20K+,,Yes,Yes,http://www.corvino.com,'+1 816-832-4564
+Phase 3 - Remaining HIGHs,280,HIGH,4.3,Smokehouse BBQ KC,Independence,Missouri,bbq restaurant,31,,$20K+,,Yes,Yes,http://www.smokehousebbq.com,'+1 816-587-3337
+Phase 3 - Remaining HIGHs,281,HIGH,4.2,Katie's Pizza,Clayton,Missouri,pizza restaurant,48,,$20K+,,,Yes,http://www.johngehrig.ch,'+1 312-725-6466
+Phase 3 - Remaining HIGHs,282,HIGH,4.2,Graves Foods,Jefferson City,Missouri,restaurant (general),43,,$20K+,,,Yes,http://www.gravesfoods.com,'+1 573-893-3000
+Phase 3 - Remaining HIGHs,283,HIGH,4.2,BARcelona Tapas,Clayton,Missouri,restaurant (general),41,,$20K+,,,Yes,http://www.barcelonatapas.com,'+1 314-899-9600
+Phase 3 - Remaining HIGHs,284,HIGH,4.2,Bartolino's Restaurant,St. Louis,Missouri,restaurant (general),27,,$20K+,,,Yes,http://www.bartolinosrestaurants.com,'+1 314-487-4545
+Phase 3 - Remaining HIGHs,285,HIGH,4.2,Bengelina Hospitality Group,St. Louis,Missouri,restaurant (general),30,,$20K+,,,Yes,http://www.bengelina.com,'+1 314-932-1088
+Phase 3 - Remaining HIGHs,286,HIGH,4.2,El Charo,Pittsburg,Kansas,restaurant (general),23,"$3,525,000",$20K+,,,Yes,http://www.elcharrocafe.com,'+1 520-622-1922
+Phase 3 - Remaining HIGHs,287,HIGH,4.2,Las Carretas,Lexington,Missouri,restaurant (general),32,,$20K+,,,Yes,http://www.lascarretas.com,'+60 3-5637 3058
+Phase 3 - Remaining HIGHs,288,HIGH,4.1,Food Industry Sanitation Auditors,Olathe,Kansas,restaurant (general),26,,$10K-$20K,,Yes,Yes,http://www.fisaconsulting.com,'+1 800-477-4432
+Phase 3 - Remaining HIGHs,289,HIGH,4.1,Gram & Dun,Kansas City,Missouri,restaurant (general),25,"$3,219,000",$10K-$20K,,Yes,Yes,http://www.gramanddun.com,'+1 816-389-2900
+Phase 3 - Remaining HIGHs,290,HIGH,4.1,Engrain LLC (engrain.us),Manhattan,Kansas,restaurant (general),17,"$226,000",$10K-$20K,,Yes,Yes,http://www.engrain.us,'+1 785-539-1100
+Phase 3 - Remaining HIGHs,291,HIGH,4.1,Operation BBQ Relief,Peculiar,Missouri,bbq restaurant,46,"$1,892,000",$10K-$20K,,Yes,Yes,http://www.operationbbqrelief.org,'+1 844-627-7353
+Phase 3 - Remaining HIGHs,292,HIGH,4.1,RMF Companies,Grandview,Missouri,restaurant (general),16,,$10K-$20K,,Yes,Yes,http://www.rmfworks.com,'+1 816-765-4101
+Phase 3 - Remaining HIGHs,293,HIGH,4.1,Nell Hill's,Kansas City,Missouri,retail,31,,$20K+,,Yes,No,http://www.nellhills.com,'+1 816-746-4320
+Phase 3 - Remaining HIGHs,294,HIGH,4.1,Walker's Fresh Foods,North Kansas City,Missouri,restaurant (general),16,,$10K-$20K,,Yes,Yes,http://www.walkersfoodproducts.com,'+1 816-472-8121
+Phase 3 - Remaining HIGHs,295,HIGH,4.1,Tallgrass Tap House,Manhattan,Kansas,brewery/taproom,32,,$20K+,,Yes,Yes,http://www.tallgrasstaphouse.com,'+1 785-320-2933
+Phase 3 - Remaining HIGHs,296,HIGH,4.1,Lotus Hospitality,Kansas City,Missouri,restaurant (general),39,,$20K+,,Yes,Yes,http://www.lotusgroupinc.com,
+Phase 3 - Remaining HIGHs,297,HIGH,4.1,WorkForge,Kansas City,Missouri,e-learning,37,,$20K+,,Yes,No,http://www.workforge.com,'+1 816-744-5565
+Phase 3 - Remaining HIGHs,298,HIGH,4.1,BRGR Kitchen + Bar,Kansas City,Missouri,restaurant (general),18,,$10K-$20K,,Yes,Yes,http://www.brgrkitchen.com,'+1 816-221-2747
+Phase 3 - Remaining HIGHs,299,HIGH,4.1,Helping Hands Humane Society,Topeka,Kansas,nonprofit organization management,31,,$20K+,,Yes,No,http://www.topekahumaneshelter.org,'+1 785-233-7325
+Phase 3 - Remaining HIGHs,300,HIGH,4.1,Brew Haha Coffeehouse,Overland Park,Kansas,brewery/taproom,22,,$10K-$20K,,Yes,Yes,http://www.brewhahacoffeehouse.com,'+1 913-904-2099
+Phase 3 - Remaining HIGHs,301,HIGH,4.1,Salty Iguana Mexican,Lawrence,Kansas,mexican restaurant,32,,$20K+,,Yes,Yes,http://www.saltyiguana.net,'+1 913-381-3888
+Phase 3 - Remaining HIGHs,302,HIGH,4.1,Martys Bbq,Kansas City,Missouri,bbq restaurant,17,,$10K-$20K,,Yes,Yes,http://www.martysbbq.com,'+1 252-243-5887
+Phase 3 - Remaining HIGHs,303,HIGH,4.1,Salsa Grill,Shawnee,Kansas,restaurant (general),27,"$1,962,000",$10K-$20K,,Yes,Yes,http://www.thesalsagrill.com,'+1 562-942-7072
+Phase 3 - Remaining HIGHs,304,HIGH,4.1,ERINS PUB,Independence,Missouri,restaurant (general),17,,$10K-$20K,,Yes,Yes,http://www.erinpubnorwood.com,'+1 610-461-0991
+Phase 3 - Remaining HIGHs,305,HIGH,4.1,Farmers Bank of Kansas City,Overland Park,Kansas,banking,49,,$20K+,,Yes,No,http://www.farmersbankkc.com,'+1 833-325-2684
+Phase 3 - Remaining HIGHs,306,HIGH,4.1,The Fontaine Hotel,Kansas City,Missouri,restaurant (general),29,,$10K-$20K,,Yes,Yes,http://www.thefontainehotel.com,'+1 816-753-8800
+Phase 3 - Remaining HIGHs,307,HIGH,4.1,One Egg Group,Manhattan,Kansas,restaurant (general),18,,$10K-$20K,,Yes,Yes,http://www.one-egg.com,'+1 785-537-1396
+Phase 3 - Remaining HIGHs,308,HIGH,4.1,Brooksider Sportsbar & Grill,Kansas City,Missouri,bar/nightclub,19,,$10K-$20K,,Yes,Yes,http://www.brooksider.com,'+1 816-363-4070
+Phase 3 - Remaining HIGHs,309,HIGH,4.1,Booth Creek Wagyu,Manhattan,Kansas,restaurant (general),23,,$10K-$20K,,Yes,Yes,http://www.boothcreekwagyu.com,'+1 785-775-1144
+Phase 3 - Remaining HIGHs,310,HIGH,4.1,CocoBolos,Overland Park,Kansas,restaurant (general),13,"$2,694,000",$10K-$20K,,Yes,Yes,http://www.cocoboloskc.com,'+1 913-766-5000
+Phase 3 - Remaining HIGHs,311,HIGH,4.1,Dunkn Donuts,Independence,Missouri,bakery,38,,$20K+,,Yes,Yes,http://www.kcdunkin.com,
+Phase 3 - Remaining HIGHs,312,HIGH,4.1,The Well,Kansas City,Missouri,restaurant (general),27,,$10K-$20K,,Yes,Yes,http://www.waldowell.com,'+1 816-361-1700
+Phase 3 - Remaining HIGHs,313,HIGH,4.1,Central Bag Company,Leavenworth,Kansas,packaging & containers,45,,$20K+,,Yes,No,http://www.centralbagcompany.com,'+1 913-250-0325
+Phase 3 - Remaining HIGHs,314,HIGH,4.1,Heroes Restaurant & Pub,Warrensburg,Missouri,restaurant (general),11,"$2,867,000",$10K-$20K,,Yes,Yes,http://www.heroeswarrensburg.com,'+1 660-747-3162
+Phase 3 - Remaining HIGHs,315,HIGH,4.1,Tequila Harrys Inc,Lee's Summit,Missouri,restaurant (general),16,"$250,000",$10K-$20K,,Yes,Yes,http://www.tequilaharrys.com,'+1 913-469-6644
+Phase 3 - Remaining HIGHs,316,HIGH,4.1,"Tippin's Gourmet Pies, LLC",Kansas City,Kansas,restaurant (general),25,,$10K-$20K,,Yes,Yes,http://www.tippinspies.com,'+1 800-435-3382
+Phase 3 - Remaining HIGHs,317,HIGH,4.1,The Farmhouse KC,Kansas City,Missouri,restaurant (general),24,,$10K-$20K,,Yes,Yes,http://www.eatatthefarmhouse.com,'+1 816-569-6032
+Phase 3 - Remaining HIGHs,318,HIGH,4.1,Kansas City Community Gardens (KCCG),Kansas City,Missouri,restaurant (general),27,,$10K-$20K,,Yes,Yes,http://www.kccg.org,'+1 816-931-3877
+Phase 3 - Remaining HIGHs,319,HIGH,4.1,Powercat Sports Grill,Manhattan,Kansas,restaurant (general),24,,$10K-$20K,,Yes,Yes,http://www.powercatsportsgrill.com,'+1 785-320-4662
+Phase 3 - Remaining HIGHs,320,HIGH,4.1,Taco Lucha,Manhattan,Kansas,mexican restaurant,24,,$10K-$20K,,Yes,Yes,http://www.tacoluchamanhattan.com,'+1 785-320-5255
+Phase 3 - Remaining HIGHs,321,HIGH,4.1,Burnt End BBQ,Overland Park,Kansas,bbq restaurant,16,,$10K-$20K,,Yes,Yes,http://www.burntendbbqkc.com,'+1 913-451-8888
+Phase 3 - Remaining HIGHs,322,HIGH,4.1,Ginger Sue’s,Lee's Summit,Missouri,restaurant (general),24,,$10K-$20K,,Yes,Yes,http://www.gingersues.com,'+1 816-407-7707
+Phase 3 - Remaining HIGHs,323,HIGH,4.1,Big Mill,Lawrence,Kansas,restaurant (general),16,,$10K-$20K,,Yes,Yes,http://www.bigmilllawrence.com,'+1 785-856-0101
+Phase 3 - Remaining HIGHs,324,HIGH,4.1,Brookside Barrio,Kansas City,Missouri,restaurant (general),15,,$10K-$20K,,Yes,Yes,http://www.barriokc.com,'+1 816-293-9587
+Phase 3 - Remaining HIGHs,325,HIGH,4.1,Jarocho,Kansas City,Kansas,restaurant (general),32,,$20K+,,Yes,Yes,http://www.jarochokc.com,'+1 913-281-7757
+Phase 3 - Remaining HIGHs,326,HIGH,4.1,Burg & Barrel,Overland Park,Kansas,restaurant (general),35,,$20K+,,Yes,Yes,http://www.burgandbarrel.com,
+Phase 3 - Remaining HIGHs,327,HIGH,4.1,"LOUIE'S WINE DIVE KC, LLC",Kansas City,Missouri,restaurant (general),34,"$3,700,000",$10K-$20K,,Yes,Yes,http://www.louieswinedive.com,'+1 913-469-4177
+Phase 3 - Remaining HIGHs,328,HIGH,4.1,"Olive Tree, LLC",Overland Park,Kansas,retail,31,,$20K+,,Yes,No,http://www.olivetreekc.com,'+1 913-338-2700
+Phase 3 - Remaining HIGHs,329,HIGH,4.1,Taco Republic,Kansas City,Kansas,mexican restaurant,13,"$3,160,000",$10K-$20K,,Yes,Yes,http://www.eattacorepublic.com,'+1 913-262-8226
+Phase 3 - Remaining HIGHs,330,HIGH,4.1,Blissful Honeymoons & Destination Weddings,Overland Park,Kansas,restaurant (general),19,"$3,371,000",$10K-$20K,,Yes,Yes,http://www.blissfulhoneymoons.com,'+1 816-260-8781
+Phase 3 - Remaining HIGHs,331,HIGH,4.1,Gunter Pest & Lawn,Kansas City,Missouri,consumer services,14,"$1,596,000",$20K+,,Yes,No,http://www.gunterpest.com,'+1 816-444-2847
+Phase 3 - Remaining HIGHs,332,HIGH,4.1,23RD STREET BREWERY,Lawrence,Kansas,brewery/taproom,49,"$3,054,000",$10K-$20K,,Yes,Yes,http://www.brew23.com,'+1 785-856-2337
+Phase 3 - Remaining HIGHs,333,HIGH,4.1,Spicin Foods,Kansas City,Kansas,restaurant (general),27,,$10K-$20K,,Yes,Yes,http://www.spicinfoods.com,'+1 800-568-8468
+Phase 3 - Remaining HIGHs,334,HIGH,4.1,The Brass Onion,Overland Park,Kansas,restaurant (general),21,,$10K-$20K,,Yes,Yes,http://www.thebrassonion.com,'+1 913-851-5940
+Phase 3 - Remaining HIGHs,335,HIGH,4.1,Good Spirits Distilling,Olathe,Kansas,restaurant (general),19,,$10K-$20K,,Yes,Yes,http://www.gsdalcohol.com,'+1 913-361-8070
+Phase 3 - Remaining HIGHs,336,HIGH,4.1,"Cyrus Hotel, Tribute Portfolio",Topeka,Kansas,restaurant (general),15,,$10K-$20K,,Yes,Yes,http://www.cyrushotel.com,'+1 785-596-0500
+Phase 3 - Remaining HIGHs,337,HIGH,4.1,BRKTHROUGH,Overland Park,Kansas,recreational facilities & services,30,,$20K+,,Yes,No,http://www.brkthrough.com,'+1 913-948-5800
+Phase 3 - Remaining HIGHs,338,HIGH,4.1,Garozzo's Ristorante,Kansas City,Missouri,restaurant (general),27,"$1,462,000",$10K-$20K,,Yes,Yes,http://www.garozzos.com,'+1 913-491-8300
+Phase 3 - Remaining HIGHs,339,HIGH,4.1,The Rub Bar-B-Que,Olathe,Kansas,restaurant (general),11,"$3,600,000",$10K-$20K,,Yes,Yes,http://www.therubbarbque.com,'+1 913-894-1820
+Phase 3 - Remaining HIGHs,340,HIGH,4.1,Manildra Group USA,Leawood,Kansas,restaurant (general),29,,$10K-$20K,,Yes,Yes,http://www.manildrausa.com,'+1 800-323-8435
+Phase 3 - Remaining HIGHs,341,HIGH,4.1,"Pines International, Inc",Lawrence,Kansas,restaurant (general),16,,$10K-$20K,,Yes,Yes,http://www.kansaswheatgrasss.com,'+1 800-697-4637
+Phase 3 - Remaining HIGHs,342,HIGH,4.1,Golden Boy Pies Inc,Overland Park,Kansas,restaurant (general),12,,$10K-$20K,,Yes,Yes,http://www.goldenboypies.com,'+1 913-384-6460
+Phase 3 - Remaining HIGHs,343,HIGH,4.1,"Riley Drive, Inc.",Lenexa,Kansas,restaurant (general),14,,$10K-$20K,,Yes,Yes,http://www.rileydrive.com,'+1 515-528-8125
+Phase 3 - Remaining HIGHs,344,HIGH,4.1,Square Pizza,Independence,Missouri,pizza restaurant,24,,$10K-$20K,,Yes,Yes,http://www.squarepizzasquared.com,'+1 816-461-2929
+Phase 3 - Remaining HIGHs,345,HIGH,4.1,"Louisburg Cider Mill, Inc.",Louisburg,Kansas,restaurant (general),20,,$10K-$20K,,Yes,Yes,http://www.louisburgcidermill.com,'+1 913-837-5202
+Phase 3 - Remaining HIGHs,346,HIGH,4.1,Simply Essentials™,Overland Park,Kansas,restaurant (general),40,,$20K+,,Yes,Yes,http://www.simply-essentials.com,
+Phase 3 - Remaining HIGHs,347,HIGH,4.1,DO DROP INN,Lee's Summit,Missouri,restaurant (general),29,,$10K-$20K,,Yes,Yes,http://www.dodropinnpueblo.com,'+1 719-542-0818
+Phase 3 - Remaining HIGHs,348,HIGH,4.1,Lawrence Beer Company,Lawrence,Kansas,restaurant (general),27,,$10K-$20K,,Yes,Yes,http://www.lawrencebeerco.com,'+1 785-856-0453
+Phase 3 - Remaining HIGHs,349,HIGH,4.1,Worldwide Beverage Group,Lenexa,Kansas,restaurant (general),21,,$10K-$20K,,Yes,Yes,http://www.worldwidebeveragegroup.com,'+1 913-859-9925
+Phase 3 - Remaining HIGHs,350,HIGH,4.1,Smith Electric Vehicles,Kansas City,Missouri,transportation,34,,$20K+,,Yes,No,http://www.smithev.com,'+1 816-464-0508
+Phase 3 - Remaining HIGHs,351,HIGH,4.1,Education Leaders of Color,Parkville,Missouri,contractor,30,,$20K+,,Yes,No,http://www.edloc.org,
+Phase 3 - Remaining HIGHs,352,HIGH,4.1,Exit Strategy,Kansas City,Kansas,restaurant (general),38,,$20K+,,Yes,Yes,http://www.exitstrategybar.com,
+Phase 3 - Remaining HIGHs,353,HIGH,4.1,Fountain City Logistics,Overland Park,Kansas,transportation,31,,$20K+,,Yes,No,http://www.fountaincitylogistics.com,'+1 877-811-0854
+Phase 3 - Remaining HIGHs,354,HIGH,4.1,Plaza Liquor,Kansas City,Missouri,restaurant (general),15,,$10K-$20K,,Yes,Yes,http://www.plazaliquorkc.com,'+1 816-531-5900
+Phase 3 - Remaining HIGHs,355,HIGH,4.1,Merchants Pub & Plate,Lawrence,Kansas,bar/nightclub,21,,$10K-$20K,,Yes,Yes,http://www.merchantsonmass.com,'+1 785-843-4111
+Phase 3 - Remaining HIGHs,356,HIGH,4.1,Scratch Gourmet Kitchen,Prairie Village,Kansas,restaurant (general),17,,$10K-$20K,,Yes,Yes,http://www.scratchgourmet.com,'+1 913-766-6021
+Phase 3 - Remaining HIGHs,357,HIGH,4.1,Carolyn's Country Cousins,Liberty,Missouri,entertainment,21,"$3,947,000",$20K+,,Yes,No,http://www.carolynspumpkinpatch.com,'+1 816-781-9196
+Phase 3 - Remaining HIGHs,358,HIGH,4.1,Strawberry Hill Baking Company,Merriam,Kansas,restaurant (general),15,"$4,256,000",$10K-$20K,,Yes,Yes,http://www.strawberryhill.com,'+1 800-631-1002
+Phase 3 - Remaining HIGHs,359,HIGH,4.1,LUNCH BOX,Shawnee,Kansas,restaurant (general),39,,$20K+,,Yes,Yes,http://www.lunchboxclub.net,
+Phase 3 - Remaining HIGHs,360,HIGH,4.1,So Long Saloon,Manhattan,Kansas,bar/nightclub,20,,$10K-$20K,,Yes,Yes,http://www.solongsaloon.com,'+1 785-537-9292
+Phase 3 - Remaining HIGHs,361,HIGH,4.1,"Seaboard Transport, Inc.",Mission,Kansas,transportation,30,,$20K+,,Yes,No,http://www.seaboardtransport.net,123-456-7890
+Phase 3 - Remaining HIGHs,362,HIGH,4.1,Kansas City Girls Preparatory Academy,Kansas City,Missouri,non-food (primary/secondary education),33,,$20K+,,Yes,No,http://www.kcgpa.org,'+1 816-268-2573
+Phase 3 - Remaining HIGHs,363,HIGH,4.1,The Mad Greek,Lawrence,Kansas,restaurant (general),17,,$10K-$20K,,Yes,Yes,http://www.themadgreeklawrence.com,'+1 785-843-2441
+Phase 3 - Remaining HIGHs,364,HIGH,4.1,Chef Caleb,Kansas City,Kansas,restaurant (general),22,,$10K-$20K,,Yes,Yes,http://www.chefcaleb.com,'+1 479-306-6064
+Phase 3 - Remaining HIGHs,365,HIGH,4.1,Woods Chapel Church,Lee's Summit,Missouri,religious org,36,,$20K+,,Yes,No,http://www.woodschapelchurch.org,'+1 816-795-8848
+Phase 3 - Remaining HIGHs,366,HIGH,4.1,Pegah's Family Restaurant,Lenexa,Kansas,restaurant (general),22,"$280,000",$10K-$20K,,Yes,Yes,http://www.pegahs.com,'+1 913-258-8766
+Phase 3 - Remaining HIGHs,367,HIGH,4.1,Kansas City magazine,Overland Park,Kansas,publishing,37,,$20K+,,Yes,No,http://www.kansascitymag.com,'+1 913-469-6700
+Phase 3 - Remaining HIGHs,368,HIGH,4.1,KBP Bells,Overland Park,Kansas,restaurant (general),16,,$10K-$20K,,Yes,Yes,http://www.kbpbells.com,'+1 913-356-6300
+Phase 3 - Remaining HIGHs,369,HIGH,4.1,Rancho Grande Cantina Restaurant,Parkville,Missouri,mexican restaurant,29,,$10K-$20K,,Yes,Yes,http://www.rgcantina.com,'+1 816-505-9097
+Phase 3 - Remaining HIGHs,370,HIGH,4.1,MIDWEST BEST LLC,Shawnee,Kansas,restaurant (general),23,,$10K-$20K,,Yes,Yes,http://www.midwestbest.net,'+1 913-952-4873
+Phase 3 - Remaining HIGHs,371,HIGH,4.1,Center of Grace,Olathe,Kansas,nonprofit organization management,33,,$20K+,,Yes,No,http://www.centerofgrace.center,'+1 913-764-1353
+Phase 3 - Remaining HIGHs,372,HIGH,4.1,"SOMBRERO'S MEXICAN CANTINA, LLC",Shawnee,Kansas,mexican restaurant,23,,$10K-$20K,,Yes,Yes,http://www.sombreroskc.com,'+1 913-441-6700
+Phase 3 - Remaining HIGHs,373,HIGH,4.1,Urban Table,Prairie Village,Kansas,restaurant (general),20,,$10K-$20K,,Yes,Yes,http://www.urbantablekc.com,'+1 913-948-6900
+Phase 3 - Remaining HIGHs,374,HIGH,4.1,Falcon Ridge Golf Course,Lenexa,Kansas,sports,47,,$20K+,,Yes,No,http://www.falconridgegolfclub.com,'+1 913-393-4653
+Phase 3 - Remaining HIGHs,375,HIGH,4.1,BETTY RAE'S ICE CREAM LLC,Kansas City,Missouri,restaurant (general),20,,$10K-$20K,,Yes,Yes,http://www.bettyraes.com,'+1 913-232-8167
+Phase 3 - Remaining HIGHs,376,HIGH,4.1,Twisted Fresh,Kansas City,Missouri,restaurant (general),22,"$317,000",$10K-$20K,,Yes,Yes,http://www.twistedfresh.com,'+1 913-441-0444
+Phase 3 - Remaining HIGHs,377,HIGH,4.1,Westchester Village of Lenexa,Lenexa,Kansas,hospital & health care,30,,$20K+,,Yes,No,http://www.westchestervillagelenexa.com,'+1 913-307-2000
+Phase 3 - Remaining HIGHs,378,HIGH,4.1,Reconciliation Services,Kansas City,Missouri,nonprofit,38,,$20K+,,Yes,No,http://www.rs3101.org,'+1 816-931-4751
+Phase 3 - Remaining HIGHs,379,HIGH,4.1,Los Corrals,Kansas City,Missouri,restaurant (general),18,,$10K-$20K,,Yes,Yes,http://www.loscorrals.com,'+1 816-421-9440
+Phase 3 - Remaining HIGHs,380,HIGH,4.1,Highlander Bar & Grill,Grandview,Missouri,bar/nightclub,15,,$10K-$20K,,Yes,Yes,http://www.highlanderbarandgrill.com,'+1 210-340-4577
+Phase 3 - Remaining HIGHs,381,HIGH,4.1,Los Tules,Kansas City,Missouri,restaurant (general),28,,$10K-$20K,,Yes,Yes,http://www.los-tuleskc.com,'+1 816-421-9229
+Phase 3 - Remaining HIGHs,382,HIGH,4.1,Genghis Khan Mongolian Grill,Kansas City,Missouri,restaurant (general),21,,$10K-$20K,,Yes,Yes,http://www.gkbbq.com,'+1 816-753-3600
+Phase 3 - Remaining HIGHs,383,HIGH,4.1,eShipping Distribution Services,Riverside,Missouri,food distributor,36,,$20K+,,,Yes,http://www.eshippingdistributionservices.com,'+1 312-361-0066
+Phase 3 - Remaining HIGHs,384,HIGH,4.1,Blackford Brokerage Inc,Mission,Kansas,restaurant (general),23,,$10K-$20K,,Yes,Yes,http://www.blackfordbrokerage.com,'+1 913-685-1400
+Phase 3 - Remaining HIGHs,385,HIGH,4.1,The Smoothie Shop & Supplements,Lee's Summit,Missouri,restaurant (general),17,"$2,659,000",$10K-$20K,,Yes,Yes,http://www.thesmoothieshop.com,'+1 816-920-1977
+Phase 3 - Remaining HIGHs,386,HIGH,4.1,Iron Horse Bar and Grill,Leawood,Kansas,bar/nightclub,44,,$20K+,,Yes,Yes,http://www.ironhorsegrillbar.com,
+Phase 3 - Remaining HIGHs,387,HIGH,4.1,Set’em Up Jacks,Lawrence,Kansas,restaurant (general),17,,$10K-$20K,,Yes,Yes,http://www.setemupjacks.com,'+1 785-832-2030
+Phase 3 - Remaining HIGHs,388,HIGH,4.1,The Brewtop Pub & Patio,Kansas City,Missouri,brewery/taproom,28,,$10K-$20K,,Yes,Yes,http://www.thebrewtop.com,'+1 816-584-9292
+Phase 3 - Remaining HIGHs,389,HIGH,4.1,Six Mile Chop House - Tavern,Lawrence,Kansas,bar/nightclub,20,,$10K-$20K,,Yes,Yes,http://www.6milechophouse.com,'+1 785-856-6453
+Phase 3 - Remaining HIGHs,390,HIGH,4.1,Maloneys Sports Bar and Grill,Overland Park,Kansas,bar/nightclub,28,,$10K-$20K,,Yes,Yes,http://www.maloneyssportsbar.com,'+1 913-385-9595
+Phase 3 - Remaining HIGHs,391,HIGH,4.1,Cinder Block Brewery,North Kansas City,Missouri,brewery/taproom,14,"$4,993,000",$10K-$20K,,Yes,Yes,http://www.cinderblockbrewery.com,'+1 816-298-6555
+Phase 3 - Remaining HIGHs,392,HIGH,4.0,Metabolic Meals LLC,St. Louis,Missouri,restaurant (general),31,"$4,025,000",$10K-$20K,,,Yes,http://www.mymetabolicmeals.com,'+1 855-355-6325
+Phase 3 - Remaining HIGHs,393,HIGH,4.0,Connection Point Church,Raytown,Missouri,religious org,46,,$20K+,,,No,http://www.connectionpoint.tv,'+1 816-353-1994
+Phase 3 - Remaining HIGHs,394,HIGH,4.0,bluetree casework,Saint Joseph,Missouri,restaurant (general),15,,$10K-$20K,,,Yes,http://www.gobluetree.com,'+1 816-232-3060
+Phase 3 - Remaining HIGHs,395,HIGH,4.0,"Delaware North Companies, Inc. - Boston",Onaga,Kansas,restaurant (general),19,,$10K-$20K,,,Yes,http://www.dncboston.com,'+1 617-624-1050
+Phase 3 - Remaining HIGHs,396,HIGH,4.0,Shayashone,Cameron,Missouri,management consulting,39,,$20K+,,,No,http://www.shayashone.com,'+251 93 000 0563
+Phase 3 - Remaining HIGHs,397,HIGH,4.0,The Farmer's House,Weston,Missouri,nonprofit organization management,47,"$823,000",$20K+,,,No,http://www.thefarmershouse.org,'+1 816-640-3276
+Phase 3 - Remaining HIGHs,398,HIGH,4.0,Grand Mere Restaurant Group,Overland Park,Kansas,restaurant (general),51,,$20K+,,Yes,Yes,http://www.gmrestaurantgroup.com,'+1 913-383-8177
+Phase 3 - Remaining HIGHs,399,HIGH,4.0,"C.J. Foods, Inc.",Bern,Kansas,restaurant (general),42,,$20K+,,,Yes,,'+1 785-336-6132
+Phase 3 - Remaining HIGHs,400,HIGH,4.0,Stroud's Restaurant & Bar,Fairway,Kansas,restaurant (general),25,,$20K+,,,Yes,http://www.stroudsrestaurant.com,'+1 913-262-8500
+Phase 3 - Remaining HIGHs,401,HIGH,4.0,RADIUS BREWING COMPANY LLC,Emporia,Kansas,brewery/taproom,20,,$10K-$20K,,,Yes,http://www.radiusbrewing.com,'+1 620-208-4677
+Phase 3 - Remaining HIGHs,402,HIGH,4.0,Pappy's Smokehouse,St. Louis,Missouri,bbq restaurant,28,"$3,779,000",$10K-$20K,,,Yes,http://www.pappyssmokehouse.com,'+1 314-535-4340
+Phase 3 - Remaining HIGHs,403,HIGH,4.0,"Grandma Hoerner's Foods, Inc",Alma,Kansas,restaurant (general),25,"$4,476,000",$10K-$20K,,,Yes,http://www.grandmahoerners.com,'+1 785-765-2300
+Phase 3 - Remaining HIGHs,404,HIGH,4.0,Campo Lindo,Lathrop,Missouri,farming,43,,$20K+,,,No,http://www.campolindofarms.com,'+1 816-740-3625
+Phase 3 - Remaining HIGHs,405,HIGH,4.0,BOBS GRILL,Pittsburg,Kansas,restaurant (general),28,,$10K-$20K,,,Yes,http://www.bobsgrill.org,'+1 620-232-9738
+Phase 3 - Remaining HIGHs,406,HIGH,4.0,Lean Kitchen Co,Saint Joseph,Missouri,restaurant (general),47,,$20K+,,,Yes,http://www.leankitchenco.com,
+Phase 3 - Remaining HIGHs,407,HIGH,4.0,Dogtown Pizza,St. Louis,Missouri,pizza restaurant,16,,$10K-$20K,,,Yes,http://www.dogtownpizza.com,'+1 314-802-7001
+Phase 3 - Remaining HIGHs,408,HIGH,4.0,Uncle Ray's,Chillicothe,Missouri,restaurant (general),31,,$20K+,,,Yes,,'+1 313-834-0800
+Phase 3 - Remaining HIGHs,409,HIGH,4.0,Chick N Max,Wichita,Kansas,restaurant (general),27,,$10K-$20K,,,Yes,http://www.chicknmax.com,'+1 316-425-3991
+Phase 3 - Remaining HIGHs,410,HIGH,4.0,Essig Family McDonald's,Reeds,Missouri,restaurant (general),29,,$10K-$20K,,,Yes,http://www.essigmcd.com,'+1 816-903-5105
+Phase 3 - Remaining HIGHs,411,HIGH,4.0,Bionic Burger,Wichita,Kansas,restaurant (general),19,,$10K-$20K,,,Yes,http://www.bionic-burger.com,'+1 316-945-3838
+Phase 3 - Remaining HIGHs,412,HIGH,4.0,Casino White Cloud,White Cloud,Kansas,entertainment,40,,$20K+,,,No,http://www.casinowhitecloud.org,'+1 877-652-6115
+Phase 3 - Remaining HIGHs,413,HIGH,4.0,Nevada Regiona Technical Center,Nevada,Missouri,restaurant (general),31,,$20K+,,,Yes,http://nrtc.k12.mo.us,
+Phase 3 - Remaining HIGHs,414,HIGH,4.0,Republic Foods,Lone Jack,Missouri,restaurant (general),18,,$10K-$20K,,,Yes,http://www.republic-foods.com,'+1 816-697-1839
+Phase 3 - Remaining HIGHs,415,HIGH,4.0,SALINE COUNTY HEALTH DEPARTMENT,Marshall,Missouri,government administration,30,,$20K+,,,No,http://www.salinecountyhealthdepartment.com,'+1 660-886-3434

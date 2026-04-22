@@ -1,0 +1,845 @@
+priority,overall_score,company,city,state,biz_type,apollo_emp,est_actual_staff,revenue,num_locations,est_premium,likely_asian,in_kc_metro,is_food,prem_score,fit_score,acc_score,under_score,website,phone,notes
+HIGH,5.0,Cupini's Inc.,Kansas City,Missouri,catering/food truck,22,44,12600000,2,$20K+,Yes,Yes,Yes,5,5,5,5,http://www.cupinis.com,'+1 816-753-7662,"Asian/ethnic cuisine; KC metro; $12,600,000 rev; 2 locations"
+HIGH,4.9,Headrush Roasters Coffee & Tea,Kansas City,Missouri,bar/brewery,11,38,12636000,1,$20K+,Yes,Yes,Yes,5,5,5,4.5,http://www.headrushroasters.com,'+1 816-888-4675,"Asian/ethnic cuisine; KC metro; $12,636,000 rev"
+HIGH,4.9,Lulu's Thai Noodle Shop,Kansas City,Missouri,bar/brewery,27,94,20614000,1,$20K+,Yes,Yes,Yes,5,5,5,4.5,http://www.lulusnoodles.com,'+1 816-474-8424,"Asian/ethnic cuisine; KC metro; $20,614,000 rev"
+HIGH,4.9,TikiTaco,Kansas City,Missouri,bar/brewery,19,66,17223000,1,$20K+,Yes,Yes,Yes,5,5,5,4.5,http://www.tikitaco.com,'+1 609-492-2328,"Asian/ethnic cuisine; KC metro; $17,223,000 rev"
+HIGH,4.8,Gold China,Independence,Missouri,full-service restaurant,14,63,,1,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.goldchinamiami.com,'+1 305-233-6501,Asian/ethnic cuisine; KC metro
+HIGH,4.8,Golden palace,Olathe,Kansas,full-service restaurant,18,81,,1,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.goldenpalaceolathe.com,'+1 913-780-1511,Asian/ethnic cuisine; KC metro
+HIGH,4.8,Bones Co,Ottawa,Kansas,bar/brewery,21,74,,1,$20K+,Yes,No,Yes,5,5,5,4.0,http://www.bonesdenver.com,'+1 303-860-2929,Asian/ethnic cuisine; MO/KS territory
+HIGH,4.8,Summit Hospitality Group,Lee's Summit,Missouri,bar/brewery,29,102,,1,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.summitgrillkc.com,'+1 816-795-1299,Asian/ethnic cuisine; KC metro
+HIGH,4.8,Nara Restaurant,Kansas City,Missouri,full-service restaurant,15,68,19111000,1,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.1617eventspace.com,'+1 816-221-0362,"Asian/ethnic cuisine; KC metro; $19,111,000 rev"
+HIGH,4.8,Swagat Fine Indian Cuisine,Kansas City,Missouri,full-service restaurant,14,63,14552000,1,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.swagatkc.com,'+1 816-746-9400,"Asian/ethnic cuisine; KC metro; $14,552,000 rev"
+HIGH,4.8,Happy Wok Chinese,Kansas City,Missouri,full-service restaurant,19,86,,2,$20K+,Yes,Yes,Yes,5,5,5,4.0,http://www.happywokchinese.com,'+1 973-300-1536,Asian/ethnic cuisine; KC metro; 2 locations
+HIGH,4.8,Twin Dragon,Saint Joseph,Missouri,full-service restaurant,24,108,13752000,1,$20K+,Yes,No,Yes,5,5,5,4.0,http://www.twindragonsj.com,'+1 816-689-0061,"Asian/ethnic cuisine; MO/KS territory; $13,752,000 rev"
+HIGH,4.7,Bamboo Penny's,Leawood,Kansas,bar/brewery,13,46,,1,$10K-$20K,Yes,Yes,Yes,4.5,5,5,4.5,http://www.bamboopennys.com,'+1 913-232-7695,Asian/ethnic cuisine; KC metro
+HIGH,4.7,Bo Lings Chinese Restaurant,Kansas City,Missouri,bar/brewery,41,144,11901000,6,$20K+,Yes,Yes,Yes,5,5,5,3.5,http://www.bolings.com,'+1 816-753-1718,"Asian/ethnic cuisine; KC metro; $11,901,000 rev; 6 locations"
+HIGH,4.7,"Seaboard Transport, Inc.",Mission,Kansas,food/bev general,30,60,,1,$20K+,Yes,Yes,Yes,5,5,5,3.5,http://www.seaboardtransport.net,123-456-7890,Asian/ethnic cuisine; KC metro
+HIGH,4.7,Genghis Khan Mongolian Grill,Kansas City,Missouri,full-service restaurant,21,94,,1,$20K+,Yes,Yes,No,5,4.5,5,4.0,http://www.gkbbq.com,'+1 816-753-3600,Asian/ethnic cuisine; KC metro
+HIGH,4.7,Thai Café,Kansas City,Missouri,bakery/cafe,27,68,,1,$20K+,Yes,Yes,Yes,5,5,4,4.5,http://www.thai.cafe,02/888.80.80,Asian/ethnic cuisine; KC metro
+HIGH,4.6,Farm To Market Bread Co.,Kansas City,Kansas,bakery/cafe,20,50,3168000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.farmtomarketbread.com,'+1 816-363-3198,"KC metro; $3,168,000 rev"
+HIGH,4.6,The Culinary Center of Kansas City,Overland Park,Kansas,bakery/cafe,13,32,5000000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.kcculinary.com,'+1 913-341-4455,"KC metro; $5,000,000 rev"
+HIGH,4.6,Sheridan's Unforked,Overland Park,Kansas,catering/food truck,18,36,10000000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.unforked.com,'+1 913-661-9887,"KC metro; $10,000,000 rev"
+HIGH,4.6,Naka-Kon Anime Convention,Overland Park,Kansas,food/bev general,14,28,5767000,1,$20K+,Yes,Yes,Yes,5,5,4,4.0,http://www.naka-kon.com,,"Asian/ethnic cuisine; KC metro; $5,767,000 rev"
+HIGH,4.6,Fuji Japanese Steak House,Liberty,Missouri,full-service restaurant,23,104,,1,$20K+,Yes,Yes,Yes,5,5,4,4.0,http://www.fujilibertytogo.com,'+1 816-439-5150,Asian/ethnic cuisine; KC metro
+HIGH,4.6,"Select Brands, Inc.",Lenexa,Kansas,bakery/cafe,18,45,17469000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.selectbrands.com,'+1 913-663-4500,"KC metro; $17,469,000 rev"
+HIGH,4.6,Parisi Coffee,Kansas City,Missouri,bakery/cafe,28,70,4953000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.parisicoffee.com,'+1 816-423-5464,"KC metro; $4,953,000 rev"
+HIGH,4.6,Garozzo's Ristorante,Kansas City,Missouri,catering/food truck,27,54,1462000,1,$20K+,No,Yes,Yes,5,4.0,5,4.0,http://www.garozzos.com,'+1 913-491-8300,"KC metro; $1,462,000 rev"
+HIGH,4.6,Chinese Grocery Store,Manhattan,Kansas,full-service restaurant,25,112,,1,$20K+,Yes,No,Yes,5,5,4,4.0,http://www.crunchbearmarket.com,'+1 785-802-5040,Asian/ethnic cuisine; MO/KS territory
+HIGH,4.5,Engrain LLC (engrain.us),Manhattan,Kansas,bakery/cafe,17,42,226000,1,$10K-$20K,Yes,No,Yes,4.0,5,5,4.5,http://www.engrain.us,'+1 785-539-1100,"Asian/ethnic cuisine; MO/KS territory; $226,000 rev"
+HIGH,4.5,Eden Alley Cafe,Kansas City,Missouri,catering/food truck,11,22,13810000,1,$20K+,No,Yes,Yes,5,3.5,5,4.0,http://www.edenalley.com,'+1 816-561-5415,"KC metro; $13,810,000 rev"
+HIGH,4.5,"Irving Weber Associates, Inc.",Overland Park,Kansas,full-service restaurant,11,50,13127000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.iwains.com,'+1 855-764-7406,"KC metro; $13,127,000 rev"
+HIGH,4.5,Excel Linen Supply,Kansas City,Kansas,full-service restaurant,11,50,10000000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.excellinen.com,'+1 816-842-6565,"KC metro; $10,000,000 rev"
+HIGH,4.5,Off the Vine Catering,Leavenworth,Kansas,catering/food truck,22,44,11936000,1,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.offthevinecatering.com,'+1 781-762-9770,"MO/KS territory; $11,936,000 rev"
+HIGH,4.5,Rye KC,Leawood,Kansas,catering/food truck,24,48,19089000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.ryekc.com,'+1 913-642-5800,"KC metro; $19,089,000 rev"
+HIGH,4.5,Prime Sushi,Kansas City,Missouri,full-service restaurant,15,68,,1,$20K+,Yes,Yes,No,5,4.5,4,4.0,http://www.primesushikc.com,'+1 816-931-4829,Asian/ethnic cuisine; KC metro
+HIGH,4.5,VIVIANOS FESTA ITALIANO,Fenton,Missouri,catering/food truck,22,44,22350000,1,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.vivianosmarket.com,'+1 636-305-1474,"MO/KS territory; $22,350,000 rev"
+HIGH,4.5,Bartolino's Restaurant,St. Louis,Missouri,catering/food truck,27,54,,2,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.bartolinosrestaurants.com,'+1 314-487-4545,MO/KS territory; 2 locations
+HIGH,4.5,Dolce Bakery,Prairie Village,Kansas,catering/food truck,37,74,749000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.dolcebakes.com,'+1 913-236-4411,"KC metro; $749,000 rev"
+HIGH,4.5,"Tippin's Gourmet Pies, LLC",Kansas City,Kansas,bakery/cafe,25,62,,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.tippinspies.com,'+1 800-435-3382,KC metro
+HIGH,4.5,Red Snapper,Kansas City,Missouri,full-service restaurant,17,76,11609000,1,$20K+,Yes,Yes,No,5,4.5,4,4.0,http://www.kcredsnapper.com,'+1 816-333-8899,"Asian/ethnic cuisine; KC metro; $11,609,000 rev"
+HIGH,4.5,Vista Drive In Reasturant,Manhattan,Kansas,catering/food truck,28,56,11751000,1,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.vistadrivein.com,'+1 785-537-0100,"MO/KS territory; $11,751,000 rev"
+HIGH,4.5,Reverie Coffee Roasters,Wichita,Kansas,bakery/cafe,13,32,5332000,1,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.reverieroasters.com,'+1 316-201-1144,"MO/KS territory; $5,332,000 rev"
+HIGH,4.5,Pappy's Smokehouse,St. Louis,Missouri,catering/food truck,28,56,3779000,1,$20K+,No,No,Yes,5,3.5,5,4.0,http://www.pappyssmokehouse.com,'+1 314-535-4340,"MO/KS territory; $3,779,000 rev"
+HIGH,4.5,Room 39,Kansas City,Missouri,catering/food truck,15,30,12765000,2,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.rm39.com,'+1 816-753-3939,"KC metro; $12,765,000 rev; 2 locations"
+HIGH,4.5,Carolyn's Country Cousins,Liberty,Missouri,bakery/cafe,21,52,3947000,2,$20K+,No,Yes,Yes,5,3.5,5,4.0,http://www.carolynspumpkinpatch.com,'+1 816-781-9196,"KC metro; $3,947,000 rev; 2 locations"
+HIGH,4.5,Fiorella's,Overland Park,Kansas,catering/food truck,35,70,,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.fiorellaskc.com,'+1 913-356-5700,KC metro
+HIGH,4.5,Rancho Grande Cantina Restaurant,Parkville,Missouri,full-service restaurant,29,130,,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.rgcantina.com,'+1 816-505-9097,KC metro
+HIGH,4.5,Blast It Clean,Kansas City,Missouri,bakery/cafe,34,85,,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.blastitclean.com,'+1 877-379-4233,KC metro
+HIGH,4.5,Elite Booth LLC,Raytown,Missouri,full-service restaurant,12,54,33331000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.elitebooth.com,'+1 816-743-8158,"KC metro; $33,331,000 rev"
+HIGH,4.5,Old Shawnee Pizza,Shawnee,Kansas,full-service restaurant,26,117,8493000,4,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.shawneepizza.com,'+1 913-677-1844,"KC metro; $8,493,000 rev; 4 locations"
+HIGH,4.5,Equip-Bid Auctions,Overland Park,Kansas,full-service restaurant,22,99,7729000,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.equip-bid.com,'+1 913-686-6345,"KC metro; $7,729,000 rev"
+HIGH,4.5,Plate,Kansas City,Missouri,catering/food truck,32,64,,1,$20K+,No,Yes,Yes,5,4.0,5,3.5,http://www.platekc.com,'+1 913-730-7545,KC metro
+HIGH,4.5,Kome Sushi,Parkville,Missouri,full-service restaurant,23,104,,1,$20K+,Yes,Yes,No,5,4.5,4,4.0,http://www.komesushimo.com,'+1 816-587-8882,Asian/ethnic cuisine; KC metro
+HIGH,4.4,"Exit 11 Coffee, LLC",Washington,Missouri,bakery/cafe,25,62,,1,$20K+,No,No,Yes,5,3.0,5,4.0,http://www.exit11coffee.com,'+1 636-429-0111,MO/KS territory
+HIGH,4.4,Barsto Construction Inc,Kansas City,Missouri,full-service restaurant,19,86,9650000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.barstoconstruction.com,'+1 816-421-5677,"KC metro; $9,650,000 rev"
+HIGH,4.4,RestaurantLink,Overland Park,Kansas,full-service restaurant,12,54,12000000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.restaurantlink.com,'+1 785-841-3656,"KC metro; $12,000,000 rev"
+HIGH,4.4,Hiway Inn,Girard,Kansas,full-service restaurant,13,58,,3,$20K+,Yes,No,Yes,5,5,3,4.0,,'+1 808-954-4955,Asian/ethnic cuisine; MO/KS territory; 3 locations
+HIGH,4.4,Stone Canyon Gladstone,Gladstone,Missouri,bar/brewery,22,77,13323000,2,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.stonecanyonpizza.com,'+1 816-746-8686,"KC metro; $13,323,000 rev; 2 locations"
+HIGH,4.4,Post Coffee Company,Lee's Summit,Missouri,bar/brewery,20,70,,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.postcoffeecompany.com,'+1 816-886-8659,KC metro
+HIGH,4.4,V's Italiano Ristorante,Independence,Missouri,bakery/cafe,17,42,13084000,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.vsrestaurant.com,'+1 816-353-1241,"KC metro; $13,084,000 rev"
+HIGH,4.4,The Farmhouse KC,Kansas City,Missouri,full-service restaurant,24,108,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.eatatthefarmhouse.com,'+1 816-569-6032,KC metro
+HIGH,4.4,Sunnycrest Farm,Blue Mound,Kansas,bakery/cafe,11,28,16283000,1,$20K+,No,No,Yes,5,3.0,5,4.0,http://www.sunnycrestfarmnh.com,'+1 603-432-9652,"MO/KS territory; $16,283,000 rev"
+HIGH,4.4,ARC General Contracting,Lenexa,Kansas,full-service restaurant,13,58,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.arcgc.com,'+1 913-492-8008,KC metro
+HIGH,4.4,Eileen's Colossal Cookies - Kansas City,Kansas City,Missouri,bakery/cafe,21,52,36835000,1,$20K+,No,Yes,Yes,5,4.0,4,4.0,,'+1 402-421-6609,"KC metro; $36,835,000 rev"
+HIGH,4.4,Pirtle Winery,Weston,Missouri,bar/brewery,13,46,39084000,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.pirtlewinery.com,'+1 816-640-5728,"KC metro; $39,084,000 rev"
+HIGH,4.4,ResourceOne International,Overland Park,Kansas,full-service restaurant,25,112,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.r1recruitment.com,'+1 913-563-5775,KC metro
+HIGH,4.4,"B & J Peerless Food Service Equipment, Inc.",Kansas City,Kansas,full-service restaurant,36,162,13386000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.bjpeerless.com,'+1 417-782-6165,"KC metro; $13,386,000 rev"
+HIGH,4.4,Christopher Elbow Chocolates,Kansas City,Missouri,bar/brewery,29,102,4677000,2,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.elbowchocolates.com,'+1 415-355-1105,"KC metro; $4,677,000 rev; 2 locations"
+HIGH,4.4,The Brass Onion,Overland Park,Kansas,full-service restaurant,21,94,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.thebrassonion.com,'+1 913-851-5940,KC metro
+HIGH,4.4,Jess & Jim’s Steak House,Kansas City,Missouri,full-service restaurant,13,58,8561000,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.jessandjims.com,'+1 816-941-9499,"KC metro; $8,561,000 rev"
+HIGH,4.4,Governor Stumpy's Grill House,Kansas City,Missouri,bar/brewery,12,42,11956000,2,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.governorstumpys.com,'+1 816-444-2252,"KC metro; $11,956,000 rev; 2 locations"
+HIGH,4.4,Manildra Group USA,Leawood,Kansas,bakery/cafe,29,72,,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.manildrausa.com,'+1 800-323-8435,KC metro
+HIGH,4.4,Piping Alloys Inc,Lenexa,Kansas,bar/brewery,18,63,,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.pipingalloys.com,'+1 800-659-4050,KC metro
+HIGH,4.4,"Louisburg Cider Mill, Inc.",Louisburg,Kansas,bar/brewery,20,70,,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.louisburgcidermill.com,'+1 913-837-5202,KC metro
+HIGH,4.4,Meat Mitch LLC,Prairie Village,Kansas,full-service restaurant,15,68,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.meatmitch.com,'+1 877-545-0005,KC metro
+HIGH,4.4,Goebel Mitts Construction,Overland Park,Kansas,full-service restaurant,12,54,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.goebelmitts.com,'+1 913-735-0024,KC metro
+HIGH,4.4,Watermark Books & Cafe,Wichita,Kansas,bakery/cafe,13,32,8582000,1,$20K+,No,No,Yes,5,3.5,5,3.5,http://www.watermarkbooks.com,'+1 316-682-1181,"MO/KS territory; $8,582,000 rev"
+HIGH,4.4,FINKLE + WILLIAMS Architecture,Lenexa,Kansas,full-service restaurant,26,117,9016000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.finklewilliams.com,'+1 913-498-1550,"KC metro; $9,016,000 rev"
+HIGH,4.4,Johns Farm,Walnut,Kansas,bakery/cafe,18,45,14964000,1,$20K+,No,No,Yes,5,3.0,5,4.0,http://www.johnsfarms.com,'+1 516-933-1444,"MO/KS territory; $14,964,000 rev"
+HIGH,4.4,Decision Insight by TELUS Consumer Goods,Kansas City,Missouri,full-service restaurant,15,68,2423000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.decisioninsight.com,'+1 816-221-0445,"KC metro; $2,423,000 rev"
+HIGH,4.4,Nexus 5 Group,Merriam,Kansas,full-service restaurant,23,104,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.nexus5group.com,'+1 913-671-3361,KC metro
+HIGH,4.4,Trezo Mare Restaurant and Lounge,Kansas City,Missouri,full-service restaurant,25,112,9014000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.trezomare.com,'+1 816-505-3200,"KC metro; $9,014,000 rev"
+HIGH,4.4,Platte County Health Department,Kansas City,Missouri,catering/food truck,36,72,3632000,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.plattecountyhealthdept.com,'+1 816-858-2412,"KC metro; $3,632,000 rev"
+HIGH,4.4,Roots. Seasonal Cuisine,Lee's Summit,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.rootsseasonalcuisine.com,'+1 816-205-4746,KC metro
+HIGH,4.4,Ballard Center KS,Lawrence,Kansas,catering/food truck,12,24,9532000,1,$20K+,No,No,Yes,5,3.5,5,3.5,http://www.ballardcenter.org,'+1 785-842-0729,"MO/KS territory; $9,532,000 rev"
+HIGH,4.4,BETTY RAE'S ICE CREAM LLC,Kansas City,Missouri,catering/food truck,20,40,,1,$10K-$20K,No,Yes,Yes,4.5,4.0,5,4.0,http://www.bettyraes.com,'+1 913-232-8167,KC metro
+HIGH,4.4,Chick N Max,Wichita,Kansas,catering/food truck,27,54,,1,$20K+,No,No,Yes,5,3.5,5,3.5,http://www.chicknmax.com,'+1 316-425-3991,MO/KS territory
+HIGH,4.4,ROMA BAKERY,Kansas City,Missouri,bakery/cafe,25,62,20612000,1,$20K+,No,Yes,Yes,5,4.0,4,4.0,http://www.romabakerykc.com,'+1 816-455-8888,"KC metro; $20,612,000 rev"
+HIGH,4.4,CORVINO,Kansas City,Missouri,full-service restaurant,40,180,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.corvino.com,'+1 816-832-4564,KC metro
+HIGH,4.4,Plaza Street Partners,Leawood,Kansas,full-service restaurant,16,72,,1,$20K+,No,Yes,Yes,5,4.0,5,3.0,http://www.plazastreetpartners.com,'+1 913-306-3229,KC metro
+HIGH,4.4,Heartland Waffles,Westwood,Kansas,bakery/cafe,12,30,12000000,1,$20K+,No,Yes,Yes,5,3.5,5,3.5,http://www.heartlandwaffles.com,'+1 866-571-0222,"KC metro; $12,000,000 rev"
+HIGH,4.3,"Industrial Sealing & Lubrication, inc.",Olathe,Kansas,food/bev general,26,52,9260000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.islgroup.com,'+1 913-334-5823,"KC metro; $9,260,000 rev"
+HIGH,4.3,Gram & Dun,Kansas City,Missouri,bar/brewery,25,88,3219000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.gramanddun.com,'+1 816-389-2900,"KC metro; $3,219,000 rev"
+HIGH,4.3,Crossroads Real Estate Group,Kansas City,Missouri,full-service restaurant,29,130,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.crossroads-kc.com,'+1 816-298-9998,KC metro
+HIGH,4.3,The KC Improv Company,Kansas City,Missouri,bar/brewery,12,42,6622000,2,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.kansascitycomedy.com,'+1 816-806-4000,"KC metro; $6,622,000 rev; 2 locations"
+HIGH,4.3,BRGR Kitchen + Bar,Kansas City,Missouri,bar/brewery,18,63,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.brgrkitchen.com,'+1 816-221-2747,KC metro
+HIGH,4.3,Radinas Coffeehouse And Roastery,Manhattan,Kansas,bakery/cafe,23,58,13285000,2,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.radinascoffee.com,'+1 785-537-2345,"MO/KS territory; $13,285,000 rev; 2 locations"
+HIGH,4.3,PT's Coffee Roasting Co.,Topeka,Kansas,bar/brewery,27,94,4111000,4,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.ptscoffee.com,'+1 785-862-5282,"MO/KS territory; $4,111,000 rev; 4 locations"
+HIGH,4.3,"Tilton, Thomas & Morgan, Inc.",Saint Joseph,Missouri,bar/brewery,13,46,17524000,1,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.ttminsurance.com,'+1 816-233-0266,"MO/KS territory; $17,524,000 rev"
+HIGH,4.3,"Acertus Consulting Group, LLC",Overland Park,Kansas,full-service restaurant,16,72,19391000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.acertusgroup.com,'+1 913-322-5150,"KC metro; $19,391,000 rev"
+HIGH,4.3,Grand Street Cafe,Kansas City,Missouri,bar/brewery,31,108,2394000,2,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.grandstreetkc.com,'+1 816-561-8000,"KC metro; $2,394,000 rev; 2 locations"
+HIGH,4.3,FireBoard,Kansas City,Missouri,bar/brewery,16,56,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.fireboard.com,'+1 816-945-2232,KC metro
+HIGH,4.3,Brooksider Sportsbar & Grill,Kansas City,Missouri,bar/brewery,19,66,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.brooksider.com,'+1 816-363-4070,KC metro
+HIGH,4.3,GROUNDHOUSE COFFEE INC.,Gardner,Kansas,full-service restaurant,16,72,14519000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.groundhousecoffee.com,'+1 913-856-5711,"KC metro; $14,519,000 rev"
+HIGH,4.3,Graves Foods,Jefferson City,Missouri,full-service restaurant,43,194,,1,$20K+,No,No,Yes,5,3.5,5,3.0,http://www.gravesfoods.com,'+1 573-893-3000,MO/KS territory
+HIGH,4.3,Bengelina Hospitality Group,St. Louis,Missouri,bakery/cafe,30,75,,1,$20K+,No,No,Yes,5,3.5,5,3.0,http://www.bengelina.com,'+1 314-932-1088,MO/KS territory
+HIGH,4.3,Love to Travel,Overland Park,Kansas,full-service restaurant,27,122,7724000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.lovetotravel.com,'+1 913-681-3688,"KC metro; $7,724,000 rev"
+HIGH,4.3,The Well,Kansas City,Missouri,bar/brewery,27,94,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.waldowell.com,'+1 816-361-1700,KC metro
+HIGH,4.3,Main Street Properties/Events,Grandview,Missouri,full-service restaurant,22,99,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.mainstreet-properties.com,'+1 269-344-3555,KC metro
+HIGH,4.3,PKC Commercial Construction,Lenexa,Kansas,full-service restaurant,19,86,9089000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.pkcc.com,'+1 913-782-4646,"KC metro; $9,089,000 rev"
+HIGH,4.3,Arthur Bryant's Barbeque,Kansas City,Missouri,catering/food truck,15,30,,2,$10K-$20K,No,Yes,Yes,4.5,4.0,5,3.5,http://www.arthurbryantsbbq.com,'+1 816-231-1123,KC metro; 2 locations
+HIGH,4.3,Trumark Homes,Blue Springs,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.markthebuilder.info,'+1 816-223-9540,KC metro
+HIGH,4.3,The Don Bosco Centers,Kansas City,Missouri,catering/food truck,13,26,,1,$10K-$20K,No,Yes,Yes,4.5,4.0,5,3.5,http://www.donbosco.org,'+1 816-427-0161,KC metro
+HIGH,4.3,The Golden Scoop,Overland Park,Kansas,bakery/cafe,21,52,,1,$20K+,No,Yes,Yes,5,4.0,4,3.5,http://www.thegoldenscoop.org,,KC metro
+HIGH,4.3,Hy-Vee Fast & Fresh,Topeka,Kansas,bakery/cafe,18,45,,1,$10K-$20K,Yes,No,Yes,4.0,5,4,4.5,http://www.hy-veefastandfresh.com,'+1 712-274-8063,Asian/ethnic cuisine; MO/KS territory
+HIGH,4.3,Ginger Sue’s,Lee's Summit,Missouri,full-service restaurant,24,108,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.gingersues.com,'+1 816-407-7707,KC metro
+HIGH,4.3,Brookside Barrio,Kansas City,Missouri,bar/brewery,15,52,,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.barriokc.com,'+1 816-293-9587,KC metro
+HIGH,4.3,Askinosie Chocolate,Springfield,Missouri,bar/brewery,14,49,21000000,1,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.askinosie.com,'+1 417-862-9900,"MO/KS territory; $21,000,000 rev"
+HIGH,4.3,"Baldwin Insurance Agency, llc",Kearney,Missouri,full-service restaurant,14,63,5503000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.baldwininsuranceagency.com,'+1 816-628-0092,"KC metro; $5,503,000 rev"
+HIGH,4.3,"Nationwide Transportation and Logistics Services, Inc.",Shawnee,Kansas,food/bev general,25,50,10442000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.nationwidetransportation.com,'+1 913-888-1685,"KC metro; $10,442,000 rev"
+HIGH,4.3,Spicin Foods,Kansas City,Kansas,food/bev general,27,54,,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.spicinfoods.com,'+1 800-568-8468,KC metro
+HIGH,4.3,The Wellington Senior Living,Liberty,Missouri,full-service restaurant,22,99,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.wellingtonseniorliving.com,'+1 816-722-3077,KC metro
+HIGH,4.3,Good Spirits Distilling,Olathe,Kansas,bar/brewery,19,66,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.gsdalcohol.com,'+1 913-361-8070,KC metro
+HIGH,4.3,TREXCON INC.,Saint Joseph,Missouri,full-service restaurant,20,90,12210000,1,$20K+,No,No,Yes,5,3.5,5,3.0,http://www.trexcon.com,'+1 816-232-8494,"MO/KS territory; $12,210,000 rev"
+HIGH,4.3,Thelma's Kitchen,Kansas City,Missouri,catering/food truck,14,28,,1,$10K-$20K,No,Yes,Yes,4.5,4.0,5,3.5,http://www.thelmaskitchen.org,'+1 816-298-9919,KC metro
+HIGH,4.3,WheatFields Bakery Café,Lawrence,Kansas,bakery/cafe,20,50,11538000,1,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.wheatfieldsbakery.com,'+1 785-841-5553,"MO/KS territory; $11,538,000 rev"
+HIGH,4.3,"eNSYNC Solutions, Inc",Overland Park,Kansas,bar/brewery,12,42,16706000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.ensyncsolutions.com,'+1 816-416-7500,"KC metro; $16,706,000 rev"
+HIGH,4.3,Moms Restaurant,Marceline,Missouri,full-service restaurant,18,81,30319000,1,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.momschico.com,'+1 530-893-3447,"MO/KS territory; $30,319,000 rev"
+HIGH,4.3,Campo Lindo,Lathrop,Missouri,full-service restaurant,43,194,,1,$20K+,No,No,Yes,5,3.5,5,3.0,http://www.campolindofarms.com,'+1 816-740-3625,MO/KS territory
+HIGH,4.3,Lon Lane's Inspired Occasions,Kansas City,Missouri,full-service restaurant,38,171,31070000,1,$20K+,No,Yes,Yes,5,4.0,5,2.5,http://www.inspiredoccasionskc.com,'+1 816-444-8372,"KC metro; $31,070,000 rev"
+HIGH,4.3,DO DROP INN,Lee's Summit,Missouri,full-service restaurant,29,130,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.dodropinnpueblo.com,'+1 719-542-0818,KC metro
+HIGH,4.3,Mr. Dell Foods,Kearney,Missouri,food/bev general,23,46,32852000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.lls.com,'+44 1780 471800,"KC metro; $32,852,000 rev"
+HIGH,4.3,KC Cattle Company,Weston,Missouri,full-service restaurant,13,58,,1,$20K+,No,Yes,Yes,5,4.0,4,3.5,http://www.kccattlecompany.com,,KC metro
+HIGH,4.3,Café Des Amis,Parkville,Missouri,bakery/cafe,38,95,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.cafedesamiskc.com,'+1 816-587-6767,KC metro
+HIGH,4.3,Scratch Gourmet Kitchen,Prairie Village,Kansas,bar/brewery,17,60,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.scratchgourmet.com,'+1 913-766-6021,KC metro
+HIGH,4.3,Complete Construction Service,Shawnee,Kansas,full-service restaurant,33,148,,1,$20K+,No,Yes,Yes,5,4.0,5,2.5,http://www.ccsconstructionservice.com,'+1 913-387-4796,KC metro
+HIGH,4.3,Page Communications,Kansas City,Missouri,full-service restaurant,13,58,6074000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.pagecomms.com,'+1 816-531-7243,"KC metro; $6,074,000 rev"
+HIGH,4.3,"Harmon Construction, Inc.",Olathe,Kansas,full-service restaurant,47,212,140000000,1,$20K+,No,Yes,Yes,5,4.0,5,2.5,http://www.harmonconst.com,'+1 913-962-5888,"KC metro; $140,000,000 rev"
+HIGH,4.3,SubTech,Lee's Summit,Missouri,bar/brewery,19,66,7215000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.ifgsupplies.com,'+1 913-232-4471,"KC metro; $7,215,000 rev"
+HIGH,4.3,The Mad Greek,Lawrence,Kansas,catering/food truck,17,34,,1,$10K-$20K,No,No,Yes,4.5,3.5,5,4.0,http://www.themadgreeklawrence.com,'+1 785-843-2441,MO/KS territory
+HIGH,4.3,Pegah's Family Restaurant,Lenexa,Kansas,bar/brewery,22,77,280000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.pegahs.com,'+1 913-258-8766,"KC metro; $280,000 rev"
+HIGH,4.3,Kansas City magazine,Overland Park,Kansas,full-service restaurant,37,166,,1,$20K+,No,Yes,Yes,5,4.0,5,2.5,http://www.kansascitymag.com,'+1 913-469-6700,KC metro
+HIGH,4.3,KBP Bells,Overland Park,Kansas,full-service restaurant,16,72,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.kbpbells.com,'+1 913-356-6300,KC metro
+HIGH,4.3,Tot Commercial Cleaning,Overland Park,Kansas,full-service restaurant,17,76,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.totcommercialcleaning.com,'+1 913-956-8037,KC metro
+HIGH,4.3,"SOMBRERO'S MEXICAN CANTINA, LLC",Shawnee,Kansas,full-service restaurant,23,104,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.sombreroskc.com,'+1 913-441-6700,KC metro
+HIGH,4.3,Urban Table,Prairie Village,Kansas,full-service restaurant,20,90,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.urbantablekc.com,'+1 913-948-6900,KC metro
+HIGH,4.3,Bissinger's Handcrafted Chocolatier,St. Louis,Missouri,bakery/cafe,44,110,11000000,3,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.bissingers.com,'+1 314-615-2400,"MO/KS territory; $11,000,000 rev; 3 locations"
+HIGH,4.3,Hog Wild BBQ,Derby,Kansas,catering/food truck,32,64,13608000,3,$20K+,No,No,Yes,5,3.5,5,3.0,http://www.hogwildpitbbq.com,'+1 712-256-5421,"MO/KS territory; $13,608,000 rev; 3 locations"
+HIGH,4.3,C3 | Creative Consumer Concepts,Overland Park,Kansas,full-service restaurant,42,189,5275000,1,$20K+,No,Yes,Yes,5,4.0,5,2.5,http://www.c3brandmarketing.com,'+1 913-491-6444,"KC metro; $5,275,000 rev"
+HIGH,4.3,Frozen & Refrigerated Buyer,Olathe,Kansas,food distributor/grocer,12,21,25411000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.frbuyer.com,'+1 913-481-5060,"KC metro; $25,411,000 rev"
+HIGH,4.3,Dean Realty Co.,Kansas City,Missouri,bar/brewery,19,66,,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.deanrealty.com,'+1 816-531-0800,KC metro
+HIGH,4.3,Tabco,Kansas City,Kansas,food/bev general,23,46,13428000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.tabcoinc.com,'+1 913-287-3333,"KC metro; $13,428,000 rev"
+HIGH,4.3,Rollstock™,Kansas City,Missouri,bar/brewery,21,74,40925000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.rollstock.com,'+1 800-954-6020,"KC metro; $40,925,000 rev"
+HIGH,4.3,The Restaurant at 1900,Mission,Kansas,full-service restaurant,13,58,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.therestaurantat1900.com,'+1 913-730-1900,KC metro
+HIGH,4.3,McGregor's Butcher and Bistro,Overland Park,Kansas,full-service restaurant,11,50,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.mcgregorsbutcherandbistro.com,'+1 913-766-0100,KC metro
+HIGH,4.3,Essig Family McDonald's,Reeds,Missouri,full-service restaurant,29,130,,1,$20K+,No,No,Yes,5,3.0,5,3.5,http://www.essigmcd.com,'+1 816-903-5105,MO/KS territory
+HIGH,4.3,Twisted Fresh,Kansas City,Missouri,catering/food truck,22,44,317000,1,$10K-$20K,No,Yes,Yes,4.5,4.0,5,3.5,http://www.twistedfresh.com,'+1 913-441-0444,"KC metro; $317,000 rev"
+HIGH,4.3,Reconciliation Services,Kansas City,Missouri,bakery/cafe,38,95,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.rs3101.org,'+1 816-931-4751,KC metro
+HIGH,4.3,Park Lanes Family Fun Center,Shawnee,Kansas,bar/brewery,21,74,9665000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.parklaneskc.com,'+1 913-248-1110,"KC metro; $9,665,000 rev"
+HIGH,4.3,"Trimac Industrial Systems, LLC",Kansas City,Kansas,food/bev general,14,28,41966000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.trimacsystems.com,'+1 913-441-0043,"KC metro; $41,966,000 rev"
+HIGH,4.3,Olive Cafe,Kansas City,Missouri,bakery/cafe,46,115,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.olivecafe.biz,'+1 858-488-1224,KC metro
+HIGH,4.3,Guaranteed Foods Inc,Shawnee,Kansas,food manufacturing,11,19,9221000,1,$20K+,No,Yes,Yes,5,3.0,5,3.5,http://www.guaranteedfoods.com,'+1 913-888-5000,"KC metro; $9,221,000 rev"
+HIGH,4.3,Smokehouse BBQ KC,Independence,Missouri,bar/brewery,31,108,,6,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.smokehousebbq.com,'+1 816-587-3337,KC metro; 6 locations
+HIGH,4.3,Olive Events + Catering,Kansas City,Kansas,bar/brewery,20,70,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.oliveeventscatering.com,'+1 913-721-3399,KC metro
+HIGH,4.3,Paragon Star,Lee's Summit,Missouri,full-service restaurant,15,68,15312000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.paragonstar.com,'+1 888-382-2831,"KC metro; $15,312,000 rev"
+HIGH,4.3,Frontier Steakhouse,Kansas City,Kansas,full-service restaurant,13,58,,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.frontiertampasteakhouse.com,'+1 813-621-3050,KC metro
+HIGH,4.3,"WESTAR FOODS, INC.",Overland Park,Kansas,full-service restaurant,26,117,8204000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.westarfoods.com,'+1 913-648-2148,"KC metro; $8,204,000 rev"
+HIGH,4.3,Paulo and Bill,Shawnee,Kansas,full-service restaurant,12,54,17369000,1,$20K+,No,Yes,Yes,5,3.5,5,3.0,http://www.pauloandbill.com,'+1 913-962-9900,"KC metro; $17,369,000 rev"
+HIGH,4.2,"The Williams-Carver Company, Inc.",Kansas City,Kansas,food/bev general,13,26,5000000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.williamscarver.com,'+1 913-236-4949,"KC metro; $5,000,000 rev"
+HIGH,4.2,Rainy Day Books,Fairway,Kansas,food/bev general,22,44,14113000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.rainydaybooks.com,'+1 913-384-3126,"KC metro; $14,113,000 rev"
+HIGH,4.2,Food Link USA,Overland Park,Kansas,food/bev general,16,32,26826000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.foodlinkusa.com,'+1 913-851-2985,"KC metro; $26,826,000 rev"
+HIGH,4.2,Outlaw Cigar Company Inc,Kansas City,Missouri,bar/brewery,14,49,7112000,3,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.outlawcigar.com,'+1 913-814-9000,"KC metro; $7,112,000 rev; 3 locations"
+HIGH,4.2,Operation BBQ Relief,Peculiar,Missouri,full-service restaurant,46,207,1892000,1,$20K+,No,No,Yes,5,3.5,5,2.5,http://www.operationbbqrelief.org,'+1 844-627-7353,"MO/KS territory; $1,892,000 rev"
+HIGH,4.2,Apex Restaurant and Market Solutions Inc.,Kansas City,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,Yes,5,4.0,4,3.0,,'+1 507-332-1989,KC metro
+HIGH,4.2,Just Like You Films,Kansas City,Missouri,food/bev general,13,26,7579000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.justlikeyoufilms.org,'+1 913-240-4269,"KC metro; $7,579,000 rev"
+HIGH,4.2,Martinous Produce Inc,Pittsburg,Kansas,food/bev general,13,26,8000000,1,$20K+,No,No,Yes,5,2.5,5,3.5,http://www.martinousproduce.com,'+1 800-776-7854,"MO/KS territory; $8,000,000 rev"
+HIGH,4.2,Timber Creek Bar & Grill,Louisburg,Kansas,bar/brewery,18,63,,3,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.timbercreeklouisburg.com,'+1 913-837-2600,KC metro; 3 locations
+HIGH,4.2,"Tiger Cool Express, LLC",Overland Park,Kansas,food/bev general,17,34,9349000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.tigercoolexpress.com,'+1 913-305-3510,"KC metro; $9,349,000 rev"
+HIGH,4.2,bluetree casework,Saint Joseph,Missouri,full-service restaurant,15,68,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.gobluetree.com,'+1 816-232-3060,MO/KS territory
+HIGH,4.2,Wein- und Sektkellerei Josef Drathen GmbH & Co. KG,Overland Park,Kansas,bar/brewery,11,38,,1,$10K-$20K,No,Yes,Yes,4.5,3.5,5,3.5,http://www.josef-drathen.de,'+49 6542 7000,KC metro
+HIGH,4.2,The Museum of Art + Light,Manhattan,Kansas,full-service restaurant,20,90,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.artlightmuseum.org,'+1 785-775-5444,MO/KS territory
+HIGH,4.2,Kaffe Haus,Higginsville,Missouri,full-service restaurant,14,63,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.kaffehaus.com,787-413-8413,MO/KS territory
+HIGH,4.2,Brew Haha Coffeehouse,Overland Park,Kansas,bar/brewery,22,77,,1,$20K+,No,Yes,Yes,5,3.5,4,3.5,http://www.brewhahacoffeehouse.com,'+1 913-904-2099,KC metro
+HIGH,4.2,"Healthy Meals, INC.",Riverside,Missouri,food manufacturing,14,24,6644000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.healthymealsinc.com,'+1 816-587-6325,"KC metro; $6,644,000 rev"
+HIGH,4.2,"IodiTech, Inc.",Kansas City,Missouri,food/bev general,20,40,9260000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.ioditech.com,'+1 816-421-0366,"KC metro; $9,260,000 rev"
+HIGH,4.2,"DanCo Systems, Inc.",Shawnee,Kansas,food/bev general,12,24,21095000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.dancosystems.com,'+1 913-962-0600,"KC metro; $21,095,000 rev"
+HIGH,4.2,"Klover Architects, Inc.",Lenexa,Kansas,full-service restaurant,36,162,17018000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.klover.net,'+1 913-649-8181,"KC metro; $17,018,000 rev"
+HIGH,4.2,Kain McArthur,Olathe,Kansas,food/bev general,18,36,28922000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.kainmcarthur.com,'+1 913-829-3700,"KC metro; $28,922,000 rev"
+HIGH,4.2,Morgans Restaurant,Odessa,Missouri,full-service restaurant,15,68,5733000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.morgansrest.net,'+1 610-769-4100,"MO/KS territory; $5,733,000 rev"
+HIGH,4.2,ERINS PUB,Independence,Missouri,bar/brewery,17,60,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.erinpubnorwood.com,'+1 610-461-0991,KC metro
+HIGH,4.2,The Fontaine Hotel,Kansas City,Missouri,bar/brewery,29,102,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.thefontainehotel.com,'+1 816-753-8800,KC metro
+HIGH,4.2,One Egg Group,Manhattan,Kansas,catering/food truck,18,36,,1,$10K-$20K,No,No,Yes,4.5,3.5,5,3.5,http://www.one-egg.com,'+1 785-537-1396,MO/KS territory
+HIGH,4.2,Burch Food Services,Sikeston,Missouri,full-service restaurant,40,180,13386000,1,$20K+,No,No,Yes,5,3.5,5,2.5,http://www.burchfood.com,'+1 731-627-0280,"MO/KS territory; $13,386,000 rev"
+HIGH,4.2,Prenger Foods,Bucklin,Missouri,bakery/cafe,33,82,12594000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.prengerfoods.com,'+1 660-258-2653,"MO/KS territory; $12,594,000 rev"
+HIGH,4.2,Grandma's Catering,Kansas City,Missouri,food/bev general,12,24,7324000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.grandmascatering.com,'+1 913-327-8663,"KC metro; $7,324,000 rev"
+HIGH,4.2,Feature Impact,Mission,Kansas,food/bev general,18,36,45780000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.familyfeatures.com,'+1 888-824-3337,"KC metro; $45,780,000 rev"
+HIGH,4.2,Reardon Machine,Saint Joseph,Missouri,food manufacturing,11,19,17774000,1,$20K+,No,No,Yes,5,2.5,5,3.5,http://www.reardonmachine.com,'+1 816-279-0906,"MO/KS territory; $17,774,000 rev"
+HIGH,4.2,Custom Control Mfr.,Overland Park,Kansas,food manufacturing,23,40,16045000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.customcontrolmfr.com,'+1 913-722-0343,"KC metro; $16,045,000 rev"
+HIGH,4.2,Maceli's Catering & Events,Lawrence,Kansas,catering/food truck,16,32,,1,$10K-$20K,No,No,Yes,4.5,3.5,5,3.5,http://www.macelis.com,'+1 785-331-2096,MO/KS territory
+HIGH,4.2,Powercat Sports Grill,Manhattan,Kansas,bar/brewery,24,84,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.powercatsportsgrill.com,'+1 785-320-4662,MO/KS territory
+HIGH,4.2,Kansas City Barbeque Society,Kansas City,Missouri,full-service restaurant,44,198,5564000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.kcbs.us,'+1 800-963-5227,"KC metro; $5,564,000 rev"
+HIGH,4.2,Trattoria Marcella,St. Louis,Missouri,full-service restaurant,12,54,21191000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.trattoriamarcella.com,'+1 314-352-7706,"MO/KS territory; $21,191,000 rev"
+HIGH,4.2,"LOUIE'S WINE DIVE KC, LLC",Kansas City,Missouri,full-service restaurant,34,153,3700000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.louieswinedive.com,'+1 913-469-4177,"KC metro; $3,700,000 rev"
+HIGH,4.2,"MC Power Companies, Inc.",Lee's Summit,Missouri,food/bev general,27,54,10000000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.mcpower.com,'+1 816-251-4700,"KC metro; $10,000,000 rev"
+HIGH,4.2,MSI GuaranteedWeather,Overland Park,Kansas,food/bev general,19,38,12833000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.guaranteedweather.com,'+1 844-864-8381,"KC metro; $12,833,000 rev"
+HIGH,4.2,"Olive Tree, LLC",Overland Park,Kansas,bar/brewery,31,108,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.olivetreekc.com,'+1 913-338-2700,KC metro
+HIGH,4.2,Missouri Organic Recycling,Kansas City,Missouri,food/bev general,26,52,5000000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.missouriorganic.com,'+1 816-483-0908,"KC metro; $5,000,000 rev"
+HIGH,4.2,"Show Me Ethanol, LLC",Carrollton,Missouri,bar/brewery,26,91,9699000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.smealcohol.com,'+1 660-542-6493,"MO/KS territory; $9,699,000 rev"
+HIGH,4.2,Brewlab,Overland Park,Kansas,bar/brewery,25,88,6589000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.brewlabkc.com,'+1 913-400-2343,"KC metro; $6,589,000 rev"
+HIGH,4.2,T-Shotz,Kansas City,Missouri,bar/brewery,22,77,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.tshotz.com,'+1 816-702-1320,KC metro
+HIGH,4.2,"Cyrus Hotel, Tribute Portfolio",Topeka,Kansas,full-service restaurant,15,68,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.cyrushotel.com,'+1 785-596-0500,MO/KS territory
+HIGH,4.2,BRKTHROUGH,Overland Park,Kansas,bar/brewery,30,105,,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.brkthrough.com,'+1 913-948-5800,KC metro
+HIGH,4.2,The Merc Co+op,Lawrence,Kansas,bakery/cafe,34,85,6215000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.themerc.coop,'+1 785-843-8544,"MO/KS territory; $6,215,000 rev"
+HIGH,4.2,Silo Modern Farmhouse,Lenexa,Kansas,full-service restaurant,26,117,,1,$20K+,No,Yes,Yes,5,4.0,4,3.0,http://www.silocanyonfarms.com,'+1 913-278-0910,KC metro
+HIGH,4.2,"NCES, Inc",Olathe,Kansas,food/bev general,24,48,11959000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.ncescatalog.com,'+1 877-623-7266,"KC metro; $11,959,000 rev"
+HIGH,4.2,The Majestic Restaurant,Kansas City,Missouri,bar/brewery,28,98,6650000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.majestickc.com,'+1 816-221-1888,"KC metro; $6,650,000 rev"
+HIGH,4.2,Falcon Lakes Golf Club,Basehor,Kansas,bar/brewery,30,105,2297000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.falconlakesgolf.com,'+1 913-724-4653,"KC metro; $2,297,000 rev"
+HIGH,4.2,Golden Boy Pies Inc,Overland Park,Kansas,bakery/cafe,12,30,,2,$10K-$20K,No,Yes,Yes,4.0,4.0,5,4.0,http://www.goldenboypies.com,'+1 913-384-6460,KC metro; 2 locations
+HIGH,4.2,TW Automation LC,Lenexa,Kansas,food/bev general,11,22,11400000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.tw-automation.com,'+1 913-303-9700,"KC metro; $11,400,000 rev"
+HIGH,4.2,Pack Leader USA,Grandview,Missouri,food/bev general,18,36,9000000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.packleaderusa.com,'+1 816-581-4330,"KC metro; $9,000,000 rev"
+HIGH,4.2,Kissner USA Holdings,Overland Park,Kansas,food/bev general,48,96,123000000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.kissner.com,'+1 800-434-8248,"KC metro; $123,000,000 rev"
+HIGH,4.2,Express Scale Parts,Lenexa,Kansas,food/bev general,14,28,6533000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.espmfg.com,'+1 913-441-4787,"KC metro; $6,533,000 rev"
+HIGH,4.2,Cross-Lines Community Outreach,Kansas City,Kansas,food/bev general,23,46,29073000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.cross-lines.org,'+1 913-281-3388,"KC metro; $29,073,000 rev"
+HIGH,4.2,Lawrence Beer Company,Lawrence,Kansas,bar/brewery,27,94,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.lawrencebeerco.com,'+1 785-856-0453,MO/KS territory
+HIGH,4.2,Blade & Timber Axe Throwing,Kansas City,Missouri,bar/brewery,25,88,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.bladeandtimber.com,'+1 816-343-8489,KC metro
+HIGH,4.2,Smith Electric Vehicles,Kansas City,Missouri,food/bev general,34,68,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.smithev.com,'+1 816-464-0508,KC metro
+HIGH,4.2,Nautical Manufacturing and Fulfillment,Lenexa,Kansas,food/bev general,37,74,7200000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.nautical-direct.com,'+1 913-261-9491,"KC metro; $7,200,000 rev"
+HIGH,4.2,Topsy's Popcorn,Kansas City,Missouri,food/bev general,20,40,14697000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.topsyspopcorn.com,'+1 816-523-5555,"KC metro; $14,697,000 rev"
+HIGH,4.2,Submarina California Subs,Topeka,Kansas,full-service restaurant,24,108,5152000,1,$20K+,No,No,Yes,5,3.5,4,3.5,http://www.submarina.com,'+1 760-471-3377,"MO/KS territory; $5,152,000 rev"
+HIGH,4.2,Chateau Avalon Hotel Spa and Bar,Kansas City,Kansas,bar/brewery,27,94,6736000,2,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.chateauavalonhotel.com,'+1 913-596-6000,"KC metro; $6,736,000 rev; 2 locations"
+HIGH,4.2,Midwest Cabinet Company,Ottawa,Kansas,full-service restaurant,38,171,5327000,1,$20K+,No,No,Yes,5,3.5,5,2.5,http://www.midwestcabinet.com,'+1 785-242-8181,"MO/KS territory; $5,327,000 rev"
+HIGH,4.2,Pizza 51,Kansas City,Missouri,full-service restaurant,18,81,8426000,2,$20K+,No,Yes,No,5,3.0,5,3.0,http://www.pizza51.com,'+1 816-531-1151,"KC metro; $8,426,000 rev; 2 locations"
+HIGH,4.2,Paradise Locker Meats,Trimble,Missouri,food/bev general,16,32,265000000,1,$20K+,No,No,Yes,5,2.5,5,3.5,http://www.paradisemeats.com,'+1 816-370-6328,"MO/KS territory; $265,000,000 rev"
+HIGH,4.2,So Long Saloon,Manhattan,Kansas,bar/brewery,20,70,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.solongsaloon.com,'+1 785-537-9292,MO/KS territory
+HIGH,4.2,Wilson Transportation Inc,Overland Park,Kansas,food/bev general,26,52,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.wilsontransportation.com,'+1 913-851-7900,KC metro
+HIGH,4.2,Scan American Corporation,Kansas City,Missouri,food manufacturing,18,32,13004000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.scanamcorp.com,'+1 816-880-9321,"KC metro; $13,004,000 rev"
+HIGH,4.2,Baird Realty Group,Lee's Summit,Missouri,food/bev general,16,32,16980000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.bairdrealtygrp.com,'+1 816-524-1923,"KC metro; $16,980,000 rev"
+HIGH,4.2,Austins Bar & Grill Olathe & Gardner KS,Olathe,Kansas,bar/brewery,45,158,,2,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.austinsbarandgrill.com,'+1 913-322-2337,KC metro; 2 locations
+HIGH,4.2,"JOE'S KANSAS CITY BAR-B-QUE, INC.",Kansas City,Kansas,bar/brewery,36,126,,4,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.joeskc.com,'+1 913-722-3366,KC metro; 4 locations
+HIGH,4.2,PowerPlay Entertainment Center,Kansas City,Missouri,bar/brewery,35,122,1075000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.powerplaykc.com,'+1 816-423-4447,"KC metro; $1,075,000 rev"
+HIGH,4.2,A Little BBQ Joint,Independence,Missouri,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,5,3.5,http://www.alittlebarbqjoint.com,'+1 816-252-2275,KC metro
+HIGH,4.2,Brass Rail Sports Bar & Grill,Kansas City,Missouri,bar/brewery,33,116,,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.brassrailkc.com,'+1 816-468-6100,KC metro
+HIGH,4.2,Spectragraphics Inc.,Lenexa,Kansas,food/bev general,25,50,4417000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.spectragraphics.com,'+1 913-888-6828,"KC metro; $4,417,000 rev"
+HIGH,4.2,Great Day Moving,Kansas City,Missouri,food/bev general,17,34,4780000,4,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.greatdaymoving.com,'+1 877-541-1015,"KC metro; $4,780,000 rev; 4 locations"
+HIGH,4.2,CUI Solutions,North Kansas City,Missouri,food/bev general,19,38,17165000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.cuisolutions.com,'+1 816-471-3602,"KC metro; $17,165,000 rev"
+HIGH,4.2,Hangar Cinema,Maryville,Missouri,full-service restaurant,14,63,10759000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.hangar1.com,'+1 660-582-7100,"MO/KS territory; $10,759,000 rev"
+HIGH,4.2,Westport Flea Market,Kansas City,Missouri,bar/brewery,15,52,1231000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.westportfleamarket.com,'+1 816-931-1986,"KC metro; $1,231,000 rev"
+HIGH,4.2,Winsteads,Overland Park,Kansas,full-service restaurant,34,153,12743000,6,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.winsteadssteakburger.com,'+1 816-753-2244,"KC metro; $12,743,000 rev; 6 locations"
+HIGH,4.2,Cancer Action,Overland Park,Kansas,food/bev general,12,24,12096000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.canceractionkc.org,'+1 913-642-8885,"KC metro; $12,096,000 rev"
+HIGH,4.2,Salvajor Company,Kansas City,Missouri,food/bev general,32,64,12434000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.salvajor.com,'+1 816-363-1030,"KC metro; $12,434,000 rev"
+HIGH,4.2,"Realm Construction, Inc.",Blue Springs,Missouri,food/bev general,26,52,22241000,1,$20K+,No,Yes,Yes,5,2.5,5,3.5,http://www.realmconstruction.com,'+1 502-581-9191,"KC metro; $22,241,000 rev"
+HIGH,4.2,Mainline Printing,Topeka,Kansas,bar/brewery,40,140,6163000,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.mainlineprinting.com,'+1 785-233-2338,"MO/KS territory; $6,163,000 rev"
+HIGH,4.2,United Country | Heritage Brokers & Auctioneers,Kansas City,Missouri,bar/brewery,17,60,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.buyheritage.com,'+1 877-318-0438,KC metro
+HIGH,4.2,KC Shepherd's Center,Kansas City,Missouri,food/bev general,12,24,6284000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.kcshepherdscenter.org,'+1 816-444-1121,"KC metro; $6,284,000 rev"
+HIGH,4.2,Bionic Burger,Wichita,Kansas,full-service restaurant,19,86,,1,$20K+,No,No,Yes,5,3.0,5,3.0,http://www.bionic-burger.com,'+1 316-945-3838,MO/KS territory
+HIGH,4.2,Westchester Village of Lenexa,Lenexa,Kansas,full-service restaurant,30,135,,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.westchestervillagelenexa.com,'+1 913-307-2000,KC metro
+HIGH,4.2,Bill Barr & Co.,Overland Park,Kansas,food/bev general,31,62,12822000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.billbarr.com,'+1 913-599-6668,"KC metro; $12,822,000 rev"
+HIGH,4.2,Foxx Equipment Company,Kansas City,Kansas,bar/brewery,43,150,23170000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.foxxequipment.com,'+1 816-421-3600,"KC metro; $23,170,000 rev"
+HIGH,4.2,Fulfillment Plus,North Kansas City,Missouri,food/bev general,14,28,10247000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.fulfillment-kc.com,'+1 816-221-4700,"KC metro; $10,247,000 rev"
+HIGH,4.2,Business by Promotion LLC,Lee's Summit,Missouri,food/bev general,13,26,10518000,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.businessbp.com,'+1 816-350-8811,"KC metro; $10,518,000 rev"
+HIGH,4.2,Highlander Bar & Grill,Grandview,Missouri,bar/brewery,15,52,,1,$20K+,No,Yes,Yes,5,3.0,5,3.0,http://www.highlanderbarandgrill.com,'+1 210-340-4577,KC metro
+HIGH,4.2,Blind Box BBQ,Shawnee,Kansas,full-service restaurant,15,68,,1,$20K+,No,Yes,Yes,5,4.0,4,3.0,,'+1 913-268-4227,KC metro
+HIGH,4.2,Coaches Bar & Grill,Overland Park,Kansas,bar/brewery,38,133,11901000,1,$20K+,No,Yes,Yes,5,3.5,5,2.5,http://www.coach-s.com,'+1 816-941-2286,"KC metro; $11,901,000 rev"
+HIGH,4.1,Ole Tyme Produce Inc,Saint Charles,Missouri,food distributor/grocer,44,77,3676000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.oletyme.com,'+1 314-436-5010,"MO/KS territory; $3,676,000 rev"
+HIGH,4.1,4 Hands Brewing Company,St. Louis,Missouri,bar/brewery,41,144,10000000,1,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.4handsbrewery.com,'+1 314-436-1559,"MO/KS territory; $10,000,000 rev"
+HIGH,4.1,The Olivia Collection,Lawrence,Kansas,bar/brewery,29,102,2030000,2,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.theoread.com,'+1 785-843-1200,"MO/KS territory; $2,030,000 rev; 2 locations"
+HIGH,4.1,Replay Lounge,Lawrence,Kansas,bar/brewery,11,38,11161000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.replaylounge.com,'+1 785-749-7676,"MO/KS territory; $11,161,000 rev"
+HIGH,4.1,Cellar Rat Wine Merchants,Kansas City,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.5,3.0,5,3.5,http://www.cellarratwine.com,'+1 816-221-9463,KC metro
+HIGH,4.1,Kansas City Allergy & Asthma,Overland Park,Kansas,food/bev general,29,58,23463000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.kcallergy.com,'+1 913-491-5501,"KC metro; $23,463,000 rev"
+HIGH,4.1,Metro Lutheran Ministry,Kansas City,Missouri,food/bev general,23,46,26558000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.mlmkc.org,'+1 816-931-0027,"KC metro; $26,558,000 rev"
+HIGH,4.1,"Standard Sheet Metal, Inc.",Kansas City,Missouri,food/bev general,37,74,15493000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.standardsheetmetal.com,'+1 816-221-5434,"KC metro; $15,493,000 rev"
+HIGH,4.1,"The Savage Group, LLC - McDonald's",Lenexa,Kansas,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.tsg-mcd.com,'+1 888-876-5254,KC metro
+HIGH,4.1,CTS Enterprises,Kansas City,Missouri,full-service restaurant,18,81,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.ctsenterprises.org,,KC metro
+HIGH,4.1,"SUMMIT RESTAURANT GROUP, LLC",Blue Springs,Missouri,full-service restaurant,29,130,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.srgonline.us,'+1 816-224-3336,KC metro
+HIGH,4.1,"KMO Burger, A Whataburger Franchisee",Kansas City,Kansas,full-service restaurant,26,117,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.kmoburger.com,,KC metro
+HIGH,4.1,St. Joseph (Mo.) Chamber of Commerce,Saint Joseph,Missouri,food manufacturing,12,21,8079000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.choosesaintjoseph.com,'+1 816-232-4461,"MO/KS territory; $8,079,000 rev"
+HIGH,4.1,Churchill Container,Lenexa,Kansas,food/bev general,46,92,41889000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.churchillcontainer.com,'+1 800-999-5518,"KC metro; $41,889,000 rev"
+HIGH,4.1,Free State Brewing Co,Lawrence,Kansas,bar/brewery,37,130,17545000,1,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.freestatebrewing.com,'+1 785-843-4555,"MO/KS territory; $17,545,000 rev"
+HIGH,4.1,Martys Bbq,Kansas City,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.martysbbq.com,'+1 252-243-5887,KC metro
+HIGH,4.1,Riega Foods LLC,Kansas City,Missouri,food/bev general,22,44,8506000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.riegafoods.com,'+1 816-744-8260,"KC metro; $8,506,000 rev"
+HIGH,4.1,Salsa Grill,Shawnee,Kansas,full-service restaurant,27,122,1962000,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.thesalsagrill.com,'+1 562-942-7072,"KC metro; $1,962,000 rev"
+HIGH,4.1,Farmers Bank of Kansas City,Overland Park,Kansas,food/bev general,49,98,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.farmersbankkc.com,'+1 833-325-2684,KC metro
+HIGH,4.1,Heartland International Ministries,Lenexa,Kansas,food/bev general,11,22,7462000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.heartforhim.org,'+1 913-432-1446,"KC metro; $7,462,000 rev"
+HIGH,4.1,VS Services LLC,Kansas City,Missouri,food/bev general,17,34,,1,$10K-$20K,No,Yes,Yes,4.5,3.0,5,3.5,http://www.vsservices.com,'+1 816-249-2755,KC metro
+HIGH,4.1,BioStar Renewables,Overland Park,Kansas,food/bev general,21,42,17396000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.biostarrenewables.com,'+1 913-369-4100,"KC metro; $17,396,000 rev"
+HIGH,4.1,Eldridge Hotel,Lawrence,Kansas,bar/brewery,30,105,,1,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.eldridgehotel.com,'+1 785-749-5011,MO/KS territory
+HIGH,4.1,Saint Joe Distributing,Saint Joseph,Missouri,food/bev general,33,66,17165000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.saintjoedist.com,'+1 800-892-9072,"MO/KS territory; $17,165,000 rev"
+HIGH,4.1,W. VinZant Restaurants,Kansas City,Missouri,full-service restaurant,15,68,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.wvinzantrestaurants.com,,KC metro
+HIGH,4.1,"715, L.L.C.",Lawrence,Kansas,bar/brewery,23,80,12472000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.715mass.com,'+1 785-856-7150,"MO/KS territory; $12,472,000 rev"
+HIGH,4.1,KBP Inspired,Leawood,Kansas,full-service restaurant,22,99,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,,'+1 913-356-6300,KC metro
+HIGH,4.1,CocoBolos,Overland Park,Kansas,full-service restaurant,13,58,2694000,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.cocoboloskc.com,'+1 913-766-5000,"KC metro; $2,694,000 rev"
+HIGH,4.1,Kansas State University Olathe,Olathe,Kansas,food/bev general,26,52,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://olathe.k-state.edu,'+1 785-532-2535,KC metro
+HIGH,4.1,Lidia’s,Kansas City,Missouri,full-service restaurant,11,50,546000,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.lidias-kc.com,'+1 816-221-0805,"KC metro; $546,000 rev"
+HIGH,4.1,BARcelona Tapas,Clayton,Missouri,bar/brewery,41,144,,1,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.barcelonatapas.com,'+1 314-899-9600,MO/KS territory
+HIGH,4.1,Konrad's Kitchen and Tap House,Lee's Summit,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.5,3.5,5,3.0,http://www.konradskc.com,'+1 816-525-1871,KC metro
+HIGH,4.1,Siggins,North Kansas City,Missouri,food/bev general,41,82,2512000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.siggins.com,'+1 800-383-3218,"KC metro; $2,512,000 rev"
+HIGH,4.1,Kansas Sampler,Lenexa,Kansas,food/bev general,24,48,9042000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.kansassampler.org,'+1 620-585-2374,"KC metro; $9,042,000 rev"
+HIGH,4.1,Warner Robinson LLC,Kansas City,Missouri,food manufacturing,12,21,21106000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.warner-robinson.com,'+1 800-792-4861,"KC metro; $21,106,000 rev"
+HIGH,4.1,D. Thomas & Associates,Kansas City,Missouri,food/bev general,47,94,34926000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.dthos.com,'+1 816-361-5522,"KC metro; $34,926,000 rev"
+HIGH,4.1,Tequila Harrys Inc,Lee's Summit,Missouri,full-service restaurant,16,72,250000,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.tequilaharrys.com,'+1 913-469-6644,"KC metro; $250,000 rev"
+HIGH,4.1,ARY Inc.,Overland Park,Kansas,food manufacturing,14,24,10000000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.vacmasterfresh.com,'+1 800-821-7849,"KC metro; $10,000,000 rev"
+HIGH,4.1,Sabor Brasil,Overland Park,Kansas,bar/brewery,18,63,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.tasteofbrazilkc.com,'+1 816-527-0400,KC metro
+HIGH,4.1,El Charo,Pittsburg,Kansas,bar/brewery,23,80,3525000,2,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.elcharrocafe.com,'+1 520-622-1922,"MO/KS territory; $3,525,000 rev; 2 locations"
+HIGH,4.1,Tom's Town Distilling Co.,Kansas City,Missouri,bar/brewery,24,84,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.toms-town.com,,KC metro
+HIGH,4.1,Kansas City Community Gardens (KCCG),Kansas City,Missouri,food/bev general,27,54,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.kccg.org,'+1 816-931-3877,KC metro
+HIGH,4.1,"TTG, Inc.",Higginsville,Missouri,food manufacturing,26,46,6000000,1,$20K+,No,No,Yes,5,2.0,5,3.5,http://www.ttgtech.net,'+1 660-584-2448,"MO/KS territory; $6,000,000 rev"
+HIGH,4.1,The Farmer's House,Weston,Missouri,food/bev general,47,94,823000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.thefarmershouse.org,'+1 816-640-3276,"KC metro; $823,000 rev"
+HIGH,4.1,Taco Lucha,Manhattan,Kansas,bar/brewery,24,84,,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.tacoluchamanhattan.com,'+1 785-320-5255,MO/KS territory
+HIGH,4.1,Burnt End BBQ,Overland Park,Kansas,full-service restaurant,16,72,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.burntendbbqkc.com,'+1 913-451-8888,KC metro
+HIGH,4.1,"Westin Trading, Inc.",St. Louis,Missouri,food distributor/grocer,19,33,14219000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.westintrading.com,'+1 314-993-6150,"MO/KS territory; $14,219,000 rev"
+HIGH,4.1,"F & A Food Sales Co., Inc.",Concordia,Kansas,food distributor/grocer,38,66,15361000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.fafoodsales.com,'+1 785-243-2301,"MO/KS territory; $15,361,000 rev"
+HIGH,4.1,Ivanhoe Neighborhood Council,Kansas City,Missouri,food/bev general,17,34,14099000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.incthrives.org,'+1 816-921-6611,"KC metro; $14,099,000 rev"
+HIGH,4.1,Taco Republic,Kansas City,Kansas,bar/brewery,13,46,3160000,1,$10K-$20K,No,Yes,Yes,4.5,3.5,5,3.0,http://www.eattacorepublic.com,'+1 913-262-8226,"KC metro; $3,160,000 rev"
+HIGH,4.1,Alden,Kansas City,Missouri,food/bev general,29,58,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.alden.tech,'+1 949-942-5336,KC metro
+HIGH,4.1,"The Raphael Hotel, Autograph Collection",Kansas City,Missouri,full-service restaurant,16,72,4703000,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.raphaelkc.com,,"KC metro; $4,703,000 rev"
+HIGH,4.1,Vertical Cannabis,Saint Joseph,Missouri,food/bev general,27,54,,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.vertical-cannabis.com,'+1 816-396-8573,MO/KS territory
+HIGH,4.1,The Rub Bar-B-Que,Olathe,Kansas,bar/brewery,11,38,3600000,1,$10K-$20K,No,Yes,Yes,4.5,3.5,5,3.0,http://www.therubbarbque.com,'+1 913-894-1820,"KC metro; $3,600,000 rev"
+HIGH,4.1,SWEET TEE'S COFFEE SHOP,Olathe,Kansas,catering/food truck,10,20,,1,$5K-$10K,No,Yes,Yes,3.5,4.0,5,4.5,http://www.sweetteescoffeeshop.com,'+1 913-544-9705,KC metro
+HIGH,4.1,"SES, Inc.",Lenexa,Kansas,food/bev general,21,42,21658000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.ses-corp.com,'+1 913-307-0046,"KC metro; $21,658,000 rev"
+HIGH,4.1,Midwest Metalcraft,Windsor,Missouri,food manufacturing,27,47,18570000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.4mmc.com,'+1 660-647-3167,"MO/KS territory; $18,570,000 rev"
+HIGH,4.1,"Stuppy Greenhouse, Inc",North Kansas City,Missouri,food/bev general,41,82,28000000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.stuppy.com,'+1 800-733-5025,"KC metro; $28,000,000 rev"
+HIGH,4.1,CGR USA - ISC,North Kansas City,Missouri,food manufacturing,24,42,15796000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.isckc.com,'+1 816-741-6073,"KC metro; $15,796,000 rev"
+HIGH,4.1,"Grandma Hoerner's Foods, Inc",Alma,Kansas,food/bev general,25,50,4476000,1,$20K+,No,No,Yes,5,2.0,5,3.5,http://www.grandmahoerners.com,'+1 785-765-2300,"MO/KS territory; $4,476,000 rev"
+HIGH,4.1,VersaFlex,Kansas City,Kansas,food/bev general,49,98,62400000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.versaflex.com,'+1 913-321-9000,"KC metro; $62,400,000 rev"
+HIGH,4.1,Las Carretas,Lexington,Missouri,bar/brewery,32,112,,3,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.lascarretas.com,'+60 3-5637 3058,MO/KS territory; 3 locations
+HIGH,4.1,"Zest Restaurant, LLC",Leawood,Kansas,food manufacturing,44,77,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.zest.ae,043685460,KC metro
+HIGH,4.1,Salty Iguana,Prairie Village,Kansas,full-service restaurant,20,90,23228000,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.saltyiguana.com,'+1 913-381-3888,"KC metro; $23,228,000 rev"
+HIGH,4.1,FANESTIL MEATS,Emporia,Kansas,food/bev general,22,44,17223000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.fanestils.com,'+1 620-342-6354,"MO/KS territory; $17,223,000 rev"
+HIGH,4.1,Food Entrepreneur,Kansas City,Missouri,catering/food truck,22,44,,1,$10K-$20K,No,Yes,Yes,4.5,4.0,4,3.5,http://www.foodbizcon.com,,KC metro
+HIGH,4.1,St. Joe Petroleum Co.,Saint Joseph,Missouri,food/bev general,30,60,5119000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.stjoepetroleum.com,'+1 816-279-0770,"MO/KS territory; $5,119,000 rev"
+HIGH,4.1,"His & Her Fitness, LLC",Leawood,Kansas,food/bev general,13,26,5500000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.hisandherfitness.net,'+1 913-206-7645,"KC metro; $5,500,000 rev"
+HIGH,4.1,Fountain City Logistics,Overland Park,Kansas,food/bev general,31,62,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.fountaincitylogistics.com,'+1 877-811-0854,KC metro
+HIGH,4.1,Merchants Pub & Plate,Lawrence,Kansas,bar/brewery,21,74,,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.merchantsonmass.com,'+1 785-843-4111,MO/KS territory
+HIGH,4.1,J. Rieger & Co.,Kansas City,Missouri,bar/brewery,50,175,,1,$20K+,No,Yes,Yes,5,3.5,5,2.0,http://www.jriegerco.com,'+1 816-807-3867,KC metro
+HIGH,4.1,Select Sites LLC,Kansas City,Missouri,full-service restaurant,14,63,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.selectsitesllc.com,,KC metro
+HIGH,4.1,Hereford House - Shawnee,Shawnee,Kansas,bar/brewery,37,130,17895000,5,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.herefordhouse.com,'+1 816-842-8718,"KC metro; $17,895,000 rev; 5 locations"
+HIGH,4.1,Village Interiors,Kansas City,Missouri,food/bev general,11,22,12187000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.villageinteriors.com,'+1 775-831-8868,"KC metro; $12,187,000 rev"
+HIGH,4.1,Hotel Kansas City - in the Unbound Collection by Hyatt,Kansas City,Missouri,bar/brewery,40,140,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.hotelkc.com,'+1 816-685-1228,KC metro
+HIGH,4.1,JOHNNY KAW'S INC,Manhattan,Kansas,bar/brewery,21,74,,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.johnnykaws.com,'+1 785-301-8316,MO/KS territory
+HIGH,4.1,St. Agnes Catholic School,Roeland Park,Kansas,food/bev general,17,34,64115000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.stagneskc.org,'+1 913-262-2400,"KC metro; $64,115,000 rev"
+HIGH,4.1,Riverwood Winery,Rushville,Missouri,bar/brewery,12,42,5682000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.riverwoodwinery.com,'+1 816-579-9797,"MO/KS territory; $5,682,000 rev"
+HIGH,4.1,Tannin Wine Bar and Kitchen,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.5,3.5,5,3.0,http://www.tanninwinebar.com,'+1 816-842-2660,KC metro
+HIGH,4.1,Pawsperity,Kansas City,Missouri,food/bev general,27,54,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.pawsperity.org,'+1 816-214-5376,KC metro
+HIGH,4.1,Lean Kitchen Co,Saint Joseph,Missouri,catering/food truck,47,94,,1,$20K+,No,No,Yes,5,3.5,4,3.0,http://www.leankitchenco.com,,MO/KS territory
+HIGH,4.1,District. Pour House + Kitchen,Kansas City,Missouri,full-service restaurant,14,63,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.districtpourhousekc.com,'+1 816-333-0799,KC metro
+HIGH,4.1,Center of Grace,Olathe,Kansas,food/bev general,33,66,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.centerofgrace.center,'+1 913-764-1353,KC metro
+HIGH,4.1,Wells Blue Bunny Dairy Pdts,Kansas City,Missouri,food/bev general,45,90,70000000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.bluebunny.com,'+1 800-942-3800,"KC metro; $70,000,000 rev"
+HIGH,4.1,Longboards Wraps & Bowls,Kansas City,Missouri,full-service restaurant,12,54,3363000,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.longboardswrapsandbowls.com,,"KC metro; $3,363,000 rev"
+HIGH,4.1,Los Cabos Mexican Grill and Cantina,Independence,Missouri,full-service restaurant,13,58,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.loscabosok.com,'+1 918-298-2226,KC metro
+HIGH,4.1,FlexPro Meals,Kansas City,Missouri,food manufacturing,33,58,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.flexpromeals.com,'+1 816-888-3539,KC metro
+HIGH,4.1,"DataSource, Inc.",Kansas City,Missouri,full-service restaurant,50,225,6300000,1,$20K+,No,Yes,Yes,5,4.0,5,1.5,http://www.datasourceinc.com,'+1 703-748-7180,"KC metro; $6,300,000 rev"
+HIGH,4.1,Canyon Cafe LLC,Kansas City,Missouri,bakery/cafe,32,80,17505000,3,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.canyoncafe.com,'+1 602-954-7100,"KC metro; $17,505,000 rev; 3 locations"
+HIGH,4.1,Ophelias Restaurant,Independence,Missouri,full-service restaurant,12,54,,2,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.opheliasind.com,'+1 816-461-4525,KC metro; 2 locations
+HIGH,4.1,Sassafras Marketing,Lenexa,Kansas,food/bev general,28,56,,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.sassafrasmarketing.com,'+1 404-822-7971,KC metro
+HIGH,4.1,Pyramid Pizza,Oak Grove,Missouri,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.pyramidpizzalawrence.com,'+1 785-842-3232,KC metro
+HIGH,4.1,CASCONES,Kansas City,Missouri,full-service restaurant,21,94,10000000,2,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.cascones.com,'+1 816-454-7977,"KC metro; $10,000,000 rev; 2 locations"
+HIGH,4.1,Falcon Ridge Golf Course,Lenexa,Kansas,other/non-food,47,70,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.falconridgegolfclub.com,'+1 913-393-4653,KC metro
+HIGH,4.1,"Vanguard Shrink Films, Inc.",Lenexa,Kansas,food/bev general,13,26,10000000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.vanguardshrinkfilms.com,'+1 800-772-1187,"KC metro; $10,000,000 rev"
+HIGH,4.1,Somerset Ridge Vineyard and Winery,Paola,Kansas,bar/brewery,14,49,,1,$10K-$20K,No,No,Yes,4.5,3.0,5,3.5,http://www.somersetridge.com,'+1 913-491-0038,MO/KS territory
+HIGH,4.1,Margarita's,Kansas City,Missouri,full-service restaurant,12,54,2446000,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.margaritasamigos.com,'+1 816-468-0337,"KC metro; $2,446,000 rev"
+HIGH,4.1,Sushi Gin,Overland Park,Kansas,full-service restaurant,13,58,,1,$20K+,Yes,Yes,No,5,4.5,2,4.0,,,Asian/ethnic cuisine; KC metro
+HIGH,4.1,Casino White Cloud,White Cloud,Kansas,full-service restaurant,40,180,,1,$20K+,No,No,Yes,5,3.0,5,2.5,http://www.casinowhitecloud.org,'+1 877-652-6115,MO/KS territory
+HIGH,4.1,Los Corrals,Kansas City,Missouri,full-service restaurant,18,81,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.loscorrals.com,'+1 816-421-9440,KC metro
+HIGH,4.1,Waldo Pizza,Lee's Summit,Missouri,bar/brewery,36,126,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.ordersummitpizza.com,'+1 816-875-2121,KC metro
+HIGH,4.1,Social Suppers,Riverside,Missouri,food/bev general,13,26,11945000,3,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.socialsuppers.com,'+1 816-505-1220,"KC metro; $11,945,000 rev; 3 locations"
+HIGH,4.1,Omega Door and Hardware,Kansas City,Kansas,food/bev general,21,42,13901000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.omega-kc.com,'+1 913-647-3667,"KC metro; $13,901,000 rev"
+HIGH,4.1,Quality Air Solutions,Lenexa,Kansas,food distributor/grocer,25,44,7306000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.qualityairsolutions.net,'+1 913-735-2920,"KC metro; $7,306,000 rev"
+HIGH,4.1,Los Tules,Kansas City,Missouri,full-service restaurant,28,126,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.los-tuleskc.com,'+1 816-421-9229,KC metro
+HIGH,4.1,eShipping Distribution Services,Riverside,Missouri,food/bev general,36,72,,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.eshippingdistributionservices.com,'+1 312-361-0066,KC metro
+HIGH,4.1,Kansas Wheat,Manhattan,Kansas,food/bev general,18,36,10288000,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.kswheat.com,'+1 785-539-0255,"MO/KS territory; $10,288,000 rev"
+HIGH,4.1,Great Plains Analytical Laboratory - GPAL,Kansas City,Missouri,food manufacturing,30,52,6098000,1,$20K+,No,Yes,Yes,5,3.0,5,2.5,http://www.gpalab.com,'+1 816-891-7337,"KC metro; $6,098,000 rev"
+HIGH,4.1,Iron Horse Bar and Grill,Leawood,Kansas,bar/brewery,44,154,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.ironhorsegrillbar.com,,KC metro
+HIGH,4.1,Nurture KC,Kansas City,Missouri,food/bev general,11,22,30436000,1,$20K+,No,Yes,Yes,5,2.5,5,3.0,http://www.nurturekc.org,'+1 816-283-6242,"KC metro; $30,436,000 rev"
+HIGH,4.1,Garment House,Kansas City,Missouri,full-service restaurant,21,94,,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.garmenthousekc.com,,KC metro
+HIGH,4.1,Six Mile Chop House - Tavern,Lawrence,Kansas,bar/brewery,20,70,,1,$20K+,No,No,Yes,5,2.5,5,3.0,http://www.6milechophouse.com,'+1 785-856-6453,MO/KS territory
+HIGH,4.1,Piropos Restaurant,Kansas City,Missouri,full-service restaurant,12,54,13906000,1,$20K+,No,Yes,Yes,5,3.5,4,3.0,http://www.piroposkc.com,'+1 816-741-3600,"KC metro; $13,906,000 rev"
+HIGH,4.1,The Stanley Historic Event Space,Lee's Summit,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,5,3.0,http://www.thestanleyeventspace.com,'+1 816-600-2065,KC metro
+HIGH,4.0,Metabolic Meals LLC,St. Louis,Missouri,food manufacturing,31,54,4025000,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.mymetabolicmeals.com,'+1 855-355-6325,"MO/KS territory; $4,025,000 rev"
+HIGH,4.0,Latitude 39,Kansas City,Missouri,bar/brewery,18,63,,1,$20K+,No,Yes,Yes,5,3.0,4,3.0,,'+1 804-226-4300,KC metro
+HIGH,4.0,Connection Point Church,Raytown,Missouri,food/bev general,46,92,,4,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.connectionpoint.tv,'+1 816-353-1994,KC metro; 4 locations
+HIGH,4.0,Nell Hill's,Kansas City,Missouri,food/bev general,31,62,,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.nellhills.com,'+1 816-746-4320,KC metro
+HIGH,4.0,"Interactive Design, Inc.",Lenexa,Kansas,food/bev general,31,62,27926000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.interactivedesign.com,'+1 913-492-0495,"KC metro; $27,926,000 rev"
+HIGH,4.0,Advanced Sports & Family Chiropractic & Acupuncture,Overland Park,Kansas,food/bev general,34,68,7252000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.asfca.com,'+1 816-425-7015,"KC metro; $7,252,000 rev"
+HIGH,4.0,New Growth,Appleton City,Missouri,food/bev general,25,50,,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.newgrowthmo.org,'+1 417-282-5936,MO/KS territory
+HIGH,4.0,WorkForge,Kansas City,Missouri,food manufacturing,37,65,,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.workforge.com,'+1 816-744-5565,KC metro
+HIGH,4.0,"Crosswind Industries, Inc.",Parkville,Missouri,food/bev general,29,58,25000000,1,$20K+,No,Yes,Yes,5,2.5,4,3.5,,'+1 816-891-7979,"KC metro; $25,000,000 rev"
+HIGH,4.0,Katie's Pizza,Clayton,Missouri,food/bev general,48,96,,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.johngehrig.ch,'+1 312-725-6466,MO/KS territory
+HIGH,4.0,Hammons Black Walnuts,Stockton,Missouri,food/bev general,24,48,20000000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.black-walnuts.com,'+1 417-276-5181,"MO/KS territory; $20,000,000 rev"
+HIGH,4.0,JFS of Greater Kansas City (Jewish Family Services),Overland Park,Kansas,food/bev general,30,60,35272000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.jfskc.org,'+1 913-327-8250,"KC metro; $35,272,000 rev"
+HIGH,4.0,Commercial Baking,Kansas City,Missouri,bakery/cafe,18,45,,1,$10K-$20K,No,Yes,Yes,4.0,4.0,4,4.0,http://www.commercialbaking.com,,KC metro
+HIGH,4.0,Shayashone,Cameron,Missouri,food/bev general,39,78,,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.shayashone.com,'+251 93 000 0563,MO/KS territory
+HIGH,4.0,SAFE Bar Network,Kansas City,Missouri,bar/brewery,11,38,,1,$10K-$20K,No,Yes,Yes,4.5,3.0,5,3.0,http://www.safebarnetwork.org,'+1 816-237-8628,KC metro
+HIGH,4.0,Northland Shepherd's Center,Kansas City,Missouri,bakery/cafe,14,35,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.5,http://www.northlandsc.org,'+1 816-452-4536,KC metro
+HIGH,4.0,Glory Days Pizza,Topeka,Kansas,full-service restaurant,28,126,17659000,1,$20K+,No,No,Yes,5,3.0,4,3.0,http://www.glorydayspizza.com,'+1 785-266-0373,"MO/KS territory; $17,659,000 rev"
+HIGH,4.0,Kansas City Catering,Kansas City,Kansas,catering/food truck,11,22,,1,$5K-$10K,No,Yes,Yes,3.5,4.0,5,4.0,http://www.kansascitycatering.com,'+1 913-831-0764,KC metro
+HIGH,4.0,BCI,Sabetha,Kansas,food/bev general,30,60,20000000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.bachelorcontrols.com,'+1 785-284-3482,"MO/KS territory; $20,000,000 rev"
+HIGH,4.0,Central Bag Company,Leavenworth,Kansas,food/bev general,45,90,,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.centralbagcompany.com,'+1 913-250-0325,MO/KS territory
+HIGH,4.0,Captain's Sports Lounge,Lee's Summit,Missouri,bar/brewery,29,102,,1,$20K+,No,Yes,Yes,5,3.0,4,3.0,http://www.captainskc.com,,KC metro
+HIGH,4.0,Aladdin Hotel and Spa,Kansas City,Missouri,food/bev general,39,78,23072000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.hialaddin.com,'+1 816-421-8888,"KC metro; $23,072,000 rev"
+HIGH,4.0,Burg & Barrel,Overland Park,Kansas,bar/brewery,35,122,,1,$20K+,No,Yes,Yes,5,3.5,4,2.5,http://www.burgandbarrel.com,,KC metro
+HIGH,4.0,Grand Mere Restaurant Group,Overland Park,Kansas,full-service restaurant,51,230,,1,$20K+,No,Yes,Yes,5,3.5,5,1.5,http://www.gmrestaurantgroup.com,'+1 913-383-8177,KC metro
+HIGH,4.0,TK Architects International,Kansas City,Missouri,food/bev general,45,90,48086000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.tkarch.com,'+1 816-842-7552,"KC metro; $48,086,000 rev"
+HIGH,4.0,Flint Oak,Fall River,Kansas,food/bev general,15,30,13912000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.flintoak.com,'+1 620-658-4401,"MO/KS territory; $13,912,000 rev"
+HIGH,4.0,Brookridge Golf Club,Overland Park,Kansas,full-service restaurant,50,225,1043000,1,$20K+,No,Yes,Yes,5,3.5,5,1.5,http://www.brookridgegolfclub.com,'+1 913-648-1600,"KC metro; $1,043,000 rev"
+HIGH,4.0,Unicorn Theatre,Kansas City,Missouri,bar/brewery,14,49,12012000,1,$20K+,No,Yes,No,5,2.0,5,3.0,http://www.unicorntheatre.org,'+1 816-531-7529,"KC metro; $12,012,000 rev"
+HIGH,4.0,"Wolf Construction, Inc.",Topeka,Kansas,food/bev general,47,94,9131000,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.wolfks.com,'+1 888-508-9653,"MO/KS territory; $9,131,000 rev"
+HIGH,4.0,Gunter Pest & Lawn,Kansas City,Missouri,other/non-food,14,21,1596000,5,$20K+,No,Yes,No,5,1.5,5,3.5,http://www.gunterpest.com,'+1 816-444-2847,"KC metro; $1,596,000 rev; 5 locations"
+HIGH,4.0,Look East,Gladstone,Missouri,food/bev general,35,70,5300000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.lookeast.com,'+1 816-880-0204,"KC metro; $5,300,000 rev"
+HIGH,4.0,23RD STREET BREWERY,Lawrence,Kansas,bar/brewery,49,172,3054000,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.brew23.com,'+1 785-856-2337,"MO/KS territory; $3,054,000 rev"
+HIGH,4.0,ReHope,Harrisonville,Missouri,food/bev general,25,50,,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.rehope.org,'+1 816-865-1808,MO/KS territory
+HIGH,4.0,Il Lazzarone,Saint Joseph,Missouri,full-service restaurant,14,63,,1,$20K+,No,No,No,5,2.0,5,3.0,http://www.illazzarone.org,'+1 816-541-3695,MO/KS territory
+HIGH,4.0,American Royal Association,Kansas City,Missouri,food/bev general,48,96,6301000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.americanroyal.com,'+1 816-221-9800,"KC metro; $6,301,000 rev"
+HIGH,4.0,"SCD Probiotics, LLC",Kansas City,Missouri,food/bev general,34,68,12000000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.scdprobiotics.com,'+1 913-541-9299,"KC metro; $12,000,000 rev"
+HIGH,4.0,Agriculture Future of America,Kansas City,Missouri,food/bev general,45,90,3900000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.agfuture.org,'+1 816-472-4232,"KC metro; $3,900,000 rev"
+HIGH,4.0,Europa A Cafe,Kansas City,Missouri,bakery/cafe,24,60,,7,$20K+,No,Yes,Yes,5,3.5,3,3.5,,'+1 212-869-9830,KC metro; 7 locations
+HIGH,4.0,BOBS GRILL,Pittsburg,Kansas,full-service restaurant,28,126,,1,$20K+,No,No,No,5,2.0,5,3.0,http://www.bobsgrill.org,'+1 620-232-9738,MO/KS territory
+HIGH,4.0,New Frontier Technologies,Overland Park,Kansas,food/bev general,41,82,13704000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.newfrontiertech.com,'+1 816-842-0786,"KC metro; $13,704,000 rev"
+HIGH,4.0,RAOULS,Shawnee,Kansas,bar/brewery,21,74,18729000,1,$20K+,No,Yes,No,5,2.0,5,3.0,http://www.raouls.com,'+1 212-966-3518,"KC metro; $18,729,000 rev"
+HIGH,4.0,Worldwide Beverage Group,Lenexa,Kansas,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.5,3.0,5,3.0,http://www.worldwidebeveragegroup.com,'+1 913-859-9925,KC metro
+HIGH,4.0,Portia's Cafe,Kansas City,Missouri,bakery/cafe,11,28,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.5,http://www.portiascafe.com,'+1 614-928-3252,KC metro
+HIGH,4.0,Custom Trailer Pros,Overland Park,Kansas,catering/food truck,11,22,,1,$5K-$10K,No,Yes,Yes,3.5,4.0,5,4.0,http://www.customtrailerpros.com,'+1 800-859-5405,KC metro
+HIGH,4.0,Bombay Canada,Kansas City,Kansas,bar/brewery,14,49,,1,$10K-$20K,No,Yes,Yes,4.5,3.5,4,3.5,http://www.bombay.com,,KC metro
+HIGH,4.0,"Humphrey, Farrington & McClain, P.C.",Independence,Missouri,food/bev general,39,78,12591000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.hfmlegal.com,'+1 888-353-0491,"KC metro; $12,591,000 rev"
+HIGH,4.0,Strawberry Hill Baking Company,Merriam,Kansas,bakery/cafe,15,38,4256000,1,$10K-$20K,No,Yes,Yes,4.0,4.0,4,4.0,http://www.strawberryhill.com,'+1 800-631-1002,"KC metro; $4,256,000 rev"
+HIGH,4.0,Sunflower Foundation,Topeka,Kansas,food/bev general,17,34,6491000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.sunflowerfoundation.org,'+1 785-232-3000,"MO/KS territory; $6,491,000 rev"
+HIGH,4.0,Missouri State Fair,Sedalia,Missouri,food/bev general,28,56,,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.mostatefair.com,'+1 660-530-5600,MO/KS territory
+HIGH,4.0,Barlow Truck Lines Inc,Faucett,Missouri,food/bev general,44,88,32072000,1,$20K+,No,No,Yes,5,2.5,5,2.5,http://www.barlowtruckline.com,'+1 816-238-3373,"MO/KS territory; $32,072,000 rev"
+HIGH,4.0,"Prairie Paws Animal Shelter, Inc.",Ottawa,Kansas,food/bev general,12,24,19512000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.prairiepaws.org,'+1 785-242-2967,"MO/KS territory; $19,512,000 rev"
+HIGH,4.0,Kansas City Girls Preparatory Academy,Kansas City,Missouri,food/bev general,33,66,,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.kcgpa.org,'+1 816-268-2573,KC metro
+HIGH,4.0,Woods Chapel Church,Lee's Summit,Missouri,food/bev general,36,72,,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.woodschapelchurch.org,'+1 816-795-8848,KC metro
+HIGH,4.0,Fifth & Emery Frozen Yogurt and Chocolate,Kansas City,Missouri,bakery/cafe,19,48,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.5,http://www.fifthandemerykc.com,'+1 816-800-4100,KC metro
+HIGH,4.0,InnovaPrep LLC,Drexel,Missouri,food/bev general,24,48,13431000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.innovaprep.com,'+1 816-619-3374,"MO/KS territory; $13,431,000 rev"
+HIGH,4.0,Mother Earth News magazine,Topeka,Kansas,food/bev general,23,46,30243000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.motherearthnews.com,'+1 785-274-4300,"MO/KS territory; $30,243,000 rev"
+HIGH,4.0,"American Pest Management, Inc.",Manhattan,Kansas,food/bev general,40,80,4174000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.americanpestonline.com,'+1 800-748-8287,"MO/KS territory; $4,174,000 rev"
+HIGH,4.0,"Camcorp, Inc.",Lenexa,Kansas,food manufacturing,41,72,11200000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.camcorpinc.com,'+1 913-831-0740,"KC metro; $11,200,000 rev"
+HIGH,4.0,Huckleberry's,Trenton,Missouri,full-service restaurant,20,90,12769000,1,$20K+,No,No,Yes,5,3.0,4,3.0,,'+1 660-359-5745,"MO/KS territory; $12,769,000 rev"
+HIGH,4.0,Popculture Gourmet Popcorn,Parkville,Missouri,catering/food truck,11,22,,1,$5K-$10K,No,Yes,Yes,3.5,4.0,5,4.0,http://www.popculturekc.com,'+1 816-819-1140,KC metro
+HIGH,4.0,"Kansas City Sausage Company, LLC",Kansas City,Missouri,food/bev general,32,64,16000000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.kcsausageco.com,'+1 816-891-9600,"KC metro; $16,000,000 rev"
+HIGH,4.0,"Green Dot Bioplastics, Inc.",Emporia,Kansas,food/bev general,14,28,5000000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.greendotbioplastics.com,'+1 620-273-8919,"MO/KS territory; $5,000,000 rev"
+HIGH,4.0,Build WyCo,Kansas City,Kansas,food/bev general,38,76,,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.buildwyco.org,'+1 913-342-7580,KC metro
+HIGH,4.0,Second Harvest Community Food Bank,Saint Joseph,Missouri,food/bev general,20,40,5575000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.shcfb.org,'+1 816-364-3663,"MO/KS territory; $5,575,000 rev"
+HIGH,4.0,Noble Hospitality,Kansas City,Missouri,food/bev general,36,72,17341000,1,$20K+,No,Yes,Yes,5,2.5,5,2.5,http://www.noblehospitality.com,'+1 785-539-3800,"KC metro; $17,341,000 rev"
+HIGH,4.0,Plaza Catering,Overland Park,Kansas,bar/brewery,14,49,429000,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.5,http://www.plazacatering.com,'+1 913-383-8800,"KC metro; $429,000 rev"
+HIGH,4.0,McCoy's Public House and Brew Kitchen,Kansas City,Missouri,bar/brewery,25,88,,1,$20K+,No,Yes,Yes,5,3.0,4,3.0,,'+1 816-931-7141,KC metro
+HIGH,4.0,Johnson County Community Health Services,Warrensburg,Missouri,food/bev general,23,46,19811000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.johnsoncountyhealth.org,'+1 660-747-6121,"MO/KS territory; $19,811,000 rev"
+HIGH,4.0,Space Perspective,Warrensburg,Missouri,food/bev general,24,48,7000000,1,$20K+,No,No,Yes,5,2.0,5,3.0,http://www.spaceperspective.com,'+1 321-985-3018,"MO/KS territory; $7,000,000 rev"
+HIGH,4.0,Set’em Up Jacks,Lawrence,Kansas,full-service restaurant,17,76,,1,$20K+,No,No,No,5,2.0,5,3.0,http://www.setemupjacks.com,'+1 785-832-2030,MO/KS territory
+HIGH,4.0,The Brewtop Pub & Patio,Kansas City,Missouri,bar/brewery,28,98,,1,$20K+,No,Yes,No,5,2.0,5,3.0,http://www.thebrewtop.com,'+1 816-584-9292,KC metro
+HIGH,4.0,1900 BARKER BAKERY AND CAFE LLC,Lawrence,Kansas,bakery/cafe,12,30,,1,$10K-$20K,No,No,Yes,4.0,3.0,5,4.0,http://www.1900barker.com,'+1 785-424-7609,MO/KS territory
+HIGH,4.0,SALINE COUNTY HEALTH DEPARTMENT,Marshall,Missouri,catering/food truck,30,60,,1,$20K+,No,No,Yes,5,3.0,4,3.0,http://www.salinecountyhealthdepartment.com,'+1 660-886-3434,MO/KS territory
+HIGH,4.0,Marina 27 Steak & Seafood,Lake Lotawana,Missouri,full-service restaurant,15,68,,1,$20K+,No,No,Yes,5,3.0,4,3.0,http://www.marina27.com,'+1 816-578-4400,MO/KS territory
+HIGH,4.0,Crows coffee,Kansas City,Missouri,bakery/cafe,12,30,3936000,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.5,http://www.crowscoffee.com,'+1 816-912-2703,"KC metro; $3,936,000 rev"
+MEDIUM,3.9,Riverside Red- X,Riverside,Missouri,food/bev general,18,36,16637000,2,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.riversideredx.com,'+1 816-741-3377,"KC metro; $16,637,000 rev; 2 locations"
+MEDIUM,3.9,ECKAN,Ottawa,Kansas,food/bev general,35,70,5226000,1,$20K+,No,No,Yes,5,2.0,5,2.5,http://www.eckan.org,'+1 785-242-7450,"MO/KS territory; $5,226,000 rev"
+MEDIUM,3.9,Boss Cafe,Clinton,Missouri,bakery/cafe,12,30,,1,$10K-$20K,No,No,Yes,4.0,3.0,5,3.5,http://www.bosscaffe.com,'+381 24 551111,MO/KS territory
+MEDIUM,3.9,Test Smartly Labs Testing Centers,Overland Park,Kansas,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.5,2.5,5,3.0,http://www.testsmartlylabs.com,'+1 816-777-2977,KC metro
+MEDIUM,3.9,RevLogical,Liberty,Missouri,food/bev general,34,68,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,http://www.revlogical.com,,KC metro
+MEDIUM,3.9,El Cerro Grande,Liberty,Missouri,full-service restaurant,27,122,,1,$20K+,No,Yes,No,5,2.5,4,3.0,,'+1 910-793-0035,KC metro
+MEDIUM,3.9,Helping Hands Humane Society,Topeka,Kansas,food/bev general,31,62,,1,$20K+,No,No,Yes,5,2.0,5,2.5,http://www.topekahumaneshelter.org,'+1 785-233-7325,MO/KS territory
+MEDIUM,3.9,KMDI Inc. MicroLite!,Kansas City,Kansas,other/non-food,29,44,10689000,1,$20K+,No,Yes,No,5,1.5,5,3.0,http://www.kmdi.net,'+1 913-281-4200,"KC metro; $10,689,000 rev"
+MEDIUM,3.9,Hi Boy Drive In,Independence,Missouri,food/bev general,13,26,13679000,2,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.hiboydrivein.com,'+1 816-350-2120,"KC metro; $13,679,000 rev; 2 locations"
+MEDIUM,3.9,Jani-King of the Midwest,Lenexa,Kansas,full-service restaurant,19,86,,1,$20K+,No,Yes,Yes,5,3.5,3,3.0,,,KC metro
+MEDIUM,3.9,BERKS Group,Kansas City,Missouri,food/bev general,20,40,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.berksgroup.com,'+1 816-271-8508,KC metro
+MEDIUM,3.9,Modern Catering,Mission,Kansas,food/bev general,11,22,15885000,1,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.modernartcatering.com,'+1 626-818-0414,"KC metro; $15,885,000 rev"
+MEDIUM,3.9,Saints Pub + Patio,Shawnee,Kansas,bar/brewery,32,112,10000000,1,$20K+,No,Yes,No,5,2.0,5,2.5,http://www.saintspub.com,'+1 913-600-2977,"KC metro; $10,000,000 rev"
+MEDIUM,3.9,Reliable Mechanical Services,Kearney,Missouri,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.rms-kc.com,'+1 816-903-7674,KC metro
+MEDIUM,3.9,"HERITAGE ELECTRIC, LLC",Olathe,Kansas,other/non-food,20,30,13807000,1,$20K+,No,Yes,No,5,2.0,4,3.5,http://www.heritage-electric.com,,"KC metro; $13,807,000 rev"
+MEDIUM,3.9,Spokes Cafe | Cyclery,Kansas City,Missouri,bar/brewery,13,46,,1,$10K-$20K,No,Yes,Yes,4.5,3.5,4,3.0,http://www.spokeskc.com,,KC metro
+MEDIUM,3.9,"HinzJJ, LLC",Overland Park,Kansas,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.hinzjj.com,,KC metro
+MEDIUM,3.9,SOS Pest Control,Kansas City,Missouri,food/bev general,20,40,15004000,1,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.soskc.com,'+1 816-471-5733,"KC metro; $15,004,000 rev"
+MEDIUM,3.9,Ralcorp University,Excelsior Springs,Missouri,food/bev general,28,56,,1,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.ralcorpuniversity.com,,KC metro
+MEDIUM,3.9,"Reliable Caps, LLC",Olathe,Kansas,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.reliablecaps.com,'+1 913-764-2277,KC metro
+MEDIUM,3.9,KC Kitchen & Pizzeria,Kansas City,Missouri,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.kckitchenpizza.com,'+1 816-599-4533,KC metro
+MEDIUM,3.9,Social House Entertainment,Overland Park,Kansas,food/bev general,44,88,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,http://www.socialhouseentertainment.com,,KC metro
+MEDIUM,3.9,Longboards,Mission,Kansas,full-service restaurant,28,126,,1,$20K+,No,Yes,No,5,2.5,4,3.0,,'+1 913-236-2523,KC metro
+MEDIUM,3.9,RADIUS BREWING COMPANY LLC,Emporia,Kansas,bar/brewery,20,70,,1,$20K+,No,No,No,5,1.5,5,3.0,http://www.radiusbrewing.com,'+1 620-208-4677,MO/KS territory
+MEDIUM,3.9,Fun House Pizza,Lee's Summit,Missouri,full-service restaurant,13,58,9100000,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.funhousepizza.com,'+1 816-254-8000,"KC metro; $9,100,000 rev"
+MEDIUM,3.9,Andre's Confiserie Suisse,Kansas City,Missouri,bar/brewery,12,42,2043000,2,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.andreschocolates.com,'+1 816-561-3440,"KC metro; $2,043,000 rev; 2 locations"
+MEDIUM,3.9,RedStone Logistics,Olathe,Kansas,food/bev general,50,100,3402000,1,$20K+,No,Yes,Yes,5,3.0,5,1.5,http://www.redstonelogistics.com,'+1 888-733-5030,"KC metro; $3,402,000 rev"
+MEDIUM,3.9,"Roll Products, Inc.",Saint Marys,Kansas,other/non-food,16,24,10000000,1,$20K+,No,No,No,5,1,5,3.5,http://www.rollproducts.com,'+1 785-437-6000,"MO/KS territory; $10,000,000 rev"
+MEDIUM,3.9,Beer Kitchen,Kansas City,Missouri,full-service restaurant,17,76,24209000,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.beerkitchenkc.com,'+1 816-389-4180,"KC metro; $24,209,000 rev"
+MEDIUM,3.9,"EDA, Inc.",Lee's Summit,Missouri,food manufacturing,29,51,,1,$20K+,No,Yes,Yes,5,2.5,4,3.0,http://www.edainc.io,,KC metro
+MEDIUM,3.9,BANJOS CAFE,Topeka,Kansas,bakery/cafe,16,40,,1,$10K-$20K,No,No,Yes,4.0,3.0,5,3.5,http://www.banjoscafe.com,'+1 785-862-1406,MO/KS territory
+MEDIUM,3.9,Dogtown Pizza,St. Louis,Missouri,bakery/cafe,16,40,,1,$10K-$20K,No,No,Yes,4.0,3.0,5,3.5,http://www.dogtownpizza.com,'+1 314-802-7001,MO/KS territory
+MEDIUM,3.9,Jose Pepper's Restaurant Group,Overland Park,Kansas,full-service restaurant,14,63,35524000,1,$20K+,No,Yes,Yes,5,3.5,3,3.0,,,"KC metro; $35,524,000 rev"
+MEDIUM,3.9,Kansas City Country Club Plaza Marriott,Kansas City,Missouri,full-service restaurant,14,63,,1,$20K+,No,Yes,Yes,5,3.5,3,3.0,,,KC metro
+MEDIUM,3.9,Department of Grain and Food Science (K-State),Manhattan,Kansas,bakery/cafe,13,32,,1,$10K-$20K,No,No,Yes,4.0,3.0,5,3.5,http://grains.k-state.edu,'+1 785-532-2535,MO/KS territory
+MEDIUM,3.9,Pack3000,Kansas City,Kansas,food/bev general,30,60,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,http://www.pack3000.com,,KC metro
+MEDIUM,3.9,Joy Coffee,Independence,Missouri,bakery/cafe,15,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,4,4.0,http://www.dishubbelawan.com,,KC metro
+MEDIUM,3.9,Culinary Virtue,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,5,3.0,http://www.culinaryvirtue.com,'+1 816-931-7141,KC metro
+MEDIUM,3.9,Johnny's BBQ,Mission,Kansas,full-service restaurant,27,122,,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.johnnysbbqkc.com,'+1 913-432-0777,KC metro
+MEDIUM,3.9,"PAPA MURPHY'S FRANCHISEE ASSOCIATION, INC.",Mission,Kansas,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.papaowners.com,,KC metro
+MEDIUM,3.9,Faulkner's Ranch Event Venue,Kansas City,Missouri,food/bev general,13,26,2748000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.faulknersranch.com,'+1 816-761-5055,"KC metro; $2,748,000 rev"
+MEDIUM,3.9,Bluestem Bistro,Manhattan,Kansas,bar/brewery,14,49,938000,1,$10K-$20K,No,No,Yes,4.0,3.0,5,3.5,http://www.bluestembistro.com,'+1 785-587-8888,"MO/KS territory; $938,000 rev"
+MEDIUM,3.9,A. Arnold Moving,Olathe,Kansas,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.5,http://www.aakcmoving.com,'+1 913-829-8267,KC metro
+MEDIUM,3.9,Bally’s Kansas City Casino,Kansas City,Missouri,bar/brewery,31,108,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,,'+1 816-855-7777,KC metro
+MEDIUM,3.9,Panasonic Connect North America Professional Services,Leawood,Kansas,food/bev general,36,72,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,,'+1 913-685-8855,KC metro
+MEDIUM,3.9,The Point Bar & Grill,Kansas City,Missouri,bar/brewery,36,126,,1,$20K+,No,Yes,Yes,5,3.0,4,2.5,http://www.thepointkc.com,,KC metro
+MEDIUM,3.9,Fritz's Railroad Restaurant,Shawnee,Kansas,full-service restaurant,19,86,11209000,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.fritzskc.com,'+1 913-375-1000,"KC metro; $11,209,000 rev"
+MEDIUM,3.9,Genghis Khan,Kansas City,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,4,3.0,http://www.genghiskhankc.com,,KC metro
+MEDIUM,3.8,Food Industry Sanitation Auditors,Olathe,Kansas,food manufacturing,26,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.fisaconsulting.com,'+1 800-477-4432,KC metro
+MEDIUM,3.8,Bulldog Bar & Grill,Kansas City,Missouri,bar/brewery,14,49,13529000,1,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.kcbulldog.com,'+1 816-421-4799,"KC metro; $13,529,000 rev"
+MEDIUM,3.8,MGM Marketing Inc.,Olathe,Kansas,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.mgmbusinesspartners.com,'+1 800-214-7788,KC metro
+MEDIUM,3.8,Wild Hare,Bolivar,Missouri,bar/brewery,46,161,5337000,1,$20K+,No,No,No,5,1.5,5,2.5,http://www.wildharemusic.com,'+1 773-770-3511,"MO/KS territory; $5,337,000 rev"
+MEDIUM,3.8,Broadway Liquors,Lexington,Missouri,food/bev general,16,32,,1,$10K-$20K,No,No,Yes,4.5,2.0,5,3.0,http://www.broadway-liquors.com,'+1 773-472-0805,MO/KS territory
+MEDIUM,3.8,Pour Coffeehouse,Olathe,Kansas,bakery/cafe,12,30,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,4,3.5,http://www.pourcoffeekc.com,'+1 913-839-9736,KC metro
+MEDIUM,3.8,"O-ring Sales & Service, Inc.",Lenexa,Kansas,food/bev general,18,36,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.oringsales.com,'+1 800-786-5056,KC metro
+MEDIUM,3.8,Columbia Packaging Group,Kansas City,Missouri,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.columbiapkg.com,'+1 800-872-3794,KC metro
+MEDIUM,3.8,RMF Companies,Grandview,Missouri,food manufacturing,16,28,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.rmfworks.com,'+1 816-765-4101,KC metro
+MEDIUM,3.8,Walker's Fresh Foods,North Kansas City,Missouri,food manufacturing,16,28,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.walkersfoodproducts.com,'+1 816-472-8121,KC metro
+MEDIUM,3.8,Tallgrass Tap House,Manhattan,Kansas,bar/brewery,32,112,,1,$20K+,No,No,Yes,5,2.5,4,2.5,http://www.tallgrasstaphouse.com,'+1 785-320-2933,MO/KS territory
+MEDIUM,3.8,Pineapple Academy,Kansas City,Missouri,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.pineappleacademy.com,'+1 816-775-0600,KC metro
+MEDIUM,3.8,Quality Vending & Coffee Co.,Kansas City,Missouri,food/bev general,18,36,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.qualityvendingkc.com,'+1 816-436-7377,KC metro
+MEDIUM,3.8,JT's Grill,De Soto,Kansas,bar/brewery,14,49,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.jtsgrill.com,'+1 913-585-1116,KC metro
+MEDIUM,3.8,Attane Health,Kansas City,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.attane-health.com,'+1 916-445-1254,KC metro
+MEDIUM,3.8,El Dorado Mexican Grille & Cantina,Topeka,Kansas,full-service restaurant,16,72,11006000,1,$20K+,No,No,No,5,2.0,4,3.0,http://www.eldoradomexicangrille.com,'+1 785-267-1100,"MO/KS territory; $11,006,000 rev"
+MEDIUM,3.8,Spa on Penn,Kansas City,Missouri,bar/brewery,14,49,,2,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.spaonpenn.com,'+1 816-531-8600,KC metro; 2 locations
+MEDIUM,3.8,Messenger Coffee Company,Kansas City,Missouri,food/bev general,17,34,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.5,http://www.messengercoffee.co,'+1 877-334-7660,KC metro
+MEDIUM,3.8,Weidenhammer New Packaging,Kansas City,Missouri,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.weidenhammer.us,'+1 816-924-7069,KC metro
+MEDIUM,3.8,IPS - Process Innovations,Independence,Missouri,food/bev general,50,100,17327000,1,$20K+,No,Yes,Yes,5,2.5,5,1.5,http://www.ips-kc.com,'+1 816-221-9944,"KC metro; $17,327,000 rev"
+MEDIUM,3.8,Booth Creek Wagyu,Manhattan,Kansas,food/bev general,23,46,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.5,http://www.boothcreekwagyu.com,'+1 785-775-1144,MO/KS territory
+MEDIUM,3.8,Dunkn Donuts,Independence,Missouri,food/bev general,38,76,,1,$20K+,No,Yes,Yes,5,2.5,4,2.5,http://www.kcdunkin.com,,KC metro
+MEDIUM,3.8,ProSpection Solutions,Kearney,Missouri,bar/brewery,14,49,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.prospectionsolutions.com,'+1 816-256-5666,KC metro
+MEDIUM,3.8,Rhycom,Overland Park,Kansas,bar/brewery,12,42,3386000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.rhycom.com,'+1 913-451-9102,"KC metro; $3,386,000 rev"
+MEDIUM,3.8,"Kauffman Scholars, Inc.",Kansas City,Missouri,food/bev general,27,54,,1,$20K+,No,Yes,Yes,5,2.5,3,3.5,,,KC metro
+MEDIUM,3.8,Union Hill Animal Hospital,Kansas City,Missouri,food/bev general,18,36,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.uhanimalhospital.com,'+1 816-931-4930,KC metro
+MEDIUM,3.8,Coal Vines,Kansas City,Missouri,bar/brewery,18,63,,1,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.coalvines.com,'+1 214-855-4999,KC metro
+MEDIUM,3.8,Brown Industries,Kansas City,Missouri,food/bev general,22,44,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.brownindustries.com,'+1 816-231-2454,KC metro
+MEDIUM,3.8,Distribution By Air Kansas City & Greenville-Spartanburg,Kansas City,Missouri,food manufacturing,19,33,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.shipdba.com,'+1 888-248-3554,KC metro
+MEDIUM,3.8,Big Mill,Lawrence,Kansas,full-service restaurant,16,72,,1,$20K+,No,No,No,5,2.0,4,3.0,http://www.bigmilllawrence.com,'+1 785-856-0101,MO/KS territory
+MEDIUM,3.8,Jarocho,Kansas City,Kansas,full-service restaurant,32,144,,1,$20K+,No,Yes,No,5,2.5,4,2.5,http://www.jarochokc.com,'+1 913-281-7757,KC metro
+MEDIUM,3.8,Fav Trip,Independence,Missouri,food/bev general,14,28,1315000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.favtrip.com,'+1 816-461-3144,"KC metro; $1,315,000 rev"
+MEDIUM,3.8,Hickory Pit,Rock Port,Missouri,other/non-food,21,32,19163000,1,$20K+,No,No,No,5,1,5,3.0,http://www.hickorypitq.com,'+1 815-344-1444,"MO/KS territory; $19,163,000 rev"
+MEDIUM,3.8,O'Dowd's Little Dublin,Kansas City,Missouri,bar/brewery,12,42,8336000,1,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.odowdskc.com,'+1 816-561-2700,"KC metro; $8,336,000 rev"
+MEDIUM,3.8,CTW Logistics - Consolidated Transfer & Warehouse,North Kansas City,Missouri,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.ctwlogistics.com,'+1 816-221-3411,KC metro
+MEDIUM,3.8,Stroud's Restaurant & Bar,Fairway,Kansas,bar/brewery,25,88,,4,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.stroudsrestaurant.com,'+1 913-262-8500,KC metro; 4 locations
+MEDIUM,3.8,Green Lady Lounge,Kansas City,Missouri,bar/brewery,13,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.greenladylounge.com,'+1 816-215-2954,KC metro
+MEDIUM,3.8,"Riley Drive, Inc.",Lenexa,Kansas,bar/brewery,14,49,,2,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.rileydrive.com,'+1 515-528-8125,KC metro; 2 locations
+MEDIUM,3.8,Simply Essentials™,Overland Park,Kansas,food/bev general,40,80,,1,$20K+,No,Yes,Yes,5,2.5,4,2.5,http://www.simply-essentials.com,,KC metro
+MEDIUM,3.8,Avenue of Life KC,Kansas City,Kansas,food/bev general,21,42,4999000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.avenueoflife.org,'+1 816-787-6101,"KC metro; $4,999,000 rev"
+MEDIUM,3.8,Blue Beetle Pest Control,Kansas City,Missouri,other/non-food,21,32,,1,$10K-$20K,No,Yes,No,4.5,2.0,5,3.0,http://www.bluebeetlepest.com,'+1 816-333-7378,KC metro
+MEDIUM,3.8,Safari Belting,Olathe,Kansas,food manufacturing,20,35,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.safaribelting.com,'+1 913-254-7582,KC metro
+MEDIUM,3.8,Lenexa Manufacturing Company,Lenexa,Kansas,food manufacturing,15,26,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.lenexamc.com,'+1 913-378-3800,KC metro
+MEDIUM,3.8,Pickleman's Lawrence,Lawrence,Kansas,full-service restaurant,21,94,,1,$20K+,No,No,Yes,5,3.0,3,3.0,,,MO/KS territory
+MEDIUM,3.8,Education Leaders of Color,Parkville,Missouri,food/bev general,30,60,,1,$20K+,No,Yes,Yes,5,2.5,4,2.5,http://www.edloc.org,,KC metro
+MEDIUM,3.8,Exit Strategy,Kansas City,Kansas,food/bev general,38,76,,1,$20K+,No,Yes,Yes,5,2.5,4,2.5,http://www.exitstrategybar.com,,KC metro
+MEDIUM,3.8,Tavern at Mission Farms,Leawood,Kansas,bar/brewery,21,74,4493000,1,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.tavernatmissionfarms.com,'+1 913-213-6588,"KC metro; $4,493,000 rev"
+MEDIUM,3.8,emfluence,Kansas City,Missouri,other/non-food,33,50,2680000,1,$20K+,No,Yes,No,5,1.5,5,2.5,http://www.emfluence.com,'+1 816-472-4455,"KC metro; $2,680,000 rev"
+MEDIUM,3.8,IAPD – The Performance Plastics Association,Overland Park,Kansas,food/bev general,17,34,4882000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.iapd.org,'+1 913-345-1005,"KC metro; $4,882,000 rev"
+MEDIUM,3.8,Cloverleaf Bar,Kansas City,Missouri,bar/brewery,14,49,303000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.cloverleafrestaurant.com,'+1 586-777-5391,"KC metro; $303,000 rev"
+MEDIUM,3.8,LUNCH BOX,Shawnee,Kansas,full-service restaurant,39,176,,1,$20K+,No,Yes,No,5,2.5,4,2.5,http://www.lunchboxclub.net,,KC metro
+MEDIUM,3.8,HUNAN CHINESE RESTAURANT,Topeka,Kansas,full-service restaurant,14,63,,1,$20K+,Yes,No,No,5,4.0,1,4.0,,,Asian/ethnic cuisine; MO/KS territory
+MEDIUM,3.8,7 Flags,Kansas City,Missouri,bar/brewery,11,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.7flags.com,'+1 515-276-7003,KC metro
+MEDIUM,3.8,Chef Caleb,Kansas City,Kansas,food manufacturing,22,38,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.chefcaleb.com,'+1 479-306-6064,KC metro
+MEDIUM,3.8,"Locke AMI, LLC",Olathe,Kansas,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.lockeami.com,'+1 913-782-8500,KC metro
+MEDIUM,3.8,MIDWEST BEST LLC,Shawnee,Kansas,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.midwestbest.net,'+1 913-952-4873,KC metro
+MEDIUM,3.8,Warehouse Labor Solutions,Independence,Missouri,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.warehouselaborsolutions.com,'+1 816-886-6954,KC metro
+MEDIUM,3.8,"Seeds of Hope, Inc",Overland Park,Kansas,food/bev general,16,32,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.seedsofhope.org,'+1 913-730-8770,KC metro
+MEDIUM,3.8,Orion River Rafting,Leavenworth,Kansas,bar/brewery,14,49,156000,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.5,http://www.orionexp.com,'+1 509-548-1401,"MO/KS territory; $156,000 rev"
+MEDIUM,3.8,LA FUENTE MEXICAN RESTAURANT,Lee's Summit,Missouri,full-service restaurant,18,81,,1,$20K+,No,Yes,Yes,5,4.0,2,3.0,http://www.orderlafuente.com,,KC metro
+MEDIUM,3.8,"Seton Center, Inc.",Kansas City,Missouri,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.setonkc.org,'+1 816-231-3955,KC metro
+MEDIUM,3.8,Donutology,Kansas City,Missouri,bakery/cafe,14,35,,1,$10K-$20K,No,Yes,No,4.0,2.5,5,3.5,http://www.donutology.com,'+1 913-962-7408,KC metro
+MEDIUM,3.8,Avant Food Media,Kansas City,Missouri,bakery/cafe,13,32,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,4,3.5,http://www.avantfoodmedia.com,,KC metro
+MEDIUM,3.8,Feldmans Farm and Home,Liberty,Missouri,food/bev general,21,42,8579000,1,$20K+,No,Yes,Yes,5,3.0,3,3.0,http://www.feldmans-fh.com,'+1 816-230-3444,"KC metro; $8,579,000 rev"
+MEDIUM,3.8,Great Western Manufacturing,,Kansas,food manufacturing,47,82,48000000,1,$20K+,No,No,Yes,5,2.5,4,2.5,http://www.gwmfg.com,'+1 913-682-2291,"MO/KS territory; $48,000,000 rev"
+MEDIUM,3.8,Grace United Church,Kansas City,Missouri,food/bev general,32,64,,1,$20K+,No,Yes,Yes,5,2.5,4,2.5,http://www.graceunitedkc.org,'+1 816-231-5745,KC metro
+MEDIUM,3.8,Stuey Mcbrews,Lee's Summit,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.stueymcbrews.com,'+1 816-600-5560,KC metro
+MEDIUM,3.8,ANNIE'S PLACE,Topeka,Kansas,full-service restaurant,13,58,1963000,1,$20K+,No,No,No,5,2.0,4,3.0,http://www.anniesplacetopeka.com,'+1 785-273-0848,"MO/KS territory; $1,963,000 rev"
+MEDIUM,3.8,Viagio Technologies,Kansas City,Missouri,food manufacturing,18,32,1151000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.viagiotech.com,'+1 816-226-6217,"KC metro; $1,151,000 rev"
+MEDIUM,3.8,Cultivate KC,Kansas City,Missouri,food/bev general,23,46,1518000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.cultivatekc.org,'+1 913-831-2444,"KC metro; $1,518,000 rev"
+MEDIUM,3.8,Kanbe's Markets,Kansas City,Missouri,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.kanbesmarkets.org,'+1 816-359-3622,KC metro
+MEDIUM,3.8,The Farmacy,Topeka,Kansas,food/bev general,21,42,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.5,http://www.thefarmacy.us,'+1 785-383-1449,MO/KS territory
+MEDIUM,3.8,Main Street Coffee House,Independence,Missouri,bakery/cafe,12,30,,1,$10K-$20K,No,Yes,No,4.0,2.5,5,3.5,http://www.main-streetcoffeehouse.com,'+1 816-503-8388,KC metro
+MEDIUM,3.8,Maloneys Sports Bar and Grill,Overland Park,Kansas,bar/brewery,28,98,,1,$20K+,No,Yes,No,5,2.0,4,3.0,http://www.maloneyssportsbar.com,'+1 913-385-9595,KC metro
+MEDIUM,3.8,Cinder Block Brewery,North Kansas City,Missouri,bar/brewery,14,49,4993000,1,$10K-$20K,No,Yes,Yes,4.0,3.0,5,3.0,http://www.cinderblockbrewery.com,'+1 816-298-6555,"KC metro; $4,993,000 rev"
+MEDIUM,3.7,New Vision Photography,Kansas City,Kansas,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.newvisionphotokc.com,'+1 913-406-3429,KC metro
+MEDIUM,3.7,A Taste Of Home Catering,Topeka,Kansas,food/bev general,17,34,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.tasteofhomecatering.com,'+1 630-323-7979,MO/KS territory
+MEDIUM,3.7,Kansas Dairy Ingredients,Kansas City,Missouri,other/non-food,29,44,3357000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.kansasdairyingredients.com,'+1 855-526-2192,"KC metro; $3,357,000 rev"
+MEDIUM,3.7,"Crown Toyota of Lawrence, KS",Lawrence,Kansas,food/bev general,13,26,2886000,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.crowntoyotaoflawrence.com,'+1 785-312-3803,"MO/KS territory; $2,886,000 rev"
+MEDIUM,3.7,KC Can Compost,Kansas City,Missouri,food/bev general,17,34,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.kccancompost.com,'+1 816-912-3286,KC metro
+MEDIUM,3.7,Synbiotics Corporation,Kansas City,Missouri,food/bev general,16,32,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.synbiotics.com,'+1 973-822-7000,KC metro
+MEDIUM,3.7,Rayne Nutrition,Johnson City,Kansas,food/bev general,24,48,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.raynenutrition.com,'+1 877-698-3823,MO/KS territory
+MEDIUM,3.7,Hutchinson Salt Co,Paola,Kansas,food/bev general,23,46,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.hutchinsonsalt.com,'+1 620-662-3345,MO/KS territory
+MEDIUM,3.7,G3 Industrial Solutions,Lenexa,Kansas,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.g3industrialsolutions.com,'+1 816-381-4883,KC metro
+MEDIUM,3.7,Harvey's at Union Station,Kansas City,Missouri,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,3,3.0,,'+1 816-460-2274,KC metro
+MEDIUM,3.7,Roundabout Cafe,Warrensburg,Missouri,bakery/cafe,16,40,,1,$10K-$20K,No,No,Yes,4.0,3.0,4,3.5,http://www.roundaboutcafe.com,,MO/KS territory
+MEDIUM,3.7,AgGrandize Global,Kansas City,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.aggrandizeglobal.com,'+1 913-596-8556,KC metro
+MEDIUM,3.7,"Baker's Inn Quality Baked Goods, LLC",Kansas City,Missouri,bakery/cafe,30,75,,1,$20K+,No,Yes,Yes,5,3.5,2,3.0,,,KC metro
+MEDIUM,3.7,Heroes Restaurant & Pub,Warrensburg,Missouri,bar/brewery,11,38,2867000,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.heroeswarrensburg.com,'+1 660-747-3162,"MO/KS territory; $2,867,000 rev"
+MEDIUM,3.7,MF Foods USA LLC,Kansas City,Missouri,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.marfood.us,'+1 313-292-4100,KC metro
+MEDIUM,3.7,"Mitzi Dulan, LLC- Helping food companies maximize results on Pinterest.",Leawood,Kansas,food manufacturing,20,35,422000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.nutritionexpert.com,'+1 310-573-5060,"KC metro; $422,000 rev"
+MEDIUM,3.7,Bark to Basics,Olathe,Kansas,food distributor/grocer,21,37,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.bark2basicsllc.com,'+1 636-272-2620,KC metro
+MEDIUM,3.7,Jerseys Sports Grill & Bar,Chillicothe,Missouri,bar/brewery,11,38,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.jerseyssportsgrill.com,'+1 660-646-8535,MO/KS territory
+MEDIUM,3.7,Tubby’s Sports Bar,Manhattan,Kansas,bar/brewery,13,46,,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.tubbyssportsbar.com,'+1 785-587-8707,MO/KS territory
+MEDIUM,3.7,"Corporate Restaurant Concepts, Inc.",Overland Park,Kansas,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,3,3.0,http://www.corporaterestaurantconcepts.com,'+1 913-897-5000,KC metro
+MEDIUM,3.7,Gear Headquarters,Kansas City,Kansas,food manufacturing,15,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.gearheadquarters.com,'+1 913-831-1700,KC metro
+MEDIUM,3.7,"C.J. Foods, Inc.",Bern,Kansas,food/bev general,42,84,,1,$20K+,No,No,Yes,5,2.0,4,2.5,,'+1 785-336-6132,MO/KS territory
+MEDIUM,3.7,Curtin Property Co.,Overland Park,Kansas,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.meridianop.com,'+1 913-266-1100,KC metro
+MEDIUM,3.7,Blissful Honeymoons & Destination Weddings,Overland Park,Kansas,food/bev general,19,38,3371000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.blissfulhoneymoons.com,'+1 816-260-8781,"KC metro; $3,371,000 rev"
+MEDIUM,3.7,Zone 6 Fitness,North Kansas City,Missouri,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.zone6fitness.com,'+1 816-965-1300,KC metro
+MEDIUM,3.7,Refreshments LLC,Independence,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.kcrefreshments.com,'+1 816-254-0003,KC metro
+MEDIUM,3.7,Kansas Corn,Manhattan,Kansas,food/bev general,15,30,4243000,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.kscorn.com,'+1 800-489-2676,"MO/KS territory; $4,243,000 rev"
+MEDIUM,3.7,Youth MOVE National,Parkville,Missouri,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.youthmovenational.org,'+1 800-580-6199,KC metro
+MEDIUM,3.7,Jones Twine & Net Wrap,Sheldon,Missouri,food/bev general,13,26,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.5,http://www.jonestwine.com,'+1 833-429-2253,MO/KS territory
+MEDIUM,3.7,East Central Kansas Community Action Agency,Ottawa,Kansas,food/bev general,48,96,,1,$20K+,No,No,Yes,5,2.0,4,2.5,,'+1 785-242-7450,MO/KS territory
+MEDIUM,3.7,Square Pizza,Independence,Missouri,food/bev general,24,48,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.squarepizzasquared.com,'+1 816-461-2929,KC metro
+MEDIUM,3.7,Curé of Ars Catholic Church,Leawood,Kansas,food/bev general,20,40,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.cureofars.com,'+1 913-648-2620,KC metro
+MEDIUM,3.7,Pierpont’s at Union Station,Kansas City,Missouri,full-service restaurant,13,58,,1,$20K+,No,Yes,No,5,2.5,3,3.0,,,KC metro
+MEDIUM,3.7,Tiff N Jays,Lee's Summit,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,3,3.0,http://www.legacygrillkc.com,,KC metro
+MEDIUM,3.7,Excel Tool & Manufacturing,Lenexa,Kansas,food/bev general,20,40,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.exceltool.com,'+1 913-894-6415,KC metro
+MEDIUM,3.7,Hetlinger Developmental Services,Emporia,Kansas,food/bev general,13,26,1638000,1,$10K-$20K,No,No,Yes,4.0,2.5,5,3.0,http://www.hetlinger.org,'+1 620-342-1087,"MO/KS territory; $1,638,000 rev"
+MEDIUM,3.7,Bishop Sullivan Center,Kansas City,Missouri,food/bev general,18,36,3507000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.bishopsullivan.org,'+1 816-231-0984,"KC metro; $3,507,000 rev"
+MEDIUM,3.7,Produce Market Guide,Lenexa,Kansas,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.producemarketguide.com,'+1 800-331-9310,KC metro
+MEDIUM,3.7,Rising Sun Learning Center,Kansas City,Missouri,food/bev general,21,42,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.risingsunkc.com,'+1 816-997-9031,KC metro
+MEDIUM,3.7,Simply Catering,Shawnee,Kansas,catering/food truck,11,22,,1,$5K-$10K,No,Yes,Yes,3.5,4.0,4,3.5,http://www.simplycateringkc.com,,KC metro
+MEDIUM,3.7,"TMS, Inc",Kansas City,Kansas,food manufacturing,21,37,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.tmsmech.com,'+1 913-321-8647,KC metro
+MEDIUM,3.7,Treadwell,Olathe,Kansas,food manufacturing,28,49,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.wetreadwell.com,'+1 913-396-6216,KC metro
+MEDIUM,3.7,Uncle Ray's,Chillicothe,Missouri,food/bev general,31,62,,1,$20K+,No,No,Yes,5,2.0,4,2.5,,'+1 313-834-0800,MO/KS territory
+MEDIUM,3.7,Cafe Barcelona,Kansas City,Missouri,bakery/cafe,34,85,,1,$20K+,No,Yes,Yes,5,3.5,2,3.0,,,KC metro
+MEDIUM,3.7,503 Capital Partners,Overland Park,Kansas,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.503capitalpartners.com,'+1 913-279-0177,KC metro
+MEDIUM,3.7,Nevada Regiona Technical Center,Nevada,Missouri,food/bev general,31,62,,1,$20K+,No,No,Yes,5,2.0,4,2.5,http://nrtc.k12.mo.us,,MO/KS territory
+MEDIUM,3.7,Eggtc,Kansas City,Missouri,food/bev general,15,30,1383000,2,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.eggtckc.com,'+1 816-561-0116,"KC metro; $1,383,000 rev; 2 locations"
+MEDIUM,3.7,Palominos Restaurant,Independence,Missouri,bar/brewery,38,133,16627000,5,$20K+,No,Yes,No,5,2.0,4,2.5,http://www.palomino.com,'+1 415-512-7400,"KC metro; $16,627,000 rev; 5 locations"
+MEDIUM,3.7,Blackford Brokerage Inc,Mission,Kansas,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.blackfordbrokerage.com,'+1 913-685-1400,KC metro
+MEDIUM,3.7,The Smoothie Shop & Supplements,Lee's Summit,Missouri,food/bev general,17,34,2659000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.thesmoothieshop.com,'+1 816-920-1977,"KC metro; $2,659,000 rev"
+MEDIUM,3.7,The Giving Grove,Kansas City,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.givinggrove.org,'+1 816-931-3877,KC metro
+MEDIUM,3.7,TIFEC,Leawood,Kansas,food/bev general,44,88,,1,$20K+,No,Yes,Yes,5,2.5,3,3.0,,,KC metro
+MEDIUM,3.7,Johnson County K-State Extension,Olathe,Kansas,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://johnson.k-state.edu,'+1 785-532-2535,KC metro
+MEDIUM,3.7,Kingdom Of Kush,Garnett,Kansas,food/bev general,30,60,,1,$20K+,No,No,Yes,5,2.0,4,2.5,http://www.kingdomofkush.org,,MO/KS territory
+MEDIUM,3.7,Plate Restaurant Group,Kansas City,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,Yes,5,3.5,2,3.0,,,KC metro
+MEDIUM,3.7,Fast Fulfillment,Lenexa,Kansas,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,5,3.0,http://www.fastfulfillment.com,'+1 913-954-0545,KC metro
+MEDIUM,3.7,The Little Pig BBQ,Belton,Missouri,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,3,3.0,http://www.littlepigbbq.com,,KC metro
+MEDIUM,3.7,Serve AI,Kansas City,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,No,5,2.5,3,3.0,http://www.serveitup.ai,,KC metro
+MEDIUM,3.7,Best Friends Pet,Leawood,Kansas,food/bev general,17,34,15008000,1,$20K+,No,Yes,Yes,5,2.5,3,3.0,http://www.bestfriendspet.us,,"KC metro; $15,008,000 rev"
+MEDIUM,3.7,JBS Live Pork,Smithton,Missouri,food/bev general,25,50,,1,$20K+,No,No,Yes,5,2.5,3,3.0,http://www.jbslivepork.com,'+1 641-954-3236,MO/KS territory
+MEDIUM,3.6,Midwest Equity,Overland Park,Kansas,food/bev general,33,66,,1,$20K+,No,Yes,Yes,5,2.5,3,2.5,,,KC metro
+MEDIUM,3.6,Lotus Hospitality,Kansas City,Missouri,other/non-food,39,58,,1,$20K+,No,Yes,No,5,1.5,4,2.5,http://www.lotusgroupinc.com,,KC metro
+MEDIUM,3.6,SoulFIRE Health,Overland Park,Kansas,food/bev general,23,46,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,4,3.0,http://www.soulfirehealth.app,,KC metro
+MEDIUM,3.6,Odessa High School,Odessa,Missouri,food/bev general,18,36,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.odessar7.net,'+1 816-633-5316,MO/KS territory
+MEDIUM,3.6,Jose Peppers,Kansas City,Missouri,full-service restaurant,43,194,,1,$20K+,No,Yes,No,5,2.5,3,2.5,,,KC metro
+MEDIUM,3.6,Fiorellas Jack Stack Barbeque,Kansas City,Missouri,food/bev general,48,96,,1,$20K+,No,Yes,Yes,5,2.5,3,2.5,,,KC metro
+MEDIUM,3.6,Harris Fabrication,Topeka,Kansas,food/bev general,20,40,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.harrisfab.com,'+1 785-408-1490,MO/KS territory
+MEDIUM,3.6,Us Beef Corp Arbys,Clinton,Missouri,full-service restaurant,22,99,,1,$20K+,No,No,No,5,2.0,3,3.0,,,MO/KS territory
+MEDIUM,3.6,Kansas Appleseed Center for Law and Justice,Lawrence,Kansas,food/bev general,12,24,3617000,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.kansasappleseed.org,'+1 785-856-0917,"MO/KS territory; $3,617,000 rev"
+MEDIUM,3.6,"Delaware North Companies, Inc. - Boston",Onaga,Kansas,food/bev general,19,38,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.dncboston.com,'+1 617-624-1050,MO/KS territory
+MEDIUM,3.6,Le Fou Frog,Kansas City,Missouri,bar/brewery,13,46,,1,$10K-$20K,No,Yes,No,4.0,2.0,5,3.0,http://www.lefoufrog.com,'+1 816-474-6060,KC metro
+MEDIUM,3.6,Kansas City Bier Company,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,4,3.0,,'+1 816-214-8691,KC metro
+MEDIUM,3.6,"Pines International, Inc",Lawrence,Kansas,food/bev general,16,32,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.kansaswheatgrasss.com,'+1 800-697-4637,MO/KS territory
+MEDIUM,3.6,Bates Co.,Lawrence,Kansas,full-service restaurant,14,63,,1,$20K+,No,No,No,5,2.0,3,3.0,,,MO/KS territory
+MEDIUM,3.6,VantEdge Partners LP,Overland Park,Kansas,other/non-food,20,30,,1,$10K-$20K,No,Yes,No,4.0,2.0,5,3.0,http://www.vantedge.partners,'+1 913-286-5500,KC metro
+MEDIUM,3.6,Mercy Without Limits,Overland Park,Kansas,food/bev general,50,100,,1,$20K+,No,Yes,Yes,5,2.5,4,1.5,,'+1 855-633-3695,KC metro
+MEDIUM,3.6,Old Town Pizza,Shawnee,Kansas,full-service restaurant,32,144,,1,$20K+,No,Yes,No,5,2.5,3,2.5,,'+1 913-897-9242,KC metro
+MEDIUM,3.6,VacMaster,Overland Park,Kansas,full-service restaurant,50,225,,1,$20K+,No,Yes,Yes,5,3.5,3,1.5,,,KC metro
+MEDIUM,3.6,Fairview Mills,Seneca,Kansas,food manufacturing,16,28,,1,$10K-$20K,No,No,Yes,4.0,2.5,4,3.5,http://www.jsixenterprises.com,,MO/KS territory
+MEDIUM,3.6,Storewise by Ladle,Overland Park,Kansas,food/bev general,24,48,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,4,3.0,http://www.storewise.io,,KC metro
+MEDIUM,3.6,Trust In Food™,Lenexa,Kansas,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.5,http://www.trustinfood.com,,KC metro
+MEDIUM,3.6,United Way of Kaw Valley,Topeka,Kansas,food/bev general,13,26,3516000,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.uwkawvalley.org,'+1 785-273-4804,"MO/KS territory; $3,516,000 rev"
+MEDIUM,3.6,Ristorante Laghi,,Missouri,full-service restaurant,11,50,,1,$20K+,No,No,No,5,2.0,3,3.0,http://www.ristorantelaghi.it,,MO/KS territory
+MEDIUM,3.6,The Landing Eatery & Pub,Liberty,Missouri,bar/brewery,13,46,,1,$10K-$20K,No,Yes,No,4.0,2.0,5,3.0,http://www.landingeateryandpub.com,'+1 816-792-5230,KC metro
+MEDIUM,3.6,Webster House,Kansas City,Missouri,other/non-food,37,56,2789000,1,$20K+,No,Yes,No,5,1.5,4,2.5,http://www.websterhousekc.com,'+1 816-221-4713,"KC metro; $2,789,000 rev"
+MEDIUM,3.6,Schult Industries,Lee's Summit,Missouri,other/non-food,18,27,446000,1,$10K-$20K,No,Yes,No,4.0,1.5,5,3.5,http://www.schult.com,'+1 816-874-4600,"KC metro; $446,000 rev"
+MEDIUM,3.6,Balanced,Topeka,Kansas,food/bev general,17,34,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.balanced.org,'+1 816-945-4037,MO/KS territory
+MEDIUM,3.6,Republic Foods,Lone Jack,Missouri,food manufacturing,18,32,,1,$10K-$20K,No,No,Yes,4.0,2.0,5,3.0,http://www.republic-foods.com,'+1 816-697-1839,MO/KS territory
+MEDIUM,3.6,"Midwest Distributors Co., Inc",Kansas City,Kansas,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.5,,'+1 913-287-2020,KC metro
+MEDIUM,3.6,Erie High School,Erie,Kansas,food/bev general,35,70,,1,$20K+,No,No,Yes,5,2.5,3,2.5,http://www.usd101.com,'+1 620-244-3264,MO/KS territory
+MEDIUM,3.6,JReid InDeed,Kansas City,Missouri,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,4,3.0,http://www.jreidindeed.com,,KC metro
+MEDIUM,3.6,HARPOS,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,Yes,4.0,3.0,4,3.0,http://www.harposkc.com,'+1 816-753-3434,KC metro
+MEDIUM,3.6,Granfalloon Restaurant & Bar,Kansas City,Missouri,bar/brewery,18,63,,1,$20K+,No,Yes,No,5,2.0,3,3.0,,'+1 816-753-7850,KC metro
+MEDIUM,3.6,Union Cafe at Union Station,Kansas City,Missouri,bakery/cafe,25,62,,1,$20K+,No,Yes,No,5,2.5,2,3.5,,,KC metro
+MEDIUM,3.5,Kansas Grain Inspection Svc,Topeka,Kansas,food/bev general,13,26,,1,$10K-$20K,No,No,Yes,4.0,2.5,4,3.0,http://www.kansasgrain.com,'+1 785-233-7063,MO/KS territory
+MEDIUM,3.5,Los Compas Mexican Restaurant,Raytown,Missouri,full-service restaurant,19,86,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,US BEEF CORPORATION ARBYS,Clinton,Missouri,food/bev general,35,70,,1,$20K+,No,No,Yes,5,2.0,3,2.5,,,MO/KS territory
+MEDIUM,3.5,KC Live! Block,Kansas City,Missouri,full-service restaurant,16,72,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Las Gorditas,Kansas City,Kansas,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,iVet Professional Formulas,Parkville,Missouri,food/bev general,16,32,1400000,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.ivet.com,'+1 800-436-5909,"KC metro; $1,400,000 rev"
+MEDIUM,3.5,Food Business Resource,Lenexa,Kansas,food manufacturing,19,33,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,,'+1 720-636-5289,KC metro
+MEDIUM,3.5,"Novel Engineering & Consulting, LLC",Kansas City,Kansas,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.novel-ec.com,,KC metro
+MEDIUM,3.5,Carlitos Mexican Food,Liberty,Missouri,full-service restaurant,15,68,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Jeremiah Bullfrogs Bar & Grill,Topeka,Kansas,bar/brewery,12,42,,1,$10K-$20K,No,No,Yes,4.0,3.0,3,3.5,http://www.weeblyte.com,,MO/KS territory
+MEDIUM,3.5,Yiayias,Kansas City,Missouri,full-service restaurant,17,76,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Wings Cafe,Kansas City,Missouri,bakery/cafe,15,38,,1,$10K-$20K,No,Yes,No,4.0,2.5,3,4.0,,,KC metro
+MEDIUM,3.5,Plaza Liquor,Kansas City,Missouri,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.plazaliquorkc.com,'+1 816-531-5900,KC metro
+MEDIUM,3.5,Rib Crib Restaurant,Independence,Missouri,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,The Coffee Depot,Tonganoxie,Kansas,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,"JIMS MANAGEMENT CO., INC",Gladstone,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Drop the H Brewing Company,Pittsburg,Kansas,bar/brewery,13,46,,1,$10K-$20K,No,No,No,4.0,1.5,5,3.0,http://www.droptheh.com,'+1 620-404-4019,MO/KS territory
+MEDIUM,3.5,PMA Engineering,Overland Park,Kansas,other/non-food,21,32,,1,$10K-$20K,No,Yes,No,4.0,1.5,5,3.0,http://www.pmaengineering.com,'+1 913-831-1262,KC metro
+MEDIUM,3.5,Vest Professional Placement,Independence,Missouri,food/bev general,20,40,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,,'+1 816-282-6288,KC metro
+MEDIUM,3.5,"NPC Quality Burgers, Inc.",Overland Park,Kansas,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,High Tech Tool LLC,Lee's Summit,Missouri,food/bev general,16,32,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.high-tech-tool.com,,KC metro
+MEDIUM,3.5,b:2 a burger boutique,Lee's Summit,Missouri,full-service restaurant,13,58,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Zarda BBQ & Catering,Blue Springs,Missouri,full-service restaurant,16,72,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Barleys Brewhaus,Kansas City,Missouri,full-service restaurant,14,63,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Hilltop Farms,Perry,Kansas,food/bev general,46,92,,1,$20K+,No,No,Yes,5,2.0,3,2.5,,,MO/KS territory
+MEDIUM,3.5,Hope Faith - Homeless Assistance Campus,Kansas City,Missouri,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.hopefaith.org,,KC metro
+MEDIUM,3.5,Cinzetti’s,Overland Park,Kansas,full-service restaurant,20,90,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Todco Beverage & Mechanical,Lee's Summit,Missouri,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,,'+1 816-875-1941,KC metro
+MEDIUM,3.5,Coast to Coast Cleaning,Lee's Summit,Missouri,other/non-food,21,32,,1,$10K-$20K,No,Yes,No,4.0,1.5,5,3.0,http://www.theatercleaning.com,'+1 877-518-7867,KC metro
+MEDIUM,3.5,El Mexicano,Saint Joseph,Missouri,full-service restaurant,50,225,,1,$20K+,No,No,Yes,5,3.5,2,2.0,http://www.barbosasstjoe.com,,MO/KS territory
+MEDIUM,3.5,Child Nutrition Service Inc,Kansas City,Missouri,food/bev general,15,30,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.childnutritionservice.com,'+1 816-453-8700,KC metro
+MEDIUM,3.5,Versatile Dispatch & BPO,Harrisonville,Missouri,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.5,2.5,5,3.0,http://www.versatiledispatchbpo.com,'+1 916-587-9274,MO/KS territory
+MEDIUM,3.5,REMIEX,Miami,Missouri,food/bev general,17,34,,1,$10K-$20K,No,No,Yes,4.0,2.5,4,3.0,http://www.remiex.com,,MO/KS territory
+MEDIUM,3.5,Abundant Life Counseling Center,Lee's Summit,Missouri,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,4,3.0,http://www.livingproof.co,,KC metro
+MEDIUM,3.5,Sylas & Maddy’s Homemade Ice Cream,Olathe,Kansas,full-service restaurant,12,54,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Screenland Armour,North Kansas City,Missouri,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,LE CAMÉLÉON,Olathe,Kansas,full-service restaurant,11,50,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,Fitter’s Pub,Warrensburg,Missouri,bar/brewery,11,38,,1,$10K-$20K,No,No,No,4.0,1.5,5,3.0,http://www.fitterspub.com,'+1 660-429-3500,MO/KS territory
+MEDIUM,3.5,El Taconazo,Kansas City,Kansas,full-service restaurant,15,68,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.5,CONRAD’S Restaurant and Alehouse,Liberty,Missouri,full-service restaurant,13,58,,1,$20K+,No,Yes,No,5,2.5,2,3.0,,,KC metro
+MEDIUM,3.4,Hilton President Kansas City,Kansas City,Missouri,other/non-food,33,50,,1,$20K+,No,Yes,No,5,1.5,3,2.5,,,KC metro
+MEDIUM,3.4,Clinton Marina,Lawrence,Kansas,food/bev general,13,26,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,http://www.clintonmarina.com,'+1 785-749-3222,MO/KS territory
+MEDIUM,3.4,Down Home Diner,Harrisonville,Missouri,full-service restaurant,15,68,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Third Avenue Events,Leawood,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.thirdavenueevents.com,'+1 816-694-8966,KC metro
+MEDIUM,3.4,Tavern In the Village,Prairie Village,Kansas,bar/brewery,12,42,3190000,1,$10K-$20K,No,Yes,No,4.0,2.0,4,3.0,http://www.taverninthevillage.com,'+1 913-529-2229,"KC metro; $3,190,000 rev"
+MEDIUM,3.4,The Gettin Place,Breckenridge,Missouri,full-service restaurant,19,86,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,"DOBSKI & ASSOCIATES, INC",Lawrence,Kansas,full-service restaurant,22,99,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Mr. Goodcents,Topeka,Kansas,full-service restaurant,15,68,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,A & G RESTAURANT,Maryville,Missouri,full-service restaurant,19,86,,1,$20K+,No,No,No,5,2.0,2,3.0,http://www.agrestaurant.com,,MO/KS territory
+MEDIUM,3.4,"Extra Hands Services, Inc.",Grandview,Missouri,food/bev general,11,22,1661000,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.extrahandskc.com,'+1 816-396-6234,"KC metro; $1,661,000 rev"
+MEDIUM,3.4,Gates Bar B Que,Kansas City,Missouri,bar/brewery,28,98,,1,$20K+,No,Yes,No,5,2.0,2,3.0,,,KC metro
+MEDIUM,3.4,PowerPath Transportation,Kansas City,Missouri,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.powerpathtransportation.com,'+1 913-948-9139,KC metro
+MEDIUM,3.4,Hope For Life,Saint Joseph,Missouri,full-service restaurant,21,94,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Petra Cafe,Kansas City,Missouri,bakery/cafe,16,40,,1,$10K-$20K,No,Yes,Yes,4.0,3.5,2,3.5,,,KC metro
+MEDIUM,3.4,Whole Harvest,North Kansas City,Missouri,food manufacturing,14,24,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.wholeharvest.com,'+1 910-293-7917,KC metro
+MEDIUM,3.4,Redemptorist Center,Kansas City,Missouri,food manufacturing,13,23,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.redemptoristcenter.org,'+1 816-931-9942,KC metro
+MEDIUM,3.4,Avenue Café,Saint Joseph,Missouri,bakery/cafe,30,75,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,SPORT GRILL,Saint Joseph,Missouri,full-service restaurant,29,130,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Jugheads,Odessa,Missouri,full-service restaurant,13,58,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Maple Lanes,Hiawatha,Kansas,food/bev general,14,28,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,http://www.maplelaneswaterloo.com,'+1 319-234-1414,MO/KS territory
+MEDIUM,3.4,Tb Of America Inc,Marysville,Kansas,full-service restaurant,12,54,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Golden Pizza Co,Oskaloosa,Kansas,full-service restaurant,29,130,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,JAYHAWK AREA AGENCY ON AGING INC,Topeka,Kansas,food/bev general,17,34,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,http://www.jhawkaaa.org,'+1 785-235-1367,MO/KS territory
+MEDIUM,3.4,BB's Grill and Bar,Spring Hill,Kansas,bar/brewery,15,52,,1,$20K+,No,Yes,No,5,2.0,2,3.0,,,KC metro
+MEDIUM,3.4,Washington Street Food & Drink,Chillicothe,Missouri,full-service restaurant,11,50,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Four Rivers Kennel,Walker,Missouri,food/bev general,18,36,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,http://www.fourriverscanineresearch.com,,MO/KS territory
+MEDIUM,3.4,Storm Technologies,Lee's Summit,Missouri,food manufacturing,13,23,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.stormtechcontrols.com,'+1 816-287-0718,KC metro
+MEDIUM,3.4,Sisters Restaurant & Bar,Kansas City,Kansas,bar/brewery,15,52,,1,$20K+,No,Yes,No,5,2.0,2,3.0,,,KC metro
+MEDIUM,3.4,Mi Casita Mexican Restraunt,Riverside,Missouri,food/bev general,49,98,,1,$20K+,No,Yes,Yes,5,2.5,2,2.5,,,KC metro
+MEDIUM,3.4,SoundTube Entertainment,Lenexa,Kansas,other/non-food,44,66,,1,$20K+,No,Yes,No,5,1.5,3,2.5,,,KC metro
+MEDIUM,3.4,"Cold Solutions at Rush Creek, LLC",Liberty,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.coldsolutions.com,'+1 816-427-4050,KC metro
+MEDIUM,3.4,CMC Foods US,North Kansas City,Missouri,food manufacturing,14,24,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,5,3.0,http://www.cmcfoodsus.com,'+1 501-262-2232,KC metro
+MEDIUM,3.4,Community Mercantile Co-Op,Lawrence,Kansas,food/bev general,13,26,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,,'+1 785-843-8544,MO/KS territory
+MEDIUM,3.4,Flamingo Lounge,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,No,4.0,2.0,4,3.0,http://www.flamingorocks.com,'+1 816-353-7465,KC metro
+MEDIUM,3.4,El Cimarron,Marceline,Missouri,full-service restaurant,19,86,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,Chruch’s Chicken,Independence,Missouri,full-service restaurant,45,202,,1,$20K+,No,Yes,No,5,2.5,2,2.5,,,KC metro
+MEDIUM,3.4,Sharkeez,Lee's Summit,Missouri,full-service restaurant,33,148,,1,$20K+,No,Yes,No,5,2.5,2,2.5,,,KC metro
+MEDIUM,3.4,Fort Leavenworth Commissary,Leavenworth,Kansas,food/bev general,14,28,,1,$10K-$20K,No,No,Yes,4.0,2.0,4,3.0,http://www.fortleavenworthhousing.com,'+1 913-682-6300,MO/KS territory
+MEDIUM,3.4,El Mezcal Mexican Restaurant,Lawrence,Kansas,full-service restaurant,12,54,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.4,EARLY EDITION L.L.C.,Manhattan,Kansas,full-service restaurant,13,58,,1,$20K+,No,No,No,5,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.3,Pour Boys,Excelsior Springs,Missouri,food/bev general,13,26,,2,$10K-$20K,No,Yes,Yes,4.0,2.5,3,3.0,,'+1 816-781-6780,KC metro; 2 locations
+MEDIUM,3.3,Todco Beverage LLC,Lee's Summit,Missouri,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.todco.net,'+1 816-875-1941,KC metro
+MEDIUM,3.3,BETHEL NEIGHBORHOOD CENTER,Kansas City,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.bethelcenter.org,'+1 913-371-8218,KC metro
+MEDIUM,3.3,IAOM,Lenexa,Kansas,food manufacturing,12,21,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.iaom.org,'+1 913-338-3377,KC metro
+MEDIUM,3.3,Tick Tock Escape Rooms,Overland Park,Kansas,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.ticktockescaperoom.com,'+1 913-396-9144,KC metro
+MEDIUM,3.3,"GPS-KC, LLC",Kansas City,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.gps-kc.com,'+1 913-498-3751,KC metro
+MEDIUM,3.3,St Jo Frontier Casino,Saint Joseph,Missouri,full-service restaurant,35,158,,1,$20K+,No,No,No,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,Sodexo Catering,Manhattan,Kansas,full-service restaurant,31,140,,1,$20K+,No,No,No,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,"BUNGE NORTH AMERICA (OPD WEST), INC.",Emporia,Kansas,food/bev general,18,36,,1,$10K-$20K,No,No,Yes,4.0,2.5,3,3.0,http://www.bungeag.com,,MO/KS territory
+MEDIUM,3.3,Summit Grill and Bar,Kansas City,Missouri,bar/brewery,44,154,,1,$20K+,No,Yes,No,5,2.0,2,2.5,,,KC metro
+MEDIUM,3.3,Georgian Village,Kansas City,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.georgianvillage.ca,'+1 800-263-3199,KC metro
+MEDIUM,3.3,"WILLIE'S SPORTS BAR AND GRILL, INC.",Manhattan,Kansas,bar/brewery,28,98,,1,$20K+,No,No,No,5,1.5,2,3.0,,,MO/KS territory
+MEDIUM,3.3,Sonic Drive Thru,Bolivar,Missouri,full-service restaurant,33,148,,1,$20K+,No,No,No,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,AU COEUR DU VILLAGE,Saint Joseph,Missouri,full-service restaurant,46,207,,1,$20K+,No,No,No,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,Quality Fabrications,Blue Springs,Missouri,food/bev general,16,32,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,3,3.0,,,KC metro
+MEDIUM,3.3,"Applied Marketing Research, Inc.",Lawrence,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.5,5,3.0,http://www.appliedmr.com,'+1 800-381-5599,MO/KS territory
+MEDIUM,3.3,Cfs West Holdings Inc,New Century,Kansas,food/bev general,40,80,,1,$20K+,No,No,Yes,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,Roadhouse Restaurant,Kansas City,Kansas,full-service restaurant,18,81,,1,$20K+,No,Yes,No,5,2.5,1,3.0,,,KC metro
+MEDIUM,3.3,Stray Dog Institute,Leawood,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.straydoginstitute.org,'+1 816-237-3114,KC metro
+MEDIUM,3.3,Fox Hill Veterinary Clinic,Overland Park,Kansas,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.foxhillvet.com,'+1 913-381-2500,KC metro
+MEDIUM,3.3,Kansas Manufacturing Solutions,Overland Park,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,5,3.0,http://www.wearekms.com,'+1 913-649-4333,KC metro
+MEDIUM,3.3,River of Refuge,Kansas City,Missouri,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,3,3.0,,,KC metro
+MEDIUM,3.3,"JIM'S STEAK HOUSE, INC.",Pittsburg,Kansas,full-service restaurant,30,135,,1,$20K+,No,No,No,5,2.0,2,2.5,,,MO/KS territory
+MEDIUM,3.3,"THE DUGOUT BAR & GRILL, L.L.C.",Saint Paul,Kansas,bar/brewery,15,52,,1,$20K+,No,No,No,5,1.5,2,3.0,,,MO/KS territory
+MEDIUM,3.3,Minskys Pizza Cafe & Bar,Lawrence,Kansas,bar/brewery,15,52,,1,$20K+,No,No,No,5,1.5,2,3.0,,,MO/KS territory
+MEDIUM,3.3,"BLIND TIGER BREWERY & RESTAURANT, L.L.C.",Topeka,Kansas,bar/brewery,23,80,,1,$20K+,No,No,No,5,1.5,2,3.0,,,MO/KS territory
+MEDIUM,3.2,Kaw Valley Industrial Services,Leavenworth,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.0,5,3.0,http://www.kvindustrial.net,'+1 913-449-3224,MO/KS territory
+MEDIUM,3.2,Free Spirit Farm,LaCygne,Kansas,food/bev general,15,30,,1,$10K-$20K,No,No,Yes,4.0,2.0,3,3.0,http://www.freespiritfarm.ca,,MO/KS territory
+MEDIUM,3.2,unity village,Unity Village,Missouri,food/bev general,15,30,,1,$10K-$20K,No,No,Yes,4.0,2.0,3,3.0,,'+1 816-524-3550,MO/KS territory
+MEDIUM,3.2,Cafe Tempo,Overland Park,Kansas,bakery/cafe,11,28,,1,$10K-$20K,No,Yes,No,4.0,2.5,2,3.5,,,KC metro
+MEDIUM,3.2,West Central Missouri Community Action Agency,Harrisonville,Missouri,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,5,3.0,http://www.wcmcaa.org,'+1 660-476-2185,MO/KS territory
+MEDIUM,3.2,Keith Connell Inc,Stilwell,Kansas,food/bev general,16,32,,1,$10K-$20K,No,No,Yes,4.0,2.0,3,3.0,,,MO/KS territory
+MEDIUM,3.2,Mid States Specialty Eggs,Smithton,Missouri,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.5,4,3.5,http://www.msseggs.com,'+1 660-827-3447,MO/KS territory
+MEDIUM,3.2,GRAND FOOD INC,Overland Park,Kansas,food manufacturing,11,19,2000000,1,$5K-$10K,No,Yes,Yes,3.0,3.0,4,3.0,http://www.grandfoodinc.com,'+1 510-782-3999,"KC metro; $2,000,000 rev"
+MEDIUM,3.2,Miami County Health Dept,Paola,Kansas,food/bev general,14,28,,1,$10K-$20K,No,No,Yes,4.0,2.0,3,3.0,,,MO/KS territory
+MEDIUM,3.2,Unbound Recovery,Manhattan,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.0,5,3.0,http://www.unboundmhk.com,'+1 785-510-3008,MO/KS territory
+MEDIUM,3.2,Cornelius Farms,Hamilton,Missouri,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,5,3.0,http://www.corneliusfarms.com,'+1 912-284-0266,MO/KS territory
+MEDIUM,3.2,The Quaff Bar & Grill,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,No,4.0,2.0,3,3.0,http://www.jordanamavi.com,,KC metro
+MEDIUM,3.2,Yummy's Choice,Kansas City,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,4,3.5,http://www.yummyschoice.com,,KC metro
+MEDIUM,3.2,Wilson Foods,Concordia,Missouri,food/bev general,15,30,,1,$10K-$20K,No,No,Yes,4.0,2.0,3,3.0,http://www.wilsonfoods.net,,MO/KS territory
+MEDIUM,3.1,Garozzos Ristorante,Kansas City,Missouri,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,4,3.0,,'+1 816-221-2455,KC metro
+MEDIUM,3.1,Local Harvest,Kansas City,Missouri,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,4,3.0,http://www.localharvestgrocery.com,'+1 314-865-5260,KC metro
+MEDIUM,3.1,Animal Haven,Merriam,Kansas,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,4,3.0,http://www.animalhavenkc.org,'+1 913-432-7548,KC metro
+MEDIUM,3.1,BEST HARVEST BAKERIES,Kansas City,Kansas,food/bev general,19,38,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,2,3.0,,,KC metro
+MEDIUM,3.1,Phoenix Catering,Kansas City,Missouri,food/bev general,14,28,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,2,3.0,,,KC metro
+MEDIUM,3.1,Simple Pleasures Catering,Kansas City,Kansas,food/bev general,13,26,,1,$10K-$20K,No,Yes,Yes,4.0,2.5,2,3.0,,,KC metro
+MEDIUM,3.1,KC Splash Pressure Washing,Kansas City,Missouri,other/non-food,11,16,100000,1,$5K-$10K,No,Yes,No,3.0,1.5,5,3.0,http://www.kc-splash.com,'+1 816-274-1516,"KC metro; $100,000 rev"
+MEDIUM,3.1,Margaritaville Hotel Kansas City,Kansas City,Kansas,other/non-food,27,40,,1,$10K-$20K,No,Yes,No,4.0,1.5,3,3.0,,,KC metro
+MEDIUM,3.1,Simply Country Cafe,Brookfield,Missouri,bakery/cafe,14,35,,1,$10K-$20K,No,No,No,4.0,2.0,2,3.5,,,MO/KS territory
+MEDIUM,3.1,Bonheur,Kansas City,Missouri,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,4,3.0,http://www.natashamichellebailey.com,,KC metro
+MEDIUM,3.1,The Mason Jar Cafe,Sedalia,Missouri,bakery/cafe,17,42,,1,$10K-$20K,No,No,No,4.0,2.0,2,3.5,,,MO/KS territory
+MEDIUM,3.0,Menu Foods Midwest,Emporia,Kansas,food/bev general,13,26,,1,$10K-$20K,No,No,Yes,4.0,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.0,The Well Bar - Grill and Rooftop,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,No,4.0,2.0,2,3.0,,,KC metro
+MEDIUM,3.0,Plush Bar & Grill,Overland Park,Kansas,bar/brewery,12,42,,1,$10K-$20K,No,Yes,No,4.0,2.0,2,3.0,,,KC metro
+MEDIUM,3.0,Stables Bar & Grill,Liberty,Missouri,bar/brewery,11,38,,1,$10K-$20K,No,Yes,No,4.0,2.0,2,3.0,,,KC metro
+MEDIUM,3.0,Eclipse Bar & Night Club,Kansas City,Missouri,bar/brewery,12,42,,1,$10K-$20K,No,Yes,No,4.0,2.0,2,3.0,,,KC metro
+MEDIUM,3.0,"Famsun USA Design & Engineering, Inc",Overland Park,Kansas,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,3.0,3,3.0,,,KC metro
+MEDIUM,3.0,Griffith Lumber Co,Saint Marys,Kansas,food/bev general,22,44,,1,$10K-$20K,No,No,Yes,4.0,2.0,2,3.0,,,MO/KS territory
+MEDIUM,3.0,Eagle Beverage Company,Frontenac,Kansas,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,4,3.0,,'+1 620-231-7970,MO/KS territory
+MEDIUM,3.0,C4 (Carroll County Cannabis Co.),Carrollton,Missouri,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,4,3.0,http://www.c4pharms.com,,MO/KS territory
+MEDIUM,3.0,Blue Moose Bar & Grille - Lenexa,Lenexa,Kansas,bar/brewery,11,38,,1,$10K-$20K,No,Yes,No,4.0,2.0,2,3.0,,,KC metro
+MEDIUM,3.0,THE PENNANT,Topeka,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.0,4,3.0,http://www.thepennanttopeka.com,'+1 785-286-6808,MO/KS territory
+LOW,2.9,Yarco Contracting,Belton,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,3,3.0,,,KC metro
+LOW,2.9,DoughBoys Pizza and Pub,Manhattan,Kansas,bar/brewery,13,46,,1,$10K-$20K,No,No,No,4.0,1.5,2,3.0,,,MO/KS territory
+LOW,2.9,Searles Associates Inc,Olathe,Kansas,food/bev general,11,22,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,3,3.0,,,KC metro
+LOW,2.9,ACI Learning Centers,Overland Park,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,3,3.0,,,KC metro
+LOW,2.9,Torfresma USA,Lenexa,Kansas,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,3,3.0,,,KC metro
+LOW,2.8,Colony Foods,Colony,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.0,3,3.0,,,MO/KS territory
+LOW,2.7,West Hall,Kansas City,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,2,3.0,,,KC metro
+LOW,2.7,El Faisan,Kansas City,Missouri,food/bev general,12,24,,1,$5K-$10K,No,Yes,Yes,3.0,2.5,2,3.0,,,KC metro
+LOW,2.6,Cork & Barrel Wine & Spirits,Lawrence,Kansas,food/bev general,11,22,,1,$5K-$10K,No,No,Yes,3.0,2.0,2,3.0,,,MO/KS territory
+LOW,2.6,Oregon Trail Equipment,Marysville,Kansas,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,2,3.0,,,MO/KS territory
+LOW,2.6,Candyopolis,Topeka,Kansas,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,2,3.0,,,MO/KS territory
+LOW,2.6,Gold Crown Food Co,Springfield,Missouri,food distributor/grocer,12,21,,1,$5K-$10K,No,No,No,3.0,1,3,3.0,,'+1 417-869-7386,MO/KS territory
+LOW,2.6,Mik Di Enterprises,Marshall,Missouri,food/bev general,12,24,,1,$5K-$10K,No,No,Yes,3.0,2.0,2,3.0,,,MO/KS territory
+SKIP,1.8,"BSE Structural Engineers, LLC",Lenexa,Kansas,other/non-food,28,42,6581000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.bsestructural.com,'+1 913-492-7400,"Non-food industry (civil engineering), no food signals"
+SKIP,1.8,Generator Studio,Kansas City,Missouri,other/non-food,32,48,8900000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.generatorstudio.com,'+1 816-333-6527,"Non-food industry (architecture & planning), no food signals"
+SKIP,1.8,Paul Werner Architects,Lawrence,Kansas,other/non-food,11,16,13392000,1,<$3K,No,No,No,1.0,1.0,5,1.0,http://www.paulwernerarchitects.com,'+1 785-832-0804,"Non-food industry (architecture & planning), no food signals"
+SKIP,1.8,Fox Ceramic Tile,Saint Marys,Kansas,other/non-food,11,16,,1,<$3K,No,No,No,1.0,1.0,5,1.0,http://www.foxceramictile.com,'+1 785-437-2792,Non-commercial entity (church/school/nonprofit)
+SKIP,1.8,"First Construction, LLC",Lawrence,Kansas,other/non-food,15,22,,1,<$3K,No,No,No,1.0,1.0,5,1.0,http://www.firstconstructionllc.com,'+1 785-841-8476,Non-commercial entity (church/school/nonprofit)
+SKIP,1.8,"New Horizons Enterprises, LLC",Kansas City,Missouri,other/non-food,11,16,4123000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.newhorizons-llc.com,'+1 816-569-5256,Non-commercial entity (church/school/nonprofit)
+SKIP,1.8,Goldberg Group Architects,Saint Joseph,Missouri,other/non-food,18,27,,1,<$3K,No,No,No,1.0,1.0,5,1.0,http://www.goldbergarchitects.com,'+1 816-233-9300,"Non-food industry (architecture & planning), no food signals"
+SKIP,1.8,IRIS,Overland Park,Kansas,other/non-food,15,22,1509000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.irisnow.com,'+1 913-749-4100,"Non-food industry (marketing & advertising), no food signals"
+SKIP,1.8,TGC,Kansas City,Missouri,other/non-food,12,18,,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.theguesscorporationholdingcoinc.com,'+1 844-969-4242,"Non-food industry (executive office), no food signals"
+SKIP,1.8,Roca Salon & Spa,Kansas City,Missouri,other/non-food,12,18,20170000,1,<$3K,Yes,Yes,No,1.0,1.0,5,1.0,http://www.rocasalon.com,'+1 816-531-8018,"Non-food industry (executive office), no food signals"
+SKIP,1.8,"BC Engineers, Inc.",Shawnee,Kansas,other/non-food,19,28,13983000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.bcengineer.com,'+1 913-262-1772,Non-commercial entity (church/school/nonprofit)
+SKIP,1.8,The Therapy House,Prairie Village,Kansas,bar/brewery,15,52,,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.thetherapyhousekc.com,'+1 913-362-4800,"Non-food industry (health, wellness & fitness), no food signals"
+SKIP,1.8,Country Club Plaza,Kansas City,Missouri,other/non-food,13,20,,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.countryclubplaza.com,'+1 816-753-0100,"Non-food industry (retail), no food signals"
+SKIP,1.8,"Kindred CPA, LLC",Lawrence,Kansas,bar/brewery,18,63,,1,<$3K,No,No,No,1.0,1.0,5,1.0,http://www.kindredcpa.com,'+1 785-842-8844,"Non-food industry (accounting), no food signals"
+SKIP,1.8,Lakewood Property Owners Association,Lee's Summit,Missouri,other/non-food,14,21,10774000,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.lpoa.com,'+1 816-373-4326,Non-commercial entity (church/school/nonprofit)
+SKIP,1.8,BEDROCK CONCRETE LLC,Spring Hill,Kansas,other/non-food,13,20,,1,<$3K,No,Yes,No,1.0,1.0,5,1.0,http://www.bedrockconcretellc.com,'+1 913-393-0935,Non-commercial entity (church/school/nonprofit)
+SKIP,1.6,Salty Iguana Mexican,Lawrence,Kansas,other/non-food,32,48,,5,<$3K,No,No,No,1.0,1.0,4,1.0,http://www.saltyiguana.net,'+1 913-381-3888,"Non-food industry (marketing & advertising), no food signals"
+SKIP,1.6,Westin Crown Center The,Kansas City,Missouri,other/non-food,14,21,,1,<$3K,No,Yes,No,1.0,1.0,4,1.0,,'+1 816-474-4400,"Non-food industry (marketing & advertising), no food signals"
+SKIP,1.6,Darmody Family McDonald's,,Nebraska,food/bev general,23,46,,1,<$3K,No,No,Yes,1.0,1.0,4,1.0,http://www.darmodymcd.com,'+1 402-431-1558,Outside MO/KS territory
+SKIP,1.4,Sound Extreme Entertainment,Kansas City,Missouri,other/non-food,17,26,,1,<$3K,No,Yes,No,1.0,1.0,3,1.0,,,Non-commercial entity (church/school/nonprofit)
+SKIP,1.4,Velocity MSC formerly CTI,Overland Park,Kansas,other/non-food,14,21,,1,<$3K,No,Yes,No,1.0,1.0,3,1.0,,,Non-commercial entity (church/school/nonprofit)
+SKIP,1.4,Foss Analytical AB,,Nebraska,food/bev general,12,24,,1,<$3K,No,No,Yes,1.0,1.0,3,1.0,,'+45 70 10 33 70,Outside MO/KS territory

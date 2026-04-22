@@ -1,0 +1,26 @@
+company,city,state,segment,score,website,apollo_emp,revenue,status,recommendation,notes
+McCray Lumber & Millwork,Kansas City,Kansas,Construction,4.0,mccraylumber.com,130,155000000,OPEN,REVEAL,Building materials supplier; 5 KC-area locations; since 1947; 200+ employees
+Santa Fe Tow Service,Lenexa,Kansas,Transport/Logistics,4.0,santafetowservice.com,17,2176000,OPEN,REVEAL,24/7 towing/recovery; 80+ trucks; multi-state KS/MO/OK
+WHC Worldwide,Kansas City,Missouri,Transport/Logistics,4.0,whcworldwide.com,41,,OPEN,REVEAL,Website vague but KC-based; 41 employees
+4Sight Construction Group,Kansas City,Missouri,Construction,4.0,4sightgroupllc.com,16,,OPEN,REVEAL,Multifamily housing GC; 7920 Ward Pkwy KC MO 64114; 8600+ units completed
+Wagner Logistics,North Kansas City,Missouri,Transport/Logistics,3.9,wagnerlogistics.com,610,163900000,OPEN,REVEAL,Top 100 3PL; since 1946; HQ North KC MO; nationwide warehousing
+zTrip,Kansas City,Missouri,Transport/Logistics,3.9,ztrip.com,540,166500000,OPEN,REVEAL,Taxi/rideshare platform; KC-based; large operation
+JE Dunn Construction,Kansas City,Missouri,Construction,3.9,jedunn.com,4600,7500000000,OPEN,REVEAL,Major national GC; HQ KC; may be too large for Anvo sweet spot but worth reveal
+Carrier Lynx,Olathe,Kansas,Transport/Logistics,3.9,carrierlynx.com,8,,OPEN,REVEAL,Freight brokerage; LTL/TL/expedited/intermodal
+Citizen Trucking,Lenexa,Kansas,Transport/Logistics,3.9,citizentrucking.com,12,,OPEN,REVEAL,Trucking company; Wix website
+McCownGordon Construction,Kansas City,Missouri,Construction,3.9,mccowngordon.com,800,501000000,OPEN,REVEAL,Large regional GC; KC HQ; may be beyond sweet spot
+"Rasheed Carpentry and Construction Pvt Ltd",Independence,Missouri,Construction,3.9,rcc.mv,510,,OPEN,SKIP,Maldives-based company (rcc.mv domain); NOT in Independence MO; location mismatch
+Smart Warehousing,Overland Park,Kansas,Transport/Logistics,3.9,smartwarehousing.com,410,161300000,OPEN,REVEAL,Top 50 3PL; 7309 W 80th St OP KS; 30+ warehouses nationwide; founded 2001
+Mark One Electric,Kansas City,Missouri,Construction,3.9,markone.com,210,140000000,OPEN,REVEAL,Electrical contractor since 1974; 1414 Genessee St KC MO; major KC projects
+"American Central Transport Inc.",Kansas City,Missouri,Transport/Logistics,3.9,americancentral.com,260,14300000,OPEN,REVEAL,Family-owned dry van trucking; 8731 NE Parvin Rd KC MO; ACT Plaza facility
+ACERTUS,Overland Park,Kansas,Transport/Logistics,3.9,acertusdelivers.com,1100,230000000,OPEN,REVEAL,Vehicle delivery logistics; OP KS HQ; large operation
+Cerris Systems,Kansas City,Missouri,Construction,3.9,cerrissystems.com,310,,OPEN,REVEAL,National MEP contractor; HQ Nashville TN but has KC office; 10+ regional offices
+Kala Performance Homes,Kansas City,Missouri,Construction,3.9,kalabuilt.com,15,,OPEN,REVEAL,Passive house builder; 1517 Westport Rd KC MO 64111; Phius certified
+LifewiseCHM,Prairie Village,Kansas,Construction,3.9,lifewisechm.com,12,,CLOSED,SKIP,Closed March 31 2026; clinical home modifications company
+SPEC Building Materials,Kansas City,Kansas,Construction,3.9,speccorp.com,390,162500000,OPEN,REVEAL,Wholesale building materials; national supplier
+Ryan Transportation,Overland Park,Kansas,Transport/Logistics,3.9,ryantrans.com,570,5000000,OPEN,REVEAL,Freight brokerage; 9350 Metcalf Ave OP KS; #19 top 3PL; 40+ years
+"Central Power Systems and Services",Liberty,Missouri,Manufacturing,3.9,cpower.com,350,466500000,OPEN,REVEAL,Diesel truck repair/power generation; 9200 Liberty Dr Liberty MO; since 1954; 20 locations
+"Performance Contracting, Inc. (PCI)",Lenexa,Kansas,Construction,3.9,performancecontracting.com,8900,2100000000,OPEN,REVEAL,Massive national contractor; Lenexa KS HQ; likely self-insured but worth reveal
+WireCo,Leawood,Kansas,Manufacturing,3.9,wireco.com,4000,650700000,OPEN,REVEAL,Wire rope manufacturer; Leawood KS HQ; large operation
+Iron Tiger Corp,Independence,Missouri,Transport/Logistics,3.9,irontigerlogistics.com,57,,OPEN,REVEAL,Finished vehicle delivery for truck OEMs; Independence MO HQ
+Jack Cooper Transport,Kansas City,Missouri,Transport/Logistics,3.9,jackcooper.com,1200,543200000,OPEN,REVEAL,Auto hauling/transport; KC MO; large fleet

@@ -1,0 +1,111 @@
+{
+  "last_updated": "2026-04-22",
+  "description": "Tracks Anvo nightly Apollo prospecting pipeline progress. Read this at the start of every run.",
+  "master_list": {
+    "file": "A2-stage1-tier1-scored.csv",
+    "total_rows": 1495,
+    "stage2_completed_through_company_index": 476,
+    "note": "Index is approximate — use company names in stage2 files as the authoritative source."
+  },
+  "stage2": {
+    "batch1_file": "A2-stage2-batch1-verified.csv",
+    "batch1_companies": 50,
+    "batch2_file": "A2-stage2-batch2-verified.csv",
+    "batch2_companies": 100,
+    "batch3_file": "A2-stage2-batch3-verified.csv",
+    "batch3_companies": 25,
+    "batch4_file": "A2-stage2-batch4-verified.csv",
+    "batch4_companies": 25,
+    "batch5_file": "A2-stage2-batch5-verified.csv",
+    "batch5_companies": 25,
+    "batch6_file": "A2-stage2-batch6-verified.csv",
+    "batch6_companies": 25,
+    "batch7_file": "A2-stage2-batch7-verified.csv",
+    "batch7_companies": 25,
+    "batch8_file": "A2-stage2-batch8-verified.csv",
+    "batch8_companies": 25,
+    "batch9_file": "A2-stage2-batch9-verified.csv",
+    "batch9_companies": 25,
+    "batch10_file": "A2-stage2-batch10-verified.csv",
+    "batch10_companies": 25,
+    "batch11_file": "A2-stage2-batch11-verified.csv",
+    "batch11_companies": 25,
+    "batch12_file": "A2-stage2-batch12-verified.csv",
+    "batch12_companies": 25,
+    "batch13_file": "A2-stage2-batch13-verified.csv",
+    "batch13_companies": 25,
+    "batch14_file": "A2-stage2-batch14-verified.csv",
+    "batch14_companies": 25,
+    "batch15_file": "A2-stage2-batch15-verified.csv",
+    "batch15_companies": 25,
+    "total_verified": 475,
+    "next_batch_number": 16,
+    "note": "Batch 15 Stage 2 COMPLETE: 25 REVEAL, 0 SKIP (all passed OPEN/location/identity checks in verification). Stage 3 processed all 25 on 2026-04-22: 19 REVEALED + 6 SKIPPED (5 NO_DECISION_MAKER Ricotta Heating/BBi/Phillips Southern/Accumax/Big Boy's Towing + 1 NO_EMAIL CW Electric owners both red-X)."
+  },
+  "stage3": {
+    "results_file": "stage3_results.csv",
+    "total_revealed_to_date": 268,
+    "pending_reveals": {
+      "description": "No pending reveals — batch15 fully processed on 2026-04-22.",
+      "total_pending": 0,
+      "batch15_pending": []
+    }
+  },
+  "stage4": {
+    "file": "stage4_scored.csv",
+    "total_scored": 216,
+    "high_priority": 61,
+    "medium_priority": 118,
+    "low_priority": 14,
+    "skip": 23,
+    "scored_ranges": "ranks 8-467 scored through 2026-04-14 gap fill. Ranks 443-467 (batches 14-15) added 2026-04-21/22 are NOT yet scored — 18 revealed contacts pending Stage 4 scoring.",
+    "remaining_to_score": "Ranks 443-467 from batches 14-15 (18 newly revealed contacts) need Stage 4 scoring. Ranks 1-7 intentionally skipped per Edward.",
+    "note": "Gap analysis completed 2026-04-14. 23 SKIPs include duplicates and companies too large for Anvo (JE Dunn $7.5B, PCI $2.1B, Jack Cooper $543M, etc)."
+  },
+  "stage5": {
+    "file": "stage5_outreach_log.csv",
+    "total_drafted": 61,
+    "total_skipped": 4,
+    "last_draft_date": "2026-04-14",
+    "send_from": "edward@anvoins.com (secondary domain for cold outreach)",
+    "reply_handling": "Replies to anvoins.com should be forwarded to edward@anvo-insurance.com. Warm conversations continue from primary domain.",
+    "note": "61 Gmail drafts in edward@anvoins.com inbox. Domain switched from anvo-insurance.com to protect primary domain deliverability. Some duplicate drafts may exist from concurrent agent work — review before sending."
+  },
+  "credit_cycle": {
+    "cycle_start": "2026-04-02",
+    "cycle_end": "2026-05-01",
+    "credits_remaining_apollo_ui": 1785,
+    "credits_used_this_cycle": 815,
+    "note": "Apollo UI source of truth — estimated; verify at next session start. 2026-04-22 session consumed ~22 credits (19 successful email reveals + ~3 variance from red-X unavailable clicks and stuck 'Saving results...' states). 9 days left in cycle, ~1785 credits remaining — need ~198 credits/day. Phone reveals (7-8 credits each) deferred to next session to preserve context."
+  },
+  "daily_runs": {
+    "date": "2026-04-22",
+    "count": 1
+  },
+  "phone_reveal_candidates_deferred": [
+    {"rank": 450, "company": "Innovative Construction Services, Inc.", "contact": "Brad Haedt", "title": "Owner"},
+    {"rank": 451, "company": "SE Energy, LLC", "contact": "Randy Jansen", "title": "President"},
+    {"rank": 452, "company": "Koehn Building Systems", "contact": "Steve Koehn", "title": "CEO and Co-Founder"},
+    {"rank": 454, "company": "KAW Services", "contact": "Danny Banister", "title": "Vice President"},
+    {"rank": 455, "company": "KA Pazdera Hauling and Excavating LLC", "contact": "Dara Riney", "title": "Owner"},
+    {"rank": 456, "company": "Kay Bee Electric Company Inc", "contact": "Brian Kohnen", "title": "President"},
+    {"rank": 458, "company": "Deluxe Truck Stop", "contact": "Bob Wollenman", "title": "Managing Partner"},
+    {"rank": 459, "company": "Byrne Electric Company", "contact": "Brian Wetteroff", "title": "President"},
+    {"rank": 460, "company": "Heartland Home Improvements, Inc.", "contact": "Michael Gatschet", "title": "President"},
+    {"rank": 461, "company": "C. Rallo Contracting Co., Inc.", "contact": "Charlie Rallo", "title": "President"},
+    {"rank": 462, "company": "Champion Floor Company", "contact": "Kim Russ", "title": "General Manager"},
+    {"rank": 464, "company": "Bourne Logistics Management, Inc.", "contact": "Zachary Brown", "title": "Director of Client Services"},
+    {"rank": 467, "company": "HC Sharp Company", "contact": "Mark Haas", "title": "President"}
+  ],
+  "run_order_for_next_session": [
+    "1. Read this state file and pipeline-learnings.json.",
+    "2. Verify Chrome connection and Apollo login + check actual credit balance vs estimate.",
+    "3. Disable Apollo enrichment mode at start (Step 0.5).",
+    "4. PRIORITY A: Stage 4 scoring for batch 14-15 newly revealed ranks 443-467 (18 contacts).",
+    "5. PRIORITY B: Phase 2 phone reveals — start with 13 deferred candidates in phone_reveal_candidates_deferred. Each = 7-8 credits.",
+    "6. PRIORITY C: Run Stage 2 batch 16 (25 companies from master list ~companies 476-500) if time permits.",
+    "7. PRIORITY D: Stage 3 reveals for batch 16.",
+    "8. Update this state file with new counts and credits.",
+    "9. KEY LEARNING 2026-04-21/22: Apollo 'Saving results...' stuck-state in table view still reveals the email successfully — use document.body.innerText global search for contact name, then regex extract email (no need to open profile page unless table is truly stale)."
+  ]
+}

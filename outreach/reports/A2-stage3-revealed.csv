@@ -1,0 +1,51 @@
+rank,company,contact_name,title,email,phone,city,state,tier,segment,reveal_status,skip_reason,apollo_employees,revenue
+1,Gary Kerns Homebuilders LLC,Gary Kerns,Owner,gary@kernshomebuilding.com,,Platte City,Missouri,1,Construction,REVEALED,,5,13.8M
+2,Homes by Chris LLC,Chris Ragland,Owner,chris@hbcbuilder.com,,Liberty,Missouri,1,Construction,REVEALED,,4,10.0M
+3,Thai Binh,,,,,,Kansas City,Missouri,1,Transport/Logistics,SKIPPED,Manual check — likely Vietnam-based company wrong location in Apollo,,
+4,KC Water Heaters,Chase Thompson,Owner,,,Kansas City,Kansas,1,Construction,NO_EMAIL,Owner revealed — no email available in Apollo,3,8.1M
+5,McBee Custom Homes LC,Tyler Murphy,Construction Superintendent,tmurphy@mcbeecustomhomes.com,,Independence,Missouri,1,Construction,REVEALED,,8,39.8M
+6,Mack Colt Homes Inc,Mack Colt,President,mack@mackcolthomes.com,,Overland Park,Kansas,1,Construction,REVEALED,Already revealed — 0 credits,3,18.1M
+7,Transportation Logistics Systems Inc. (TLSI),Camila Lizarraga,Sales Specialist,,,Kansas City,Missouri,1,Transport/Logistics,SKIPPED,No decision-maker,3,6.7M
+8,GSC Lighting & Supply,Anna Roberts,Owner,annaroberts@gsclighting.com,,Belton,Missouri,1,Construction,REVEALED,,4,10M
+9,Jason Wright Electric,Jason Wright,Manager,,,Lee's Summit,Missouri,1,Construction,SKIPPED,Page loading error,5,22.9M
+10,SkuTouch Solutions,Douglas Obershaw,CEO,dobershaw@skutouch.com,,Lenexa,Kansas,1,Manufacturing,REVEALED,,7,18.3M
+11,Mid-America Pump,Gordon K,Project Manager,gordon@midamericapump.com,,Kansas City,Kansas,1,Manufacturing,REVEALED,,10,9.9M
+12,Evans Building Company Inc.,Jeffrey Johnson,Vice President / General Manager,jeffreyj@evansbldg.com,,Wichita,Kansas,1,Construction,REVEALED,,8,13.6M
+13,Lambie Homes,Jim Lambie,President,jlambie@lambiehomes.com,,Overland Park,Kansas,1,Construction,REVEALED,,10,34.6M
+14,Paramount Flooring,,,,,Raymore,Missouri,1,Construction,SKIPPED,Wrong Apollo match — contacts show Canada location,15,
+15,Wineteer Construction,Nick McIntyre,President,nick@wineteerconstruction.com,,Kansas City,Missouri,1,Construction,REVEALED,,6,5.7M
+16,Olinger Heavy Hauling,Milton Hatt,President,milton@olingerheavyhauling.com,,Kansas City,Missouri,1,Transport/Logistics,REVEALED,,11,13.3M
+17,5 Guys Transportation,Terry Demoss,Partner,terry@5guystransportation.com,,Kansas City,Missouri,1,Transport/Logistics,REVEALED,,12,6.3M
+18,Columbia Glass & Windows,,,,,Kansas City,Missouri,1,Construction,SKIPPED,No email available — all contacts email-cell-unavailable,8,10M
+19,Chris George Custom Homes,Chris George,Company Owner,chris3@chrisgeorgecustomhomes.com,,Mission,Kansas,1,Construction,REVEALED,,7,7.9M
+20,AgriLogistics Inc.,Brian Bickford,President,brianb@agrilogistics.com,,Gardner,Kansas,1,Transport/Logistics,REVEALED,,6,11.1M
+21,Homoly Design + Build,Andrew Homoly,Owner/President,ahomoly@homoly.com,,Kansas City,Missouri,1,Construction,REVEALED,,8,7.2M
+22,Cardinal Crest,John Ongman,Managing Principal,john@cardinalcrestkc.com,,Kansas City,Missouri,1,Construction,REVEALED,,5,4.1M
+23,Davis Truck Service,Danny Davis,Business Owner,danny@davistruckservice.com,,Kansas City,Missouri,1,Transport/Logistics,REVEALED,,6,3.8M
+24,Royal Creations Architectural Landscaping,Andy Wright,President,awright@royalcreationslandscaping.com,,Lenexa,Kansas,1,Construction,REVEALED,,9,8.5M
+25,Kansas City Streetcar Authority,,,,,Kansas City,Missouri,1,Transport/Logistics,SKIPPED,Public transit authority — not a commercial insurance prospect,,
+26,Kramer Commercial Inc.,Lora Mora,CFO,lora@kramercommercialinc.com,,Kansas City,Missouri,1,Construction,REVEALED,,7,6.2M
+27,Casa Bella Construction Inc.,Russ Groshans,Owner,russ@casabellaconstruction.com,,Kansas City,Missouri,1,Construction,REVEALED,,6,5.1M
+28,Jonkman Construction,Timothy Jonkman,President,tim@jonkmanconstruction.com,,Lenexa,Kansas,1,Construction,REVEALED,,8,9.3M
+29,Excellart,Mark Allaman,National Program Manager,marka@excellart.com,,Olathe,Kansas,1,Manufacturing,REVEALED,,14,13.6M
+30,Baxter Mechanical Contractors,Austan Bartelli,Office Manager,abartelli@baxtermechanical.com,,Kansas City,Kansas,1,Construction,REVEALED,,6,10M
+31,Purdum Construction,,,,,Overland Park,Kansas,1,Construction,SKIPPED,No email available — all contacts email-cell-unavailable,12,16.8M
+32,Blue Heating and Cooling,Dustin Lundberg,Owner,dustin@blueheatingandcooling.com,,Parkville,Missouri,1,Construction,REVEALED,,6,9.8M
+33,R. L. YATES ELECTRIC CONSTRUCTION COMPANY,Perrin Yates,Vice President,pyates@yateselectric.com,,North Kansas City,Missouri,1,Construction,REVEALED,,8,20M
+34,Nations Auto Transport LLC,Julie Sharpe,Vice President,jsharpe@shipnat.com,,Kansas City,Missouri,1,Transport/Logistics,REVEALED,,10,11.3M
+35,Signature Flooring Inc.,Greg Coussens,President / Founder / Owner,gcoussens@sfikc.com,,Merriam,Kansas,1,Construction,REVEALED,,11,50.5M
+36,Midpoint National,Ron Freund,President,ron.freund@midpt.com,,Kansas City,Kansas,1,Transport/Logistics,REVEALED,,13,17.4M
+37,Strickland Construction Company,,,,,Olathe,Kansas,1,Construction,SKIPPED,No decision-maker — only contact is Controller (not on eligible hierarchy),,11.2M
+38,Almighty Tow Service LLC,David Griffiths,President/CEO,david@almightytow.com,,Overland Park,Kansas,1,Transport/Logistics,REVEALED,,12,12.3M
+39,C&M Restoration Co. Inc.,Chad Grimmett,Project Manager/Sales,cegrimmett@cmrestore.com,,Kansas City,Missouri,1,Construction,REVEALED,,8,12.6M
+40,DESCO Coatings Inc.,Joe Gutowski,Project Manager,joe@descocoatings.com,,Olathe,Kansas,1,Construction,REVEALED,,6,11.5M
+41,DIAMOND POLISH SOLUTIONS,,,,,Overland Park,Kansas,1,Construction,SKIPPED,No email available — all contacts email-cell-unavailable,,24.7M
+42,Insight Mechanical Contractors,,,,,Raytown,Missouri,1,Manufacturing,SKIPPED,No email available — all contacts email-cell-unavailable,,25.6M
+43,J&J Converting Machinery,John Migliazzo,Engineer/Owner,jmigliazzo@jjconvertingmachinery.com,,Grandview,Missouri,1,Manufacturing,REVEALED,,10,5M
+44,DESIGN MATERIALS INC,Marty Wessinger,President,marty@dmikc.com,,Kansas City,Kansas,1,Construction,REVEALED,,13,22.1M
+45,Suture Express,,,,,Overland Park,Kansas,1,Transport/Logistics,SKIPPED,Acquired by Medline 2019 — no longer independent,,15,
+46,Deckscapes Inc.,,,,,Lenexa,Kansas,1,Construction,SKIPPED,No email available — all contacts email-cell-unavailable,8,10.4M
+47,Pech Limousine and Delivery,,,,,Kansas City,Missouri,1,Transport/Logistics,SKIPPED,No decision-maker — contacts are Chauffeur / wrong company / France location,8,15.9M
+48,Vaughan Mechanical Inc,Dick Vaughan,Owner,dick@vm-inc.com,,Kansas City,Missouri,1,Construction,REVEALED,,9,18.1M
+49,VARSITY DRIVEAWAY,Nate Snook,COO/Owner,nsnook@varsitydriveaway.com,,Shawnee,Kansas,1,Transport/Logistics,REVEALED,,27,
+50,Sutton Trucking,John Sutton,President,jsutton@suttontrucking.com,,Lee's Summit,Missouri,1,Transport/Logistics,REVEALED,,21,
