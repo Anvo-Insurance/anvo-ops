@@ -49,6 +49,7 @@ Best,
 Anvo Insurance
 {{sender_email}}
 {{sender_phone}}
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=standard
 ```
 
 ## Template 2: Generational / Family Business Angle
@@ -74,6 +75,7 @@ Best,
 Anvo Insurance
 {{sender_email}}
 {{sender_phone}}
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=family
 ```
 
 ## Template 3: Growth / Award / Milestone Angle
@@ -99,6 +101,7 @@ Best,
 Anvo Insurance
 {{sender_email}}
 {{sender_phone}}
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=growth
 ```
 
 ## Template 4: Specialty / Niche Angle
@@ -124,6 +127,7 @@ Best,
 Anvo Insurance
 {{sender_email}}
 {{sender_phone}}
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=specialty
 ```
 
 ## Template 5: WBE / MWBE / Certification Angle
@@ -149,6 +153,7 @@ Best,
 Anvo Insurance
 {{sender_email}}
 {{sender_phone}}
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=wbe
 ```
 
 ## Template Selection Logic
@@ -163,9 +168,26 @@ When drafting, select the template that best matches the prospect. Use this prio
 
 If multiple templates could apply, combine elements. For example, a family-owned specialty towing company could blend Templates 2 and 4.
 
+## UTM Tracking Convention
+
+Every link in outreach emails gets UTM parameters so we can track engagement in Google Analytics. The convention:
+
+| Parameter | Value | Purpose |
+|-----------|-------|---------|
+| `utm_source` | `cold_outreach` | Identifies traffic from outreach emails |
+| `utm_medium` | `email` | Channel type |
+| `utm_campaign` | `stage5_apr2026` | Batch identifier — update per stage/month |
+| `utm_content` | Template name: `standard`, `family`, `growth`, `specialty`, `wbe` | Which template was used |
+
+**How to build the URL:** Take the base URL and append the parameters:
+
+`https://anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign=stage5_apr2026&utm_content=standard`
+
+When a new batch goes out, update `utm_campaign` to reflect the stage and month (e.g., `stage6_may2026`).
+
 ## Signature Block
 
-Use this signature block for all emails:
+Use this signature block for all emails. The website link MUST include UTM parameters matching the template used.
 
 **If sender is Alice:**
 ```
@@ -174,6 +196,7 @@ Operations Manager
 Anvo Insurance
 alice@anvo-insurance.com
 <!-- TODO: Alice's phone number -->
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content={{template}}
 ```
 
 **If sender is Edward:**
@@ -183,7 +206,12 @@ Managing Partner
 Anvo Insurance
 edward@anvo-insurance.com
 <!-- TODO: Edward's phone number -->
+anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content={{template}}
 ```
+
+**Variable substitution for signature links:**
+- `{{campaign}}` = current batch (e.g., `stage5_apr2026`)
+- `{{template}}` = template name used for this email: `standard`, `family`, `growth`, `specialty`, or `wbe`
 
 ## Things to NEVER Do
 

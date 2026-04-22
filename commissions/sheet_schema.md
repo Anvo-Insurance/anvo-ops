@@ -184,5 +184,20 @@ Reference data for carrier normalization.
 5. Note the Sheet ID from the URL — needed for the Apps Scripts
 6. Share the Sheet with the service account running the Apps Scripts (editor access)
 
-**Sheet ID:** `13CT2DuKgbyCq3N18on-fHLC4K-HxUIMokZN3kf0wNow`  
-**Sheet URL:** https://docs.google.com/spreadsheets/d/13CT2DuKgbyCq3N18on-fHLC4K-HxUIMokZN3kf0wNow/edit
+**Sheet ID:** `1z1OjIfOT91WAtzQeT8ef7qM3BSbC0N5eW17u0VZQYVk`  
+**Sheet URL:** https://docs.google.com/spreadsheets/d/1z1OjIfOT91WAtzQeT8ef7qM3BSbC0N5eW17u0VZQYVk/edit
+
+---
+
+## Tab 7: `MGT Summary`
+
+Rollup view for MGT Insurance commissions, which arrive in installments. Uses UNIQUE + SUMIFS against Policy Detail.
+
+| Column | Header | Formula logic |
+|--------|--------|---------------|
+| A | `insured_name` | `UNIQUE(FILTER('Policy Detail'!D:E, 'Policy Detail'!B:B="MGT Insurance"))` (spill array, col 1) |
+| B | `policy_number` | Same UNIQUE formula (spill array, col 2) |
+| C | `installment_count` | `COUNTIFS('Policy Detail'!D:D, A, 'Policy Detail'!E:E, B, 'Policy Detail'!B:B, "MGT Insurance")` |
+| D | `total_commission` | `SUMIFS('Policy Detail'!J:J, 'Policy Detail'!D:D, A, 'Policy Detail'!E:E, B, 'Policy Detail'!B:B, "MGT Insurance")` |
+
+Columns A-B auto-expand as new MGT policies appear in Policy Detail. Columns C-D formulas must be extended to match new rows.

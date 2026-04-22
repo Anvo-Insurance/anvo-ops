@@ -58,30 +58,44 @@ As commission statements arrive from carriers (via email, carrier portals, or SI
 
 ## Step 2: Process PDF Statements in Claude (Day 5-7)
 
-### Who does this: Edward, Alice, or Ling (in a Cowork session)
+### Who does this: Edward's Claude Code session (has both Google Drive + Google Sheets MCP access)
 
-Once all statements for the month are uploaded to the Drive folder, open a Cowork session and use this prompt:
+Once all statements for the month are uploaded to the Drive folder, tell Claude:
 
 ```
-Process this month's commission statements. Read each PDF in the 
-[Month Year] folder on Google Drive, extract the carrier name, 
-commission total, premium volume, and line of business (P/L or C/L), 
-and write the data to the Commissions tab of the Anvo Commission 
-Tracker Sheet. Cross-reference against the Carriers config tab for 
-canonical names. Flag any statements that are unclear as "needs_review".
-
-Drive folder: https://drive.google.com/drive/folders/1z1W_KpWoG3ue83XSAnUsr0ddGFXtdQ5C
-See commissions/workflow.md and commissions/carrier_reference.md in 
-anvo-ops for carrier details and parsing notes.
+Process [Month] commissions. Search the Drive folder for all files in 
+the [Month] subfolder, read each PDF, extract carrier name, commission 
+total, premium volume, LOB, and policy-level detail. Write summary rows 
+to the Commissions tab and line items to the Policy Detail tab of the 
+Anvo Commission Tracker Sheet. Flag anything unclear as "needs_review".
 ```
 
-### What Claude does:
-1. Opens the Drive folder for the current month
-2. Reads each PDF statement
-3. Extracts: carrier name, report month, LOB, premium, gross commission
-4. Writes rows to the `Commissions` tab with `parse_status` = `claude_extracted`
-5. Flags anything ambiguous as `needs_review`
-6. Reports a summary of what was processed
+**Drive folder:** https://drive.google.com/drive/folders/1z1W_KpWoG3ue83XSAnUsr0ddGFXtdQ5C
+**Sheet ID:** `1z1OjIfOT91WAtzQeT8ef7qM3BSbC0N5eW17u0VZQYVk`
+
+### How it works (end-to-end, no manual steps):
+1. Claude searches Google Drive for files in the month's subfolder
+2. Reads each PDF/CSV/Excel via Google Drive MCP (`read_file_content`)
+3. Extracts: carrier name, report month, LOB, premium, gross commission, policy-level line items
+4. Writes summary rows to `Commissions` tab via Google Sheets MCP (`update_cells` / `add_rows`)
+5. Writes policy-level rows to `Policy Detail` tab
+6. Sets `parse_status` = `claude_extracted` (Edward reviews and flips to `verified`)
+7. Flags anything ambiguous as `needs_review`
+8. Reports a summary of what was processed
+
+### Required MCP connections (Edward's session):
+- **Google Drive MCP** — reads PDFs and file listings from the Commission Statements folder
+- **Google Sheets MCP** (`mcp-google-sheets`) — writes directly to the Anvo Commission Tracker
+  - Credentials: `C:\Users\ehsye\OneDrive\Desktop\Claude Code\.secrets\anvo-oauth-credentials.json`
+  - Token: `C:\Users\ehsye\OneDrive\Desktop\Claude Code\.secrets\anvo-oauth-token.json`
+  - Configured in `.mcp.json` in the anvo-ops repo
+
+### For wholesaler/MGA invoices (Burns & Wilcox, RPS, Cochrane, etc.):
+These come as individual policy invoices rather than monthly statements. Upload to the same Drive folder, or share the PDF directly in the session. Claude extracts:
+- Premium (excluding surplus tax and broker fees — commission is calculated on premium lines only)
+- Broker commission amount and rate
+- Insured name, policy number, effective date, transaction type
+- Writes to both Commissions (Network = `MGA/Wholesale`) and Policy Detail tabs
 
 ### Key extraction points per carrier (see `carrier_reference.md` for full details):
 

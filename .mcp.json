@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "google-sheets": {
+      "command": "uvx",
+      "args": [
+        "mcp-google-sheets@latest",
+        "--include-tools",
+        "get_sheet_data,update_cells,batch_update_cells,list_spreadsheets,list_sheets,create_sheet,add_rows,find_in_spreadsheet,get_sheet_formulas"
+      ],
+      "env": {
+        "CREDENTIALS_PATH": "C:\\Users\\ehsye\\OneDrive\\Desktop\\Claude Code\\.secrets\\anvo-oauth-credentials.json",
+        "TOKEN_PATH": "C:\\Users\\ehsye\\OneDrive\\Desktop\\Claude Code\\.secrets\\anvo-oauth-token.json"
+      }
+    }
+  }
+}
