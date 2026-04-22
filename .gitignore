@@ -2,3 +2,5 @@
 *.json.key
 .claude-keys/
 .claude/settings.local.json
+outreach/*.csv
+outreach/_working/
