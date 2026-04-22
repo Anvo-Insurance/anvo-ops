@@ -1,3 +1,4 @@
 .secrets/
 *.json.key
 .claude-keys/
+.claude/settings.local.json

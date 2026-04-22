@@ -86,9 +86,9 @@ Anvo Commission Tracker Sheet. Flag anything unclear as "needs_review".
 ### Required MCP connections (Edward's session):
 - **Google Drive MCP** — reads PDFs and file listings from the Commission Statements folder
 - **Google Sheets MCP** (`mcp-google-sheets`) — writes directly to the Anvo Commission Tracker
-  - Credentials: `C:\Users\ehsye\OneDrive\Desktop\Claude Code\.secrets\anvo-oauth-credentials.json`
-  - Token: `C:\Users\ehsye\OneDrive\Desktop\Claude Code\.secrets\anvo-oauth-token.json`
-  - Configured in `.mcp.json` in the anvo-ops repo
+  - Credentials: `$ANVO_SECRETS_DIR/anvo-oauth-credentials.json`
+  - Token: `$ANVO_SECRETS_DIR/anvo-oauth-token.json`
+  - Configured in `.mcp.json` in the anvo-brain repo. Requires the `ANVO_SECRETS_DIR` env var (see SETUP_MAC.md / SETUP_WINDOWS.md).
 
 ### For wholesaler/MGA invoices (Burns & Wilcox, RPS, Cochrane, etc.):
 These come as individual policy invoices rather than monthly statements. Upload to the same Drive folder, or share the PDF directly in the session. Claude extracts:
