@@ -20,7 +20,9 @@
       "mcp__Claude_in_Chrome__computer",
       "mcp__google-sheets__create_sheet",
       "mcp__google-sheets__batch_update_cells",
-      "mcp__Claude_in_Chrome__tabs_create_mcp"
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "Bash(gh auth *)",
+      "Bash(gh api *)"
     ]
   }
 }
