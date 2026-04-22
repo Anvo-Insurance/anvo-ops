@@ -6,43 +6,56 @@ Centralized, version-controlled operational knowledge base for Anvo Insurance. E
 
 **Users:** Edward (Managing Partner), Alice (Operations Manager, Edward's sister), Ling (future sub-producer, studying for P&C license).
 
+**Repo name:** `anvo-brain` on GitHub (`github.com/Anvo-Insurance/anvo-brain`). Locally clones to `~/dev/anvo-brain` (Mac) or `C:\Users\<you>\dev\anvo-brain` (Windows). First-time setup is documented in `SETUP_MAC.md` and `SETUP_WINDOWS.md` at the repo root.
+
 ## Repo Structure
 
 ```
-anvo-ops/
-├── carriers/              # Carrier appetite, submission preferences, market intel
+anvo-brain/
+├── README.md                 # Repo overview + first-time setup pointers
+├── CLAUDE.md                 # This file — operating manual for Claude agents
+├── SETUP_MAC.md              # First-time setup on macOS
+├── SETUP_WINDOWS.md          # First-time setup on Windows
+├── .mcp.json                 # MCP server config — references ${ANVO_SECRETS_DIR}
+│
+├── carriers/                 # Carrier appetite, submission preferences, market intel
 │   ├── carrier_matrix.md
 │   ├── submission_preferences.md
-│   └── market_notes/      # Timestamped intel from underwriter calls/emails
+│   └── market_notes/         # Timestamped intel from underwriter calls/emails
 │       └── YYYY-MM-DD_carrier_topic.md
-├── intercom/              # Intercom automation, templates, integration notes
-│   ├── setup_notes.md     # EZLynx→Intercom pipeline (Google Apps Script webhooks)
+├── intercom/                 # Intercom automation, templates, integration notes
+│   ├── setup_notes.md        # EZLynx→Intercom pipeline (Google Apps Script webhooks)
 │   ├── workflows/
 │   └── templates/
-├── intake/                # Email processing, intake checklists, routing rules
-│   ├── instructions.md    # Universal intake instruction set
-│   ├── email_accounts/    # Per-inbox handling rules
-│   └── checklists/        # By line of business (commercial_auto, bop, workers_comp)
-├── workflows/             # Cross-cutting process documentation (used by multiple workflows)
+├── intake/                   # Email processing, intake checklists, routing rules
+│   ├── instructions.md       # Universal intake instruction set
+│   ├── email_accounts/       # Per-inbox handling rules
+│   └── checklists/           # By line of business (commercial_auto, bop, workers_comp)
+├── workflows/                # Cross-cutting process documentation (used by multiple workflows)
 │   ├── new_submission.md
 │   ├── bor_process.md
 │   ├── renewal_timeline.md
 │   └── claims_reporting.md
-├── commissions/           # Monthly commission & bonus reporting (self-contained)
-│   ├── workflow.md        # End-to-end monthly process (collection → processing → report)
-│   ├── sheet_schema.md    # Google Sheet structure (tabs, columns, formulas)
-│   ├── carrier_reference.md # Per-carrier statement formats and parsing notes
-│   └── scripts/           # Google Apps Scripts for auto-ingestion
-│       ├── commission_ingestion.js  # Drive folder watcher (CSV/Excel)
-│       └── bonus_ingestion.js       # Gmail label scanner (MIAA bonuses)
-├── outreach/              # Cold email outreach (self-contained)
-│   ├── README.md          # CSV schema, status codes, processing rules
-│   ├── workflow.md        # End-to-end outreach process (research → draft → send)
-│   ├── templates.md       # Email templates with selection logic
+├── commissions/              # Monthly commission & bonus reporting (self-contained)
+│   ├── workflow.md           # End-to-end monthly process (collection → processing → report)
+│   ├── sheet_schema.md       # Google Sheet structure (tabs, columns, formulas)
+│   ├── carrier_reference.md  # Per-carrier statement formats and parsing notes
+│   └── scripts/              # Google Apps Scripts for auto-ingestion
+│       ├── commission_ingestion.js   # Drive folder watcher (CSV/Excel)
+│       └── bonus_ingestion.js        # Gmail label scanner (MIAA bonuses)
+├── outreach/                 # Cold email outreach (self-contained)
+│   ├── README.md             # CSV schema, status codes, processing rules
+│   ├── workflow.md           # End-to-end outreach process (research → draft → send)
+│   ├── templates.md          # Email templates with selection logic
 │   └── stage{N}_outreach_log.csv  # Prospect batches (Edward generates, Alice drafts)
-├── accounts/              # Running notes on active accounts
+├── business/                 # Strategic analyses, audits, internal briefs
+│   ├── audits/               # E&O content audit, website audit, vertical analyses
+│   └── strategy/             # Middleware risk brief and similar standalone briefs
+├── marketing/                # Marketing project plans, content briefs
+│   └── seo-aeo/              # SEO/AEO optimization project + content briefs
+├── accounts/                 # Running notes on active accounts
 │   └── active_notes.md
-└── templates/             # Shared templates (used across multiple workflows)
+└── templates/                # Shared templates (used across multiple workflows)
     ├── client_welcome_email.md
     └── acord_cover_letter.md
 ```
@@ -56,6 +69,12 @@ anvo-ops/
 - **Agency management system:** EZLynx ($280/month, contract through Dec 2027)
 - **Customer platform:** Intercom (synced with EZLynx via Google Apps Script webhooks, ~100 contacts with policy data)
 - **Aggregator memberships:** SIAA, MIAA
+
+## Secrets & Credentials
+
+This repo does NOT contain credentials. The `.mcp.json` at the repo root references `${ANVO_SECRETS_DIR}/anvo-oauth-credentials.json` and `${ANVO_SECRETS_DIR}/anvo-oauth-token.json`. The `ANVO_SECRETS_DIR` environment variable must be set in your shell, pointing at a folder OUTSIDE the repo (typically `~/.anvo-secrets/` on Mac or `%USERPROFILE%\.anvo-secrets\` on Windows). Setup instructions are in `SETUP_MAC.md` / `SETUP_WINDOWS.md`.
+
+If an MCP call fails with a credentials error, first check: (1) `echo $ANVO_SECRETS_DIR` returns a real path, (2) the three credential JSON files are present in that folder, (3) the `.mcp.json` references `${ANVO_SECRETS_DIR}` (not a hardcoded path).
 
 ## How to Use This Repo
 
@@ -95,34 +114,28 @@ This repo is shared across multiple Claude Cowork sessions — Edward and Alice 
 4. Push to `origin/main` so the other session can pull the latest.
 
 ### Avoiding Conflicts
-- **Edward's session** primarily handles: carrier strategy, workflow design, escalations, repo structure changes.
-- **Alice's session** primarily handles: intake processing, certificate issuance, day-to-day operations, client communications.
+- **Edward's session** primarily handles: carrier strategy, workflow design, escalations, repo structure changes, business/strategy briefs, marketing project planning.
+- **Alice's session** primarily handles: intake processing, certificate issuance, day-to-day operations, client communications, outreach drafting.
 - If both sessions need to edit the same file, one should push before the other pulls. Do not edit the same file simultaneously.
 - If a git lock file error occurs (`.git/index.lock` or `.git/HEAD.lock`), the human must delete it manually from their machine before git operations will work.
 
 ### Git Auth From Cowork Sandbox
 
-Each Cowork session uses its own SSH deploy key to push/pull from GitHub. The remote is SSH: `git@github.com:Anvo-Insurance/anvo-ops.git`.
+The remote is HTTPS: `https://github.com/Anvo-Insurance/anvo-brain.git`. Each Cowork session authenticates with a Personal Access Token cached by git credential helper, OR uses an SSH deploy key if the session has been configured for SSH.
 
-**Alice's session:**
-- Key location: `.claude-keys/anvo-ops-deploy` (gitignored via `.claude-keys/` in `.gitignore`)
-- The repo's local `core.sshCommand` config points at this key. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
-- If `.claude-keys/anvo-ops-deploy` is missing (fresh clone, new workspace, etc.), regenerate with `ssh-keygen -t ed25519 -f .claude-keys/anvo-ops-deploy -N "" -C "claude-cowork-deploy-key@anvo-ops"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked. Delete the old deploy key on GitHub after.
+**Alice's session (HTTPS + PAT or SSH deploy key):**
+- If using SSH: key location is `.claude-keys/anvo-brain-deploy` (gitignored via `.claude-keys/` in `.gitignore`). The repo's local `core.sshCommand` config points at this key. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
+- If `.claude-keys/anvo-brain-deploy` is missing (fresh clone, new workspace, etc.), regenerate with `ssh-keygen -t ed25519 -f .claude-keys/anvo-brain-deploy -N "" -C "claude-cowork-deploy-key@anvo-brain"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked. Delete the old deploy key on GitHub after.
 
-**Edward's session:**
-- Key location: `~/.ssh/id_ed25519` (lives in the sandbox home directory, not in the repo)
-- Git picks this up automatically as the default SSH key — no `GIT_SSH_COMMAND` override or `unset` needed. Standard `git pull` and `git push origin main` work directly.
-- If the key is missing (new session/sandbox), regenerate with `ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N "" -C "edward-cowork-deploy-key"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub with "Allow write access" checked. Delete the old deploy key on GitHub after.
-- **Mounted folder git workaround:** The Cowork sandbox cannot delete `.git` lock files on the mounted folder, which causes git operations to fail and leave stale locks behind. To avoid this, maintain a clean clone at `/tmp/anvo-ops-push` and use it for all git operations:
-  - **To commit and push:** Edit files in the mounted folder → copy changed files to `/tmp/anvo-ops-push` → commit and push from there.
-  - **To pull latest:** Pull in `/tmp/anvo-ops-push` → copy updated files back to the mounted folder.
-  - **Setup (once per session):** `git clone git@github.com:Anvo-Insurance/anvo-ops.git /tmp/anvo-ops-push` then set `git config user.name "Edward Hsyeh"` and `git config user.email "edward@anvo-insurance.com"` in that clone.
-  - Never run `git pull`, `git commit`, or `git push` directly in the mounted folder — it will create lock files that require Edward to manually delete from his terminal.
+**Edward's session (HTTPS + PAT, primary path):**
+- Remote is HTTPS. PAT is cached by `git credential-manager` on the host machine; the Cowork sandbox inherits the cached credential.
+- If pushes start prompting for username/password, Edward needs to refresh the PAT on his Windows host (GitHub → Settings → Developer settings → Personal access tokens) and re-cache it via `git push` once on the host.
+- **Mounted folder git workaround (Windows host only):** The Cowork sandbox cannot delete `.git` lock files on the OneDrive-mounted folder, which causes git operations to fail and leave stale locks behind. To avoid this, Edward keeps the working repo at `C:\Users\ehsye\dev\anvo-brain` (NOT inside OneDrive). The previous `/tmp/anvo-brain-push` clean-clone workaround is no longer needed since the repo lives outside OneDrive.
+- If the repo accidentally gets cloned into OneDrive again, never run `git pull`, `git commit`, or `git push` directly in it — it will create lock files that require Edward to manually delete from his terminal.
 
 **Both sessions:**
-- GitHub allows multiple deploy keys per repo, one per session.
-- To revoke access for either session: delete that session's deploy key on GitHub. The private key becomes inert immediately.
-- If the remote URL is set to HTTPS instead of SSH, switch it: `git remote set-url origin git@github.com:Anvo-Insurance/anvo-ops.git`
+- For SSH: GitHub allows multiple deploy keys per repo, one per session. To revoke access for either session: delete that session's deploy key on GitHub. The private key becomes inert immediately.
+- If the remote URL is set to SSH but you want HTTPS (or vice versa): `git remote set-url origin https://github.com/Anvo-Insurance/anvo-brain.git` (HTTPS) or `git remote set-url origin git@github.com:Anvo-Insurance/anvo-brain.git` (SSH).
 
 ## Working Conventions
 
