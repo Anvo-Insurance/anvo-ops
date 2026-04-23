@@ -797,6 +797,199 @@
       "category": "decision_maker_flexibility",
       "title": "Director-level acceptable when no C-suite listed at small firms",
       "detail": "Bourne Logistics (10 emp): no President/CEO/Owner in Apollo, but family surname Bourne present in non-DM titles (James=Pricing Manager, Lindsey=Sales Account Manager). Revealed Zachary Brown (Director of Client Services) as best DM proxy. Champion Floor (6 emp): no President listed, revealed Kim Russ (General Manager). These are legitimate insurance decision-makers at small firms. Pattern: when top-of-hierarchy absent, GM/Director/VP of operations is acceptable."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "phone_reveal",
+      "severity": "info",
+      "title": "Phase 2 phone reveal burndown \u2014 12/13 deferred candidates successful",
+      "detail": "Run #2 2026-04-22 processed all 13 deferred phone candidates. 12 successful reveals (Haas/HC Sharp 314-630-1313, Brown/Bourne 417-208-7656, Russ/Champion 314-956-1999, Rallo/C.Rallo 314-614-5886, Gatschet/Heartland 316-371-4218, Wetteroff/Byrne 314-544-4101, Wollenman/Deluxe 816-261-0994, Riney/KA Pazdera 314-852-5163, Banister/KAW 813-785-1198, Koehn/Koehn 417-321-0480, Jansen/SE Energy 314-486-2438, Haedt/Innovative 316-737-4005). 1 skipped pre-click \u2014 Brian Kohnen no longer in Apollo (see apollo_data_drift learning). ~96 credits spent (8/reveal consistent with prior phone-test batch). Apollo UI went 1726 \u2192 1630."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "apollo_data_drift",
+      "severity": "high",
+      "title": "Deferred contacts may vanish from Apollo between email reveal and phone reveal",
+      "detail": "Brian Kohnen (Kay Bee Electric, rank 456) was revealed with email bjk@kaybeeelectric.com in batch15 Stage 3 on 2026-04-22 Run #1. In Run #2 hours later, Apollo's Kay Bee Electric search returned 8 contacts with Stephen Kohnen now listed as President \u2014 Brian not present at all. Do NOT click a different person's phone-reveal when the original contact is missing. Mark phone column as NO_APOLLO_RECORD and move on. Implication: deferred phone reveals should ideally run same-session as the email reveal, not days later. When deferring to a later run, verify the contact still exists before clicking."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "apollo_search",
+      "severity": "medium",
+      "title": "qKeywords=FirstName%20LastName is reliable last-resort when virtualized table hides target",
+      "detail": "Brad Haedt (Innovative Construction Services, rank 450) couldn't be found via qOrganizationName search \u2014 Apollo returned 25+ Innovative Construction Services contacts across multiple entities, Brad virtualized out of view. Adding contactLocations=Wichita%2C%20Kansas didn't narrow the list (Apollo may ignore city-level location filters on this field). Switching URL to qKeywords=Brad%20Haedt&contactLocations=United%20States resolved immediately \u2014 target was the only row returned. Use qKeywords as a fallback for any deferred phone reveal where qOrganizationName returns a crowded table."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "apollo_ui",
+      "severity": "info",
+      "title": "Enrichment-mode switch is a role=switch button, not an input[type=checkbox]",
+      "detail": "Runbook Step 0.5 code uses input[aria-label='Enable enrichment mode'], but current Apollo UI exposes it as <button role='switch' aria-label='Enable enrichment mode' aria-checked='...'>. The input[] selector returns null and Step 0.5 reports 'toggle_not_found' even though the toggle exists. Runbook fix: use document.querySelector('[role=\"switch\"][aria-label=\"Enable enrichment mode\"]') and read aria-checked instead of .checked. Toggle was already off this session (aria-checked=false), so no credits were wasted, but the detection must still work in case it gets flipped on accidentally."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "chrome_stability",
+      "severity": "low",
+      "title": "One transient Chrome disconnect during Run #2 \u2014 auto-recovered on retry",
+      "detail": "Single extension disconnect occurred mid-session between KAW Services navigation and Kay Bee Electric navigation. Retry of tabs_context_mcp after ~60s re-established the connection. No credits lost; session resumed cleanly. Matches the Chrome-stability learning from 2026-04-05 batch5 (single-retry recovery)."
+    },
+    {
+      "date": "2026-04-22",
+      "batch": "phase2-deferred-burndown",
+      "category": "chrome_stability",
+      "severity": "high",
+      "title": "Workspace bash unavailable during Run #2 \u2014 file writes succeeded but git commit/push could not run from agent",
+      "detail": "mcp__workspace__bash returned 'Workspace unavailable. The isolated Linux environment failed to start.' on every attempt during Run #2 finalization. File tools (Read/Write/Edit) continued to work against the mounted anvo-brain folder, so state file + CSV + learnings writes all landed durably on disk. But `git add/commit/push` could not be executed. Action required from Edward OR next agent run: cd ~/dev/anvo-brain && git add outreach/reports/nightly-run-state.json outreach/reports/stage3_results.csv outreach/reports/pipeline-learnings.json && git commit -m 'Nightly run: 2026-04-22 #2 \u2014 Phase 2 phone burndown 12/13' && git push. Prevention: the scheduled-task prompt should include an early sanity check that bash is responsive BEFORE starting Apollo work; if bash is down, defer the run rather than doing work that can't be committed. Alternatively, if bash remains flaky, explore whether the file tools can perform git operations via a helper script or whether the next run can catch up unpushed changes."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "apollo_navigation",
+      "severity": "medium",
+      "title": "Generic-name small companies (JMC Electric, CSE Electric, GEM Transportation, Kelley Construction) return 50-160 cross-entity contacts",
+      "detail": "For small (\u226415 emp) companies with very common 2-3-word names, Apollo qOrganizationName= search returns dozens to hundreds of contacts spanning multiple unrelated same-named entities globally. JMC Electric: 63 contacts (target Overland Park KS not visible). CSE Electric: 57 contacts dominated by Carnwath-family CSE (target Ellisville MO 3-emp not indexed). GEM Transportation: 48 contacts dominated by Gulino chauffeur/limo service (target Hazelwood MO 13-emp trucking not visible). Kelley Construction: 163 contacts (target Topeka KS not visible). Heuristic: if Total > 30 AND target city name not present in first 25 visible rows AND apollo_emp <= 15, skip without spending credit. Saved ~4 wasted credits on this batch."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "apollo_ui",
+      "severity": "high",
+      "title": "data-tour-id=\"email-cell-*\" selectors disappeared on Colcon and Higginbotham pages mid-session",
+      "detail": "After 6+ Apollo people-search navigations in the same session, data-tour-id attributes on email cells stopped rendering on Colcon Corporation and Higginbotham Custom Homes pages. Page innerText still shows contact names + titles, total contact count visible in header \u2014 but querySelectorAll(\"[data-tour-id^=email-cell]\") returns 0 even after 30+ seconds of waiting and scrolling. Same pattern as batch6 learning from 2026-04-05. Both companies skipped without credit spend. Workaround: end the session and resume in a fresh browser session, OR fall back to computer-tool screenshot click on the visible Access email span. Both companies queued for retry next run."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "title": "Profile-panel fallback works when table cell stuck on \"Saving results...\"",
+      "detail": "ERMAN Corporation: clicked email-cell for Ted Roth (President), table cell stuck on \"Saving results...\" for 12+ seconds. Clicked Ted Roth name link \u2192 navigated to /contacts/<id>?overrideScoreId=score profile panel \u2192 email troth@ermangroup.com appeared in profile innerHTML within 6 seconds. Confirms 2026-04-21 batch14 learning: click-name-if-stuck-after-12s is a reliable fallback. Apollo charges the credit either way (table-stuck or profile-panel) \u2014 the fallback only recovers the email, not the credit."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "title": "\"Trying other sources...\" can resolve to \"Enrichment ran successfully but no data was found\" \u2014 credit spent for nothing",
+      "detail": "LM2 Construction: clicked email-cell for Latasha McCall (Owner/President, marked email-cell-unavailable badge). Cell first showed \"Trying other sources...\" for 18 seconds, then \"Enrichment ran successfully, but no data was found with the current configuration\" \u2014 credit was spent, no email returned. Confirms batch10 learning that email-cell-unavailable badge contacts often fail. Updated rule: for sole-DM companies where ONLY the DM has unavailable badge AND no other DM is verified, accept the credit risk. For LM2 the alternate Director (Steve Huffman) also showed unavailable, so risk was high but Owner trumps Director \u2014 worth attempting."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "company_matching",
+      "severity": "high",
+      "title": "Substring-only dedup misses typo variants \u2014 Follow Me Construction \"Maintenace\" vs \"Maintenance\" cost almost a wasted reveal",
+      "detail": "Master list spelling \"Follow Me Construction & Home Maintenace\" (typo missing N) did not match batch5 entry \"Follow Me Construction & Home Maintenance\" via substring matching \u2014 they are 38-char strings differing by one character so neither is a substring of the other. Almost spent a credit re-revealing the same Brian English EVP (already revealed at rank 200 in earlier session). Detected after Apollo cells loaded showing brian@followmeconstruction.com already populated. Fix: for dedup against already-processed company list, also use SequenceMatcher with ratio >= 0.95 threshold (NOT 0.85 \u2014 that produced false positives for \"CRG Construction\" vs \"LMG Construction\"). 0.95 catches typo variants but rejects shared-word collisions."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "data_integrity",
+      "severity": "critical",
+      "title": "NEVER open stage3_results.csv in Python \"w\" mode \u2014 partial writerows truncates file on error",
+      "detail": "Lost stage3_results.csv mid-run today: opened in \"w\" mode then csv.DictWriter.writerows raised ValueError(\"dict contains fields not in fieldnames: None\") because some pre-existing rows had trailing commas creating None-keyed fields. By the time the error fired, the file was already truncated to 0 bytes. Recovered from git HEAD copy and manually re-applied 12 phone updates from Run #2 2026-04-22 note plus appended batch16 rows. PREVENTION: always write to \"stage3_results.csv.new\" sibling file first, then os.replace() atomically. Or use append mode \"a\" instead of \"w\" when extending existing data. Also: filter out None-keyed entries from rows before passing to writerows."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "apollo_ui",
+      "severity": "medium",
+      "title": "Apollo UI credit counter is heavily cached \u2014 does not update for many minutes within a session",
+      "detail": "Apollo header credit counter showed 1,630 at session start (matching Run #2 ending state) and stayed at 1,630 for the entire 8-company session even after 3 confirmed credit spends (2 successful reveals + 1 NO_EMAIL waste). State file estimate updated to 1,627 manually. Confirms 2026-04-14 learning that Apollo UI counter is the source of truth at SESSION END but lags during the run."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16",
+      "category": "workspace_health",
+      "severity": "info",
+      "title": "Workspace bash is responsive this session (unlike Run #2 2026-04-22 outage)",
+      "detail": "mcp__workspace__bash worked reliably throughout this run for file reads/writes, Python scripts, and web fetches. The bash outage that blocked Run #2 finalization on 2026-04-22 has resolved. Per runbook Step 5, agent does NOT run git itself \u2014 emits commit+push block for Edward."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage4_scoring",
+      "severity": "low",
+      "observation": "Initial bulk-scoring pass over 80 newly-revealed contacts produced 56 HIGH / 17 MEDIUM / 7 SKIP with a na\u00efve rubric application \u2014 70% HIGH ratio was out of line with historical 28%. Recalibration (removed baseline +1 on fit, tightened premium thresholds <8 emp, set default underserved=3 instead of 4, capped fit at 4 for KC-metro unless ethnic-owned) reduced to 42 HIGH / 31 MEDIUM / 7 SKIP (53% HIGH) \u2014 closer to expected but still generous.",
+      "workaround": "For future bulk-scoring runs, use these calibrated thresholds: Premium 5 only when emp \u2265 12 for GC OR emp \u2265 15 for artisan OR rev \u2265 $10M. Fit = 4 for KC-metro, 3 for wider MO/KS, 3 for St. Louis metro (St. Louis = MO-licensed but outside KC carrier-strength sweet spot). Underserved default = 3; bump to 4 only if emp < 15 AND niche class (roofing/excavating/coatings). Accessibility = 2 baseline + 2 if owner/president/CEO title + 1 if phone present."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage4_scoring",
+      "severity": "medium",
+      "observation": "Apollo tier-1 'Construction' tag includes several segment-mismatches that only surface during Stage 5 deep research: (a) Core Communications (likely telecom not construction GC), (b) HC Sharp Company (HVAC manufacturer rep \u2014 distributor exposure, not contractor), (c) Image Truck Partners (used truck dealer \u2014 garage keepers/dealer open lot, not commercial auto for a fleet). These were flagged in notes but still scored as standard construction/transport.",
+      "workaround": "Add a second-pass check during Stage 5 research: if deep research reveals the business is a manufacturer rep, dealer, or adjacent services firm (not a self-performing contractor or driver), append a segment-correction note to stage5 and adjust the opening angle accordingly \u2014 do not re-score, just flag for Edward."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage4_scoring",
+      "severity": "medium",
+      "observation": "Three unscored contacts turned out to be subsidiaries/acquisitions that should be SKIP but Apollo didn't flag: Temp-Con LLC (part of TriplePoint \u2014 1,200+ trade professionals across 6 mechanical contractors; insurance likely at corporate), Pro Electric L.C. (acquired by The Waldinger Corp on 2025-10-01; Waldinger is a large national mechanical/electrical contractor), Centric Construction Inc (CEO Kevin Russell is actually at California HQ \u2014 Apollo may have attached a KC location tag in error).",
+      "workaround": "During Stage 5 deep research, explicitly search '[company] acquired' and '[company] parent company' as a first-pass check before drafting. If the business is a subsidiary of a 500+ employee parent or a recent acquisition by a national player, mark draft_status=SKIPPED_DATA_ISSUE with the reason. Did NOT draft for Temp-Con, Pro Electric, or Centric this run."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "For out-of-KC-metro Missouri contacts (St. Louis, Festus, Sikeston, Wichita) the 'happy to swing by for coffee' CTA doesn't land the same way \u2014 the drive is 3\u20134 hours. Drafted 15-minute phone call as primary ask for St. Louis-metro rows (C. Rallo, HC Sharp, KA Pazdera) but still offered in-person as optional for KC-metro.",
+      "workaround": "Future drafts: use 'happy to swing by' only when prospect is in KC metro per KC_METRO set; default to '15-minute call' for Wichita/St. Louis/outstate MO-KS. Keep the no-hard-sell framing consistent either way."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage5_drafting",
+      "severity": "medium",
+      "observation": "One draft (Renovating KC to Kaleigh Gosch) is going to a Director of Marketing \u2014 not a decision-maker for insurance. Drafted anyway with explicit routing ask ('if you can point me toward Steven or Ben Ross'). The alternative would have been SKIPPED_NO_HOOK but the Inc. 5000 angle is genuinely good if it reaches the Ross brothers.",
+      "workaround": "When the Apollo-revealed contact is a non-decision-maker (Marketing Director, HR, IT), the draft should explicitly ask for a routing introduction rather than pitch directly. Flag these in notes so Edward can decide whether to send as-is or wait for a better contact."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "Searched Google Drive for 'Anvo Prospecting Style Guide (AI-Generated)' \u2014 not found. Applied default tone rules from INSTRUCTIONS-stage4-7.md (friendly, peer-to-peer, no corporate jargon, 4-7 sentences, 'Edward, Anvo Insurance' sign-off with full signature block for consistency with templates.md).",
+      "workaround": "Style guide should be created once Stage 7 has run over 10+ sent emails. Until then, default tone is the baseline. Every email this run: (1) personalized opener with specific research finding, (2) single-sentence bridge to insurance, (3) 1-2 sentence Anvo value prop specific to the business, (4) soft CTA (15-min call, or coffee if KC-metro), (5) sign-off. No carrier names, no premium quotes, no savings promises."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "stage5_outreach_log.csv did not have a drafted_by column when this task ran (file last updated by Alice's flow on 2026-04-15 predates the column spec). Added the column per runbook Step 2 guidance, backfilled 66 existing rows with drafted_by=alice, and wrote 15 new rows with drafted_by=edward.",
+      "workaround": "Runbook CSV Schema Notes already cover this one-time migration \u2014 completed. Future runs will see the column and append accordingly."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16-extended",
+      "category": "apollo_ui",
+      "severity": "critical",
+      "title": "Cumulative DOM degradation: data-tour-id=\"email-cell-*\" stops rendering after ~12 search navigations in same session",
+      "detail": "Continued the 2026-04-23 Run #1 batch16 work. Pattern of selector failure became clear: navigations 1-3 (CRG, ERMAN, Hamtil) \u2014 selectors worked fine. Navigations 4-6 (Mofilco, Cahills) \u2014 selectors worked but cells showed \"Saving results...\" stuck state requiring profile-panel fallback. Navigations 7-13 (Coonrod, Copeland, Midwest V&C, Paul Gray, Oliver, Southwestern, Young, Scott Coop, St Louis Auto Sprinkler) \u2014 selectors NEVER rendered (cells:0 even after 30s waits) despite contact names + titles being clearly visible in body innerText. The DM at 6 of these 7 was identified but not revealable: Wolfington (President, Coonrod), Seabaugh (Pres/Owner, Midwest V&C), J.Oliver (VP, Oliver), Baker (CEO, Scott Coop), McCammack+Weinshenker (Owner+Chairman, St Louis Auto Sprinkler), Korn (Co-owner, Higginbotham). NEW MITIGATION RULE: at first cells:0 result that persists past 15s waiting, immediately commit progress and end session. The 7 companies are listed in nightly-run-state.json batch16_retry_dom_broken \u2014 they should be the highest-priority reveals next session because the DM is already identified."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16-extended",
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "title": "Profile-panel fallback consistently works when table cell stuck on \"Saving results...\"",
+      "detail": "Confirmed for the third time today (after Ted Roth/ERMAN earlier): clicking the contact name link to navigate to /contacts/<id>?overrideScoreId=score profile, then waiting 6-8s, then regex-extracting [\\w.+-]+@[\\w-]+\\.[\\w.-]+ from body.innerHTML reliably surfaces the revealed email. Worked for: Ted Roth (troth@ermangroup.com), Quenton Schott (quenton@mofilco.com \u2014 also surfaced personal qschott@comcast.net), Tonie Cahill (toniecahill@cahillsconstruction.com). Apollo charges the credit either way; the fallback only recovers the email, not the credit."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16-extended",
+      "category": "company_matching",
+      "severity": "low",
+      "title": "Heartlands Building Company has Apollo placeholder \"Heartlands Company\" listed as Owner \u2014 not a real person",
+      "detail": "Apollo people-search for Heartlands Building Company returned 4 contacts: 2 PMs (red-X email), 1 Carpenter (unverified), and one entry literally named \"Heartlands Company\" with title \"Owner\" and red-X email. The \"Heartlands Company\" name in the contact slot is clearly a placeholder/data-quality artifact \u2014 not a real person. Real President per BBB/Yelp/Houzz is Adam Twellman, who is not in Apollo. Skip rule: when \"Owner\" or \"President\" appears with the company name as the contact name, treat as no-DM and skip."
+    },
+    {
+      "date": "2026-04-23",
+      "batch": "batch16-extended",
+      "category": "data_integrity",
+      "severity": "high",
+      "title": "Bash heredoc with embedded JSON containing en-dashes/special chars can truncate file mid-write",
+      "detail": "Lost nightly-run-state.json a SECOND time today via a Python script using bash heredoc that embedded JSON strings with en-dashes (\u2014) and accented characters. The bash heredoc completed but Python read interrupted parsing at line 212 mid-string. Recovery: restored from git HEAD (which only had 4/22 pre-Run#2 state) then rebuilt the entire state file via Write tool with a complete known-good JSON dictionary. Mitigation: always build state-file dicts in pure Python and use json.dump to a .new sibling then os.replace, rather than embedding JSON literals in bash heredocs."
     }
   ]
 }
