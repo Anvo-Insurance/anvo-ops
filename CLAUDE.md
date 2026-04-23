@@ -142,11 +142,26 @@ The remote is HTTPS: `https://github.com/Anvo-Insurance/anvo-brain.git`. Each Co
 - If using SSH: key location is `.claude-keys/anvo-brain-deploy` (gitignored via `.claude-keys/` in `.gitignore`). The repo's local `core.sshCommand` config points at this key. **However, the Cowork sandbox exports a `GIT_SSH_COMMAND` env var that overrides `core.sshCommand`.** Always prefix network git operations with `unset GIT_SSH_COMMAND &&` so the configured key is picked up. Examples: `unset GIT_SSH_COMMAND && git pull`, `unset GIT_SSH_COMMAND && git push origin main`.
 - If `.claude-keys/anvo-brain-deploy` is missing (fresh clone, new workspace, etc.), regenerate with `ssh-keygen -t ed25519 -f .claude-keys/anvo-brain-deploy -N "" -C "claude-cowork-deploy-key@anvo-brain"`, then add the new `.pub` contents to the repo's Deploy keys on GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked. Delete the old deploy key on GitHub after.
 
-**Edward's session (HTTPS + PAT, primary path):**
-- Remote is HTTPS. PAT is cached by `git credential-manager` on the host machine; the Cowork sandbox inherits the cached credential.
-- If pushes start prompting for username/password, Edward needs to refresh the PAT on his Windows host (GitHub → Settings → Developer settings → Personal access tokens) and re-cache it via `git push` once on the host.
-- **Mounted folder git workaround (Windows host only):** The Cowork sandbox cannot delete `.git` lock files on the OneDrive-mounted folder, which causes git operations to fail and leave stale locks behind. To avoid this, Edward keeps the working repo at `C:\Users\ehsye\dev\anvo-brain` (NOT inside OneDrive). The previous `/tmp/anvo-brain-push` clean-clone workaround is no longer needed since the repo lives outside OneDrive.
-- If the repo accidentally gets cloned into OneDrive again, never run `git pull`, `git commit`, or `git push` directly in it — it will create lock files that require Edward to manually delete from his terminal.
+**Edward's session (SSH deploy key + /tmp clone):**
+- Deploy key location: `.claude-keys/edward-deploy` (persists across sessions via mounted folder, gitignored)
+- **On session startup, run this setup sequence:**
+  ```bash
+  # 1. Restore SSH key from mounted folder
+  mkdir -p ~/.ssh
+  cp /path/to/mounted/anvo-ops/.claude-keys/edward-deploy ~/.ssh/id_ed25519
+  chmod 600 ~/.ssh/id_ed25519
+  ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+
+  # 2. Clone to /tmp for all git operations
+  git clone git@github.com:Anvo-Insurance/anvo-ops.git /tmp/anvo-ops-push
+  cd /tmp/anvo-ops-push
+  git config user.name "Edward Hsyeh"
+  git config user.email "edward@anvo-insurance.com"
+  ```
+- **To commit and push:** Edit files in mounted folder → `cp` changed files to `/tmp/anvo-ops-push` → `git add` + `git commit` + `git push origin main` from there.
+- **To pull latest:** `cd /tmp/anvo-ops-push && git pull origin main` → `cp` updated files back to mounted folder.
+- **Why /tmp?** The Cowork sandbox cannot delete `.git` lock files on the mounted folder. Running git operations directly on the mount creates stale locks that require Edward to manually delete. The `/tmp` clone avoids this entirely.
+- If `.claude-keys/edward-deploy` is missing (first time setup), generate with `ssh-keygen -t ed25519 -f .claude-keys/edward-deploy -N "" -C "edward-cowork-deploy-key"`, then add the `.pub` contents to GitHub (`Settings → Deploy keys → Add deploy key`) with "Allow write access" checked.
 
 **Both sessions:**
 - For SSH: GitHub allows multiple deploy keys per repo, one per session. To revoke access for either session: delete that session's deploy key on GitHub. The private key becomes inert immediately.
