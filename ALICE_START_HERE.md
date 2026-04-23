@@ -1,6 +1,8 @@
 # Alice — Start Here
 
-This is the only file you need to read. Everything else is automated.
+> 🚨 **Don't have the repo cloned yet?** If you haven't installed GitHub Desktop, cloned `anvo-brain`, and installed Claude Desktop yet, **open `ALICE_INSTALL.md` first.** That file walks you through the install + clone (about 20 minutes). Come back to this file when you're done.
+
+This file is the second half of setup. Everything from here is automated by Claude.
 
 ## What's about to happen
 
