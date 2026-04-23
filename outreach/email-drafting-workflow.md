@@ -2,7 +2,7 @@
 
 End-to-end process for **drafting cold outreach emails** from a finished prospect CSV produced by the prospecting pipeline. This file covers Alice's drafting flow only.
 
-For the upstream prospecting pipeline (how the CSV is generated — Apollo scoring, verification, contact reveals, contact-level scoring), see `instructions/INSTRUCTIONS-v5.md`. For the nightly automated batch runs, see `instructions/nightly-pipeline.md`.
+For the upstream prospecting pipeline (how the CSV is generated — Apollo scoring, verification, contact reveals, contact-level scoring), see `instructions/INSTRUCTIONS-v5.md`. For the nightly automated batch runs, see `instructions/nightly-apollo-reveals.md` (Stages 1–3) and `instructions/nightly-scoring-drafting.md` (Stages 4–5, includes Edward's overnight Gmail drafts from `edward@anvoins.com`).
 
 ---
 
@@ -58,9 +58,13 @@ CSV column schema and `draft_status` codes are documented in `outreach/README.md
       - **From:** `alice@anvo-insurance.com`
       - **Subject:** the `subject_line` from the CSV (adjust for natural phrasing if needed)
       - **Body:** the personalized template
-   4. Update `draft_status` to `DRAFTED` in the CSV.
+   4. Update `draft_status` to `DRAFTED` and `drafted_by` to `alice` in the CSV.
 5. If a row has red flags in `notes` (e.g., `RED FLAG`, `DATA QUALITY ISSUE`, `FLAGGED`), skip it and set `draft_status` to `SKIPPED_DATA_ISSUE`.
 6. Commit the updated CSV and push.
+
+### Why the empty-`draft_status` gate matters
+
+Edward's overnight scoring + drafting task (`instructions/nightly-scoring-drafting.md`) writes to the same CSV from `edward@anvoins.com`. Both flows gate on empty `draft_status` so they don't draft the same row twice. If you find a row with `draft_status=DRAFTED` and `drafted_by=edward`, Edward's overnight task already drafted it — leave it alone.
 
 ### Hard Rules
 
@@ -109,7 +113,8 @@ CSV column schema and `draft_status` codes are documented in `outreach/README.md
 - **CSV schema and processing rules:** `outreach/README.md`
 - **Email templates:** `outreach/templates.md`
 - **Upstream prospecting pipeline (Stages 1–7):** `instructions/INSTRUCTIONS-v5.md`
-- **Nightly automated batch runs (Edward's machine):** `instructions/nightly-pipeline.md`
+- **Nightly Apollo reveals (Edward's machine, Stages 1–3):** `instructions/nightly-apollo-reveals.md`
+- **Nightly scoring + drafting (Edward's machine, Stages 4–5, parallel to this flow):** `instructions/nightly-scoring-drafting.md`
 - **Carrier appetite (for targeting alignment):** `../carriers/carrier_matrix.md`
 - **Submission workflow (if a prospect converts):** `../workflows/new_submission.md`
 

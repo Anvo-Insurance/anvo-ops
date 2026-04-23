@@ -74,13 +74,16 @@ anvo-brain/
 │   │   ├── INSTRUCTIONS-v5.md          ← Multi-industry pipeline (Stages 1–7)
 │   │   ├── INSTRUCTIONS-stage4-7.md    ← Detailed Stage 4–7 logic
 │   │   ├── COWORK-TASK-PROMPTS.md      ← Copy-paste prompts for ad-hoc runs
-│   │   ├── nightly-pipeline.md         ← Runbook for the continuous nightly batch
-│   │   └── scheduled-task-nightly.md   ← Trimmed prompt body for the scheduler
+│   │   ├── nightly-apollo-reveals.md          ← Runbook — Stages 1–3 (Apollo reveals)
+│   │   ├── scheduled-task-apollo-reveals.md   ← Thin prompt body for the apollo-reveals scheduler
+│   │   ├── nightly-scoring-drafting.md        ← Runbook — Stages 4–5 (scoring + Gmail drafts from edward@anvoins.com)
+│   │   └── scheduled-task-scoring-drafting.md ← Thin prompt body for the scoring-drafting scheduler
 │   └── reports/                        ← State files + generated batch outputs
-│       ├── nightly-run-state.json      ← Pipeline state (mutated each run)
-│       ├── pipeline-learnings.json     ← Accumulated workarounds (append-only)
+│       ├── nightly-run-state.json      ← Shared pipeline state (apollo-reveals owns stage2/stage3/credit_cycle/daily_runs; scoring-drafting owns stage4/stage5)
+│       ├── pipeline-learnings.json     ← Accumulated workarounds (append-only, shared by both nightly tasks)
 │       ├── stage3_results.csv          ← Ground truth: every revealed contact
-│       └── stage{N}_outreach_log.csv   ← Outputs ready for Alice's drafting flow
+│       ├── stage4_scored.csv           ← Scored prospects with priority + carrier + opening angle
+│       └── stage{N}_outreach_log.csv   ← Drafted emails (drafted_by = edward | alice)
 ├── intercom/                  ← Intercom setup, workflows, message templates
 │   ├── setup_notes.md
 │   ├── workflows/

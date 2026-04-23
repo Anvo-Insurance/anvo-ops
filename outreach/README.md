@@ -2,25 +2,36 @@
 
 This folder houses everything related to Anvo's cold outbound: the multi-stage prospecting pipeline that produces qualified contacts, and the email-drafting flow that turns those contacts into Gmail drafts. It is self-contained — an agent working on outreach should only need to read files inside `outreach/`.
 
-There are two distinct workflows here. They share data but have different drivers, schedules, and operational rhythms.
+There are three distinct workflows here. They share data but have different drivers, schedules, and operational rhythms.
 
-## The Two Workflows
+## The Three Workflows
 
-### 1. Prospecting Pipeline (Edward-driven, scheduled task)
+### 1. Apollo Reveals — Stages 1–3 (Edward-driven, scheduled task, every 45 min 11pm–3am ET)
 
-Stages 1–7 of the pipeline ingest a vertical (Construction, Logistics, Manufacturing, etc.), filter and score companies, reveal contact details from Apollo, and produce a `stage{N}_outreach_log.csv` ready for drafting. This runs primarily as a continuous nightly batch on Edward's machine (every 45 min, 11pm–3am ET) and occasionally as ad-hoc Cowork runs.
+Ingests a vertical (Construction, Logistics, Manufacturing, etc.), filters and scores companies in Apollo, verifies them, and reveals contact details. Output: every revealed contact lands in `reports/stage3_results.csv`. Requires Chrome open + Apollo logged in. Rate-limited by Apollo credits (2,600/month).
 
 **Start here:**
 
 - `instructions/INSTRUCTIONS-v5.md` — multi-industry pipeline, Stages 1–7, scoring rubrics, verification logic. **Source of truth for stage logic.**
-- `instructions/INSTRUCTIONS-stage4-7.md` — detailed Stage 4–7 logic (deeper than v5)
-- `instructions/nightly-pipeline.md` — runbook for the continuous nightly batch. **Source of truth for orchestration**, credit budget, Apollo navigation hard rules, and escalation triggers.
-- `instructions/scheduled-task-nightly.md` — the trimmed prompt body that the Cowork scheduled task system pastes verbatim. References the runbook above.
+- `instructions/nightly-apollo-reveals.md` — runbook for the apollo-reveals nightly task. **Source of truth for orchestration**, credit budget, Apollo navigation hard rules, and escalation triggers.
+- `instructions/scheduled-task-apollo-reveals.md` — the trimmed prompt body that the Cowork scheduled task system pastes verbatim. References the runbook above.
 - `instructions/COWORK-TASK-PROMPTS.md` — copy-paste prompts for ad-hoc/manual runs (one-off vertical kickoffs, batch verifications, etc.)
 
-### 2. Email Drafting (Alice-driven, ad-hoc)
+### 2. Scoring + Drafting — Stages 4–5 (Edward-driven, scheduled task, ~3:30am ET nightly)
 
-Once a `stage{N}_outreach_log.csv` exists, Alice's Cowork reads it, picks a template per row, drafts personalized emails into Gmail, and updates `draft_status` back into the CSV. Alice reviews drafts in Gmail before sending.
+Picks up where apollo-reveals leaves off. Scores every newly revealed contact against Anvo's fit rubric, recommends a starting carrier, writes an opening angle, and drafts personalized cold emails for HIGH/MEDIUM contacts as Gmail drafts in `edward@anvoins.com`. Never sends. Output: `reports/stage4_scored.csv` and `reports/stage5_outreach_log.csv` rows with `drafted_by=edward`.
+
+**Start here:**
+
+- `instructions/INSTRUCTIONS-stage4-7.md` — detailed Stage 4 scoring rubric + Stage 5 email tone and structure rules. **Source of truth for scoring + email policy.**
+- `instructions/nightly-scoring-drafting.md` — runbook for the scoring + drafting nightly task. **Source of truth for orchestration** of this half of the pipeline.
+- `instructions/scheduled-task-scoring-drafting.md` — the trimmed prompt body that the Cowork scheduled task system pastes verbatim.
+
+### 3. Daytime Email Drafting (Alice-driven, ad-hoc)
+
+Runs in parallel with the scoring + drafting nightly task. Alice's Cowork reads `stage{N}_outreach_log.csv`, picks a template per row, drafts personalized emails into Gmail under `alice@anvo-insurance.com`, and updates `draft_status` back into the CSV. Alice reviews drafts in Gmail before sending. Output: stage5 rows with `drafted_by=alice`.
+
+Both flows gate on empty `draft_status` to avoid drafting the same row twice. The `drafted_by` column distinguishes which flow created each draft.
 
 **Start here:**
 
@@ -31,21 +42,22 @@ Once a `stage{N}_outreach_log.csv` exists, Alice's Cowork reads it, picks a temp
 
 `reports/` holds two kinds of files: **state files** that the pipeline mutates, and **batch outputs** that downstream workflows consume.
 
-### State files (mutated by the nightly pipeline)
+### State files (mutated by the nightly tasks)
 
 | File | Purpose | Mutated by |
 |------|---------|-----------|
-| `nightly-run-state.json` | Current pipeline cursor: monthly credit budget, daily run count, next batch index, current vertical | Nightly pipeline (every run) |
-| `pipeline-learnings.json` | Append-only log of failure modes and workarounds discovered at runtime | Nightly pipeline (when a new failure is hit) |
-| `stage3_results.csv` | Ground truth: every contact ever revealed from Apollo. Append-only | Nightly pipeline (Stage 3 reveal) |
-| `A2-stage1-tier1-scored.csv` | Master Tier 1 prospect list per vertical — the queue Stage 2 verifies against | Pipeline (Stage 1) |
-| `A2-stage2-batch{N}-verified.csv` | Per-batch verification output from Stage 2 | Pipeline (each Stage 2 batch) |
+| `nightly-run-state.json` | Shared pipeline state. Apollo-reveals owns `stage2`, `stage3`, `credit_cycle`, `daily_runs`. Scoring-drafting owns `stage4` and `stage5`. Each task only writes its own keys. | Both nightly tasks |
+| `pipeline-learnings.json` | Append-only log of failure modes and workarounds (shared by both nightly tasks; categories distinguish source: `apollo_*`, `stage2_*`, `stage4_*`, `stage5_*`, `web_research`, `gmail_drafting`, etc.) | Both nightly tasks |
+| `stage3_results.csv` | Ground truth: every contact ever revealed from Apollo. Append-only | Apollo-reveals (Stage 3) |
+| `stage4_scored.csv` | Scored prospects with priority, carrier, opening angle. Append-only | Scoring-drafting (Stage 4) |
+| `A2-stage1-tier1-scored.csv` | Master Tier 1 prospect list per vertical — the queue Stage 2 verifies against | Apollo-reveals (Stage 1) |
+| `A2-stage2-batch{N}-verified.csv` | Per-batch verification output from Stage 2 | Apollo-reveals (each Stage 2 batch) |
 
 ### Batch outputs (consumed by email drafting)
 
 | File | Purpose | Consumed by |
 |------|---------|-------------|
-| `stage{N}_outreach_log.csv` | Final scored, deduped, and email-revealed prospect list. One per outreach batch. | `email-drafting-workflow.md` |
+| `stage{N}_outreach_log.csv` | Drafted emails — one row per HIGH/MEDIUM contact with a Gmail draft created. Both nightly scoring-drafting (rows with `drafted_by=edward`) and Alice's daytime flow (rows with `drafted_by=alice`) append here. | `email-drafting-workflow.md` (Alice) + `nightly-scoring-drafting.md` (Edward overnight) |
 
 ### Naming conventions
 
@@ -73,22 +85,28 @@ This is the schema for `stage{N}_outreach_log.csv`. It is the handoff format fro
 | `segment` | text | Industry segment (e.g., Construction, Transport/Logistics, Manufacturing) |
 | `research_summary` | text | Brief background on the company — use this to personalize the email |
 | `referral_opportunity` | YES / NO | Whether there's a warm intro path |
-| `subject_line` | text | Suggested email subject. Alice's Cowork may use as-is or adjust |
+| `subject_line` | text | Suggested email subject. The drafting flow may use as-is or adjust |
 | `draft_status` | status code | Tracks where this prospect is in the drafting flow (see below) |
-| `notes` | text | Additional context, flags, or warnings (e.g., data quality issues) |
+| `drafted_by` | `edward` / `alice` / *(empty)* | Which drafting flow created the draft. Empty until drafted. |
+| `notes` | text | Additional context, flags, or warnings (e.g., data quality issues, Gmail draft ID) |
 
 ### Draft Status Values
 
 | Status | Meaning | Who Sets It |
 |--------|---------|-------------|
 | *(empty)* | Not yet processed | Default |
-| `DRAFTED` | Gmail draft created by Alice's Cowork | Alice's Cowork |
+| `DRAFTED` | Gmail draft created (see `drafted_by` for which flow) | Either drafting flow |
 | `DRAFTED_NEXT_BATCH` | Hold for next outreach round | Edward |
-| `SENT` | Email sent by Alice | Alice (manual) |
+| `SENT` | Email sent | Alice (manual) |
 | `REPLIED` | Prospect replied | Alice or Edward |
-| `SKIPPED_NO_ANGLE` | No compelling outreach angle found | Edward |
+| `SKIPPED_NO_HOOK` | Research yielded no specific hook — generic email would be worse than skipping | Either drafting flow |
+| `SKIPPED_NO_ANGLE` | No compelling outreach angle found (legacy code; new rows use `SKIPPED_NO_HOOK`) | Edward |
 | `SKIPPED_GENERIC_EMAIL` | Contact is not decision-maker or email is generic | Edward |
-| `SKIPPED_DATA_ISSUE` | Data quality problem — do not outreach until resolved | Edward |
+| `SKIPPED_DATA_ISSUE` | Data quality problem — do not outreach until resolved | Either drafting flow |
+
+### Collision Avoidance
+
+Both drafting flows (Alice's daytime + Edward's overnight scoring-drafting) gate on **empty `draft_status`** before drafting. The `drafted_by` column distinguishes which flow created the draft after the fact (for review/metrics) but is not used for collision prevention. If you ever want to retry a draft, clear both `draft_status` and `drafted_by` first.
 
 For full processing rules (which rows to draft, ordering, follow-up cadence), see `email-drafting-workflow.md`.
 
