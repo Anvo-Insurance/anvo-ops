@@ -11,6 +11,26 @@ Templates for cold outreach to commercial insurance prospects. Used by Alice's (
 5. **Subject line** — use the `subject_line` from the CSV. If blank, write one that references something specific about the company (not "Insurance quote for {{company}}").
 6. **Sender** — the email goes from whoever's Cowork is drafting it (alice@anvo-insurance.com or edward@anvo-insurance.com).
 
+## Draft Body Format — HTML, Not Plain Text
+
+All Gmail drafts are created with an **HTML body** (not plain text). The signature block below requires HTML to render the logo, bold name, blue hyperlink, phone links, license line, and italic disclaimer. When converting a template body to HTML:
+
+- Wrap each paragraph in `<p>` tags with no inline styling — Gmail will use its default rendering.
+- Preserve one blank line between paragraphs by using separate `<p>` elements.
+- Do not include a "Best," closing — the signature block below serves as the sign-off.
+- End the HTML body with the signature block from the "Signature Block" section, verbatim, with `{{campaign}}` and `{{template}}` substituted.
+- The `create_draft` MCP tool should be called with the body as an HTML string. If the tool has a separate `isHtml` or `content_type` flag, set it to HTML.
+
+Minimal example body structure:
+
+```html
+<p>Hi {{contact_first_name}},</p>
+<p>{{opening_hook}}</p>
+<p>I'm {{sender_first_name}} with Anvo Insurance — {{pitch}}</p>
+<p>{{soft_cta}}</p>
+{{signature_block}}
+```
+
 ## Value Prop Customization Guide
 
 Never use a one-size-fits-all value prop. Instead, match Anvo's strengths to the prospect's specific exposures:
@@ -43,13 +63,7 @@ I'd love to spend 15 minutes understanding what you've got in place and see if w
 
 Would you be open to a quick call?
 
-Best,
-{{sender_name}}
-{{sender_title}}
-Anvo Insurance
-{{sender_email}}
-{{sender_phone}}
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=standard
+{{signature_block}}  (see "Signature Block" section below — use `template=standard` when substituting)
 ```
 
 ## Template 2: Generational / Family Business Angle
@@ -69,13 +83,7 @@ I'd enjoy learning about where {{company}} is headed and whether your current co
 
 Worth a 15-minute call?
 
-Best,
-{{sender_name}}
-{{sender_title}}
-Anvo Insurance
-{{sender_email}}
-{{sender_phone}}
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=family
+{{signature_block}}  (see "Signature Block" section below — use `template=family` when substituting)
 ```
 
 ## Template 3: Growth / Award / Milestone Angle
@@ -95,13 +103,7 @@ I'm {{sender_name}} with Anvo Insurance. We specialize in helping {{segment}} co
 
 Open to a 15-minute call?
 
-Best,
-{{sender_name}}
-{{sender_title}}
-Anvo Insurance
-{{sender_email}}
-{{sender_phone}}
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=growth
+{{signature_block}}  (see "Signature Block" section below — use `template=growth` when substituting)
 ```
 
 ## Template 4: Specialty / Niche Angle
@@ -121,13 +123,7 @@ I'm {{sender_name}}, and I'd love to learn more about {{company}}'s operation an
 
 15 minutes — worth a shot?
 
-Best,
-{{sender_name}}
-{{sender_title}}
-Anvo Insurance
-{{sender_email}}
-{{sender_phone}}
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=specialty
+{{signature_block}}  (see "Signature Block" section below — use `template=specialty` when substituting)
 ```
 
 ## Template 5: WBE / MWBE / Certification Angle
@@ -147,13 +143,7 @@ I'm {{sender_name}} with Anvo Insurance. We work with certified contractors and 
 
 Would a quick call make sense?
 
-Best,
-{{sender_name}}
-{{sender_title}}
-Anvo Insurance
-{{sender_email}}
-{{sender_phone}}
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content=wbe
+{{signature_block}}  (see "Signature Block" section below — use `template=wbe` when substituting)
 ```
 
 ## Template Selection Logic
@@ -187,31 +177,64 @@ When a new batch goes out, update `utm_campaign` to reflect the stage and month 
 
 ## Signature Block
 
-Use this signature block for all emails. The website link MUST include UTM parameters matching the template used.
+Use this signature block for all emails. It's HTML — paste verbatim at the end of the HTML body. The "Anvo Insurance" hyperlink carries the UTM tracking; substitute `{{campaign}}` and `{{template}}` before sending to `create_draft`.
 
-**If sender is Alice:**
-```
-Alice Hsyeh
-Operations Manager
-Anvo Insurance
-alice@anvo-insurance.com
-<!-- TODO: Alice's phone number -->
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content={{template}}
-```
+The visible layout (logo on the left, text block on the right) comes from a 2-column table. Inline styles only — no external CSS survives Gmail's sanitizer.
 
 **If sender is Edward:**
+```html
+<div>-- </div>
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.4;">
+  <tr>
+    <td valign="top" style="padding-right: 14px;">
+      <img src="https://anvo-insurance.com/logo.png" alt="Anvo Insurance" width="72" style="display: block; border: 0;">
+    </td>
+    <td valign="top" style="border-left: 1px solid #d0d0d0; padding-left: 14px;">
+      <div style="font-weight: bold; color: #222222; margin-bottom: 2px;">Edward</div>
+      <div style="margin-bottom: 8px;">
+        <a href="https://anvo-insurance.com?utm_source=cold_outreach&amp;utm_medium=email&amp;utm_campaign={{campaign}}&amp;utm_content={{template}}" style="color: #1a73e8; text-decoration: underline;">Anvo Insurance</a>
+      </div>
+      <div>Call: <a href="tel:+19138459688" style="color: #1a73e8; text-decoration: underline;">(913) 845-9688</a></div>
+      <div style="margin-bottom: 8px;">Text: <a href="tel:+18883788781" style="color: #1a73e8; text-decoration: underline;">+1-888-378-8781</a></div>
+      <div style="margin-bottom: 8px;">CA License #4533415 | NY License #PC-1946295</div>
+      <div style="font-style: italic; font-size: 11px; color: #888888; line-height: 1.35;">Anvo Insurance is an independent insurance agency compensated by the carriers we represent. Coverage cannot be bound, altered, or canceled via email, fax, or voicemail and is not effective until confirmed directly by a licensed agent or an authorized representative of the applicable carrier. This message may contain confidential information intended solely for the recipient(s). If received in error, please notify the sender and delete immediately.</div>
+    </td>
+  </tr>
+</table>
 ```
-Edward Hsyeh
-Managing Partner
-Anvo Insurance
-edward@anvo-insurance.com
-<!-- TODO: Edward's phone number -->
-anvo-insurance.com?utm_source=cold_outreach&utm_medium=email&utm_campaign={{campaign}}&utm_content={{template}}
+
+**If sender is Alice:**
+```html
+<div>-- </div>
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; line-height: 1.4;">
+  <tr>
+    <td valign="top" style="padding-right: 14px;">
+      <img src="https://anvo-insurance.com/logo.png" alt="Anvo Insurance" width="72" style="display: block; border: 0;">
+    </td>
+    <td valign="top" style="border-left: 1px solid #d0d0d0; padding-left: 14px;">
+      <div style="font-weight: bold; color: #222222; margin-bottom: 2px;">Alice</div>
+      <div style="margin-bottom: 8px;">
+        <a href="https://anvo-insurance.com?utm_source=cold_outreach&amp;utm_medium=email&amp;utm_campaign={{campaign}}&amp;utm_content={{template}}" style="color: #1a73e8; text-decoration: underline;">Anvo Insurance</a>
+      </div>
+      <div>Call: <a href="tel:+19138459688" style="color: #1a73e8; text-decoration: underline;">(913) 845-9688</a></div>
+      <div style="margin-bottom: 8px;">Text: <a href="tel:+18883788781" style="color: #1a73e8; text-decoration: underline;">+1-888-378-8781</a></div>
+      <div style="margin-bottom: 8px;">CA License #4533415 | NY License #PC-1946295</div>
+      <div style="font-style: italic; font-size: 11px; color: #888888; line-height: 1.35;">Anvo Insurance is an independent insurance agency compensated by the carriers we represent. Coverage cannot be bound, altered, or canceled via email, fax, or voicemail and is not effective until confirmed directly by a licensed agent or an authorized representative of the applicable carrier. This message may contain confidential information intended solely for the recipient(s). If received in error, please notify the sender and delete immediately.</div>
+    </td>
+  </tr>
+</table>
 ```
 
 **Variable substitution for signature links:**
 - `{{campaign}}` = current batch (e.g., `stage5_apr2026`)
 - `{{template}}` = template name used for this email: `standard`, `family`, `growth`, `specialty`, or `wbe`
+- Leave `&amp;` in the URL as-is — it's the HTML-escaped `&` that browsers will unescape when following the link.
+
+**What the signature does NOT include (by design):**
+- No "Best," / "Regards," / closing word — the signature serves as the sign-off. Template bodies end at the CTA question.
+- No visible email address — reply-to is set by the Gmail account the draft is created from (`edward@anvoins.com` or `alice@anvo-insurance.com`).
+- No raw UTM URL — tracking lives behind the "Anvo Insurance" hyperlink text.
+- No job title (previously "Managing Partner" / "Operations Manager") — first name only, matches Edward's signature in the reference image.
 
 ## Things to NEVER Do
 

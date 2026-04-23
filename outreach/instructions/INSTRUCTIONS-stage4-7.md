@@ -259,7 +259,7 @@ Create as a **Gmail draft** (never send directly). Use `gmail_create_draft`.
 2. **Bridge to insurance (1 sentence):** Natural transition connecting what you observed to why insurance matters for them.
 3. **Anvo value prop (1–2 sentences):** Specific to THIS business. Mention Mandarin capability if Chinese-owned. Construction expertise if contractor. Coverage gap identification if likely underserved.
 4. **Soft CTA (1 sentence):** Low-friction ask. "Would you be open to a 15-minute call?" or "Happy to swing by if you're ever free."
-5. **Sign-off:** "Edward, Anvo Insurance"
+5. **Sign-off:** The HTML signature block from `outreach/templates.md` (Signature Block section) serves as the sign-off. Do NOT write "Best," "Regards," or a closing word above it — the body ends at the CTA, then the signature block appears.
 
 #### Tone Rules
 - Friendly, human, peer-to-peer. Fellow business person, not a salesperson.
@@ -286,7 +286,7 @@ Create as a **Gmail draft** (never send directly). Use `gmail_create_draft`.
 Use the Gmail MCP tool `gmail_create_draft` with:
 - **To:** The prospect's email address from stage4_scored.csv
 - **Subject:** Personalized subject line
-- **Body:** The email (plain text, not HTML)
+- **Body:** **HTML**, not plain text. Wrap each paragraph of the body in `<p>` tags (no inline styling — let Gmail's defaults render), end the body at the CTA (no "Best," closing), then append the HTML signature block from `outreach/templates.md` verbatim with `{{campaign}}` and `{{template}}` substituted. If the tool has a `body_type` / `content_type` / `isHtml` flag, set it to HTML. See `templates.md` → "Draft Body Format — HTML, Not Plain Text" for the minimal body structure example.
 
 ### Step 4 — Log the Outreach
 

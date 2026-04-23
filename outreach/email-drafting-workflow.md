@@ -57,7 +57,7 @@ CSV column schema and `draft_status` codes are documented in `outreach/README.md
       - **To:** the prospect's `email`
       - **From:** `alice@anvo-insurance.com`
       - **Subject:** the `subject_line` from the CSV (adjust for natural phrasing if needed)
-      - **Body:** the personalized template
+      - **Body:** the personalized template rendered as **HTML** (not plain text). Wrap each paragraph in `<p>` tags and append the HTML signature block from `templates.md` → "Signature Block" (use the Alice block, with `{{campaign}}` and `{{template}}` substituted). No "Best," closing — the signature serves as the sign-off. See `templates.md` → "Draft Body Format — HTML, Not Plain Text" for full guidance.
    4. Update `draft_status` to `DRAFTED` and `drafted_by` to `alice` in the CSV.
 5. If a row has red flags in `notes` (e.g., `RED FLAG`, `DATA QUALITY ISSUE`, `FLAGGED`), skip it and set `draft_status` to `SKIPPED_DATA_ISSUE`.
 6. Commit the updated CSV and push.
