@@ -15,11 +15,11 @@ The downstream **scoring + drafting** task (Stages 4–5) has its own scheduled 
 ## Prompt Body (copy-paste below this line)
 
 ```
-You are running the Anvo Insurance nightly Apollo reveals pipeline (Stages 1–3). Read these files in order before doing anything else:
+You are running the Anvo Insurance nightly Apollo reveals pipeline (Stages 1–3). Working directory is the mounted anvo-brain repo root — all paths below are relative to it. Read these files in order before doing anything else:
 
-1. outreach/instructions/nightly-apollo-reveals.md — the runbook. THIS IS THE SOURCE OF TRUTH for orchestration, Apollo navigation, credit budget rules, and escalation triggers.
+1. outreach/instructions/nightly-apollo-reveals.md — the runbook. THIS IS THE SOURCE OF TRUTH for orchestration, Apollo navigation, credit budget rules, escalation triggers, AND the /tmp clone commit+push workflow (Step 5).
 2. outreach/reports/nightly-run-state.json — current pipeline state.
-3. outreach/reports/pipeline-learnings.json — accumulated workarounds. Read every entry and follow them.
+3. outreach/reports/pipeline-learnings.json — accumulated workarounds. Read every entry and follow them (especially categories apollo_navigation, apollo_reveal, chrome_stability, phone_reveal, credit_management, git_push).
 4. outreach/instructions/INSTRUCTIONS-v5.md — stage-by-stage scoring and verification logic.
 
 Then execute one batch following the runbook exactly. The runbook covers:
@@ -30,6 +30,7 @@ Then execute one batch following the runbook exactly. The runbook covers:
 - Step 2.5 — Phase 2 phone reveals (only if conditions met)
 - Step 3 — update state file, append learnings
 - Step 4 — output summary block
+- Step 5 — commit and push via /tmp clone + SSH deploy key. Deploy key lives at `.claude-keys/edward-deploy` inside the mounted anvo-brain folder. Strip CRLF and append a trailing newline before using it (OpenSSH fails with "error in libcrypto" otherwise). If any part of Step 5 fails, fall back to Step 5.5's paste-ready block and append a learning at severity=high / category=git_push.
 
 Hard rules from the runbook (do not skip):
 - If credits_remaining <= 0, STOP and output "Monthly credit cap reached — pausing until the 2nd."
@@ -38,15 +39,11 @@ Hard rules from the runbook (do not skip):
 - Process everything sequentially. Never spawn parallel sub-agents.
 - Email reveals come before phone reveals. Never reveal a phone if it would push you over the 2,600 monthly cap.
 - This task only writes the stage2/stage3/credit_cycle/daily_runs keys in nightly-run-state.json. Do NOT touch stage4 or stage5 keys (the scoring/drafting task owns those).
+- NEVER run git against the mounted anvo-brain folder directly. All git work happens inside /tmp/anvo-brain-push per runbook Step 5. The scoring+drafting task shares this /tmp clone — always `git fetch + reset --hard origin/main + clean -fd` at the start of Step 5.2 to pick up its commits.
 
 If the runbook conflicts with anything you remember from prior runs, follow the runbook. If you encounter a new failure mode, append a learning to outreach/reports/pipeline-learnings.json before stopping.
 
-After the run, commit and push the changed state files:
-  git add outreach/reports/nightly-run-state.json outreach/reports/stage3_results.csv outreach/reports/pipeline-learnings.json outreach/reports/A2-stage2-batch*-verified.csv
-  git commit -m "Nightly apollo reveals: <date> #<N>"
-  git push
-
-Output the summary block as defined in the runbook's Step 4.
+Output the summary block as defined in the runbook's Step 4. Then execute runbook Step 5 and report whether the push succeeded with the resulting commit SHA; if Step 5 fell back to the paste-block, include that block at the end of the response so Edward can run it manually.
 ```
 
 ---
@@ -54,24 +51,4 @@ Output the summary block as defined in the runbook's Step 4.
 ## When to Update This Prompt vs. the Runbook
 
 | Change | Where to make it |
-|--------|------------------|
-| New Apollo selector or anti-bot workaround | Runbook (`nightly-apollo-reveals.md`) |
-| Credit budget rule change | Runbook |
-| New escalation trigger | Runbook |
-| New phase added to the run lifecycle | Runbook + add a one-liner to the prompt's bullet list |
-| Schedule change (frequency, time window) | This file (and the Cowork scheduled task config) |
-| Working directory change | This file |
-
-The general principle: the prompt is the wrapper. The runbook is the work. When in doubt, edit the runbook.
-
----
-
-## Manual Test
-
-To dry-run without waiting for the scheduled time:
-
-1. Open a fresh Cowork session in `~/dev/anvo-brain/`.
-2. Make sure Chrome is open, logged into Apollo.
-3. Paste the prompt body above.
-
-If a manual run finds a new failure mode, append a learning to `pipeline-learnings.json` so the next scheduled run picks it up.
+|--------|-------

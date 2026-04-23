@@ -53,7 +53,8 @@ All paths are relative to the `anvo-brain` repo root.
 
 - This task runs in Cowork mode with Claude in Chrome. **Chrome must be open and logged into Apollo.io** before the run starts. If Chrome is closed, surface the issue and stop.
 - The agent cannot install software, restart Chrome, or fix login state. If Apollo's session expires mid-run, surface and stop.
-- File reads/writes against the repo are direct (mounted folder access). State and learnings files are versioned — every run that mutates them produces a commit (the scheduled task prompt handles git push).
+- File reads/writes against the repo are direct (mounted folder access). State and learnings files are versioned.
+- **The agent DOES run `git` itself**, but only inside `/tmp/anvo-brain-push` — never against the mounted anvo-brain folder. Canonical pattern: copy the SSH deploy key from `.claude-keys/edward-deploy` into `~/.ssh/id_ed25519` (strip CRLF + add trailing newline or OpenSSH fails with `error in libcrypto`), clone `git@github.com:Anvo-Insurance/anvo-brain.git` into `/tmp/anvo-brain-push`, copy the changed files in from the mount, commit, push. Full procedure in Step 5. If any part of it fails, the run falls back to emitting a paste-ready block (Step 5.5) so Edward can push manually.
 
 ---
 
@@ -67,6 +68,7 @@ All paths are relative to the `anvo-brain` repo root.
 2.5. Phase 2 — Phone reveals (only if conditions met)
 3.   Update state file + append learnings
 4.   Output summary
+5.   Commit and push via /tmp clone (fallback: emit paste block for Edward)
 ```
 
 Hard caps per run: **25 email reveals**, **5–15 phone reveals depending on cycle phase**, **25 Stage 2 verifications**.
@@ -233,6 +235,125 @@ Next batch starts from: [company name or "pending reveals" or "phone reveals"]
 
 ---
 
+### Step 5 — Commit and Push via /tmp Clone
+
+Run the commit + push yourself using the `/tmp` clone + SSH deploy key workflow. Canonical pattern, confirmed with Edward 2026-04-23. Never run `git` against the mounted anvo-brain folder directly — the mount is treated as read-only source of truth. All git happens inside `/tmp/anvo-brain-push`.
+
+**Why this is safe from a scheduled task**: the workflow clones anvo-brain into `/tmp` using an SSH deploy key that lives at `.claude-keys/edward-deploy` inside the mounted folder. If any step fails, fall back to emitting a paste-ready block per Step 5.5.
+
+#### Step 5.1 — Install the SSH deploy key
+
+The key at `.claude-keys/edward-deploy` comes off a Windows/OneDrive filesystem with CRLF line endings and often no trailing newline — OpenSSH will fail with `error in libcrypto` on a naïve `cp`. Always strip `\r` and append a trailing `\n`:
+
+```bash
+MOUNT=$(ls -d /sessions/*/mnt/anvo-brain 2>/dev/null | head -1)
+[ -z "$MOUNT" ] && { echo "ERR: anvo-brain not mounted — fall back to Step 5.5"; exit 1; }
+
+mkdir -p ~/.ssh
+tr -d '\r' < "$MOUNT/.claude-keys/edward-deploy" > ~/.ssh/id_ed25519
+printf '\n' >> ~/.ssh/id_ed25519
+chmod 600 ~/.ssh/id_ed25519
+ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+
+# Verify — fail fast, don't push if these don't both return cleanly
+ssh-keygen -y -f ~/.ssh/id_ed25519 >/dev/null
+ssh -T -o StrictHostKeyChecking=no git@github.com 2>&1 | grep -q 'successfully authenticated'
+```
+
+If the verification block errors or the grep fails, STOP and go to Step 5.5. Do not try to brute-force a push.
+
+**Shared workspace note**: If the scoring+drafting task has already run and installed the key this session, the key will already be in `~/.ssh/id_ed25519`. It's safe to re-run the install block — `tr` + `printf` + `chmod` are idempotent.
+
+#### Step 5.2 — Clone (or refresh) into /tmp
+
+```bash
+if [ -d /tmp/anvo-brain-push/.git ]; then
+  cd /tmp/anvo-brain-push && git fetch origin && git reset --hard origin/main && git clean -fd
+else
+  rm -rf /tmp/anvo-brain-push
+  git clone git@github.com:Anvo-Insurance/anvo-brain.git /tmp/anvo-brain-push
+fi
+cd /tmp/anvo-brain-push
+git config user.name "Edward Hsyeh"
+git config user.email "edward@anvo-insurance.com"
+```
+
+**Coordination with scoring+drafting task**: both tasks share `/tmp/anvo-brain-push`. The `fetch + reset --hard origin/main + clean -fd` pattern is how you pick up the other task's commits if it pushed first. Do not skip the reset — stale working state will cause conflicts.
+
+#### Step 5.3 — Copy only the files this run touched
+
+Typical full set for an apollo-reveals run:
+
+```bash
+for f in \
+  outreach/reports/nightly-run-state.json \
+  outreach/reports/pipeline-learnings.json \
+  outreach/reports/stage3_results.csv \
+  outreach/reports/A2-stage2-batch<N>-verified.csv; do
+  [ -f "$MOUNT/$f" ] && cp "$MOUNT/$f" "/tmp/anvo-brain-push/$f"
+done
+```
+
+Drop any file this run didn't actually touch:
+- `nightly-run-state.json` — always include (timestamp + counters bump every run).
+- `pipeline-learnings.json` — drop if no new learnings appended.
+- `stage3_results.csv` — drop if no reveals wrote a row this run.
+- `A2-stage2-batch<N>-verified.csv` — drop unless a new Stage 2 batch was produced this run; substitute the real batch number for `<N>`.
+
+**Hard rule**: Only touch keys in `nightly-run-state.json` that this task owns — `stage2`, `stage3`, `credit_cycle`, `daily_runs`. Never overwrite `stage4` or `stage5` (the scoring+drafting task owns those).
+
+#### Step 5.4 — Commit and push
+
+```bash
+cd /tmp/anvo-brain-push
+git add <space-separated list of the files you copied above>
+git commit -m "Nightly Apollo reveals: <YYYY-MM-DD> run #<R>
+
+Phase 1: <E> emails revealed (<C> credits)
+Phase 2: <P> phones revealed (<PC> credits) [or 'skipped']
+Stage 2 batch <N>: <V> verified (REVEAL <r> / SKIP <s> / MANUAL <m>)
+Credits remaining: <CR> / 2,600 | <D> days left in cycle
+Learnings added: <L>"
+git push origin main
+SHA=$(git rev-parse HEAD)
+echo "pushed $SHA"
+```
+
+Fill real counts — never leave `<R>` / `<E>` / `<YYYY-MM-DD>` placeholders. Include the resulting SHA in the Step 4 summary so Edward can verify at a glance.
+
+#### Step 5.5 — Fallback (paste block)
+
+If any part of 5.1–5.4 fails (mount missing, libcrypto error that tr/printf didn't fix, clone fails, push rejected, etc.), stop trying and emit this block instead so Edward can push manually from Claude Code:
+
+```
+**Push automation failed this run — paste this into Claude Code to commit manually:**
+
+​```bash
+cd C:\Users\ehsye\dev\anvo-brain
+git add outreach/reports/nightly-run-state.json outreach/reports/pipeline-learnings.json outreach/reports/stage3_results.csv outreach/reports/A2-stage2-batch<N>-verified.csv
+git commit -m "Nightly Apollo reveals: <YYYY-MM-DD> run #<R>
+
+Phase 1: <E> emails revealed (<C> credits)
+Phase 2: <P> phones revealed (<PC> credits) [or 'skipped']
+Stage 2 batch <N>: <V> verified (REVEAL <r> / SKIP <s> / MANUAL <m>)
+Credits remaining: <CR> / 2,600 | <D> days left in cycle
+Learnings added: <L>"
+git push
+​```
+```
+
+Same file-inclusion rules as 5.3 apply to the paste-block `git add` line — drop files this run didn't touch. Then append a new learning at `severity=high`, `category=git_push` describing exactly what failed so the next run either fixes it or short-circuits faster.
+
+#### Step 5.6 — Zero-change runs
+
+If the run was stopped early with no mutations (daily cap reached, monthly credit cap reached, Chrome disconnect before first reveal, etc.), skip 5.1–5.5 entirely and report:
+
+```
+**Nothing to commit this run — stopped before any state changed.**
+```
+
+---
+
 ## Apollo Reveal Procedure (Email)
 
 For each company being revealed:
@@ -272,94 +393,4 @@ For each company being revealed:
    let targetIdx = -1;
    Array.from(cells).forEach((c,i) => {
      const row = c.closest('tr,[role="row"],li,[class*="row"]');
-     if(row && row.innerText.includes('PERSON_NAME')) targetIdx=i;
-   });
-   const row = cells[targetIdx]?.closest('tr,[role="row"],li,[class*="row"]');
-   row ? row.innerText : 'not found';
-   ```
-
-6. **Grab HQ phone for free.** Read company page text or sidebar for a phone number — costs 0 credits. Log alongside the email.
-
-7. **Append to `stage3_results.csv` immediately.**
-
-**Skip reasons (record in CSV, no credit cost):**
-- Company not found in Apollo → `NO_CONTACTS`
-- No decision-maker present → `NO_CONTACTS`
-- All contacts show red X email → `NO_EMAIL`
-- Multiple ambiguous matches → note "Multiple matches"
-
-**Generic-name tip:** for companies like "Thrive Homes", append "LLC" or "Inc" to search to filter out international results.
-
----
-
-## Apollo Navigation — Hard Constraints
-
-These are hard-won rules. Each one came from a previous failed run. **Do not deviate.**
-
-| ❌ Never | ✅ Use Instead |
-|---------|---------------|
-| The `find` tool in Apollo (always times out) | `javascript_tool` with `data-tour-id` selectors |
-| `/api/v1/organizations/search` (returns stale IDs starting with `54...`) | URL-based people search with `qOrganizationName=` |
-| `get_page_text` to read contacts | `javascript_tool` with `data-tour-id` approach |
-| Screenshots to read emails | JavaScript reads |
-| Browser address bar typing | `navigate` tool |
-| `organizationLocations[]=` (array brackets cause "Array passed for String field" error) | `contactLocations=United%20States` |
-| The saved list ID `69bc42035b6cbc00157d9287` (it's the food & bev list — wrong for Tier 1) | General people search URL pattern above |
-
----
-
-## State File Schemas
-
-`nightly-run-state.json` is shared with the downstream `nightly-scoring-drafting.md` task. Each task only writes its own keys. Minimum fields touched by this task:
-
-```json
-{
-  "last_updated": "2026-04-22",
-  "daily_runs": { "date": "2026-04-22", "count": 0 },
-  "credit_cycle": {
-    "cycle_start": "2026-04-02",
-    "cycle_end": "2026-05-01",
-    "email_credits_spent": 0,
-    "phone_credits_spent": 0,
-    "enrichment_credits_wasted": 0,
-    "total_credits_spent": 0
-  },
-  "stage2": { "total_verified": 0, "next_batch_number": 1 },
-  "stage3": {
-    "total_revealed_to_date": 0,
-    "total_credits_spent_to_date": 0,
-    "pending_reveals": { "batch1_pending": [], "batch2_pending": [] }
-  }
-}
-```
-
-The downstream task adds `stage4` and `stage5` keys to the same file — see `nightly-scoring-drafting.md` for those schemas. Don't overwrite keys you don't own.
-
-**`pipeline-learnings.json` — learning entry:**
-```json
-{
-  "date": "2026-04-22",
-  "category": "apollo_reveal",
-  "severity": "high",
-  "summary": "Email cell click via cell.click() doesn't register reliably; use full mousedown/mouseup/click event dispatch with bounding-rect coordinates."
-}
-```
-
----
-
-## When to Stop and Escalate
-
-Stop the run and surface to Edward when:
-
-- Apollo shows a **billing / upgrade / credit-limit modal** — never retry, just stop
-- Chrome **disconnects more than twice** in the same run (transient one-offs are fine — wait 5s and retry)
-- A reveal click fails three times for the same company even with the computer-tool fallback
-- Stage 2 verification produces an unfamiliar pattern not covered by OPEN/CLOSED/UNVERIFIED rules
-- Apollo's people-search URL pattern returns 0 cells where you expect contacts (could mean URL schema change — high-severity learning)
-- Anything ambiguous. Surfacing costs nothing. Guessing wrong on credit handling can cost hundreds of dollars.
-
----
-
-## When the Master List Is Done
-
-If all 1,495 Tier 1 companies have been through Stage 2, the pipeline transitions to **phone-reveals-only mode** until either credits run out or the cycle resets. At that point, also surface to Edward — it's likely time to either pull the next Apollo export or begin Tier 2 processing.
+     if(row && row.in
