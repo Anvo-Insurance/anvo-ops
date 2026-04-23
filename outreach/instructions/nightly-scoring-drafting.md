@@ -62,7 +62,8 @@ All paths are relative to the `anvo-brain` repo root.
 - This task runs in Cowork with web search + Gmail MCP available. Chrome being open is **not** a hard requirement (no Apollo work happens here).
 - The agent cannot send email — only draft. The Gmail connector is bound to `edward@anvoins.com` (the secondary cold-outreach domain).
 - Gmail drafts created here land in Edward's "Drafts" folder. Alice and Edward both have visibility; the human review/send step happens out-of-band.
-- File reads/writes against the repo are direct (mounted folder access). State and learnings files are versioned — every run that mutates them produces a commit (the scheduled task prompt handles git push).
+- File reads/writes against the repo are direct (mounted folder access). State and learnings files are versioned.
+- **The agent DOES run `git` itself**, but only inside `/tmp/anvo-brain-push` — never against the mounted anvo-brain folder. Canonical pattern: copy the SSH deploy key from `.claude-keys/edward-deploy` into `~/.ssh/id_ed25519` (strip CRLF + add trailing newline or OpenSSH fails with `error in libcrypto`), clone `git@github.com:Anvo-Insurance/anvo-brain.git` into `/tmp/anvo-brain-push`, copy the changed files in from the mount, commit, push. Full procedure in Step 5. If any part of it fails, the run falls back to emitting a paste-ready block (Step 5.5) so Edward can push manually.
 - Web research happens via WebSearch / WebFetch with normal rate limits; respect 2-5s pacing per the Universal Instructions.
 
 ---
@@ -75,6 +76,7 @@ All paths are relative to the `anvo-brain` repo root.
 2.   Stage 5 — draft emails for HIGH/MEDIUM contacts without drafts
 3.   Update state file + append learnings
 4.   Output summary
+5.   Commit and push via /tmp clone (fallback: emit paste block for Edward)
 ```
 
 Hard caps per run:
@@ -238,37 +240,101 @@ Next run starts from: [email or "caught up"]
 
 ---
 
-## CSV Schema Notes
+### Step 5 — Commit and Push via /tmp Clone
 
-- **`stage4_scored.csv`** — append-only. Match on `email` to detect already-scored.
-- **`stage5_outreach_log.csv`** — append-only. Match on `email` regardless of `drafted_by`. The `drafted_by` column distinguishes overnight (this task, value: `edward`) from daytime (Alice's flow, value: `alice`). If a row exists with any `drafted_by` value, do not re-draft.
+Run the commit + push yourself using the `/tmp` clone + SSH deploy key workflow. Canonical pattern, confirmed with Edward 2026-04-23. Never run `git` against the mounted anvo-brain folder directly — the mount is treated as read-only source of truth. All git happens inside `/tmp/anvo-brain-push`.
 
-If `stage5_outreach_log.csv` does not yet have a `drafted_by` column when this task runs, add it (set existing rows to `alice` since they came from her flow before this task existed).
+**Why this is safe from a scheduled task** (despite historic bash-sandbox flakiness): the workflow clones anvo-brain into `/tmp` using an SSH deploy key that lives at `.claude-keys/edward-deploy` inside the mounted folder. If any step fails, fall back to emitting a paste-ready block per Step 5.5.
 
----
+#### Step 5.1 — Install the SSH deploy key
 
-## When to Stop and Escalate
+The key at `.claude-keys/edward-deploy` comes off a Windows/OneDrive filesystem with CRLF line endings and often no trailing newline — OpenSSH will fail with `error in libcrypto` on a naïve `cp`. Always strip `\r` and append a trailing `\n`:
 
-Stop the run and surface to Edward when:
+```bash
+MOUNT=$(ls -d /sessions/*/mnt/anvo-brain 2>/dev/null | head -1)
+[ -z "$MOUNT" ] && { echo "ERR: anvo-brain not mounted — fall back to Step 5.5"; exit 1; }
 
-- Gmail `create_draft` fails three times for the same contact even after a 5s retry
-- WebSearch / WebFetch returns block / 429 from a domain you need for research — pause and try later, do not bulk-retry
-- The voice profile in Drive returns an error other than "not found" (e.g., permission denied) — surface for Edward to fix permissions
-- The same contact is in `stage3_results.csv` more than twice with different emails — surfaces a deduping issue upstream
-- A scoring decision is genuinely ambiguous (e.g., a borderline-Fortune-500 subsidiary that's also a clear local operator) — surface, don't guess
-- Anything ambiguous. Surfacing costs nothing.
+mkdir -p ~/.ssh
+tr -d '\r' < "$MOUNT/.claude-keys/edward-deploy" > ~/.ssh/id_ed25519
+printf '\n' >> ~/.ssh/id_ed25519
+chmod 600 ~/.ssh/id_ed25519
+ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
 
----
+# Verify — fail fast, don't push if these don't both return cleanly
+ssh-keygen -y -f ~/.ssh/id_ed25519 >/dev/null
+ssh -T -o StrictHostKeyChecking=no git@github.com 2>&1 | grep -q 'successfully authenticated'
+```
 
-## When the Pipeline Is Caught Up
+If the verification block errors or the grep fails, STOP and go to Step 5.5. Do not try to brute-force a push.
 
-If every REVEALED contact is scored and every HIGH/MEDIUM contact has a draft, output `Pipeline status: CAUGHT_UP` and stop early. The next run will pick up new reveals automatically when the apollo-reveals task produces them.
+#### Step 5.2 — Clone (or refresh) into /tmp
 
----
+```bash
+if [ -d /tmp/anvo-brain-push/.git ]; then
+  cd /tmp/anvo-brain-push && git fetch origin && git reset --hard origin/main && git clean -fd
+else
+  rm -rf /tmp/anvo-brain-push
+  git clone git@github.com:Anvo-Insurance/anvo-brain.git /tmp/anvo-brain-push
+fi
+cd /tmp/anvo-brain-push
+git config user.name "Edward Hsyeh"
+git config user.email "edward@anvo-insurance.com"
+```
 
-## Notes for Future Maintainers
+#### Step 5.3 — Copy only the files this run touched
 
-- **Why this task is separate from the apollo-reveals task:** Apollo work needs Chrome open + Apollo session active and is rate-limited by credits. Scoring + drafting needs WebSearch + Gmail and is rate-limited by Gmail's draft creation API. Keeping them separate means each can fail / pause / retry independently without touching the other's state.
-- **Why the `drafted_by` column matters:** Alice's daytime flow drafts from her account; this task drafts from Edward's. If we ever want per-account performance metrics or to filter Alice's review queue to only her drafts (or only Edward's overnight ones), this column is the join key.
-- **Why we re-read `INSTRUCTIONS-stage4-7.md` every run instead of caching:** the rubric evolves. Re-reading is cheap and guarantees the latest rules are applied.
-- **Email reply addressing:** outreach goes from `edward@anvoins.com` (cold-outreach domain), but replies should be handled from `edward@anvo-insurance.com` (primary domain). This is a Gmail forwarding rule outside this task's scope — flag any inbox monitoring needs to Edward separately.
+```bash
+for f in \
+  outreach/reports/stage4_scored.csv \
+  outreach/reports/stage5_outreach_log.csv \
+  outreach/reports/nightly-run-state.json \
+  outreach/reports/pipeline-learnings.json; do
+  cp "$MOUNT/$f" "/tmp/anvo-brain-push/$f"
+done
+```
+
+Drop any file this run didn't actually touch:
+- `stage5_outreach_log.csv` — drop if zero drafts this run.
+- `pipeline-learnings.json` — drop if zero new learnings.
+- `nightly-run-state.json` — always include (gets a timestamp bump every run).
+- `stage4_scored.csv` — always include unless Stage 4 scored zero rows.
+
+#### Step 5.4 — Commit and push
+
+```bash
+cd /tmp/anvo-brain-push
+git add <space-separated list of the files you copied above>
+git commit -m "Nightly scoring + drafting: <YYYY-MM-DD>
+
+Stage 4: scored <N> (HIGH <h> / MEDIUM <m> / LOW <l> / SKIP <s>)
+Stage 5: drafted <D> (skipped-no-hook <nh>, skipped-data-issue <di>)
+Learnings added: <L>"
+git push origin main
+SHA=$(git rev-parse HEAD)
+echo "pushed $SHA"
+```
+
+Fill real counts — never leave `<N>` / `<YYYY-MM-DD>` placeholders. Include the resulting SHA in the Step 4 summary so Edward can verify at a glance.
+
+#### Step 5.5 — Fallback (paste block)
+
+If any part of 5.1–5.4 fails (mount missing, libcrypto error that tr/printf didn't fix, clone fails, push rejected, etc.), stop trying and emit this block instead so Edward can push manually from Claude Code:
+
+```
+**Push automation failed this run — paste this into Claude Code to commit manually:**
+
+​```bash
+cd C:\Users\ehsye\dev\anvo-brain
+git add outreach/reports/stage4_scored.csv outreach/reports/stage5_outreach_log.csv outreach/reports/nightly-run-state.json outreach/reports/pipeline-learnings.json
+git commit -m "Nightly scoring + drafting: <YYYY-MM-DD>
+
+Stage 4: scored <N> (HIGH <h> / MEDIUM <m> / LOW <l> / SKIP <s>)
+Stage 5: drafted <D> (skipped-no-hook <nh>, skipped-data-issue <di>)
+Learnings added: <L>"
+git push
+​```
+```
+
+Same rules as 5.3 for which files to include, and same commit-message template as 5.4 with real counts substituted. Then append a new learning at `severity=high`, `category=git_push` describing exactly what failed, so the next run either fixes it or short-circuits faster.
+
+#### Step 5.6 — Zero-change ru
