@@ -16,7 +16,7 @@ Every file in this repo is written for **Claude Cowork agents as the primary rea
 
 ## First-Time Setup
 
-**If you are Alice (or any non-technical user setting up on macOS):** open `ALICE_START_HERE.md`. It's a one-page guide that tells you exactly what to do — no shell commands, no credentials handling on your end. Claude Cowork drives the setup for you.
+**If you are Alice (or any non-technical user setting up on macOS):** open `ALICE_INSTALL.md`. It's a step-by-step guide that walks you through installing GitHub Desktop, cloning the repo, installing Claude Desktop, and kicking off the rest of setup — with Claude Cowork doing the technical parts for you.
 
 **If you are setting up on Windows (Edward, or any future Windows user):** follow `SETUP_WINDOWS.md` — a manual walkthrough using PowerShell.
 

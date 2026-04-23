@@ -2,11 +2,11 @@
 
 Welcome! This is the very first file you need to read.
 
-It walks you through getting two apps installed on your Mac and downloading the Anvo repo. After this file, one more file (`ALICE_START_HERE.md`) finishes setup with Claude. Then you're ready to work.
+It walks you through getting two apps installed on your Mac, downloading the Anvo repo, and kicking off the rest of the setup with Claude. You don't need to know anything about GitHub or coding — just follow the steps in order.
 
-You don't need to know anything about GitHub or coding. Just follow the steps in order.
+**Total time:** about 30 minutes, mostly downloads and Claude doing things while you watch.
 
-**Total time:** about 20 minutes, mostly downloads.
+> 📝 **Note for Alice specifically:** Edward sent you a personal setup brief that wraps this guide with credentials handoff steps and the exact Cowork prompt to use. Follow that brief first. This file (`ALICE_INSTALL.md`) is referenced from inside it — you'll come here when the brief tells you to.
 
 ## What you should already have
 
@@ -99,34 +99,51 @@ If not:
 
 ---
 
-## You're done with this file!
+## Step 5 — Let Claude finish the setup
 
-The repo is now on your Mac at `/Users/<your-name>/dev/anvo-brain`. The next file picks up from here.
+The repo is now on your Mac at `/Users/<your-name>/dev/anvo-brain`. From here, Claude does the rest of the work — installing remaining tools, setting up your secrets folder, and walking you through a Google login.
 
-### Open the next file
+> 📝 **Alice:** if you're following Edward's personal setup brief, go back to it now — Part 3 has the exact prompt for you to paste, plus the credentials-file context Claude needs. Skip the steps below.
+>
+> If you don't have a personal brief (e.g., you're a future hire who landed here directly), follow these steps:
 
-Two ways to find it:
+### Step 5.1 — Make sure you have the credentials file
 
-**Option A — through GitHub Desktop:**
+You need a file called exactly `anvo-oauth-credentials.json` in your **Downloads** folder. The administrator who onboarded you will have sent this to you separately.
 
-1. In GitHub Desktop, click **Repository** in the top menu → **Show in Finder**.
-2. Finder opens to the cloned folder.
-3. Find the file called **`ALICE_START_HERE.md`** and double-click it.
+If you don't have it, stop here and message the administrator — don't continue without it.
 
-**Option B — through Finder directly:**
+### Step 5.2 — Open Claude Desktop
 
-1. Open **Finder**.
-2. Press **⌘+Shift+G** (Go → Go to Folder).
-3. Type `~/dev/anvo-brain` and press Enter.
-4. Find **`ALICE_START_HERE.md`** and double-click it.
+1. Open **Claude Desktop** from Applications.
+2. Switch into **Cowork mode**.
+3. Select the cloned `anvo-brain` folder (`~/dev/anvo-brain`) as your working directory.
 
-The file will open in TextEdit or another markdown viewer. Read it top-to-bottom and follow the instructions inside.
+### Step 5.3 — Paste this prompt and press Enter
+
+```
+Read SETUP_MAC.md in this repo and walk me through setting up anvo-brain on my Mac. I have the `anvo-oauth-credentials.json` file from the admin in my Downloads folder. Run the setup as described in the runbook — handle the technical parts yourself, ask me to confirm before anything irreversible, and pause at the OAuth login step so I can complete it.
+```
+
+### Step 5.4 — Watch Claude work
+
+Claude will:
+
+- Check what's already installed and skip what you don't need
+- Ask you to install missing tools (Homebrew, git) — copy/paste the commands it gives you into Terminal
+- Move the credentials file from Downloads into a hidden secrets folder (`~/.anvo-secrets/`)
+- Pause and walk you through a Google login (a browser window will pop open)
+- Run a verification at the end and confirm everything works
+
+🚨 **Important:** if Claude ever asks you to paste the **contents** of `anvo-oauth-credentials.json` into the chat, don't. Tell it to use the file directly from Downloads. Then message the administrator. Claude moving the file is fine; Claude reading the contents into chat is not.
+
+✅ Setup is complete when Claude tells you it's verified all three Google services (Sheets, Drive, Gmail). At that point, you're ready to do real work in Cowork.
 
 ---
 
 ## If anything goes wrong
 
-Don't try to push through. Signal Edward with:
+Don't try to push through. Message the person who onboarded you with:
 
 - A **screenshot** of what's on your screen
 - One sentence about which step you were on (e.g., "Step 3, the Clone button isn't doing anything")
