@@ -23,14 +23,14 @@
       "date": "2026-04-05",
       "batch": 5,
       "category": "apollo_navigation",
-      "learning": "The saved list ID 69bc42035b6cbc00157d9287 is a food & bev list \u2014 Tier 1 construction/transport companies are NOT on it. Use Apollo general people search instead: https://app.apollo.io/#/people?qOrganizationName=COMPANY_NAME&contactLocations=United%20States",
+      "learning": "The saved list ID 69bc42035b6cbc00157d9287 is a food & bev list — Tier 1 construction/transport companies are NOT on it. Use Apollo general people search instead: https://app.apollo.io/#/people?qOrganizationName=COMPANY_NAME&contactLocations=United%20States",
       "severity": "critical"
     },
     {
       "date": "2026-04-05",
       "batch": 5,
       "category": "apollo_navigation",
-      "learning": "Do NOT use organizationLocations[]= with array brackets in Apollo URLs \u2014 causes 'An Array is passed in for a String field' error. Use contactLocations=United%20States (no brackets).",
+      "learning": "Do NOT use organizationLocations[]= with array brackets in Apollo URLs — causes 'An Array is passed in for a String field' error. Use contactLocations=United%20States (no brackets).",
       "severity": "critical"
     },
     {
@@ -51,7 +51,7 @@
       "date": "2026-04-05",
       "batch": 5,
       "category": "company_matching",
-      "learning": "Company name matching between scored CSV and batch files must be fuzzy \u2014 normalize by lowercasing, removing LLC/Inc/Corp suffixes, stripping punctuation, and using substring matching. Exact matching misses many already-processed companies.",
+      "learning": "Company name matching between scored CSV and batch files must be fuzzy — normalize by lowercasing, removing LLC/Inc/Corp suffixes, stripping punctuation, and using substring matching. Exact matching misses many already-processed companies.",
       "severity": "critical"
     },
     {
@@ -79,7 +79,7 @@
       "date": "2026-04-05",
       "batch": 5,
       "category": "chrome_stability",
-      "learning": "Chrome can briefly disconnect during reveals. Wait 5 seconds and retry \u2014 it usually reconnects without needing a full restart.",
+      "learning": "Chrome can briefly disconnect during reveals. Wait 5 seconds and retry — it usually reconnects without needing a full restart.",
       "severity": "low"
     },
     {
@@ -107,14 +107,14 @@
       "date": "2026-04-05",
       "batch": 6,
       "category": "apollo_reveal",
-      "learning": "The JS dispatchEvent click approach (mousedown/mouseup/click) can trigger enrichments even when data-tour-id cells are not found \u2014 the click lands on visible table rows. When rows shift after a click, DO NOT click again on the same company. Instead, re-read the full cell list to check if the target was already revealed. If not, navigate away and return fresh.",
+      "learning": "The JS dispatchEvent click approach (mousedown/mouseup/click) can trigger enrichments even when data-tour-id cells are not found — the click lands on visible table rows. When rows shift after a click, DO NOT click again on the same company. Instead, re-read the full cell list to check if the target was already revealed. If not, navigate away and return fresh.",
       "severity": "high"
     },
     {
       "date": "2026-04-05",
       "batch": 6,
       "category": "apollo_navigation",
-      "learning": "Apollo's table uses virtualized rendering \u2014 only 3-4 rows are visible at a time. Scrolling the page does NOT reliably scroll the table. The internal scrollbar at x~420 controls table row scrolling. To reach a specific contact, use the 'Search people' textbox or scroll within the table container, not the page.",
+      "learning": "Apollo's table uses virtualized rendering — only 3-4 rows are visible at a time. Scrolling the page does NOT reliably scroll the table. The internal scrollbar at x~420 controls table row scrolling. To reach a specific contact, use the 'Search people' textbox or scroll within the table container, not the page.",
       "severity": "high"
     },
     {
@@ -128,14 +128,14 @@
       "date": "2026-04-05",
       "batch": 6,
       "category": "stage2_verification",
-      "learning": "New Generation Homes (nghomesllc.com) is in Westfield, Indiana \u2014 NOT Gardner, Kansas as Apollo shows. Always verify physical location matches KS/MO territory before spending reveal credits.",
+      "learning": "New Generation Homes (nghomesllc.com) is in Westfield, Indiana — NOT Gardner, Kansas as Apollo shows. Always verify physical location matches KS/MO territory before spending reveal credits.",
       "severity": "medium"
     },
     {
       "date": "2026-04-05",
       "batch": 6,
       "category": "stage2_verification",
-      "learning": "Sunflower Industrial is the parent holding company of Desco Floor Systems and Epoxy Coating Specialists, both previously revealed separately. Parent companies are still valid separate prospects \u2014 they may carry their own insurance programs.",
+      "learning": "Sunflower Industrial is the parent holding company of Desco Floor Systems and Epoxy Coating Specialists, both previously revealed separately. Parent companies are still valid separate prospects — they may carry their own insurance programs.",
       "severity": "info"
     },
     {
@@ -184,7 +184,7 @@
       "date": "2026-04-05",
       "batch": "phone-test",
       "category": "phone_reveal",
-      "learning": "Some contacts return 'No mobile number' after phone reveal click \u2014 Apollo charges credits but has no number. This is a wasted credit. Cannot predict which contacts have numbers before clicking. The '+1' prefix shown before clicking does NOT guarantee a number exists.",
+      "learning": "Some contacts return 'No mobile number' after phone reveal click — Apollo charges credits but has no number. This is a wasted credit. Cannot predict which contacts have numbers before clicking. The '+1' prefix shown before clicking does NOT guarantee a number exists.",
       "severity": "high"
     },
     {
@@ -205,7 +205,7 @@
       "date": "2026-04-05",
       "batch": "phone-test",
       "category": "credit_management",
-      "learning": "Apollo credit counter in the UI is cached \u2014 it doesn't update in real-time during a session. Only refreshes on page reload. Don't rely on the displayed count during a batch; track credits spent manually by counting reveals.",
+      "learning": "Apollo credit counter in the UI is cached — it doesn't update in real-time during a session. Only refreshes on page reload. Don't rely on the displayed count during a batch; track credits spent manually by counting reveals.",
       "severity": "high"
     },
     {
@@ -247,7 +247,7 @@
       "date": "2026-04-05",
       "batch": "batch7",
       "category": "stage2_verification",
-      "learning": "Batch 7 Stage 2: All 25 companies verified as OPEN and in MO/KS. 100% REVEAL rate \u2014 no SKIPs. Companies ranged from score 4.10 to 4.50. Several Hazelwood MO companies (Swanson Masonry, Missouri Drywall Supply, Academy Air, HDA Truck Pride) \u2014 Hazelwood is St. Louis metro, not KC metro, but still valid MO prospects.",
+      "learning": "Batch 7 Stage 2: All 25 companies verified as OPEN and in MO/KS. 100% REVEAL rate — no SKIPs. Companies ranged from score 4.10 to 4.50. Several Hazelwood MO companies (Swanson Masonry, Missouri Drywall Supply, Academy Air, HDA Truck Pride) — Hazelwood is St. Louis metro, not KC metro, but still valid MO prospects.",
       "severity": "info"
     },
     {
@@ -268,14 +268,14 @@
       "date": "2026-04-05",
       "batch": "batch7",
       "category": "performance",
-      "learning": "Batch 7 run #5: Stage 2 completed (25 verifications, 25 REVEAL). Stage 3 partially completed (10 reveals, 0 skips, 15 pending). 10 credits spent. Average ~2.5 min per reveal. Run halted at 10 reveals to preserve context window \u2014 remaining 15 saved as pending for next run.",
+      "learning": "Batch 7 run #5: Stage 2 completed (25 verifications, 25 REVEAL). Stage 3 partially completed (10 reveals, 0 skips, 15 pending). 10 credits spent. Average ~2.5 min per reveal. Run halted at 10 reveals to preserve context window — remaining 15 saved as pending for next run.",
       "severity": "info"
     },
     {
       "date": "2026-04-06",
       "batch": "batch7-pending-completion",
       "category": "company_matching",
-      "learning": "For generic company names like 'Centric' (19K+ results in Apollo), check the batch CSV for the company website first, then search Apollo with progressively more specific terms: 'Centric build' \u2192 'Centric construction'. The website domain is the most reliable identifier.",
+      "learning": "For generic company names like 'Centric' (19K+ results in Apollo), check the batch CSV for the company website first, then search Apollo with progressively more specific terms: 'Centric build' → 'Centric construction'. The website domain is the most reliable identifier.",
       "severity": "high"
     },
     {
@@ -289,7 +289,7 @@
       "date": "2026-04-06",
       "batch": "batch7-pending-completion",
       "category": "stage3_selection",
-      "learning": "Durvet Inc (48 contacts) had zero owner/founder/president/CEO/VP/director titles in top 25 visible contacts \u2014 only managers and specialists. Correctly skipped as NO_CONTACTS (no decision-maker). Large companies with many contacts but no C-suite in Apollo are likely missing key data.",
+      "learning": "Durvet Inc (48 contacts) had zero owner/founder/president/CEO/VP/director titles in top 25 visible contacts — only managers and specialists. Correctly skipped as NO_CONTACTS (no decision-maker). Large companies with many contacts but no C-suite in Apollo are likely missing key data.",
       "severity": "medium"
     },
     {
@@ -303,7 +303,7 @@
       "date": "2026-04-06",
       "batch": "batch8",
       "category": "stage2_verification",
-      "learning": "Batch 8 Stage 2: 25 companies verified. 22 REVEAL, 3 SKIP. SKIPs: SMACNA St. Louis (trade association, not insurable), Wichita Area Builders Association (trade association), F.J. Murphy & Son (Springfield IL, not MO/KS). Trade associations are common false positives in the Construction segment \u2014 always check if a company is an association vs. an actual contractor.",
+      "learning": "Batch 8 Stage 2: 25 companies verified. 22 REVEAL, 3 SKIP. SKIPs: SMACNA St. Louis (trade association, not insurable), Wichita Area Builders Association (trade association), F.J. Murphy & Son (Springfield IL, not MO/KS). Trade associations are common false positives in the Construction segment — always check if a company is an association vs. an actual contractor.",
       "severity": "medium"
     },
     {
@@ -317,7 +317,7 @@
       "date": "2026-04-06",
       "batch": "batch8",
       "category": "apollo_reveal",
-      "learning": "Sauerwein Construction: President found but all 3 contacts had email-cell-unavailable (red X). Clicking revealed 'No email' \u2014 cost 1 credit with no return. When ALL contacts at a company show red X email cells, consider skipping the reveal to save credits.",
+      "learning": "Sauerwein Construction: President found but all 3 contacts had email-cell-unavailable (red X). Clicking revealed 'No email' — cost 1 credit with no return. When ALL contacts at a company show red X email cells, consider skipping the reveal to save credits.",
       "severity": "high"
     },
     {
@@ -331,7 +331,7 @@
       "date": "2026-04-06",
       "batch": "batch8",
       "category": "stage2_verification",
-      "learning": "F.J. Murphy & Son website (fjmurphy.com) redirects and shows Springfield IL address. Apollo had listed them as Springfield MO. Always verify the actual physical address on the company's own website \u2014 Apollo location data can be wrong, especially for companies in cities that exist in multiple states (Springfield MO vs Springfield IL).",
+      "learning": "F.J. Murphy & Son website (fjmurphy.com) redirects and shows Springfield IL address. Apollo had listed them as Springfield MO. Always verify the actual physical address on the company's own website — Apollo location data can be wrong, especially for companies in cities that exist in multiple states (Springfield MO vs Springfield IL).",
       "severity": "high"
     },
     {
@@ -345,14 +345,14 @@
       "date": "2026-04-06",
       "batch": "batch8-pending-completion",
       "category": "apollo_reveal",
-      "learning": "Jeff Edwards (Owner, West Central Motor Freight) had a verified email badge but reveal got permanently stuck on 'Trying Apollo...' \u2014 even after page refresh, the email never resolved. The credit was spent (phone number request appeared) but no email was returned. When a reveal stays stuck on 'Trying Apollo' for 30+ seconds AND persists through a page refresh, treat it as a failed reveal (NO_EMAIL equivalent) and move to the next decision-maker at the same company.",
+      "learning": "Jeff Edwards (Owner, West Central Motor Freight) had a verified email badge but reveal got permanently stuck on 'Trying Apollo...' — even after page refresh, the email never resolved. The credit was spent (phone number request appeared) but no email was returned. When a reveal stays stuck on 'Trying Apollo' for 30+ seconds AND persists through a page refresh, treat it as a failed reveal (NO_EMAIL equivalent) and move to the next decision-maker at the same company.",
       "severity": "high"
     },
     {
       "date": "2026-04-06",
       "batch": "batch8-pending-completion",
       "category": "apollo_reveal",
-      "learning": "email-cell-verified badge does NOT guarantee Apollo can produce an email. Jeff Edwards had verified badge but stuck on 'Trying Apollo' permanently. Prefer contacts with verified badge but be prepared for failures \u2014 always have a fallback contact identified before clicking.",
+      "learning": "email-cell-verified badge does NOT guarantee Apollo can produce an email. Jeff Edwards had verified badge but stuck on 'Trying Apollo' permanently. Prefer contacts with verified badge but be prepared for failures — always have a fallback contact identified before clicking.",
       "severity": "high"
     },
     {
@@ -373,7 +373,7 @@
       "date": "2026-04-06",
       "batch": "batch9",
       "category": "stage2_verification",
-      "learning": "Batch 9 Stage 2: 25 companies verified. 22 REVEAL, 3 SKIP. SKIPs: Brummel Lawn and Landscape (acquired by Landscape Workshop July 2025), Trademark Electric Inc (merged with Allegiant Service Group \u2014 contacts may be stale), Sunnybrook (SaaS TMS company misclassified as Transport/Logistics in Apollo).",
+      "learning": "Batch 9 Stage 2: 25 companies verified. 22 REVEAL, 3 SKIP. SKIPs: Brummel Lawn and Landscape (acquired by Landscape Workshop July 2025), Trademark Electric Inc (merged with Allegiant Service Group — contacts may be stale), Sunnybrook (SaaS TMS company misclassified as Transport/Logistics in Apollo).",
       "severity": "medium"
     },
     {
@@ -436,28 +436,28 @@
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "stage2_verification",
-      "learning": "Batch 10 Stage 2: 25 companies verified. 23 REVEAL, 2 SKIP. SKIPs: Gilliam Electric Inc (Apollo says Anderson MO but company is actually in NW Arkansas Rogers/Bentonville area \u2014 '4 state area' service language confirms Arkansas base), TBA Construction (Apollo says St. Louis MO but company is in Union, South Carolina 29379). Both are location mismatches in Apollo data.",
+      "learning": "Batch 10 Stage 2: 25 companies verified. 23 REVEAL, 2 SKIP. SKIPs: Gilliam Electric Inc (Apollo says Anderson MO but company is actually in NW Arkansas Rogers/Bentonville area — '4 state area' service language confirms Arkansas base), TBA Construction (Apollo says St. Louis MO but company is in Union, South Carolina 29379). Both are location mismatches in Apollo data.",
       "severity": "medium"
     },
     {
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "apollo_reveal",
-      "learning": "MR Associates Inc: Anna Vogel (Managing Principal, verified badge) reveal got permanently stuck on 'Trying other sources...' \u2014 persisted through page refresh. Same pattern as Jeff Edwards in batch 8. Credit was spent but no email returned. This is the second verified-badge contact to fail this way. When 'Trying other sources' persists 20+ seconds AND through a refresh, treat as NO_EMAIL immediately rather than waiting longer.",
+      "learning": "MR Associates Inc: Anna Vogel (Managing Principal, verified badge) reveal got permanently stuck on 'Trying other sources...' — persisted through page refresh. Same pattern as Jeff Edwards in batch 8. Credit was spent but no email returned. This is the second verified-badge contact to fail this way. When 'Trying other sources' persists 20+ seconds AND through a refresh, treat as NO_EMAIL immediately rather than waiting longer.",
       "severity": "high"
     },
     {
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "apollo_reveal",
-      "learning": "Glenlo Awning: Lloyd Rudloff (Owner, verified) initially showed 'Trying other sources...' but resolved to lloydr@glenloawningandwindow.com after ~20 seconds. Not all 'Trying other sources' are permanent failures \u2014 wait at least 15-20 seconds before declaring failure. The MR Associates case was different because it persisted through a full page refresh.",
+      "learning": "Glenlo Awning: Lloyd Rudloff (Owner, verified) initially showed 'Trying other sources...' but resolved to lloydr@glenloawningandwindow.com after ~20 seconds. Not all 'Trying other sources' are permanent failures — wait at least 15-20 seconds before declaring failure. The MR Associates case was different because it persisted through a full page refresh.",
       "severity": "medium"
     },
     {
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "company_matching",
-      "learning": "Ellsworth Electric in Apollo (47 employees) shows contacts in Hagerstown MD, Shippensburg PA, Mount Airy MD \u2014 completely wrong entity for the Ellsworth Kansas company. No Kansas contacts at all. Generic electrical company names can match wrong entities even with US location filter. Always verify contact locations match the target state before spending a credit.",
+      "learning": "Ellsworth Electric in Apollo (47 employees) shows contacts in Hagerstown MD, Shippensburg PA, Mount Airy MD — completely wrong entity for the Ellsworth Kansas company. No Kansas contacts at all. Generic electrical company names can match wrong entities even with US location filter. Always verify contact locations match the target state before spending a credit.",
       "severity": "high"
     },
     {
@@ -478,21 +478,21 @@
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "stage2_verification",
-      "learning": "Team Perka rebranded to Veritas Systems Construction (veritasbuilt.com). teamperka.com redirects 301 to veritasbuilt.com. Apollo still uses old name 'Team Perka now TEAM MIRACLE!'. Contact emails still use @teamperka.com domain. Company rebrands don't always update in Apollo \u2014 search by the old Apollo name.",
+      "learning": "Team Perka rebranded to Veritas Systems Construction (veritasbuilt.com). teamperka.com redirects 301 to veritasbuilt.com. Apollo still uses old name 'Team Perka now TEAM MIRACLE!'. Contact emails still use @teamperka.com domain. Company rebrands don't always update in Apollo — search by the old Apollo name.",
       "severity": "low"
     },
     {
       "date": "2026-04-06",
       "batch": "batch10",
       "category": "performance",
-      "learning": "Batch 10 run #11: Stage 2 completed (25 verifications: 23 REVEAL, 2 SKIP). Stage 3 fully completed in same run: 16 successful reveals, 5 Apollo skips (Ellsworth=wrong entity, Tile&Bath=NO_EMAIL, DAX=NO_CONTACTS, Crystal=NO_EMAIL, MR Associates=NO_EMAIL stuck). 17 credits spent (16 successful + 1 wasted MR Associates). Full batch processed in single run \u2014 no pending carries. Run time ~50 minutes for combined Stage 2 + Stage 3.",
+      "learning": "Batch 10 run #11: Stage 2 completed (25 verifications: 23 REVEAL, 2 SKIP). Stage 3 fully completed in same run: 16 successful reveals, 5 Apollo skips (Ellsworth=wrong entity, Tile&Bath=NO_EMAIL, DAX=NO_CONTACTS, Crystal=NO_EMAIL, MR Associates=NO_EMAIL stuck). 17 credits spent (16 successful + 1 wasted MR Associates). Full batch processed in single run — no pending carries. Run time ~50 minutes for combined Stage 2 + Stage 3.",
       "severity": "info"
     },
     {
       "date": "2026-04-13",
       "batch": "batch11",
       "category": "chrome_stability",
-      "learning": "Chrome was not connected for the 2026-04-13 scheduled run (4 connection attempts failed). Stage 2 web verification was completed using WebSearch/WebFetch without Chrome. Stage 3 Apollo reveals require Chrome and were deferred \u2014 all 25 REVEAL companies saved as batch11_pending. This confirms the pattern from batch6-pending-retry: when Chrome is unavailable, Stage 2 can still proceed but Stage 3 must wait.",
+      "learning": "Chrome was not connected for the 2026-04-13 scheduled run (4 connection attempts failed). Stage 2 web verification was completed using WebSearch/WebFetch without Chrome. Stage 3 Apollo reveals require Chrome and were deferred — all 25 REVEAL companies saved as batch11_pending. This confirms the pattern from batch6-pending-retry: when Chrome is unavailable, Stage 2 can still proceed but Stage 3 must wait.",
       "severity": "high"
     },
     {
@@ -506,14 +506,14 @@
       "date": "2026-04-13",
       "batch": "batch11",
       "category": "stage2_verification",
-      "learning": "Habco Partnership (habco.net) has an SSL certificate error (ERR_TLS_CERT_ALTNAME_INVALID) when fetched with www prefix. WebSearch fallback confirmed the company is active at 10420 Baur Blvd, STL 63132. SSL errors on company websites don't indicate closure \u2014 always fall back to directory searches.",
+      "learning": "Habco Partnership (habco.net) has an SSL certificate error (ERR_TLS_CERT_ALTNAME_INVALID) when fetched with www prefix. WebSearch fallback confirmed the company is active at 10420 Baur Blvd, STL 63132. SSL errors on company websites don't indicate closure — always fall back to directory searches.",
       "severity": "low"
     },
     {
       "date": "2026-04-13",
       "batch": "batch11",
       "category": "stage2_verification",
-      "learning": "Commercial Builders Inc (commercialbuildersinc.com) redirects 301 to commercialbuilders.com, which returns 403. Company confirmed active via Hays Chamber, BBB, Yelp, and BlueBook listings. Website access issues are common with smaller contractors \u2014 directory verification is essential.",
+      "learning": "Commercial Builders Inc (commercialbuildersinc.com) redirects 301 to commercialbuilders.com, which returns 403. Company confirmed active via Hays Chamber, BBB, Yelp, and BlueBook listings. Website access issues are common with smaller contractors — directory verification is essential.",
       "severity": "low"
     },
     {
@@ -527,21 +527,21 @@
       "date": "2026-04-14",
       "batch": "batch12",
       "category": "stage2_verification",
-      "learning": "Batch 12 Stage 2: 25 companies verified, 23 REVEAL, 2 SKIP. SKIPs: FastCat Freight Inc (Apollo says Overland Park KS but HQ is Charlotte NC \u2014 division of Armstrong Transport Group), Jana Group (Apollo says De Soto MO but company is Iraq-based construction firm \u2014 domain janairaq.com confirms). Both are location mismatches where Apollo's organization location is wrong.",
+      "learning": "Batch 12 Stage 2: 25 companies verified, 23 REVEAL, 2 SKIP. SKIPs: FastCat Freight Inc (Apollo says Overland Park KS but HQ is Charlotte NC — division of Armstrong Transport Group), Jana Group (Apollo says De Soto MO but company is Iraq-based construction firm — domain janairaq.com confirms). Both are location mismatches where Apollo's organization location is wrong.",
       "severity": "medium"
     },
     {
       "date": "2026-04-14",
       "batch": "batch12",
       "category": "apollo_reveal",
-      "learning": "DS Bus Lines: GM Mark Thompson reveal returned 'No email' after trying \u2014 credit wasted. Fallback to David Sena (Director of Operations) succeeded with david.smith@dsbuslines.com. Note: email uses 'david.smith' not 'david.sena' \u2014 possible name mismatch in Apollo vs email system. The 2-credit fallback pattern from batch 8 continues to be useful.",
+      "learning": "DS Bus Lines: GM Mark Thompson reveal returned 'No email' after trying — credit wasted. Fallback to David Sena (Director of Operations) succeeded with david.smith@dsbuslines.com. Note: email uses 'david.smith' not 'david.sena' — possible name mismatch in Apollo vs email system. The 2-credit fallback pattern from batch 8 continues to be useful.",
       "severity": "medium"
     },
     {
       "date": "2026-04-14",
       "batch": "batch12",
       "category": "company_matching",
-      "learning": "Several batch 12 companies are misclassified in Apollo segments: Budget Self Storage (classified as Transport but is self-storage), Whipz (classified as Manufacturing but is a BHPH auto dealer), Design Mechanical (classified as Manufacturing but is HVAC contractor), Freightview and Miler (classified as Transport but are SaaS TMS companies). Segment mismatch doesn't invalidate as insurance prospects \u2014 they still need BOP, GL, cyber, E&O.",
+      "learning": "Several batch 12 companies are misclassified in Apollo segments: Budget Self Storage (classified as Transport but is self-storage), Whipz (classified as Manufacturing but is a BHPH auto dealer), Design Mechanical (classified as Manufacturing but is HVAC contractor), Freightview and Miler (classified as Transport but are SaaS TMS companies). Segment mismatch doesn't invalidate as insurance prospects — they still need BOP, GL, cyber, E&O.",
       "severity": "info"
     },
     {
@@ -555,7 +555,7 @@
       "date": "2026-04-14",
       "batch": "batch12",
       "category": "apollo_navigation",
-      "learning": "USKO Inc (162 contacts): CAO Karina Vasilkov was the highest C-suite title found \u2014 not visible without scrolling past row 15. For large companies (100+ contacts), always scan all 25 visible rows for C-suite titles before settling on the first VP/Director found. SequenceMatcher-style title scanning via JS regex is fast enough.",
+      "learning": "USKO Inc (162 contacts): CAO Karina Vasilkov was the highest C-suite title found — not visible without scrolling past row 15. For large companies (100+ contacts), always scan all 25 visible rows for C-suite titles before settling on the first VP/Director found. SequenceMatcher-style title scanning via JS regex is fast enough.",
       "severity": "medium"
     },
     {
@@ -569,7 +569,7 @@
       "date": "2026-04-14",
       "batch": "batch12-pending-completion",
       "category": "apollo_reveal",
-      "learning": "MyFreightWorld VP Mary Sullivan-Groves had email-cell-unavailable badge (red X) but the reveal still succeeded with mgroves@myfreightworld.com. Red X badges do NOT always mean no email \u2014 some unavailable-badged contacts DO have emails. Revising batch 8 learning: only skip when ALL contacts at a company have red X. Don't skip individual red-X contacts if they're the only decision-maker available.",
+      "learning": "MyFreightWorld VP Mary Sullivan-Groves had email-cell-unavailable badge (red X) but the reveal still succeeded with mgroves@myfreightworld.com. Red X badges do NOT always mean no email — some unavailable-badged contacts DO have emails. Revising batch 8 learning: only skip when ALL contacts at a company have red X. Don't skip individual red-X contacts if they're the only decision-maker available.",
       "severity": "high"
     },
     {
@@ -583,14 +583,14 @@
       "date": "2026-04-14",
       "batch": "batch12-pending-completion",
       "category": "apollo_navigation",
-      "learning": "Miler LLC (Overland Park KS, SaaS TMS): Zero results in Apollo under both 'Miler' and 'Miler LLC'. Small SaaS companies with unusual names may not have any Apollo profiles. Similar issue to IBC \u2014 entity simply doesn't exist in Apollo's database.",
+      "learning": "Miler LLC (Overland Park KS, SaaS TMS): Zero results in Apollo under both 'Miler' and 'Miler LLC'. Small SaaS companies with unusual names may not have any Apollo profiles. Similar issue to IBC — entity simply doesn't exist in Apollo's database.",
       "severity": "medium"
     },
     {
       "date": "2026-04-14",
       "batch": "batch12-pending-completion",
       "category": "apollo_navigation",
-      "learning": "Design Mechanical Inc (KCK, HVAC, 200 emp): Apollo search returns contacts from other 'Design Mechanical' entities in different states \u2014 no KC contacts visible. Even with US location filter, the KCK entity's contacts aren't in Apollo's database. Large companies without Apollo profiles are rare but do happen with HVAC/mechanical contractors.",
+      "learning": "Design Mechanical Inc (KCK, HVAC, 200 emp): Apollo search returns contacts from other 'Design Mechanical' entities in different states — no KC contacts visible. Even with US location filter, the KCK entity's contacts aren't in Apollo's database. Large companies without Apollo profiles are rare but do happen with HVAC/mechanical contractors.",
       "severity": "medium"
     },
     {
@@ -604,7 +604,7 @@
       "date": "2026-04-14",
       "batch": "batch13",
       "category": "stage2_verification",
-      "learning": "Batch 13 Stage 2: 25 companies verified, 23 REVEAL, 2 SKIP. SKIPs: Rasheed Carpentry and Construction Pvt Ltd (Maldives company, rcc.mv domain, NOT Independence MO), LifewiseCHM (closed March 31 2026). Notable: batch includes several very large companies (JE Dunn $7.5B, PCI $2.1B, WireCo $650M, Jack Cooper $543M, McCownGordon $501M) \u2014 likely self-insured but still worth revealing for potential smaller coverage lines.",
+      "learning": "Batch 13 Stage 2: 25 companies verified, 23 REVEAL, 2 SKIP. SKIPs: Rasheed Carpentry and Construction Pvt Ltd (Maldives company, rcc.mv domain, NOT Independence MO), LifewiseCHM (closed March 31 2026). Notable: batch includes several very large companies (JE Dunn $7.5B, PCI $2.1B, WireCo $650M, Jack Cooper $543M, McCownGordon $501M) — likely self-insured but still worth revealing for potential smaller coverage lines.",
       "severity": "info"
     },
     {
@@ -625,7 +625,7 @@
       "date": "2026-04-14",
       "batch": "batch13-pending",
       "category": "apollo_reveal",
-      "learning": "WHC Worldwide CRO Natalie George's email was natalie@ztrip.com (not @whcworldwide.com). WHC Worldwide and zTrip are related/sibling companies \u2014 multiple contacts have dual titles across both. This means the zTrip company in the pending list can be skipped as it shares leadership with WHC Worldwide.",
+      "learning": "WHC Worldwide CRO Natalie George's email was natalie@ztrip.com (not @whcworldwide.com). WHC Worldwide and zTrip are related/sibling companies — multiple contacts have dual titles across both. This means the zTrip company in the pending list can be skipped as it shares leadership with WHC Worldwide.",
       "severity": "medium"
     },
     {
@@ -645,7 +645,7 @@
       "date": "2026-04-14",
       "batch": "batch13-final",
       "category": "apollo_reveal",
-      "learning": "Cerris Systems President Jesse Jensen email was jjensen@bcsnv.com (not @cerrissystems.com). Similar to WHC/zTrip \u2014 Cerris Systems appears to have rebranded from BCS (bcsnv.com domain). Company rebrands don't always update email domains in Apollo.",
+      "learning": "Cerris Systems President Jesse Jensen email was jjensen@bcsnv.com (not @cerrissystems.com). Similar to WHC/zTrip — Cerris Systems appears to have rebranded from BCS (bcsnv.com domain). Company rebrands don't always update email domains in Apollo.",
       "severity": "low"
     },
     {
@@ -659,21 +659,21 @@
       "date": "2026-04-14",
       "batch": "session-summary",
       "category": "performance",
-      "learning": "MASSIVE SESSION 2026-04-14: 6 runs in single day. Batches 12-13 fully completed. Stage 2: 50 companies verified (46 REVEAL, 4 SKIP). Stage 3: 37 reveals, 13 skips. ~39 credits spent. Apollo UI went from 1903 to ~1831 (72 credit delta \u2014 includes some cached counter lag). Pipeline advanced from 375 to 425 verified companies, 200 to 237 revealed contacts. Most productive single day in pipeline history.",
+      "learning": "MASSIVE SESSION 2026-04-14: 6 runs in single day. Batches 12-13 fully completed. Stage 2: 50 companies verified (46 REVEAL, 4 SKIP). Stage 3: 37 reveals, 13 skips. ~39 credits spent. Apollo UI went from 1903 to ~1831 (72 credit delta — includes some cached counter lag). Pipeline advanced from 375 to 425 verified companies, 200 to 237 revealed contacts. Most productive single day in pipeline history.",
       "severity": "info"
     },
     {
       "date": "2026-04-16",
       "batch": "batch14",
       "category": "chrome_stability",
-      "learning": "Chrome was not connected for the 2026-04-16 scheduled run (2 connection attempts failed). Stage 2 web verification completed using WebSearch/WebFetch. Stage 3 Apollo reveals deferred \u2014 all 20 REVEAL companies saved as batch14_pending. This is the third time Chrome has been unavailable for a scheduled run (also batch6-pending-retry on 2026-04-05 and batch11 on 2026-04-13).",
+      "learning": "Chrome was not connected for the 2026-04-16 scheduled run (2 connection attempts failed). Stage 2 web verification completed using WebSearch/WebFetch. Stage 3 Apollo reveals deferred — all 20 REVEAL companies saved as batch14_pending. This is the third time Chrome has been unavailable for a scheduled run (also batch6-pending-retry on 2026-04-05 and batch11 on 2026-04-13).",
       "severity": "high"
     },
     {
       "date": "2026-04-16",
       "batch": "batch14",
       "category": "stage2_verification",
-      "learning": "Batch 14 Stage 2: 25 companies verified, 20 REVEAL, 5 SKIP. All companies are KC metro (scores 3.8-3.9). SKIPs: KCATA (public transit authority \u2014 government entity), Kansas City Southern (merged into CPKC \u2014 Class I railroad), New Penn Motor Express (parent Yellow Corp bankrupt July 2023), NAFFCO Modular (HQ in Dubai UAE, not Leawood KS), MMC Contractors (redirects to cerrissystems.com \u2014 already processed in batch 13). Notable: batch includes several very large companies (MHC Kenworth 3500 emp, Railcrew Xpress 2000 emp, U.S. Engineering 740 emp, TransAm Trucking 650 emp, Sutherlands 520 emp).",
+      "learning": "Batch 14 Stage 2: 25 companies verified, 20 REVEAL, 5 SKIP. All companies are KC metro (scores 3.8-3.9). SKIPs: KCATA (public transit authority — government entity), Kansas City Southern (merged into CPKC — Class I railroad), New Penn Motor Express (parent Yellow Corp bankrupt July 2023), NAFFCO Modular (HQ in Dubai UAE, not Leawood KS), MMC Contractors (redirects to cerrissystems.com — already processed in batch 13). Notable: batch includes several very large companies (MHC Kenworth 3500 emp, Railcrew Xpress 2000 emp, U.S. Engineering 740 emp, TransAm Trucking 650 emp, Sutherlands 520 emp).",
       "severity": "info"
     },
     {
@@ -715,35 +715,35 @@
       "date": "2026-04-17",
       "batch": "batch14-pending-retry",
       "category": "performance",
-      "learning": "Run 2026-04-17 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped \u2014 no point growing pending backlog when existing pending can't be cleared). State file updated to reflect failed attempt. Pipeline status: PAUSED awaiting Chrome connection.",
+      "learning": "Run 2026-04-17 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped — no point growing pending backlog when existing pending can't be cleared). State file updated to reflect failed attempt. Pipeline status: PAUSED awaiting Chrome connection.",
       "severity": "info"
     },
     {
       "date": "2026-04-20",
       "batch": "batch14-pending-retry-2",
       "category": "chrome_stability",
-      "learning": "Scheduled run on 2026-04-20 failed to connect to Chrome after 3 retries (initial + 6s wait + 10s wait). This is the FIFTH consecutive Chrome outage on a scheduled run (prior: 04-05 batch6-pending-retry, 04-13 batch11, 04-16 batch14, 04-17 batch14-pending-retry). Chrome has now been down ~5 consecutive scheduled-run dates. Edward needs to verify the Claude in Chrome extension is open and signed in \u2014 the extended duration of this outage strongly suggests the extension is closed, logged out, or the host machine is sleeping during the 11pm-3am ET run window. Credit budget is at risk: with 11 days left in cycle and 1831 credits unused, daily budget has grown to ~167 credits. If Chrome stays down through cycle reset on May 1, up to 1831 credits may expire unused.",
+      "learning": "Scheduled run on 2026-04-20 failed to connect to Chrome after 3 retries (initial + 6s wait + 10s wait). This is the FIFTH consecutive Chrome outage on a scheduled run (prior: 04-05 batch6-pending-retry, 04-13 batch11, 04-16 batch14, 04-17 batch14-pending-retry). Chrome has now been down ~5 consecutive scheduled-run dates. Edward needs to verify the Claude in Chrome extension is open and signed in — the extended duration of this outage strongly suggests the extension is closed, logged out, or the host machine is sleeping during the 11pm-3am ET run window. Credit budget is at risk: with 11 days left in cycle and 1831 credits unused, daily budget has grown to ~167 credits. If Chrome stays down through cycle reset on May 1, up to 1831 credits may expire unused.",
       "severity": "critical"
     },
     {
       "date": "2026-04-20",
       "batch": "batch14-pending-retry-2",
       "category": "performance",
-      "learning": "Run 2026-04-20 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped \u2014 no point growing pending backlog when existing pending can't be cleared). State file updated to reflect failed attempt. Pipeline status: PAUSED awaiting Chrome connection. 20 batch14_pending reveals continue to accumulate age.",
+      "learning": "Run 2026-04-20 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped — no point growing pending backlog when existing pending can't be cleared). State file updated to reflect failed attempt. Pipeline status: PAUSED awaiting Chrome connection. 20 batch14_pending reveals continue to accumulate age.",
       "severity": "info"
     },
     {
       "date": "2026-04-21",
       "batch": "batch14-pending-retry-3",
       "category": "chrome_stability",
-      "learning": "Scheduled run on 2026-04-21 failed to connect to Chrome after 3 retries (initial + 8s wait + 12s wait). This is now the SIXTH consecutive Chrome outage on a scheduled run (04-16, 04-17, 04-18, 04-19, 04-20, 04-21). Six-day outage is the longest in pipeline history \u2014 prior max was 2 consecutive days. The extension has almost certainly been closed, logged out, or the host machine is consistently sleeping during the 11pm-3am ET run window. With 10 days until cycle reset on May 1 and 1831 unused credits, the daily burn rate needed to consume all credits before expiry has grown to ~183/day \u2014 well above normal throughput of ~20-25/day. Even if Chrome is restored today, ~1400+ credits will likely expire unused unless aggressive phone reveal acceleration begins immediately.",
+      "learning": "Scheduled run on 2026-04-21 failed to connect to Chrome after 3 retries (initial + 8s wait + 12s wait). This is now the SIXTH consecutive Chrome outage on a scheduled run (04-16, 04-17, 04-18, 04-19, 04-20, 04-21). Six-day outage is the longest in pipeline history — prior max was 2 consecutive days. The extension has almost certainly been closed, logged out, or the host machine is consistently sleeping during the 11pm-3am ET run window. With 10 days until cycle reset on May 1 and 1831 unused credits, the daily burn rate needed to consume all credits before expiry has grown to ~183/day — well above normal throughput of ~20-25/day. Even if Chrome is restored today, ~1400+ credits will likely expire unused unless aggressive phone reveal acceleration begins immediately.",
       "severity": "critical"
     },
     {
       "date": "2026-04-21",
       "batch": "batch14-pending-retry-3",
       "category": "performance",
-      "learning": "Run 2026-04-21 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped \u2014 same rationale as prior failed runs). State file updated. Pipeline status: PAUSED awaiting Chrome connection. 20 batch14_pending reveals now 5+ days old. Action required from Edward: open Chrome, sign into Claude in Chrome extension, verify host machine isn't sleeping overnight.",
+      "learning": "Run 2026-04-21 #1: Chrome unavailable. 0 credits spent. 0 reveals. 0 Stage 2 work (intentionally skipped — same rationale as prior failed runs). State file updated. Pipeline status: PAUSED awaiting Chrome connection. 20 batch14_pending reveals now 5+ days old. Action required from Edward: open Chrome, sign into Claude in Chrome extension, verify host machine isn't sleeping overnight.",
       "severity": "info"
     },
     {
@@ -757,21 +757,21 @@
       "date": "2026-04-21",
       "batch": "batch14-stage3-complete",
       "category": "apollo_ui",
-      "learning": "STUCK SAVING RESULTS STATE: For multiple batch14 reveals (Navifreight/Mike Vannoy, Origin Build/Jack Lindley, Gateway/Colby Coda), after clicking the email cell the table row froze at 'Saving results...' indefinitely \u2014 innerHTML contained no email, no data-tour-id on the cell. A full page reload did NOT clear the stuck state for Mike Vannoy. SOLUTION that works reliably: click the contact NAME to open the profile panel. The revealed email appears in the profile innerHTML and can be extracted via regex. Apollo still charges 1 credit even when the table UI is stuck, so there is no way to recover unused credits once the click fires. Adopt the 'click-name-if-stuck-after-12s' pattern as the default fallback.",
+      "learning": "STUCK SAVING RESULTS STATE: For multiple batch14 reveals (Navifreight/Mike Vannoy, Origin Build/Jack Lindley, Gateway/Colby Coda), after clicking the email cell the table row froze at 'Saving results...' indefinitely — innerHTML contained no email, no data-tour-id on the cell. A full page reload did NOT clear the stuck state for Mike Vannoy. SOLUTION that works reliably: click the contact NAME to open the profile panel. The revealed email appears in the profile innerHTML and can be extracted via regex. Apollo still charges 1 credit even when the table UI is stuck, so there is no way to recover unused credits once the click fires. Adopt the 'click-name-if-stuck-after-12s' pattern as the default fallback.",
       "severity": "important"
     },
     {
       "date": "2026-04-21",
       "batch": "batch14-stage3-complete",
       "category": "apollo_entity_matching",
-      "learning": "MKLP LLC not indexed: Apollo has 0 results for 'MKLP LLC'. Attempting qOrganizationName=Midwest Refrigerated pulls the unrelated Wisconsin entity (136 emp). qOrganizationDomain URL param is not a recognized filter \u2014 returned random contacts. Very small USDOT-registered LLCs (~2 emp, no LinkedIn presence) are invisible to Apollo. Takeaway: during Stage 2 verification, flag micro-LLCs with expired SSL / no LinkedIn presence as NOT_APOLLO_INDEXED to avoid Stage 3 search time waste.",
+      "learning": "MKLP LLC not indexed: Apollo has 0 results for 'MKLP LLC'. Attempting qOrganizationName=Midwest Refrigerated pulls the unrelated Wisconsin entity (136 emp). qOrganizationDomain URL param is not a recognized filter — returned random contacts. Very small USDOT-registered LLCs (~2 emp, no LinkedIn presence) are invisible to Apollo. Takeaway: during Stage 2 verification, flag micro-LLCs with expired SSL / no LinkedIn presence as NOT_APOLLO_INDEXED to avoid Stage 3 search time waste.",
       "severity": "info"
     },
     {
       "date": "2026-04-21",
       "batch": "batch14-stage3-complete",
       "category": "performance",
-      "learning": "Run 2026-04-21 #2 FINAL: 20 companies processed. 13 REVEALED (MATAI/Nick Lewman, TalkFreight/Dave Burdick, Tomlinson/Joel Tomlinson, Navifreight/Mike Vannoy, Origin Build/Jack Lindley, Gateway/Colby Coda + 7 prior in session). 7 SKIPPED (Bath Wizard NO_EMAIL, Sutherlands WRONG_ENTITY, BIRD Construction NO_DECISION_MAKER, Hartline KC NO_DECISION_MAKER, MKLP LLC NOT_INDEXED, Grow Trucking NO_DECISION_MAKER, Rock-N-Roll Transportation NO_EMAIL). 1 fallback success (ROOTS Logistics: Mike Kincaid President NO_EMAIL \u2192 Joe Deangelo VP Ops REVEALED). Credits burned ~24 (starting 1831 \u2192 ending 1807). 35% SKIP rate on this batch is higher than historical ~20% \u2014 batch14 drew from deeper tier1 tail with more micro-LLCs and owner-operator trucking. Pipeline ready for batch15 Stage 2.",
+      "learning": "Run 2026-04-21 #2 FINAL: 20 companies processed. 13 REVEALED (MATAI/Nick Lewman, TalkFreight/Dave Burdick, Tomlinson/Joel Tomlinson, Navifreight/Mike Vannoy, Origin Build/Jack Lindley, Gateway/Colby Coda + 7 prior in session). 7 SKIPPED (Bath Wizard NO_EMAIL, Sutherlands WRONG_ENTITY, BIRD Construction NO_DECISION_MAKER, Hartline KC NO_DECISION_MAKER, MKLP LLC NOT_INDEXED, Grow Trucking NO_DECISION_MAKER, Rock-N-Roll Transportation NO_EMAIL). 1 fallback success (ROOTS Logistics: Mike Kincaid President NO_EMAIL → Joe Deangelo VP Ops REVEALED). Credits burned ~24 (starting 1831 → ending 1807). 35% SKIP rate on this batch is higher than historical ~20% — batch14 drew from deeper tier1 tail with more micro-LLCs and owner-operator trucking. Pipeline ready for batch15 Stage 2.",
       "severity": "info"
     },
     {
@@ -784,13 +784,13 @@
       "date": "2026-04-22",
       "category": "skip_rules",
       "title": "Small Apollo contact pool (<=3 contacts) + no DM title = high-confidence skip",
-      "detail": "Batch15: Accumax Auto Parts (1 contact: tear-down), Big Boy's Towing (3 contacts: AR/dispatcher/ops specialist), Ricotta Heating (6 contacts all red-X), BBi Constructors (3 non-DM), Phillips Southern Electric (4 non-DM) \u2014 all correctly skipped with no credit spend. Pattern: when Apollo returns <=6 contacts and zero match (owner|founder|president|ceo|vp|director|managing), skip without clicking."
+      "detail": "Batch15: Accumax Auto Parts (1 contact: tear-down), Big Boy's Towing (3 contacts: AR/dispatcher/ops specialist), Ricotta Heating (6 contacts all red-X), BBi Constructors (3 non-DM), Phillips Southern Electric (4 non-DM) — all correctly skipped with no credit spend. Pattern: when Apollo returns <=6 contacts and zero match (owner|founder|president|ceo|vp|director|managing), skip without clicking."
     },
     {
       "date": "2026-04-22",
       "category": "multi_entity",
       "title": "CW Electric multi-entity: correct MO entity identified but both owners show red-X unavailable",
-      "detail": "Apollo returned 25+ 'CW Electric' entities across multiple states/countries. Correct 9-employee CW Electric LLC with Jennifer White (Lee's Summit MO, Business Owner) identified by employee-count + location cross-check \u2014 but email status was email-cell-unavailable for both her and co-owner Zachary Santos. Logged as NO_EMAIL skip. Learning: multi-entity searches can still end in NO_EMAIL even when correct entity found; do not click unavailable cells to avoid wasted credits."
+      "detail": "Apollo returned 25+ 'CW Electric' entities across multiple states/countries. Correct 9-employee CW Electric LLC with Jennifer White (Lee's Summit MO, Business Owner) identified by employee-count + location cross-check — but email status was email-cell-unavailable for both her and co-owner Zachary Santos. Logged as NO_EMAIL skip. Learning: multi-entity searches can still end in NO_EMAIL even when correct entity found; do not click unavailable cells to avoid wasted credits."
     },
     {
       "date": "2026-04-22",
@@ -803,8 +803,8 @@
       "batch": "phase2-deferred-burndown",
       "category": "phone_reveal",
       "severity": "info",
-      "title": "Phase 2 phone reveal burndown \u2014 12/13 deferred candidates successful",
-      "detail": "Run #2 2026-04-22 processed all 13 deferred phone candidates. 12 successful reveals (Haas/HC Sharp 314-630-1313, Brown/Bourne 417-208-7656, Russ/Champion 314-956-1999, Rallo/C.Rallo 314-614-5886, Gatschet/Heartland 316-371-4218, Wetteroff/Byrne 314-544-4101, Wollenman/Deluxe 816-261-0994, Riney/KA Pazdera 314-852-5163, Banister/KAW 813-785-1198, Koehn/Koehn 417-321-0480, Jansen/SE Energy 314-486-2438, Haedt/Innovative 316-737-4005). 1 skipped pre-click \u2014 Brian Kohnen no longer in Apollo (see apollo_data_drift learning). ~96 credits spent (8/reveal consistent with prior phone-test batch). Apollo UI went 1726 \u2192 1630."
+      "title": "Phase 2 phone reveal burndown — 12/13 deferred candidates successful",
+      "detail": "Run #2 2026-04-22 processed all 13 deferred phone candidates. 12 successful reveals (Haas/HC Sharp 314-630-1313, Brown/Bourne 417-208-7656, Russ/Champion 314-956-1999, Rallo/C.Rallo 314-614-5886, Gatschet/Heartland 316-371-4218, Wetteroff/Byrne 314-544-4101, Wollenman/Deluxe 816-261-0994, Riney/KA Pazdera 314-852-5163, Banister/KAW 813-785-1198, Koehn/Koehn 417-321-0480, Jansen/SE Energy 314-486-2438, Haedt/Innovative 316-737-4005). 1 skipped pre-click — Brian Kohnen no longer in Apollo (see apollo_data_drift learning). ~96 credits spent (8/reveal consistent with prior phone-test batch). Apollo UI went 1726 → 1630."
     },
     {
       "date": "2026-04-22",
@@ -812,7 +812,7 @@
       "category": "apollo_data_drift",
       "severity": "high",
       "title": "Deferred contacts may vanish from Apollo between email reveal and phone reveal",
-      "detail": "Brian Kohnen (Kay Bee Electric, rank 456) was revealed with email bjk@kaybeeelectric.com in batch15 Stage 3 on 2026-04-22 Run #1. In Run #2 hours later, Apollo's Kay Bee Electric search returned 8 contacts with Stephen Kohnen now listed as President \u2014 Brian not present at all. Do NOT click a different person's phone-reveal when the original contact is missing. Mark phone column as NO_APOLLO_RECORD and move on. Implication: deferred phone reveals should ideally run same-session as the email reveal, not days later. When deferring to a later run, verify the contact still exists before clicking."
+      "detail": "Brian Kohnen (Kay Bee Electric, rank 456) was revealed with email bjk@kaybeeelectric.com in batch15 Stage 3 on 2026-04-22 Run #1. In Run #2 hours later, Apollo's Kay Bee Electric search returned 8 contacts with Stephen Kohnen now listed as President — Brian not present at all. Do NOT click a different person's phone-reveal when the original contact is missing. Mark phone column as NO_APOLLO_RECORD and move on. Implication: deferred phone reveals should ideally run same-session as the email reveal, not days later. When deferring to a later run, verify the contact still exists before clicking."
     },
     {
       "date": "2026-04-22",
@@ -820,7 +820,7 @@
       "category": "apollo_search",
       "severity": "medium",
       "title": "qKeywords=FirstName%20LastName is reliable last-resort when virtualized table hides target",
-      "detail": "Brad Haedt (Innovative Construction Services, rank 450) couldn't be found via qOrganizationName search \u2014 Apollo returned 25+ Innovative Construction Services contacts across multiple entities, Brad virtualized out of view. Adding contactLocations=Wichita%2C%20Kansas didn't narrow the list (Apollo may ignore city-level location filters on this field). Switching URL to qKeywords=Brad%20Haedt&contactLocations=United%20States resolved immediately \u2014 target was the only row returned. Use qKeywords as a fallback for any deferred phone reveal where qOrganizationName returns a crowded table."
+      "detail": "Brad Haedt (Innovative Construction Services, rank 450) couldn't be found via qOrganizationName search — Apollo returned 25+ Innovative Construction Services contacts across multiple entities, Brad virtualized out of view. Adding contactLocations=Wichita%2C%20Kansas didn't narrow the list (Apollo may ignore city-level location filters on this field). Switching URL to qKeywords=Brad%20Haedt&contactLocations=United%20States resolved immediately — target was the only row returned. Use qKeywords as a fallback for any deferred phone reveal where qOrganizationName returns a crowded table."
     },
     {
       "date": "2026-04-22",
@@ -835,7 +835,7 @@
       "batch": "phase2-deferred-burndown",
       "category": "chrome_stability",
       "severity": "low",
-      "title": "One transient Chrome disconnect during Run #2 \u2014 auto-recovered on retry",
+      "title": "One transient Chrome disconnect during Run #2 — auto-recovered on retry",
       "detail": "Single extension disconnect occurred mid-session between KAW Services navigation and Kay Bee Electric navigation. Retry of tabs_context_mcp after ~60s re-established the connection. No credits lost; session resumed cleanly. Matches the Chrome-stability learning from 2026-04-05 batch5 (single-retry recovery)."
     },
     {
@@ -843,8 +843,8 @@
       "batch": "phase2-deferred-burndown",
       "category": "chrome_stability",
       "severity": "high",
-      "title": "Workspace bash unavailable during Run #2 \u2014 file writes succeeded but git commit/push could not run from agent",
-      "detail": "mcp__workspace__bash returned 'Workspace unavailable. The isolated Linux environment failed to start.' on every attempt during Run #2 finalization. File tools (Read/Write/Edit) continued to work against the mounted anvo-brain folder, so state file + CSV + learnings writes all landed durably on disk. But `git add/commit/push` could not be executed. Action required from Edward OR next agent run: cd ~/dev/anvo-brain && git add outreach/reports/nightly-run-state.json outreach/reports/stage3_results.csv outreach/reports/pipeline-learnings.json && git commit -m 'Nightly run: 2026-04-22 #2 \u2014 Phase 2 phone burndown 12/13' && git push. Prevention: the scheduled-task prompt should include an early sanity check that bash is responsive BEFORE starting Apollo work; if bash is down, defer the run rather than doing work that can't be committed. Alternatively, if bash remains flaky, explore whether the file tools can perform git operations via a helper script or whether the next run can catch up unpushed changes."
+      "title": "Workspace bash unavailable during Run #2 — file writes succeeded but git commit/push could not run from agent",
+      "detail": "mcp__workspace__bash returned 'Workspace unavailable. The isolated Linux environment failed to start.' on every attempt during Run #2 finalization. File tools (Read/Write/Edit) continued to work against the mounted anvo-brain folder, so state file + CSV + learnings writes all landed durably on disk. But `git add/commit/push` could not be executed. Action required from Edward OR next agent run: cd ~/dev/anvo-brain && git add outreach/reports/nightly-run-state.json outreach/reports/stage3_results.csv outreach/reports/pipeline-learnings.json && git commit -m 'Nightly run: 2026-04-22 #2 — Phase 2 phone burndown 12/13' && git push. Prevention: the scheduled-task prompt should include an early sanity check that bash is responsive BEFORE starting Apollo work; if bash is down, defer the run rather than doing work that can't be committed. Alternatively, if bash remains flaky, explore whether the file tools can perform git operations via a helper script or whether the next run can catch up unpushed changes."
     },
     {
       "date": "2026-04-23",
@@ -852,7 +852,7 @@
       "category": "apollo_navigation",
       "severity": "medium",
       "title": "Generic-name small companies (JMC Electric, CSE Electric, GEM Transportation, Kelley Construction) return 50-160 cross-entity contacts",
-      "detail": "For small (\u226415 emp) companies with very common 2-3-word names, Apollo qOrganizationName= search returns dozens to hundreds of contacts spanning multiple unrelated same-named entities globally. JMC Electric: 63 contacts (target Overland Park KS not visible). CSE Electric: 57 contacts dominated by Carnwath-family CSE (target Ellisville MO 3-emp not indexed). GEM Transportation: 48 contacts dominated by Gulino chauffeur/limo service (target Hazelwood MO 13-emp trucking not visible). Kelley Construction: 163 contacts (target Topeka KS not visible). Heuristic: if Total > 30 AND target city name not present in first 25 visible rows AND apollo_emp <= 15, skip without spending credit. Saved ~4 wasted credits on this batch."
+      "detail": "For small (≤15 emp) companies with very common 2-3-word names, Apollo qOrganizationName= search returns dozens to hundreds of contacts spanning multiple unrelated same-named entities globally. JMC Electric: 63 contacts (target Overland Park KS not visible). CSE Electric: 57 contacts dominated by Carnwath-family CSE (target Ellisville MO 3-emp not indexed). GEM Transportation: 48 contacts dominated by Gulino chauffeur/limo service (target Hazelwood MO 13-emp trucking not visible). Kelley Construction: 163 contacts (target Topeka KS not visible). Heuristic: if Total > 30 AND target city name not present in first 25 visible rows AND apollo_emp <= 15, skip without spending credit. Saved ~4 wasted credits on this batch."
     },
     {
       "date": "2026-04-23",
@@ -860,7 +860,7 @@
       "category": "apollo_ui",
       "severity": "high",
       "title": "data-tour-id=\"email-cell-*\" selectors disappeared on Colcon and Higginbotham pages mid-session",
-      "detail": "After 6+ Apollo people-search navigations in the same session, data-tour-id attributes on email cells stopped rendering on Colcon Corporation and Higginbotham Custom Homes pages. Page innerText still shows contact names + titles, total contact count visible in header \u2014 but querySelectorAll(\"[data-tour-id^=email-cell]\") returns 0 even after 30+ seconds of waiting and scrolling. Same pattern as batch6 learning from 2026-04-05. Both companies skipped without credit spend. Workaround: end the session and resume in a fresh browser session, OR fall back to computer-tool screenshot click on the visible Access email span. Both companies queued for retry next run."
+      "detail": "After 6+ Apollo people-search navigations in the same session, data-tour-id attributes on email cells stopped rendering on Colcon Corporation and Higginbotham Custom Homes pages. Page innerText still shows contact names + titles, total contact count visible in header — but querySelectorAll(\"[data-tour-id^=email-cell]\") returns 0 even after 30+ seconds of waiting and scrolling. Same pattern as batch6 learning from 2026-04-05. Both companies skipped without credit spend. Workaround: end the session and resume in a fresh browser session, OR fall back to computer-tool screenshot click on the visible Access email span. Both companies queued for retry next run."
     },
     {
       "date": "2026-04-23",
@@ -868,30 +868,30 @@
       "category": "apollo_reveal",
       "severity": "medium",
       "title": "Profile-panel fallback works when table cell stuck on \"Saving results...\"",
-      "detail": "ERMAN Corporation: clicked email-cell for Ted Roth (President), table cell stuck on \"Saving results...\" for 12+ seconds. Clicked Ted Roth name link \u2192 navigated to /contacts/<id>?overrideScoreId=score profile panel \u2192 email troth@ermangroup.com appeared in profile innerHTML within 6 seconds. Confirms 2026-04-21 batch14 learning: click-name-if-stuck-after-12s is a reliable fallback. Apollo charges the credit either way (table-stuck or profile-panel) \u2014 the fallback only recovers the email, not the credit."
+      "detail": "ERMAN Corporation: clicked email-cell for Ted Roth (President), table cell stuck on \"Saving results...\" for 12+ seconds. Clicked Ted Roth name link → navigated to /contacts/<id>?overrideScoreId=score profile panel → email troth@ermangroup.com appeared in profile innerHTML within 6 seconds. Confirms 2026-04-21 batch14 learning: click-name-if-stuck-after-12s is a reliable fallback. Apollo charges the credit either way (table-stuck or profile-panel) — the fallback only recovers the email, not the credit."
     },
     {
       "date": "2026-04-23",
       "batch": "batch16",
       "category": "apollo_reveal",
       "severity": "medium",
-      "title": "\"Trying other sources...\" can resolve to \"Enrichment ran successfully but no data was found\" \u2014 credit spent for nothing",
-      "detail": "LM2 Construction: clicked email-cell for Latasha McCall (Owner/President, marked email-cell-unavailable badge). Cell first showed \"Trying other sources...\" for 18 seconds, then \"Enrichment ran successfully, but no data was found with the current configuration\" \u2014 credit was spent, no email returned. Confirms batch10 learning that email-cell-unavailable badge contacts often fail. Updated rule: for sole-DM companies where ONLY the DM has unavailable badge AND no other DM is verified, accept the credit risk. For LM2 the alternate Director (Steve Huffman) also showed unavailable, so risk was high but Owner trumps Director \u2014 worth attempting."
+      "title": "\"Trying other sources...\" can resolve to \"Enrichment ran successfully but no data was found\" — credit spent for nothing",
+      "detail": "LM2 Construction: clicked email-cell for Latasha McCall (Owner/President, marked email-cell-unavailable badge). Cell first showed \"Trying other sources...\" for 18 seconds, then \"Enrichment ran successfully, but no data was found with the current configuration\" — credit was spent, no email returned. Confirms batch10 learning that email-cell-unavailable badge contacts often fail. Updated rule: for sole-DM companies where ONLY the DM has unavailable badge AND no other DM is verified, accept the credit risk. For LM2 the alternate Director (Steve Huffman) also showed unavailable, so risk was high but Owner trumps Director — worth attempting."
     },
     {
       "date": "2026-04-23",
       "batch": "batch16",
       "category": "company_matching",
       "severity": "high",
-      "title": "Substring-only dedup misses typo variants \u2014 Follow Me Construction \"Maintenace\" vs \"Maintenance\" cost almost a wasted reveal",
-      "detail": "Master list spelling \"Follow Me Construction & Home Maintenace\" (typo missing N) did not match batch5 entry \"Follow Me Construction & Home Maintenance\" via substring matching \u2014 they are 38-char strings differing by one character so neither is a substring of the other. Almost spent a credit re-revealing the same Brian English EVP (already revealed at rank 200 in earlier session). Detected after Apollo cells loaded showing brian@followmeconstruction.com already populated. Fix: for dedup against already-processed company list, also use SequenceMatcher with ratio >= 0.95 threshold (NOT 0.85 \u2014 that produced false positives for \"CRG Construction\" vs \"LMG Construction\"). 0.95 catches typo variants but rejects shared-word collisions."
+      "title": "Substring-only dedup misses typo variants — Follow Me Construction \"Maintenace\" vs \"Maintenance\" cost almost a wasted reveal",
+      "detail": "Master list spelling \"Follow Me Construction & Home Maintenace\" (typo missing N) did not match batch5 entry \"Follow Me Construction & Home Maintenance\" via substring matching — they are 38-char strings differing by one character so neither is a substring of the other. Almost spent a credit re-revealing the same Brian English EVP (already revealed at rank 200 in earlier session). Detected after Apollo cells loaded showing brian@followmeconstruction.com already populated. Fix: for dedup against already-processed company list, also use SequenceMatcher with ratio >= 0.95 threshold (NOT 0.85 — that produced false positives for \"CRG Construction\" vs \"LMG Construction\"). 0.95 catches typo variants but rejects shared-word collisions."
     },
     {
       "date": "2026-04-23",
       "batch": "batch16",
       "category": "data_integrity",
       "severity": "critical",
-      "title": "NEVER open stage3_results.csv in Python \"w\" mode \u2014 partial writerows truncates file on error",
+      "title": "NEVER open stage3_results.csv in Python \"w\" mode — partial writerows truncates file on error",
       "detail": "Lost stage3_results.csv mid-run today: opened in \"w\" mode then csv.DictWriter.writerows raised ValueError(\"dict contains fields not in fieldnames: None\") because some pre-existing rows had trailing commas creating None-keyed fields. By the time the error fired, the file was already truncated to 0 bytes. Recovered from git HEAD copy and manually re-applied 12 phone updates from Run #2 2026-04-22 note plus appended batch16 rows. PREVENTION: always write to \"stage3_results.csv.new\" sibling file first, then os.replace() atomically. Or use append mode \"a\" instead of \"w\" when extending existing data. Also: filter out None-keyed entries from rows before passing to writerows."
     },
     {
@@ -899,7 +899,7 @@
       "batch": "batch16",
       "category": "apollo_ui",
       "severity": "medium",
-      "title": "Apollo UI credit counter is heavily cached \u2014 does not update for many minutes within a session",
+      "title": "Apollo UI credit counter is heavily cached — does not update for many minutes within a session",
       "detail": "Apollo header credit counter showed 1,630 at session start (matching Run #2 ending state) and stayed at 1,630 for the entire 8-company session even after 3 confirmed credit spends (2 successful reveals + 1 NO_EMAIL waste). State file estimate updated to 1,627 manually. Confirms 2026-04-14 learning that Apollo UI counter is the source of truth at SESSION END but lags during the run."
     },
     {
@@ -908,48 +908,48 @@
       "category": "workspace_health",
       "severity": "info",
       "title": "Workspace bash is responsive this session (unlike Run #2 2026-04-22 outage)",
-      "detail": "mcp__workspace__bash worked reliably throughout this run for file reads/writes, Python scripts, and web fetches. The bash outage that blocked Run #2 finalization on 2026-04-22 has resolved. Per runbook Step 5, agent does NOT run git itself \u2014 emits commit+push block for Edward."
+      "detail": "mcp__workspace__bash worked reliably throughout this run for file reads/writes, Python scripts, and web fetches. The bash outage that blocked Run #2 finalization on 2026-04-22 has resolved. Per runbook Step 5, agent does NOT run git itself — emits commit+push block for Edward."
     },
     {
       "date": "2026-04-23",
       "category": "stage4_scoring",
       "severity": "low",
-      "observation": "Initial bulk-scoring pass over 80 newly-revealed contacts produced 56 HIGH / 17 MEDIUM / 7 SKIP with a na\u00efve rubric application \u2014 70% HIGH ratio was out of line with historical 28%. Recalibration (removed baseline +1 on fit, tightened premium thresholds <8 emp, set default underserved=3 instead of 4, capped fit at 4 for KC-metro unless ethnic-owned) reduced to 42 HIGH / 31 MEDIUM / 7 SKIP (53% HIGH) \u2014 closer to expected but still generous.",
-      "workaround": "For future bulk-scoring runs, use these calibrated thresholds: Premium 5 only when emp \u2265 12 for GC OR emp \u2265 15 for artisan OR rev \u2265 $10M. Fit = 4 for KC-metro, 3 for wider MO/KS, 3 for St. Louis metro (St. Louis = MO-licensed but outside KC carrier-strength sweet spot). Underserved default = 3; bump to 4 only if emp < 15 AND niche class (roofing/excavating/coatings). Accessibility = 2 baseline + 2 if owner/president/CEO title + 1 if phone present."
+      "observation": "Initial bulk-scoring pass over 80 newly-revealed contacts produced 56 HIGH / 17 MEDIUM / 7 SKIP with a naïve rubric application — 70% HIGH ratio was out of line with historical 28%. Recalibration (removed baseline +1 on fit, tightened premium thresholds <8 emp, set default underserved=3 instead of 4, capped fit at 4 for KC-metro unless ethnic-owned) reduced to 42 HIGH / 31 MEDIUM / 7 SKIP (53% HIGH) — closer to expected but still generous.",
+      "workaround": "For future bulk-scoring runs, use these calibrated thresholds: Premium 5 only when emp ≥ 12 for GC OR emp ≥ 15 for artisan OR rev ≥ $10M. Fit = 4 for KC-metro, 3 for wider MO/KS, 3 for St. Louis metro (St. Louis = MO-licensed but outside KC carrier-strength sweet spot). Underserved default = 3; bump to 4 only if emp < 15 AND niche class (roofing/excavating/coatings). Accessibility = 2 baseline + 2 if owner/president/CEO title + 1 if phone present."
     },
     {
       "date": "2026-04-23",
       "category": "stage4_scoring",
       "severity": "medium",
-      "observation": "Apollo tier-1 'Construction' tag includes several segment-mismatches that only surface during Stage 5 deep research: (a) Core Communications (likely telecom not construction GC), (b) HC Sharp Company (HVAC manufacturer rep \u2014 distributor exposure, not contractor), (c) Image Truck Partners (used truck dealer \u2014 garage keepers/dealer open lot, not commercial auto for a fleet). These were flagged in notes but still scored as standard construction/transport.",
-      "workaround": "Add a second-pass check during Stage 5 research: if deep research reveals the business is a manufacturer rep, dealer, or adjacent services firm (not a self-performing contractor or driver), append a segment-correction note to stage5 and adjust the opening angle accordingly \u2014 do not re-score, just flag for Edward."
+      "observation": "Apollo tier-1 'Construction' tag includes several segment-mismatches that only surface during Stage 5 deep research: (a) Core Communications (likely telecom not construction GC), (b) HC Sharp Company (HVAC manufacturer rep — distributor exposure, not contractor), (c) Image Truck Partners (used truck dealer — garage keepers/dealer open lot, not commercial auto for a fleet). These were flagged in notes but still scored as standard construction/transport.",
+      "workaround": "Add a second-pass check during Stage 5 research: if deep research reveals the business is a manufacturer rep, dealer, or adjacent services firm (not a self-performing contractor or driver), append a segment-correction note to stage5 and adjust the opening angle accordingly — do not re-score, just flag for Edward."
     },
     {
       "date": "2026-04-23",
       "category": "stage4_scoring",
       "severity": "medium",
-      "observation": "Three unscored contacts turned out to be subsidiaries/acquisitions that should be SKIP but Apollo didn't flag: Temp-Con LLC (part of TriplePoint \u2014 1,200+ trade professionals across 6 mechanical contractors; insurance likely at corporate), Pro Electric L.C. (acquired by The Waldinger Corp on 2025-10-01; Waldinger is a large national mechanical/electrical contractor), Centric Construction Inc (CEO Kevin Russell is actually at California HQ \u2014 Apollo may have attached a KC location tag in error).",
+      "observation": "Three unscored contacts turned out to be subsidiaries/acquisitions that should be SKIP but Apollo didn't flag: Temp-Con LLC (part of TriplePoint — 1,200+ trade professionals across 6 mechanical contractors; insurance likely at corporate), Pro Electric L.C. (acquired by The Waldinger Corp on 2025-10-01; Waldinger is a large national mechanical/electrical contractor), Centric Construction Inc (CEO Kevin Russell is actually at California HQ — Apollo may have attached a KC location tag in error).",
       "workaround": "During Stage 5 deep research, explicitly search '[company] acquired' and '[company] parent company' as a first-pass check before drafting. If the business is a subsidiary of a 500+ employee parent or a recent acquisition by a national player, mark draft_status=SKIPPED_DATA_ISSUE with the reason. Did NOT draft for Temp-Con, Pro Electric, or Centric this run."
     },
     {
       "date": "2026-04-23",
       "category": "stage5_drafting",
       "severity": "low",
-      "observation": "For out-of-KC-metro Missouri contacts (St. Louis, Festus, Sikeston, Wichita) the 'happy to swing by for coffee' CTA doesn't land the same way \u2014 the drive is 3\u20134 hours. Drafted 15-minute phone call as primary ask for St. Louis-metro rows (C. Rallo, HC Sharp, KA Pazdera) but still offered in-person as optional for KC-metro.",
+      "observation": "For out-of-KC-metro Missouri contacts (St. Louis, Festus, Sikeston, Wichita) the 'happy to swing by for coffee' CTA doesn't land the same way — the drive is 3–4 hours. Drafted 15-minute phone call as primary ask for St. Louis-metro rows (C. Rallo, HC Sharp, KA Pazdera) but still offered in-person as optional for KC-metro.",
       "workaround": "Future drafts: use 'happy to swing by' only when prospect is in KC metro per KC_METRO set; default to '15-minute call' for Wichita/St. Louis/outstate MO-KS. Keep the no-hard-sell framing consistent either way."
     },
     {
       "date": "2026-04-23",
       "category": "stage5_drafting",
       "severity": "medium",
-      "observation": "One draft (Renovating KC to Kaleigh Gosch) is going to a Director of Marketing \u2014 not a decision-maker for insurance. Drafted anyway with explicit routing ask ('if you can point me toward Steven or Ben Ross'). The alternative would have been SKIPPED_NO_HOOK but the Inc. 5000 angle is genuinely good if it reaches the Ross brothers.",
+      "observation": "One draft (Renovating KC to Kaleigh Gosch) is going to a Director of Marketing — not a decision-maker for insurance. Drafted anyway with explicit routing ask ('if you can point me toward Steven or Ben Ross'). The alternative would have been SKIPPED_NO_HOOK but the Inc. 5000 angle is genuinely good if it reaches the Ross brothers.",
       "workaround": "When the Apollo-revealed contact is a non-decision-maker (Marketing Director, HR, IT), the draft should explicitly ask for a routing introduction rather than pitch directly. Flag these in notes so Edward can decide whether to send as-is or wait for a better contact."
     },
     {
       "date": "2026-04-23",
       "category": "style_guide",
       "severity": "low",
-      "observation": "Searched Google Drive for 'Anvo Prospecting Style Guide (AI-Generated)' \u2014 not found. Applied default tone rules from INSTRUCTIONS-stage4-7.md (friendly, peer-to-peer, no corporate jargon, 4-7 sentences, 'Edward, Anvo Insurance' sign-off with full signature block for consistency with templates.md).",
+      "observation": "Searched Google Drive for 'Anvo Prospecting Style Guide (AI-Generated)' — not found. Applied default tone rules from INSTRUCTIONS-stage4-7.md (friendly, peer-to-peer, no corporate jargon, 4-7 sentences, 'Edward, Anvo Insurance' sign-off with full signature block for consistency with templates.md).",
       "workaround": "Style guide should be created once Stage 7 has run over 10+ sent emails. Until then, default tone is the baseline. Every email this run: (1) personalized opener with specific research finding, (2) single-sentence bridge to insurance, (3) 1-2 sentence Anvo value prop specific to the business, (4) soft CTA (15-min call, or coffee if KC-metro), (5) sign-off. No carrier names, no premium quotes, no savings promises."
     },
     {
@@ -957,7 +957,7 @@
       "category": "stage5_drafting",
       "severity": "low",
       "observation": "stage5_outreach_log.csv did not have a drafted_by column when this task ran (file last updated by Alice's flow on 2026-04-15 predates the column spec). Added the column per runbook Step 2 guidance, backfilled 66 existing rows with drafted_by=alice, and wrote 15 new rows with drafted_by=edward.",
-      "workaround": "Runbook CSV Schema Notes already cover this one-time migration \u2014 completed. Future runs will see the column and append accordingly."
+      "workaround": "Runbook CSV Schema Notes already cover this one-time migration — completed. Future runs will see the column and append accordingly."
     },
     {
       "date": "2026-04-23",
@@ -965,7 +965,7 @@
       "category": "apollo_ui",
       "severity": "critical",
       "title": "Cumulative DOM degradation: data-tour-id=\"email-cell-*\" stops rendering after ~12 search navigations in same session",
-      "detail": "Continued the 2026-04-23 Run #1 batch16 work. Pattern of selector failure became clear: navigations 1-3 (CRG, ERMAN, Hamtil) \u2014 selectors worked fine. Navigations 4-6 (Mofilco, Cahills) \u2014 selectors worked but cells showed \"Saving results...\" stuck state requiring profile-panel fallback. Navigations 7-13 (Coonrod, Copeland, Midwest V&C, Paul Gray, Oliver, Southwestern, Young, Scott Coop, St Louis Auto Sprinkler) \u2014 selectors NEVER rendered (cells:0 even after 30s waits) despite contact names + titles being clearly visible in body innerText. The DM at 6 of these 7 was identified but not revealable: Wolfington (President, Coonrod), Seabaugh (Pres/Owner, Midwest V&C), J.Oliver (VP, Oliver), Baker (CEO, Scott Coop), McCammack+Weinshenker (Owner+Chairman, St Louis Auto Sprinkler), Korn (Co-owner, Higginbotham). NEW MITIGATION RULE: at first cells:0 result that persists past 15s waiting, immediately commit progress and end session. The 7 companies are listed in nightly-run-state.json batch16_retry_dom_broken \u2014 they should be the highest-priority reveals next session because the DM is already identified."
+      "detail": "Continued the 2026-04-23 Run #1 batch16 work. Pattern of selector failure became clear: navigations 1-3 (CRG, ERMAN, Hamtil) — selectors worked fine. Navigations 4-6 (Mofilco, Cahills) — selectors worked but cells showed \"Saving results...\" stuck state requiring profile-panel fallback. Navigations 7-13 (Coonrod, Copeland, Midwest V&C, Paul Gray, Oliver, Southwestern, Young, Scott Coop, St Louis Auto Sprinkler) — selectors NEVER rendered (cells:0 even after 30s waits) despite contact names + titles being clearly visible in body innerText. The DM at 6 of these 7 was identified but not revealable: Wolfington (President, Coonrod), Seabaugh (Pres/Owner, Midwest V&C), J.Oliver (VP, Oliver), Baker (CEO, Scott Coop), McCammack+Weinshenker (Owner+Chairman, St Louis Auto Sprinkler), Korn (Co-owner, Higginbotham). NEW MITIGATION RULE: at first cells:0 result that persists past 15s waiting, immediately commit progress and end session. The 7 companies are listed in nightly-run-state.json batch16_retry_dom_broken — they should be the highest-priority reveals next session because the DM is already identified."
     },
     {
       "date": "2026-04-23",
@@ -973,15 +973,15 @@
       "category": "apollo_reveal",
       "severity": "medium",
       "title": "Profile-panel fallback consistently works when table cell stuck on \"Saving results...\"",
-      "detail": "Confirmed for the third time today (after Ted Roth/ERMAN earlier): clicking the contact name link to navigate to /contacts/<id>?overrideScoreId=score profile, then waiting 6-8s, then regex-extracting [\\w.+-]+@[\\w-]+\\.[\\w.-]+ from body.innerHTML reliably surfaces the revealed email. Worked for: Ted Roth (troth@ermangroup.com), Quenton Schott (quenton@mofilco.com \u2014 also surfaced personal qschott@comcast.net), Tonie Cahill (toniecahill@cahillsconstruction.com). Apollo charges the credit either way; the fallback only recovers the email, not the credit."
+      "detail": "Confirmed for the third time today (after Ted Roth/ERMAN earlier): clicking the contact name link to navigate to /contacts/<id>?overrideScoreId=score profile, then waiting 6-8s, then regex-extracting [\\w.+-]+@[\\w-]+\\.[\\w.-]+ from body.innerHTML reliably surfaces the revealed email. Worked for: Ted Roth (troth@ermangroup.com), Quenton Schott (quenton@mofilco.com — also surfaced personal qschott@comcast.net), Tonie Cahill (toniecahill@cahillsconstruction.com). Apollo charges the credit either way; the fallback only recovers the email, not the credit."
     },
     {
       "date": "2026-04-23",
       "batch": "batch16-extended",
       "category": "company_matching",
       "severity": "low",
-      "title": "Heartlands Building Company has Apollo placeholder \"Heartlands Company\" listed as Owner \u2014 not a real person",
-      "detail": "Apollo people-search for Heartlands Building Company returned 4 contacts: 2 PMs (red-X email), 1 Carpenter (unverified), and one entry literally named \"Heartlands Company\" with title \"Owner\" and red-X email. The \"Heartlands Company\" name in the contact slot is clearly a placeholder/data-quality artifact \u2014 not a real person. Real President per BBB/Yelp/Houzz is Adam Twellman, who is not in Apollo. Skip rule: when \"Owner\" or \"President\" appears with the company name as the contact name, treat as no-DM and skip."
+      "title": "Heartlands Building Company has Apollo placeholder \"Heartlands Company\" listed as Owner — not a real person",
+      "detail": "Apollo people-search for Heartlands Building Company returned 4 contacts: 2 PMs (red-X email), 1 Carpenter (unverified), and one entry literally named \"Heartlands Company\" with title \"Owner\" and red-X email. The \"Heartlands Company\" name in the contact slot is clearly a placeholder/data-quality artifact — not a real person. Real President per BBB/Yelp/Houzz is Adam Twellman, who is not in Apollo. Skip rule: when \"Owner\" or \"President\" appears with the company name as the contact name, treat as no-DM and skip."
     },
     {
       "date": "2026-04-23",
@@ -989,7 +989,114 @@
       "category": "data_integrity",
       "severity": "high",
       "title": "Bash heredoc with embedded JSON containing en-dashes/special chars can truncate file mid-write",
-      "detail": "Lost nightly-run-state.json a SECOND time today via a Python script using bash heredoc that embedded JSON strings with en-dashes (\u2014) and accented characters. The bash heredoc completed but Python read interrupted parsing at line 212 mid-string. Recovery: restored from git HEAD (which only had 4/22 pre-Run#2 state) then rebuilt the entire state file via Write tool with a complete known-good JSON dictionary. Mitigation: always build state-file dicts in pure Python and use json.dump to a .new sibling then os.replace, rather than embedding JSON literals in bash heredocs."
+      "detail": "Lost nightly-run-state.json a SECOND time today via a Python script using bash heredoc that embedded JSON strings with en-dashes (—) and accented characters. The bash heredoc completed but Python read interrupted parsing at line 212 mid-string. Recovery: restored from git HEAD (which only had 4/22 pre-Run#2 state) then rebuilt the entire state file via Write tool with a complete known-good JSON dictionary. Mitigation: always build state-file dicts in pure Python and use json.dump to a .new sibling then os.replace, rather than embedding JSON literals in bash heredocs."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing — searched Google Drive for 'Anvo Prospecting Style Guide (AI-Generated)' (both title-contains and fullText-contains). No file matched. Applied default tone rules from INSTRUCTIONS-stage4-7.md and templates.md across all 15 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, no carrier names, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Until then this learning is informational and re-emerges every run."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "Apollo titles drift over time — caught two cases this run where the Apollo-revealed title is no longer accurate: (a) Brian Kohnen at Kay-Bee Electric — Apollo says President, web research confirms he's now Chairman with son Paul as President; (b) Ryan Neighbors at Neighbors Construction — Apollo says President/CFO, company website confirms he's a VP/PM (his father Roger founded the firm). Drafted to the Apollo-listed contact in both cases but adjusted phrasing in body to fit actual role and noted the discrepancy in stage5 notes.",
+      "workaround": "During Stage 5 deep research, always cross-check the Apollo title against (1) company 'Leadership' or 'Team' page, (2) LinkedIn, (3) ZoomInfo. If they disagree, defer to the company-published title in the body but keep drafting to the Apollo-revealed email. Flag the drift in stage5 notes so Edward can re-route at send time if needed."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "Apollo employee count materially undercounts driver-pool operations — Five Star Trucking shows emp=8 in Apollo but the company website says 50+ dump trucks and 25 years; Varsity Driveaway shows emp=27 but ZoomInfo lists 51-200 with 300+ drivers. The 1099 owner-operator pool isn't in Apollo's count.",
+      "workaround": "For Transport/Logistics segment specifically, treat Apollo emp as 'W-2 staff' only; check the company website / ZoomInfo for fleet size or driver count and apply that to coverage-needs reasoning. W-2 staff under 50 is still inside the Anvo sweet spot even if the operational driver pool is much larger; do not auto-skip on the larger operational number unless the W-2 count itself approaches the >200 / >$50M oversize bar."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "Caught a soft segment correction this run: CJR Construction Group's Apollo city is Topeka KS but company web profile + LinkedIn show Overland Park as actual HQ; founder is Charles J. Robinson III (MBE certification). The Apollo-revealed contact (Aaron Shatto, General Superintendent) is operations-side, not the insurance DM. Drafted with explicit routing ask to Charles per 2026-04-23 stage5_drafting workaround, and switched the CTA to KC-metro coffee since the actual office is in OP.",
+      "workaround": "When Apollo city looks anomalous (e.g., Kansas-licensed firm tagged Topeka but actually HQ'd in OP), confirm via company website's 'Contact' / 'Locations' page and use the actual city for CTA wording. Capture the segment/location correction in stage5 notes."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "stage4_scoring",
+      "severity": "info",
+      "observation": "Stage 4 caught up: every REVEALED stage3 contact with a non-empty email (n=295) is now in stage4_scored.csv (296 rows incl. one duplicate or admin row). Zero rows were scored this run. Stage 5 backlog is large (157 unprocessed HIGH/MEDIUM as of run start) which is the gating constraint — drafted 15/15 cap this run.",
+      "workaround": "When Stage 4 has nothing to do, don't synthesize work — the run is essentially a Stage 5-only pass. Continue chipping at the Stage 5 backlog at the 15/run cap until apollo-reveals lands a fresh batch."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "apollo_ui",
+      "severity": "info",
+      "title": "Fresh-DOM session (4 days post prior) reset cumulative DOM degradation — all 7 retry-broken reveals succeeded",
+      "detail": "All 7 batch16 contacts that were cells:0 / DOM-broken at end of 2026-04-23 session (St. Louis Auto Sprinkler/McCammack, Coonrod/Wolfington, Midwest V&C/Seabaugh, Scott Coop/Baker, Oliver Electric/J.Oliver, Higginbotham/Korn, Colcon/M.Walker) rendered cleanly in this 2026-04-27 fresh-DOM session, with email-cell selectors returning their full row data within 4–8 seconds of navigation. Confirms cumulative DOM degradation is a per-session memory issue, not per-account. Mitigation: end session early as before, but defer DOM-broken work to the next session rather than scrubbing/retrying mid-session. The 4-day gap likely just allowed Chrome/extension to fully release whatever was leaking; even an hour-long gap with new browser open should be enough."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "apollo_ui",
+      "severity": "low",
+      "title": "Enrichment-mode toggle returned null on /people page entry — neither role=switch nor input selector matched",
+      "detail": "Step 0.5 enrichment-mode check at session start: both selectors document.querySelector('[role=\"switch\"][aria-label=\"Enable enrichment mode\"]') AND input[aria-label=\"Enable enrichment mode\"] returned null after 4-second wait. Toggle simply not rendered on the empty /people landing view in current Apollo build. The 2026-04-22 learning recommended role=switch selector but it also doesn't surface here. Workaround: Apollo enrichment mode appears to default OFF at session start when no search is loaded. Detection still useful when the toggle is rendered (e.g., on an actual people search view); on the empty landing it can be treated as off. Consider augmenting Step 0.5 with a follow-up check after the first Apollo people-search navigation (where the toggle is visible)."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "title": "Phone-already-visible captures: 2 of 5 deferred phones (Lengyel CRG, Roth ERMAN) showed phone in mobile-cell without click",
+      "detail": "When navigating to companies whose emails were revealed in a prior session (2026-04-23), 2 of 5 contacts (Ryan Lengyel CRG, Ted Roth ERMAN) showed mobile-cell data-tour-id=\"mobile-cell-verified\" with the actual phone number rendered in innerText (e.g. \"+1 (913) 742-2550\") — no click needed. The other 3 (Hamtil/Schott/Cahill) showed \"Request phone number\" requiring click + ~7 credit spend. Theory: Apollo may bulk-reveal phones for contacts that have been in the database the longest, OR the prior reveal session had partial phone reveals that just weren't captured. Either way: ALWAYS check mobile-cell innerText before clicking — free phone captures should be opportunistically harvested whenever revisiting a company."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "data_integrity",
+      "severity": "high",
+      "title": "stage3_results.csv missing ALL 25 batch16 entries — 2026-04-23 truncation event lost more data than the 5 reveals reported",
+      "detail": "Verified at start of 2026-04-27 run: zero batch16 companies present in stage3_results.csv (last entry was rank 467 HC Sharp from batch15). The state file claimed total_revealed_to_date=273 with batch16 having 5 REVEALED + 1 NO_EMAIL + 11 zero-credit skips + 7 DOM-broken + 2 fresh, but none of those rows actually made it to disk. The 2026-04-23 'data_integrity' learning about Python w-mode truncation was wider-blast than reported — appears the entire batch16 write was lost. Recovery this run: added 14 rows (ranks 468-481) covering the 5 lost reveals + 8 new this-session reveals + 1 SKIP. The other 11 zero-credit skips and 1 NO_EMAIL waste from 2026-04-23 are NOT yet restored — those rows describe state that has no operational consequence (zero-credit means nothing to recover). Future runs should not retry those 11 companies until master list is re-evaluated."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "credit_management",
+      "severity": "info",
+      "title": "Accelerate-mode Phase 2 worked as designed — 8 phone reveals in single run with 4 days left in cycle",
+      "detail": "Per runbook accelerate rule (days_left_in_cycle <= 10 → max 15 phone reveals), this run pushed 8 phone clicks plus 2 free captures = 10 phone records, all successful. Total session credits ~64 (8 emails + ~56 phone). Credits remaining estimate ~1560 with 4 days left = ~390/day budget — comfortable headroom for next Stage 2 batch 17 + reveals. The 8 phone clicks were all on top-tier DMs (CEO/President/Owner/Co-owner) — high-value Phase 2 targets given email replies often stall and phones unlock the conversation."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "chrome_stability",
+      "severity": "medium",
+      "title": "Two transient Chrome disconnects during Phase 2 — recovered cleanly with select_browser retry",
+      "detail": "Two Chrome extension disconnects occurred during Phase 2: (a) after Higginbotham email reveal — recovered in ~10s; (b) after Mofilco phone click but before result verification (caused 60s timeout in browser_batch). On both, list_connected_browsers → select_browser → tabs_context_mcp pattern restored connectivity. The Mofilco click actually registered before the disconnect — phone was correctly captured on retry. Pattern is consistent with the 2026-04-22 single-disconnect learning. Mitigation: always re-verify Phase 2 click outcomes after reconnect — the click event may have been processed even if the result-read query failed."
+    },
+    {
+      "date": "2026-04-27",
+      "batch": "batch16-final",
+      "category": "stage4_scoring",
+      "severity": "low",
+      "title": "Mike Walker (Colcon Corporation) Apollo location is Mattoon IL but Stage 2 verified Colcon HQ as Sullivan MO",
+      "detail": "Apollo's contact-level location for Mike Walker shows Mattoon, Illinois. Stage 2 verification (batch16) marked Colcon Corporation HQ as Sullivan, Missouri (REVEAL approved). The discrepancy is likely a remote-employee or branch-office case, OR Apollo has stale location data for the contact. Flagged in the stage3_results notes field. Stage 5 drafting should verify (Sullivan MO website, BBB) before sending — if Walker is truly an IL employee of an MO HQ, the email is still valid but the in-person/coffee CTA is moot."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "git_push",
+      "severity": "high",
+      "title": "/tmp clone+push fails repeatedly inside the 45s workspace-bash window for anvo-brain (~17M .git, large appetite PDFs)",
+      "detail": "Tried Step 5.1–5.4 multiple times. SSH key install + auth verification both succeeded (5.1 OK). 5.2 clone consistently times out: bare `git clone --depth=1 --single-branch --branch=main` exceeds 38s timeout and aborts with `fetch-pack: unexpected disconnect`. Workaround attempt with `--filter=tree:0` succeeded for clone but then `git checkout`/`git restore` and `git write-tree` all hit the workspace 45s ceiling because git lazily fetches missing trees/blobs (or fails outright on `invalid object` for blobs that were never fetched). Plumbing approach (read-tree + update-index --cacheinfo + write-tree) also fails because write-tree validates every blob in the index and the partial filter left several .pdf/.xlsx blobs as promisor-only references. End result: no commit landed from the scheduled task. Paste-block fallback (Step 5.5) emitted for Edward to push manually from Claude Code on his Windows machine where the repo is fully checked out.",
+      "workaround": "Until the workspace-bash 45s timeout and/or the repo size are addressed, the scheduled task should plan to take Step 5.5 every run rather than re-attempt 5.2 each time. Two longer-term fixes worth considering: (a) split the large `carriers/appetite_pdfs/` binaries into a separate Git LFS-tracked submodule or move them outside `anvo-brain` so the main repo stays small enough for a 30-second clone; (b) explore whether the workspace-bash sandbox can be configured for a longer per-call timeout or whether a persistent `/tmp/anvo-brain-push` clone could be maintained across runs (today the dir survived between bash calls but the clone itself wouldn't complete inside one call)."
+    },
+    {
+      "date": "2026-04-29",
+      "batch": "batch16-final",
+      "category": "git_push",
+      "severity": "high",
+      "title": "Sandbox bash git clone of anvo-brain timed out repeatedly — push fell back to Step 5.5 paste-block",
+      "detail": "Step 5.2 git clone failed with multiple symptoms: (1) Initial /tmp/anvo-brain-push existed from prior session with permission-denied errors on .git files (different uid). Could not rm -rf or git fetch the existing dir. (2) Tried alternate path /tmp/anvo-brain-push-<timestamp> — clone command itself timed out after 45s (mcp__workspace__bash hard limit). (3) Tried --depth 1 in background — got 'fatal: early EOF' after ~35s. (4) Tried sparse-checkout via init+fetch — fetch did not complete in 35s window. SSH authentication ITSELF worked perfectly (ssh -T returned 'Hi Anvo-Insurance!' and git ls-remote returned HEAD SHA 03709745 instantly). Bandwidth or sandbox egress throughput appears to be the bottleneck — full repo clone exceeds the bash tool's 45s per-call ceiling. Fallback: emitted Step 5.5 paste-block for Edward to push manually from his own Claude Code session. State + CSV + learnings files are fully written on the mounted anvo-brain folder. No data loss. Mitigation for future runs: (a) try `git fetch --depth=1` then `git reset --hard FETCH_HEAD` in two separate bash calls so each is under 45s; (b) consider whether the runbook should treat sandbox-clone-timeout as a known failure mode and skip Step 5 attempts altogether until bandwidth improves."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23",
+  "last_updated": "2026-04-29",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
@@ -13,61 +13,17 @@
     "batches_processed": 16,
     "total_verified": 500,
     "next_batch_number": 17,
-    "note": "Batch 16 Stage 2 COMPLETE 2026-04-23 Run #1: 25 verified (25 REVEAL, 0 SKIP). Stage 3: 5 REVEALED, 1 NO_EMAIL credit waste, 17 SKIPPED."
+    "note": "Batch 16 Stage 3 work fully cleared 2026-04-29 Run #1. Batch 17 NOT started this run (at 21+ Apollo navigations, DOM degradation risk per cumulative-degradation learning)."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 273,
-    "phones_added_this_session": 0,
+    "total_revealed_to_date": 281,
+    "phones_added_this_session": 10,
     "pending_reveals": {
-      "description": "2 batch16 fresh + 7 batch16 retry-DOM-broken (DMs identified).",
-      "total_pending": 9,
-      "batch16_fresh_pending": [
-        {
-          "company": "Consolidated Construction Group, Inc.",
-          "rank_planned": 491,
-          "city": "St. Louis",
-          "state": "Missouri"
-        },
-        {
-          "company": "P & A Drywall Supply",
-          "rank_planned": 492,
-          "city": "St. Louis",
-          "state": "Missouri"
-        }
-      ],
-      "batch16_retry_dom_broken": [
-        {
-          "company": "St. Louis Automatic Sprinkler Company",
-          "dm": "Kathy McCammack (Owner) + Robert Weinshenker (Chairman)"
-        },
-        {
-          "company": "Coonrod & Associates Construction Co., Inc.",
-          "dm": "Scot Wolfington (President); Niki Parks VP backup"
-        },
-        {
-          "company": "Midwest Valve & Controls, Inc.",
-          "dm": "Brad Seabaugh (President/Owner)"
-        },
-        {
-          "company": "Scott Cooperative Association",
-          "dm": "Jason Baker (CEO)"
-        },
-        {
-          "company": "Oliver Electric Construction, Inc.",
-          "dm": "Jeffrey Oliver (VP, founder family)"
-        },
-        {
-          "company": "Higginbotham Custom Homes & Renovation",
-          "dm": "Bruce Korn (Co-owner)"
-        },
-        {
-          "company": "Colcon Corporation",
-          "dm": "Mike Walker (V.P.)"
-        }
-      ]
+      "description": "All batch16 work cleared this run. No pending reveals carried forward.",
+      "total_pending": 0
     },
-    "note": "2026-04-23 Run #1: 5 REVEALED (CRG/Lengyel, ERMAN/Roth, Hamtil/P.Hamtil, Mofilco/Schott, Cahills/T.Cahill). 1 NO_EMAIL waste (LM2/McCall). 11 zero-credit skips. 7 DOM-broken with DMs identified \u2014 high-priority retry next session."
+    "note": "2026-04-29 Run #1: Recovered 5 lost batch16 reveals (CRG/Lengyel, ERMAN/Roth, Hamtil/P.Hamtil, Mofilco/Schott, Cahills/T.Cahill) — emails preserved from prior session memory + Apollo. Revealed 8 new emails (St. Louis Auto Sprinkler/McCammack, Coonrod/Wolfington, Midwest V&C/Seabaugh, Scott Coop/Baker, Oliver Electric/J.Oliver, Higginbotham/Korn, Colcon/M.Walker, P&A Drywall/L.Swagman). Skipped Consolidated Construction (no DM, zero credits). Phase 2 phones: 10 captured (8 click-revealed: Hamtil/Schott/Cahill/Seabaugh/McCammack/Korn/Wolfington/Baker; 2 free visible: Lengyel/Roth)."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -76,67 +32,45 @@
     "medium_priority": 118,
     "low_priority": 14,
     "skip": 23,
-    "remaining_to_score": "Ranks 443-490 from batches 14-16 need Stage 4 scoring."
+    "scored_this_run": 0,
+    "last_run_date": "2026-04-27",
+    "last_processed_email": "",
+    "remaining_to_score": "Caught up — every REVEALED stage3 contact with email is scored. Awaiting next apollo-reveals batch."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 61,
-    "total_skipped": 4,
-    "last_draft_date": "2026-04-14",
+    "total_drafted": 105,
+    "drafted_this_run": 15,
+    "skipped_no_hook": 0,
+    "skipped_data_issue": 5,
+    "total_skipped_other": 5,
+    "last_drafted_email": "mquarles@nkce.com",
+    "last_run_date": "2026-04-27",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
     "cycle_start": "2026-04-02",
     "cycle_end": "2026-05-01",
-    "credits_remaining_apollo_ui": 1624,
-    "credits_used_this_cycle": 976,
-    "email_credits_spent_this_session": 6,
-    "phone_credits_spent_this_session": 0,
-    "note": "Apollo UI counter cached at 1,630 throughout session despite 6 credits spent (5 reveals + 1 NO_EMAIL waste). 8 days left in cycle."
+    "credits_remaining_apollo_ui": 1560,
+    "credits_used_this_cycle": 1040,
+    "email_credits_spent_this_session": 8,
+    "phone_credits_spent_this_session": 56,
+    "note": "2026-04-29 Run #1: 8 email reveals + 8 phone clicks. Phone credit estimate ~7/click (56 total). Apollo UI counter not re-checked at session end — estimated remaining ~1560. Cycle resets 2026-05-02 (2 days). Days-left tightened from 4 to 2 — accelerate further or accept some unused credits."
   },
   "daily_runs": {
-    "date": "2026-04-23",
+    "date": "2026-04-29",
     "count": 1
   },
-  "phone_reveal_candidates_deferred": [
-    {
-      "company": "CRG Construction",
-      "contact": "Ryan Lengyel",
-      "title": "CEO",
-      "email": "ryan@crgkc.com"
-    },
-    {
-      "company": "ERMAN Corporation",
-      "contact": "Ted Roth",
-      "title": "President",
-      "email": "troth@ermangroup.com"
-    },
-    {
-      "company": "Hamtil Construction LLC",
-      "contact": "Paul Hamtil",
-      "title": "Owner",
-      "email": "paul@hamtilconstruction.com"
-    },
-    {
-      "company": "Mofilco--Missouri Filter & Process Equipment Co.",
-      "contact": "Quenton Schott",
-      "title": "President",
-      "email": "quenton@mofilco.com"
-    },
-    {
-      "company": "Cahills Construction, Inc.",
-      "contact": "Tonie Cahill",
-      "title": "President",
-      "email": "toniecahill@cahillsconstruction.com"
-    }
-  ],
+  "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state file and pipeline-learnings.json (esp. 2026-04-23 entries on cumulative DOM-selector degradation).",
-    "2. PRIORITY A: Retry 7 DOM-broken companies \u2014 DMs already identified. Order: St Louis Auto Sprinkler, Coonrod, Midwest V&C, Scott Coop, Oliver, Higginbotham, Colcon.",
-    "3. PRIORITY B: Consolidated Construction + P & A Drywall Supply \u2014 never attempted.",
-    "4. PRIORITY C: Phase 2 phones on the 5 batch16 reveals.",
-    "5. PRIORITY D: Stage 2 batch 17 ONLY after batch16 fully cleared.",
-    "6. KEY LEARNING 2026-04-23: data-tour-id email-cell selectors degrade cumulatively across a session. Mitigation: end session at first sign of cells:0 and resume in fresh browser.",
-    "7. KEY LEARNING 2026-04-23: NEVER open stage3_results.csv in Python w-mode \u2014 write to .new sibling and os.replace() atomically."
+    "1. Read state file + pipeline-learnings.json — focus on 2026-04-29 entries (data integrity recovery + Phase 2 phone burndown).",
+    "2. PRIORITY A: Stage 2 batch 17 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 500). Run from fresh-DOM session for max reveal headroom.",
+    "3. PRIORITY B: Stage 3 reveals on batch 17 REVEAL companies — same procedure as runbook Step 1.",
+    "4. PRIORITY C: Phase 2 phones on any batch 17 high-priority reveals (Owner/CEO/President at MO/KS).",
+    "5. PRIORITY D: Phone reveals on this run's leftover non-phone reveals (Oliver/J.Oliver, Colcon/M.Walker, P&A/L.Swagman) — only if cycle phase still allows.",
+    "6. KEY LEARNING 2026-04-29: Phase 1A retry of 7 DOM-broken contacts succeeded — fresh-DOM session reset the data-tour-id selectors. Confirms cumulative DOM degradation is per-session, not per-account.",
+    "7. KEY LEARNING 2026-04-29: At least 21 navigations completed before any persistent cells:0. Threshold may extend further than the 12-nav heuristic suggests — but the existing rule is still safe.",
+    "8. KEY LEARNING 2026-04-29: Sandbox bash clone of anvo-brain repeatedly timed out on git clone (45-60s timeouts; ssh authentication itself worked). Push fell back to Step 5.5 paste-block. Next run should test if cloning is faster.",
+    "9. CYCLE RESET REMINDER: Cycle resets on 2026-05-02 (3 days from 2026-04-29). If next run is on or after 2026-05-02 AND state.credit_cycle.cycle_start is still 2026-04-02, reset cycle_start to 2026-05-02 and zero spent counters per runbook Step 3."
   ]
 }
