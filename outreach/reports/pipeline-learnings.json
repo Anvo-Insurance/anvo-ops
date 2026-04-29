@@ -1097,6 +1097,36 @@
       "severity": "high",
       "title": "Sandbox bash git clone of anvo-brain timed out repeatedly — push fell back to Step 5.5 paste-block",
       "detail": "Step 5.2 git clone failed with multiple symptoms: (1) Initial /tmp/anvo-brain-push existed from prior session with permission-denied errors on .git files (different uid). Could not rm -rf or git fetch the existing dir. (2) Tried alternate path /tmp/anvo-brain-push-<timestamp> — clone command itself timed out after 45s (mcp__workspace__bash hard limit). (3) Tried --depth 1 in background — got 'fatal: early EOF' after ~35s. (4) Tried sparse-checkout via init+fetch — fetch did not complete in 35s window. SSH authentication ITSELF worked perfectly (ssh -T returned 'Hi Anvo-Insurance!' and git ls-remote returned HEAD SHA 03709745 instantly). Bandwidth or sandbox egress throughput appears to be the bottleneck — full repo clone exceeds the bash tool's 45s per-call ceiling. Fallback: emitted Step 5.5 paste-block for Edward to push manually from his own Claude Code session. State + CSV + learnings files are fully written on the mounted anvo-brain folder. No data loss. Mitigation for future runs: (a) try `git fetch --depth=1` then `git reset --hard FETCH_HEAD` in two separate bash calls so each is under 45s; (b) consider whether the runbook should treat sandbox-clone-timeout as a known failure mode and skip Step 5 attempts altogether until bandwidth improves."
+    },
+    {
+      "date": "2026-04-29",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing — searched Google Drive (title-contains and fullText-contains) for 'Anvo Prospecting Style Guide (AI-Generated)'. No file matched. Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 14 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Until then this learning is informational and re-emerges every run."
+    },
+    {
+      "date": "2026-04-29",
+      "category": "stage5_drafting",
+      "severity": "high",
+      "title": "Lippert Mechanical Service rolled up by PremiStar — same pattern as Pro Electric/Waldinger 2026-04-23",
+      "observation": "LinkedIn company name reads 'Lippert Mechanical Service, LLC a PremiStar Company'. PremiStar is a private-equity rollup of regional HVAC/mechanical contractors. Insurance for these accounts is virtually always placed at the parent (PremiStar) level — local owner-CEO is no longer the insurance DM. Backlog rank 111 (4.05 HIGH) — marked draft_status=SKIPPED_DATA_ISSUE; no draft created.",
+      "workaround": "Add Lippert Mechanical Service to the running list of PE-rolled mechanical/electrical contractors that Stage 5 should auto-skip with data-issue note (alongside Pro Electric / Waldinger, Temp-Con / TriplePoint, Centric Construction / California HQ). For each new draft, run a quick LinkedIn 'company name' check — '_a [SponsorName] Company_' suffixes are the canonical PremiStar/PE rollup signal."
+    },
+    {
+      "date": "2026-04-29",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "observation": "Backlog draft for Cardinal Crest (John Ongman, Managing Principal) — public sources (BBB, Facebook, KCHBA) consistently identify Cardinal Crest founders as Adam Shaeffer and Joseph Christensen, founded Spring 2011. John Ongman's role as 'Managing Principal' was Apollo-revealed but not corroborated in public web sources. Drafted carefully without naming founders or claiming a personal milestone — used a Cardinal Crest-as-firm hook (residential + commercial hybrid) to avoid asserting incorrect personal info.",
+      "workaround": "When the Apollo-revealed contact is a senior title (Managing Principal, Partner, Director) but name doesn't appear on the company website team page or in BBB/news, draft to the firm's positioning rather than the individual's biography. Defer person-specific hooks until Stage 6 when a reply confirms the contact's actual role."
+    },
+    {
+      "date": "2026-04-29",
+      "category": "git_push",
+      "severity": "info",
+      "title": "Step 5 push SUCCEEDED via init+fetch+checkout pattern (workaround from 2026-04-29 high-severity learning)",
+      "detail": "Two prior runs (2026-04-27, 2026-04-29 #1) hit Step 5.2 sandbox-bash clone timeouts (45s ceiling). This run took the mitigation suggested in the 2026-04-29 #1 learning: instead of `git clone`, do `git init` + `git remote add origin` in one bash call, then `git fetch --depth=1 origin main` in a second call (28s wall time, exit 0), then `git checkout -b main FETCH_HEAD` in a third call. Each call stayed comfortably under the 45s sandbox limit. Push of the resulting commit (4 files, 107 insertions) completed in <2s. Final commit SHA 29b04fb. The init+fetch+checkout pattern should be the default for Step 5 going forward — drop `git clone` from the runbook canonical pattern.",
+      "workaround": "Codify in nightly-scoring-drafting.md Step 5.2: replace the `git clone` command with the three-call init→fetch→checkout sequence. Use a unique TMPDIR per run (e.g., /tmp/anvo-brain-push-$(date +%s)) to dodge the stale-perms issue when a prior session leaves /tmp/anvo-brain-push owned by a different uid that this session's user can't rm -rf."
     }
   ]
 }
