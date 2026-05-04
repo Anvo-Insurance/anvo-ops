@@ -1175,6 +1175,53 @@
       "title": "Batch17 stage3 SKIP rate: 2/25 (8%) — Cardinal Pump (St.Peters MO) and Earll Construction (St.Louis MO) had no decision-maker in Apollo",
       "detail": "Stage 2 had verified both as REVEAL (OPEN, correct identity, in MO/KS), but Apollo people coverage was thin: Cardinal Pump showed only 5 IC/admin contacts (no Owner/President/CEO/VP/GM/Director); Earll Construction showed 5 contacts ALL based in Illinois (Jerseyville, Grafton, Quincy, Oswego — not St.Louis MO). Stage 2 verifies the BUSINESS but not the Apollo people coverage. Ratio matches prior batches (~5-10% SKIP at Stage 3 due to Apollo coverage gap).",
       "workaround": "No procedural change needed — Stage 2 can't reliably predict Apollo people coverage. Continue marking these as SKIPPED in stage3_results.csv with skip_reason='No decision-maker in Apollo' and move on. Consider adding Earll Construction to a 'wrong location data' list for manual outreach via website contact form."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing - searched Google Drive (title-contains and fullText-contains) for 'Anvo Prospecting Style Guide (AI-Generated)'. Title-contains returned empty; fullText-contains returned five unrelated docs (demo-navigation-guide, daily check-ins, meeting summaries, and two carrier policy PDFs - no actual style-guide artifact). Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 15 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Until then this learning is informational and re-emerges every run."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage5_drafting",
+      "severity": "high",
+      "title": "CDI Industrial and Mechanical Contractors crosses oversize threshold - SKIPPED_DATA_ISSUE",
+      "observation": "Top-of-backlog candidate by score (3.90 MEDIUM, rank 107) but RocketReach reports $52.7M revenue and LinkedIn shows 51-200 employees. The $52.7M crosses the runbook's >$50M skip threshold. CDI does process piping and ASME welding - genuinely interesting risk profile, but at this size the program is virtually always placed with a national mid-market broker (Marsh, Aon, Lockton, HUB, etc.) where Anvo cannot compete on incumbency.",
+      "workaround": "Stage 5 should run a quick RocketReach/ZoomInfo revenue check on any rank<150 backlog candidate before drafting - the $52.7M datapoint was not in stage4 notes (which only had Apollo's 21-emp count). Add a future Stage 4 enrichment: when emp >= 21 AND firm has a strong public website, check revenue before bumping priority into HIGH/MEDIUM. Future runs: also check Universal Construction (sources vary $6.8M-$50M) and Schweiger ($25.5M known) at deeper resolution if they reach later stages."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage4_scoring",
+      "severity": "medium",
+      "title": "Initial diff missed batch17 reveals because file was mid-write by the apollo-reveals task",
+      "observation": "First Stage 4 diff returned 0 unscored; a second diff after the apollo-reveals task completed its run showed 23 newly-revealed batch17 contacts. The scheduled-task ordering (apollo-reveals 11pm-3am ET, scoring-drafting ~3:30am ET) is supposed to prevent this overlap, but with the apollo-reveals task running until ~3:25am ET on a long batch17 night, the scoring-drafting task started before all CSV writes had landed.",
+      "workaround": "Scoring-drafting Step 1 should re-run the diff after Stage 5 drafting completes (or before commit) to catch any contacts the apollo-reveals task added during the run. This run scored 23 batch17 contacts on the second diff. Consider also adding a 5-minute delay at the start of Step 1, or making the scoring-drafting task wait for an explicit 'apollo-reveals-complete' marker in nightly-run-state.json."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage4_scoring",
+      "severity": "info",
+      "title": "Batch17 calibrated scores: 0 HIGH / 18 MEDIUM / 5 LOW / 0 SKIP",
+      "observation": "Applied calibrated thresholds from 2026-04-23 (Premium 5 only emp >= 12 GC OR >= 15 artisan OR rev >= $10M; Fit 4 KC-metro / 3 wider MO-KS / 3 St. Louis; Underserved 3 default; Accessibility 2 + 2 owner/CEO + 1 phone). Batch17 was deliberately HIGH-scored at Stage 1 but at Stage 4 the small-employee counts (6-14 each) and absence of phones drove almost everyone to MEDIUM (3.0-3.95). Five rows with non-DM titles (VP, GM, Project Manager, Marketing Director, Financial Controller) plus St. Louis-metro location dropped to LOW (2.85-2.95).",
+      "workaround": "Batch17's MEDIUM concentration is consistent with the 28% historical HIGH ratio if we extend the Phase 2 phone-reveal step on these rows next cycle - many of the LOW-bumps are pure accessibility hits, not premium-potential issues. Worth a phone-reveal pass on the top 5-10 once next cycle accelerate window opens."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Two notable WBE/MBE prospects drafted this run - Schweiger (135-yr WBENC) and Infinite Energy (8(a)/MBE/DBE + SBA Person of Year)",
+      "observation": "Both rows used Template 5 (certification angle). Schweiger sourcing note: Apollo title 'President' for Jay Bluhm appears inaccurate per company website - Carol Meharry (great-granddaughter of founder) is primary leadership; Bluhm is wireless/infrastructure team lead. Drafted neutrally to Bluhm's email without personalizing on his role. Infinite Energy sourcing note: Nilson Goes was 2014 MO SBA Person of the Year, founded the firm out of his electrical engineering doctorate after immigrating from Brazil - rich founder story.",
+      "workaround": "When Apollo title contradicts company-website team page, draft to Apollo email but use firm-level positioning (not personal biography) per 2026-04-29 Cardinal Crest workaround. Both drafts here followed that pattern."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Five drafts used Template 4 (specialty) for narrow niches - elevator modernization, petroleum electrical, ag-export multi-port, PEMB+AC478, coatings/terrazzo",
+      "observation": "Construction Brokers (elevator/escalator GC, 8 offices), FATBOY Electric (petroleum + ABC Diamond safety), AgriLogistics (multi-port container loading), Koehn Building Systems (only 2nd MO firm with IAS AC478 metal-building accreditation), DESCO Coatings (65-yr coatings/terrazzo with 70+ employees vs. Apollo 6). Each pulled a niche-specific value prop in the body that wouldn't apply to a generic GC.",
+      "workaround": "Specialty drafts perform best when the opening hook names the actual niche credential/scope rather than a 'years in business' angle. The Anderson Electrical and Foundation Four Seasons drafts are intentional Template 2 (family) since their hooks are scope-breadth, not niche."
     }
   ]
 }

@@ -23,29 +23,29 @@
       "description": "All batch17 work cleared this run. No pending reveals carried forward.",
       "total_pending": 0
     },
-    "note": "2026-05-04 Run #1: Batch17 cleared. 23 emails revealed (18 already-visible at 0 credit + 5 click-reveals at 1 credit each = 5 credits). 2 SKIPPED (Cardinal Pump/St.Peters, Earll Construction/St.Louis \u2014 no decision-maker in Apollo). Apollo UI dropped from ~2,505 to 2,494 over the run = 11 credits used (5 expected from clicks + ~6 unaccounted; possibly stale-counter resolution on already-revealed contacts or phone reveals not tracked). Phase 2 phones: skipped (cycle just reset, 29 days left, days_left>10). New batch17 reveals: Superior Electric/Delfelder, Sunflower Rental/Wendland, Sample Brothers/D.Brown, SCS Home Ent/Batson, Process Air Solutions/Hertel, DH Custom Homes/Ruebsam, Eaton Chemical/R.Eaton, Thompson Price/TJ Price, Gerstner Electric/C.Gerstner, Fuqua Construction/M.Fuqua, Fox Home/C.Fox, Mid America Electric/P.Burmeister, McClelland/Colella, Loomis Brothers/Lamons, Trio Masonry/Osborne, Deskin Scale/Harrison, Greenwave/T.Gooden, Global Pump/Banden, Fielder Electrical/P.Fielder, Demien Construction/Kelso, AC Component/Tillman, Ziegler Electric/M.Butler, Whalen Custom Homes/Whalen-Bartley."
+    "note": "2026-05-04 Run #1: Batch17 cleared. 23 emails revealed (18 already-visible at 0 credit + 5 click-reveals at 1 credit each = 5 credits). 2 SKIPPED (Cardinal Pump/St.Peters, Earll Construction/St.Louis - no decision-maker in Apollo). Apollo UI dropped from ~2,505 to 2,494 over the run = 11 credits used (5 expected from clicks + ~6 unaccounted; possibly stale-counter resolution on already-revealed contacts or phone reveals not tracked). Phase 2 phones: skipped (cycle just reset, 29 days left, days_left>10). New batch17 reveals: Superior Electric/Delfelder, Sunflower Rental/Wendland, Sample Brothers/D.Brown, SCS Home Ent/Batson, Process Air Solutions/Hertel, DH Custom Homes/Ruebsam, Eaton Chemical/R.Eaton, Thompson Price/TJ Price, Gerstner Electric/C.Gerstner, Fuqua Construction/M.Fuqua, Fox Home/C.Fox, Mid America Electric/P.Burmeister, McClelland/Colella, Loomis Brothers/Lamons, Trio Masonry/Osborne, Deskin Scale/Harrison, Greenwave/T.Gooden, Global Pump/Banden, Fielder Electrical/P.Fielder, Demien Construction/Kelso, AC Component/Tillman, Ziegler Electric/M.Butler, Whalen Custom Homes/Whalen-Bartley."
   },
   "stage4": {
     "file": "stage4_scored.csv",
-    "total_scored": 229,
+    "total_scored": 252,
     "high_priority": 66,
-    "medium_priority": 125,
-    "low_priority": 14,
+    "medium_priority": 143,
+    "low_priority": 19,
     "skip": 24,
-    "scored_this_run": 13,
-    "last_run_date": "2026-04-29",
-    "last_processed_email": "paul@hamtilconstruction.com",
-    "remaining_to_score": "Caught up \u2014 every REVEALED stage3 contact with email is scored. Awaiting next apollo-reveals batch."
+    "scored_this_run": 23,
+    "last_run_date": "2026-05-04",
+    "last_processed_email": "jennifer@whalencustomhomes.com",
+    "remaining_to_score": "Caught up - every REVEALED stage3 contact with email is scored after Batch17 score-in. Awaiting next apollo-reveals batch (18)."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 119,
-    "drafted_this_run": 14,
+    "total_drafted": 134,
+    "drafted_this_run": 15,
     "skipped_no_hook": 0,
-    "skipped_data_issue": 6,
+    "skipped_data_issue": 7,
     "total_skipped_other": 5,
-    "last_drafted_email": "brenda@convoysystems.com",
-    "last_run_date": "2026-04-29",
+    "last_drafted_email": "gerry@starrhomes.net",
+    "last_run_date": "2026-05-04",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
@@ -55,16 +55,19 @@
     "credits_used_this_cycle": 106,
     "email_credits_spent_this_session": 11,
     "phone_credits_spent_this_session": 0,
-    "note": "2026-05-04 Run #1: cycle was reset from 2026-04-02 to 2026-05-02 per runbook Step 3 cycle-reset rule (today is on/after the 2nd AND prior cycle_start was previous month). Apollo UI showed 2,505 at run start, 2,494 at run end \u2192 11 credits spent this run. 5 clicks were issued (DH Custom Homes, Global Pump, Demien, Ziegler, Whalen) so 5 credits expected from clicks. The remaining ~6-credit gap is unexplained \u2014 possibly stale-counter resolution or row-load reveal events. credits_used_this_cycle (106) = 2600 - 2494, includes ~95 spent before this run by other usage between cycle reset (2026-05-02) and this run (2026-05-04). Days remaining in cycle: 29 \u2014 STANDARD pace (not accelerate window)."
+    "note": "2026-05-04 Run #1: cycle was reset from 2026-04-02 to 2026-05-02 per runbook Step 3 cycle-reset rule (today is on/after the 2nd AND prior cycle_start was previous month). Apollo UI showed 2,505 at run start, 2,494 at run end -> 11 credits spent this run. 5 clicks were issued (DH Custom Homes, Global Pump, Demien, Ziegler, Whalen) so 5 credits expected from clicks. The remaining ~6-credit gap is unexplained - possibly stale-counter resolution or row-load reveal events. credits_used_this_cycle (106) = 2600 - 2494, includes ~95 spent before this run by other usage between cycle reset (2026-05-02) and this run (2026-05-04). Days remaining in cycle: 29 - STANDARD pace (not accelerate window)."
   },
   "daily_runs": {
     "date": "2026-05-04",
-    "count": 1
+    "count": 2
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state file + pipeline-learnings.json \u2014 focus on 2026-05-04 entries (cycle reset, batch17 burndown, credit-counter discrepancy).",
+    "1. Read state file + pipeline-learnings.json - focus on 2026-05-04 entries (cycle reset, batch17 burndown, credit-counter discrepancy, scoring-drafting recovery of truncated state).",
     "2. PRIORITY A: Stage 2 batch 18 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 525). Run from fresh-DOM session for max reveal headroom.",
-    "3. PRIORITY B: Stage 3 reveals on batch 18 REVEAL companies \u2014 same procedure as runbook Step 1.",
-    "4. PRIORITY C: Phase 2 phones \u2014 STILL SKIP (29 days left in cycle, fresh credits, only re-evaluate when days_left <= 10).",
-    "5. KEY LEARNING 2026-05-04: Many batc
+    "3. PRIORITY B: Stage 3 reveals on batch 18 REVEAL companies - same procedure as runbook Step 1.",
+    "4. PRIORITY C: Phase 2 phones - STILL SKIP (29 days left in cycle, fresh credits, only re-evaluate when days_left <= 10).",
+    "5. KEY LEARNING 2026-05-04: Many batch17 emails were already-visible at 0 credit cost - apollo-reveals task ran efficiently. Drafting backlog now ~136 MEDIUM (no HIGH); will continue chipping at 15/run cap.",
+    "6. KEY LEARNING 2026-05-04 (data integrity): apollo-reveals task left nightly-run-state.json TRUNCATED mid-write at the run_order_for_next_session array (item #5 incomplete). Scoring-drafting task recovered by reconstructing the file via Python json.dump (per 2026-04-23 high-severity data_integrity learning). Apollo-reveals task should adopt the same write-via-json.dump-then-os.replace pattern to prevent future truncations."
+  ]
+}
