@@ -1,29 +1,29 @@
 {
-  "last_updated": "2026-04-29",
+  "last_updated": "2026-05-04",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 500
+    "stage2_completed_through_company_index": 525
   },
   "stage2": {
     "batch_files": [
-      "A2-stage2-batch{N}-verified.csv for N in 1..16"
+      "A2-stage2-batch{N}-verified.csv for N in 1..17"
     ],
-    "batches_processed": 16,
-    "total_verified": 500,
-    "next_batch_number": 17,
-    "note": "Batch 16 Stage 3 work fully cleared 2026-04-29 Run #1. Batch 17 NOT started this run (at 21+ Apollo navigations, DOM degradation risk per cumulative-degradation learning)."
+    "batches_processed": 17,
+    "total_verified": 525,
+    "next_batch_number": 18,
+    "note": "Batch 17 (25 REVEAL companies, all HIGH-scored Construction/Manufacturing in MO/KS) Stage 3 fully cleared 2026-05-04 Run #1. Batch 18 NOT started this run (at 25+ Apollo navigations, DOM degradation risk per cumulative-degradation learning)."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 281,
-    "phones_added_this_session": 10,
+    "total_revealed_to_date": 304,
+    "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "All batch16 work cleared this run. No pending reveals carried forward.",
+      "description": "All batch17 work cleared this run. No pending reveals carried forward.",
       "total_pending": 0
     },
-    "note": "2026-04-29 Run #1: Recovered 5 lost batch16 reveals (CRG/Lengyel, ERMAN/Roth, Hamtil/P.Hamtil, Mofilco/Schott, Cahills/T.Cahill) \u2014 emails preserved from prior session memory + Apollo. Revealed 8 new emails (St. Louis Auto Sprinkler/McCammack, Coonrod/Wolfington, Midwest V&C/Seabaugh, Scott Coop/Baker, Oliver Electric/J.Oliver, Higginbotham/Korn, Colcon/M.Walker, P&A Drywall/L.Swagman). Skipped Consolidated Construction (no DM, zero credits). Phase 2 phones: 10 captured (8 click-revealed: Hamtil/Schott/Cahill/Seabaugh/McCammack/Korn/Wolfington/Baker; 2 free visible: Lengyel/Roth)."
+    "note": "2026-05-04 Run #1: Batch17 cleared. 23 emails revealed (18 already-visible at 0 credit + 5 click-reveals at 1 credit each = 5 credits). 2 SKIPPED (Cardinal Pump/St.Peters, Earll Construction/St.Louis \u2014 no decision-maker in Apollo). Apollo UI dropped from ~2,505 to 2,494 over the run = 11 credits used (5 expected from clicks + ~6 unaccounted; possibly stale-counter resolution on already-revealed contacts or phone reveals not tracked). Phase 2 phones: skipped (cycle just reset, 29 days left, days_left>10). New batch17 reveals: Superior Electric/Delfelder, Sunflower Rental/Wendland, Sample Brothers/D.Brown, SCS Home Ent/Batson, Process Air Solutions/Hertel, DH Custom Homes/Ruebsam, Eaton Chemical/R.Eaton, Thompson Price/TJ Price, Gerstner Electric/C.Gerstner, Fuqua Construction/M.Fuqua, Fox Home/C.Fox, Mid America Electric/P.Burmeister, McClelland/Colella, Loomis Brothers/Lamons, Trio Masonry/Osborne, Deskin Scale/Harrison, Greenwave/T.Gooden, Global Pump/Banden, Fielder Electrical/P.Fielder, Demien Construction/Kelso, AC Component/Tillman, Ziegler Electric/M.Butler, Whalen Custom Homes/Whalen-Bartley."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -49,28 +49,22 @@
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
-    "cycle_start": "2026-04-02",
-    "cycle_end": "2026-05-01",
-    "credits_remaining_apollo_ui": 1560,
-    "credits_used_this_cycle": 1040,
-    "email_credits_spent_this_session": 8,
-    "phone_credits_spent_this_session": 56,
-    "note": "2026-04-29 Run #1: 8 email reveals + 8 phone clicks. Phone credit estimate ~7/click (56 total). Apollo UI counter not re-checked at session end \u2014 estimated remaining ~1560. Cycle resets 2026-05-02 (2 days). Days-left tightened from 4 to 2 \u2014 accelerate further or accept some unused credits."
+    "cycle_start": "2026-05-02",
+    "cycle_end": "2026-06-01",
+    "credits_remaining_apollo_ui": 2494,
+    "credits_used_this_cycle": 106,
+    "email_credits_spent_this_session": 11,
+    "phone_credits_spent_this_session": 0,
+    "note": "2026-05-04 Run #1: cycle was reset from 2026-04-02 to 2026-05-02 per runbook Step 3 cycle-reset rule (today is on/after the 2nd AND prior cycle_start was previous month). Apollo UI showed 2,505 at run start, 2,494 at run end \u2192 11 credits spent this run. 5 clicks were issued (DH Custom Homes, Global Pump, Demien, Ziegler, Whalen) so 5 credits expected from clicks. The remaining ~6-credit gap is unexplained \u2014 possibly stale-counter resolution or row-load reveal events. credits_used_this_cycle (106) = 2600 - 2494, includes ~95 spent before this run by other usage between cycle reset (2026-05-02) and this run (2026-05-04). Days remaining in cycle: 29 \u2014 STANDARD pace (not accelerate window)."
   },
   "daily_runs": {
-    "date": "2026-04-29",
+    "date": "2026-05-04",
     "count": 1
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state file + pipeline-learnings.json \u2014 focus on 2026-04-29 entries (data integrity recovery + Phase 2 phone burndown).",
-    "2. PRIORITY A: Stage 2 batch 17 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 500). Run from fresh-DOM session for max reveal headroom.",
-    "3. PRIORITY B: Stage 3 reveals on batch 17 REVEAL companies \u2014 same procedure as runbook Step 1.",
-    "4. PRIORITY C: Phase 2 phones on any batch 17 high-priority reveals (Owner/CEO/President at MO/KS).",
-    "5. PRIORITY D: Phone reveals on this run's leftover non-phone reveals (Oliver/J.Oliver, Colcon/M.Walker, P&A/L.Swagman) \u2014 only if cycle phase still allows.",
-    "6. KEY LEARNING 2026-04-29: Phase 1A retry of 7 DOM-broken contacts succeeded \u2014 fresh-DOM session reset the data-tour-id selectors. Confirms cumulative DOM degradation is per-session, not per-account.",
-    "7. KEY LEARNING 2026-04-29: At least 21 navigations completed before any persistent cells:0. Threshold may extend further than the 12-nav heuristic suggests \u2014 but the existing rule is still safe.",
-    "8. KEY LEARNING 2026-04-29: Sandbox bash clone of anvo-brain repeatedly timed out on git clone (45-60s timeouts; ssh authentication itself worked). Push fell back to Step 5.5 paste-block. Next run should test if cloning is faster.",
-    "9. CYCLE RESET REMINDER: Cycle resets on 2026-05-02 (3 days from 2026-04-29). If next run is on or after 2026-05-02 AND state.credit_cycle.cycle_start is still 2026-04-02, reset cycle_start to 2026-05-02 and zero spent counters per runbook Step 3."
-  ]
-}
+    "1. Read state file + pipeline-learnings.json \u2014 focus on 2026-05-04 entries (cycle reset, batch17 burndown, credit-counter discrepancy).",
+    "2. PRIORITY A: Stage 2 batch 18 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 525). Run from fresh-DOM session for max reveal headroom.",
+    "3. PRIORITY B: Stage 3 reveals on batch 18 REVEAL companies \u2014 same procedure as runbook Step 1.",
+    "4. PRIORITY C: Phase 2 phones \u2014 STILL SKIP (29 days left in cycle, fresh credits, only re-evaluate when days_left <= 10).",
+    "5. KEY LEARNING 2026-05-04: Many batc

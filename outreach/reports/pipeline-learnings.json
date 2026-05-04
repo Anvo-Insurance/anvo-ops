@@ -1127,6 +1127,54 @@
       "title": "Step 5 push SUCCEEDED via init+fetch+checkout pattern (workaround from 2026-04-29 high-severity learning)",
       "detail": "Two prior runs (2026-04-27, 2026-04-29 #1) hit Step 5.2 sandbox-bash clone timeouts (45s ceiling). This run took the mitigation suggested in the 2026-04-29 #1 learning: instead of `git clone`, do `git init` + `git remote add origin` in one bash call, then `git fetch --depth=1 origin main` in a second call (28s wall time, exit 0), then `git checkout -b main FETCH_HEAD` in a third call. Each call stayed comfortably under the 45s sandbox limit. Push of the resulting commit (4 files, 107 insertions) completed in <2s. Final commit SHA 29b04fb. The init+fetch+checkout pattern should be the default for Step 5 going forward — drop `git clone` from the runbook canonical pattern.",
       "workaround": "Codify in nightly-scoring-drafting.md Step 5.2: replace the `git clone` command with the three-call init→fetch→checkout sequence. Use a unique TMPDIR per run (e.g., /tmp/anvo-brain-push-$(date +%s)) to dodge the stale-perms issue when a prior session leaves /tmp/anvo-brain-push owned by a different uid that this session's user can't rm -rf."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "credit_management",
+      "severity": "info",
+      "title": "Cycle reset 2026-04-02 → 2026-05-02 applied per runbook Step 3 cycle-reset rule",
+      "detail": "Today (2026-05-04) is on/after the 2nd AND prior cycle_start was 2026-04-02 (April), so reset triggered: cycle_start=2026-05-02, cycle_end=2026-06-01, this-session counters zeroed at run start. Apollo UI showed 2,505 at run start, suggesting ~95 credits were used between 2026-05-02 and 2026-05-04 outside this pipeline (Edward manual usage, scoring/drafting task data lookups, etc.). Recorded credits_used_this_cycle=106 (=2600-2494) so the state file accounts for both pre-run usage and this run's 11.",
+      "workaround": "Continue with standard pace (29 days left). Re-evaluate Phase 2 phones when days_left <= 10."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "apollo_reveal",
+      "severity": "info",
+      "title": "Pre-revealed emails on batch17: 18 of 23 REVEALED contacts had emails already visible (zero credit click)",
+      "detail": "Pattern: querying [data-tour-id^=\"email-cell\"] and reading row.innerText, the email itself appeared in the cell text WITHOUT needing a click on 18 of 23 batch17 contacts (Superior Electric/Delfelder, Sunflower/Wendland, Sample Brothers/D.Brown, SCS/Batson, Process Air/Hertel, Eaton/R.Eaton, Thompson Price/TJ Price, Gerstner/C.Gerstner, Fuqua/M.Fuqua, Fox Home/C.Fox, Mid America/P.Burmeister, McClelland/Colella, Loomis/Lamons, Trio Masonry/Osborne, Deskin/Harrison, Greenwave/T.Gooden, Fielder/P.Fielder, AC Component/Tillman). These appear in cells with text ending in `email@domain.com | Request phone number | +1 | Click to run` — no \"Access email\" text. Same pattern observed 2026-04-27 for phones (Lengyel/Roth). Apollo bulk-pre-reveals emails for contacts that have been in their database the longest, especially Construction/Manufacturing established firms. CRITICAL: ALWAYS read the cell row text first to check for already-visible email before issuing a click — saves 1 credit per occurrence. This run saved 18 credits (would have been 23 clicks × 1 credit; only 5 were necessary).",
+      "workaround": "Standard procedure should be: (1) navigate, (2) read row text, (3) IF row contains visible @-address THEN record without click, ELSE click. Current Step 1 reveal procedure in nightly-apollo-reveals.md should make this explicit."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "apollo_navigation",
+      "severity": "low",
+      "title": "Apollo credit counter is stale until forced reload",
+      "detail": "Top-of-page credit badge held at 2,503 across multiple post-click reads (DH Custom Homes, Greg Banden, etc.) — the badge does not auto-refresh after click reveals. After issuing location.reload() at end of run, the badge updated to 2,494 (true value, 11 credits used this run). For accurate end-of-run accounting, ALWAYS do a final location.reload() + ~5s wait + final read of the badge.",
+      "workaround": "Make Step 4 summary block include a step: 'reload Apollo, wait 5s, read final credit counter' before computing credits_remaining_apollo_ui."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "chrome_stability",
+      "severity": "medium",
+      "title": "Tab dropped mid-click on Global Pump Marketing — recovered cleanly with re-establish",
+      "detail": "After 14 sequential Apollo navigations, the tabId 1419155387 was reported 'no longer exists' when attempting a click. Recovered by tabs_context_mcp(createIfEmpty=true) → got new tabId 1419155391 → re-navigated to Global Pump Marketing query → Greg Banden's email cell still showed 'Access email' (so the original click did NOT persist as a charge — confirmed by no extra credit decrement). Re-clicked successfully. Total run lost ~1 minute. Pattern matches 2026-04-22 and 2026-04-27 chrome_stability learnings — transient tab drops at higher-than-normal navigation depth.",
+      "workaround": "When a tab is dropped mid-reveal, after re-establishing and re-navigating, ALWAYS check whether the email cell still shows 'Access email' before re-clicking — if email is now visible, the original click went through and you're double-charging by re-clicking."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "apollo_reveal",
+      "severity": "low",
+      "title": "Credit counter showed 11 credits spent for 5 click-reveals — ~6 credit gap unexplained",
+      "detail": "Started run at Apollo UI = 2,505. Issued exactly 5 email-cell clicks across batch17 reveals (DH Custom Homes/Kristin, Global Pump/Greg, Demien/Tisha, Ziegler/Mark Butler, Whalen/Jennifer). Each successful click revealed an email. Expected end balance: 2,505 - 5 = 2,500. Actual end balance after reload: 2,494. ~6 credit gap. Possible causes: (a) Apollo charges fractional credits for rows with multiple discoveries (email + first phone digits), (b) the initial 2,505 reading was already stale and true starting balance was 2,500, (c) a row-load auto-reveal happened on one of the 'already-visible' rows that I attributed to bulk-pre-reveal but actually charged. Next run should test by reading credit counter via reload at multiple checkpoints.",
+      "workaround": "Add credit-counter-checkpoint reads after every 5 reveals (with reload + 5s wait) to localize where credits are being consumed. Add a learning if the gap repeats next run."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "stage2_verification",
+      "severity": "info",
+      "title": "Batch17 stage3 SKIP rate: 2/25 (8%) — Cardinal Pump (St.Peters MO) and Earll Construction (St.Louis MO) had no decision-maker in Apollo",
+      "detail": "Stage 2 had verified both as REVEAL (OPEN, correct identity, in MO/KS), but Apollo people coverage was thin: Cardinal Pump showed only 5 IC/admin contacts (no Owner/President/CEO/VP/GM/Director); Earll Construction showed 5 contacts ALL based in Illinois (Jerseyville, Grafton, Quincy, Oswego — not St.Louis MO). Stage 2 verifies the BUSINESS but not the Apollo people coverage. Ratio matches prior batches (~5-10% SKIP at Stage 3 due to Apollo coverage gap).",
+      "workaround": "No procedural change needed — Stage 2 can't reliably predict Apollo people coverage. Continue marking these as SKIPPED in stage3_results.csv with skip_reason='No decision-maker in Apollo' and move on. Consider adding Earll Construction to a 'wrong location data' list for manual outreach via website contact form."
     }
   ]
 }
