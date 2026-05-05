@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-05",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
@@ -32,20 +32,20 @@
     "medium_priority": 143,
     "low_priority": 19,
     "skip": 24,
-    "scored_this_run": 23,
-    "last_run_date": "2026-05-04",
+    "scored_this_run": 0,
+    "last_run_date": "2026-05-05",
     "last_processed_email": "jennifer@whalencustomhomes.com",
     "remaining_to_score": "Caught up - every REVEALED stage3 contact with email is scored after Batch17 score-in. Awaiting next apollo-reveals batch (18)."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 134,
+    "total_drafted": 149,
     "drafted_this_run": 15,
     "skipped_no_hook": 0,
-    "skipped_data_issue": 7,
+    "skipped_data_issue": 13,
     "total_skipped_other": 5,
-    "last_drafted_email": "gerry@starrhomes.net",
-    "last_run_date": "2026-05-04",
+    "last_drafted_email": "ron@jjdrainage.com",
+    "last_run_date": "2026-05-05",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
