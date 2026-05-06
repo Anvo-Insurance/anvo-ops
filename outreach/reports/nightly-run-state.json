@@ -1,29 +1,34 @@
 {
-  "last_updated": "2026-05-05",
+  "last_updated": "2026-05-06",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 550
+    "stage2_completed_through_company_index": 575
   },
   "stage2": {
     "batch_files": [
-      "A2-stage2-batch{N}-verified.csv for N in 1..18"
+      "A2-stage2-batch{N}-verified.csv for N in 1..19"
     ],
-    "batches_processed": 18,
-    "total_verified": 550,
-    "next_batch_number": 19,
-    "note": "Batch 18 written 2026-05-05 (25 companies; 23 REVEAL, 2 SKIP). SKIP: Marick Mechanical (PE-rolled by Orion Group HoldCo Oct 2022, Des Moines IA HQ - insurance at parent level), MCA of Eastern Missouri (trade association). Batch 18 Stage 3 fully cleared this run."
+    "batches_processed": 19,
+    "total_verified": 575,
+    "next_batch_number": 20,
+    "note": "Batch 19 written 2026-05-06 (25 companies; 23 REVEAL, 2 MANUAL CHECK). MANUAL CHECK: Anthony Auto (1-truck DOT carrier, NXDOMAIN), Auto Motives (used-car dealer mistagged Manufacturing). Original master-rank-ordered candidates included KCBR Design and WLX (both already in batch4) - dedup logic improved to strip pipe character; Brda Electric and Broad Building Supply substituted in. Stage 3 partial: 15 revealed, 7 skipped, 3 pending (Boulder Construction, Brahms Construction, Broad Building Supply)."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 319,
+    "total_revealed_to_date": 334,
     "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "All batch18 work cleared this run. No pending reveals carried forward.",
-      "total_pending": 0
+      "description": "Batch 19 partial - 3 companies awaiting Stage 3 reveals next run",
+      "batch19_pending": [
+        "Boulder Construction LLC (Cape Girardeau MO)",
+        "Brahms Construction LLC (St. Louis MO)",
+        "Broad Building Supply Company (Columbia MO)"
+      ],
+      "total_pending": 3
     },
-    "note": "2026-05-05 Run #1: Batch18 cleared. 15 emails revealed (all click-reveals; no pre-revealed cells in this batch unlike batch17). 7 SKIPPED (Arrow Building Center NO_DM only sales/fulfillment, Foeste Masonry NO_DM only crew/admin, Advanced Systems Homes DM unavailable, W.N. Epstein only 2 contacts NO_DM, ZipCare NO_DM only drivers, Martin Metal wrong entities for Owners, AHRS Construction NO_DM all project-level). 1 NO_EMAIL waste (Missouri Terrazzo, Rick Dreyfus 1 credit). 1 fallback (Marc's Flooring: COO Greg Edwards stuck on Trying Apollo, fallback to VP Alan Pettus succeeded - 2 credits). Apollo authoritative cycle counter: 53 used / 2505 = 2452 remaining; this run consumed ~17 credit clicks. Phase 2 phones: skipped (28 days left in cycle, days_left>10)."
+    "note": "2026-05-06 Run #1: Batch19 Stage 2 written (23 REVEAL, 2 MANUAL CHECK). Stage 3 partial: 15 revealed (1 pre-revealed Follow Me Construction Brian English EVP; 14 click-revealed). Wastes: 4 NO_EMAIL clicks (AAA Dave Moore - Apollo entity has 5 contacts spread across CA/MI/NJ/MA/OR none in Fenton MO; Air Capitol Louis Robelli Owner red X - VP son Justin fallback succeeded; Bingman Jennifer Owner red X - all DMs red X; Brda Zach CEO red X - both Brda DMs red X). Other skips: Air Services HVAC (Apex Service Partners PE-rollup confirmed via 'Market Area President - Apex Service Partners' Apollo title), Brewer Machine & Gear (NO_DM - 10 contacts all Sales/Accounting/Machinist), Anthony Auto + Auto Motives (Stage 2 MANUAL CHECK). 18 credits consumed this run. 3 batch19 companies pending next run."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -51,24 +56,25 @@
   "credit_cycle": {
     "cycle_start": "2026-05-02",
     "cycle_end": "2026-06-02",
-    "credits_remaining_apollo_ui": 2452,
-    "credits_used_this_cycle": 53,
-    "email_credits_spent_this_session": 17,
+    "credits_remaining_apollo_ui": 2434,
+    "credits_used_this_cycle": 71,
+    "email_credits_spent_this_session": 18,
     "phone_credits_spent_this_session": 0,
-    "note": "2026-05-05 Run #1: Apollo authoritative panel (Settings > Credits Usage) shows 53 credits used / 2505 cap = 2452 remaining (cycle May 2 - Jun 2 2026). Pre-run state file estimated 106 used; Apollo authoritative says 53 — actual usage 53 less than state estimate. This run made 17 credit-click attempts (15 successful reveals + 1 NO_EMAIL waste Missouri Terrazzo + 1 wasted on stuck COO at Marcs Flooring). 28 days remaining in cycle - STANDARD pace (not accelerate window)."
+    "note": "2026-05-06 Run #1: 18 credits this run (15 successful reveals + 4 NO_EMAIL waste click clusters: AAA Dave Moore, Air Capitol Louis, Bingman Jennifer, Brda Zach + 1 fallback success Air Capitol Justin). State estimate: 71 credits used / ~2429 remaining. NEXT-RUN-VERIFY: confirm via Apollo Settings > Credits Usage panel (authoritative). 27 days remaining in cycle (May 6 - Jun 2 2026)."
   },
   "daily_runs": {
-    "date": "2026-05-05",
+    "date": "2026-05-06",
     "count": 1
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state file + pipeline-learnings.json - focus on 2026-05-05 entries (batch18 burndown, Apollo authoritative credit counter shows much lower usage than state estimates).",
-    "2. PRIORITY A: Stage 2 batch 19 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 550). Run from fresh-DOM session for max reveal headroom.",
-    "3. PRIORITY B: Stage 3 reveals on batch 19 REVEAL companies - same procedure as runbook Step 1. Note batch18 had 7 NO_DM SKIPs (28%) - consider proactively checking Apollo people coverage during Stage 2 for very-small-employee companies (<20 emp Construction GCs frequently lack DM in Apollo).",
-    "4. PRIORITY C: Phase 2 phones - STILL SKIP (28 days left in cycle, fresh credits, only re-evaluate when days_left <= 10).",
-    "5. KEY LEARNING 2026-05-05 (credit accounting): Apollo Settings > Credits Usage panel is the authoritative source - much more reliable than the cached header counter or state file estimates. Always do a final reload-and-check at end of run via the Settings panel.",
-    "6. KEY LEARNING 2026-05-05 (batch18 SKIPs): Marick Mechanical follows the PE-rollup pattern (Orion Group HoldCo, Iowa HQ). Add Marick + parent Orion to the running PE-rollup skip list alongside PremiStar, Waldinger, TriplePoint.",
-    "7. KEY LEARNING 2026-05-05 (Marc's Flooring fallback success): COO Greg Edwards stuck on Trying Apollo / Saving results indefinitely; VP Alan Pettus fallback succeeded after similar stuck state but resolved within 12-20s. The 2-credit fallback continues to be the right call for high-value targets."
+    "1. Read state file + pipeline-learnings.json - focus on 2026-05-06 entries (batch19 dedup miss on pipe character, Apex Service Partners PE-rollup add, AAA Remodeling cross-state contact spread, all-red-X skip-then-NO_EMAIL pattern at Bingman + Brda).",
+    "2. PRIORITY A: Clear 3 batch19_pending Stage 3 reveals: Boulder Construction LLC (Cape Girardeau MO), Brahms Construction LLC (St. Louis MO), Broad Building Supply Company (Columbia MO).",
+    "3. PRIORITY B: Stage 2 batch 20 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 575). Use the IMPROVED dedup that strips pipe character (added 2026-05-06 - critical fix).",
+    "4. PRIORITY C: Stage 3 reveals on batch 20 REVEAL companies.",
+    "5. PRIORITY D: Phase 2 phones - SKIP (still 27 days left in cycle, pace is normal). Re-evaluate when days_left <= 10.",
+    "6. KEY LEARNING 2026-05-06 (dedup fix): Original normalize() function did not strip the pipe character. KCBR Design | Remodel and WLX | Western Logistics Express both got selected for batch19 even though they were in batch4 already. Improved normalize now strips |/(){}[]\".'`!&,. Substring check (in either direction) saves the day when normalization is incomplete. Verify dedup output shows zero DUP-BATCH or DUP-STAGE3 hits before writing the next batch.",
+    "7. KEY LEARNING 2026-05-06 (Apex Service Partners PE-rollup): Air Services Heating Cooling (Springfield MO) is owned by Apex Service Partners. Add Apex Service Partners to the running PE-rollup skip list alongside Orion Group HoldCo, PremiStar, Waldinger, TriplePoint, Redwood Group (parent of ROOTS Logistics), KCN Companies (parent of Sunflower Industrial). When Apollo title contains 'Apex Service Partners' or 'Market Area President', SKIP without revealing.",
+    "8. KEY LEARNING 2026-05-06 (cross-state contact spread): AAA REMODELING COMPANY in Apollo has 5 contacts spread across CA/MI/NJ/MA/OR with zero in Fenton MO target state. Apollo entity may be merging multiple unrelated AAA Remodelings. Owner Dave Moore Grants Pass OR returned NO_EMAIL on click. When Apollo entity contacts have zero in target state but the entity name matches, expect NO_EMAIL or wrong-entity. Verify state-of-contact distribution before clicking the Owner/CEO."
   ]
 }
