@@ -1395,6 +1395,45 @@
       "severity": "info",
       "title": "Batch 19 run #1 (2026-05-06): Stage 2 + Stage 3 partial in single context window",
       "detail": "Stage 2 completed: 25 verifications (23 REVEAL, 2 MANUAL CHECK - Anthony Auto 1-truck NXDOMAIN; Auto Motives used-car dealer mistagged Manufacturing). Stage 3 partial: 22 of 25 companies processed (15 revealed, 7 skipped/no-email). 3 pending for next run (Boulder Construction, Brahms Construction, Broad Building Supply). 18 credits this run (14 successful click reveals + 1 pre-revealed Follow Me + 4 NO_EMAIL wastes). Run time ~50 min including web verification, Stage 2 CSV write, dedup re-check + Stage 3 reveals."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing \u2014 Drive title-contains 'Anvo Prospecting Style Guide' returned empty; fullText-contains for the bracketed-AI-generated phrase also empty. Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 15 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Until then this learning re-emerges every run."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "stage4_scoring",
+      "severity": "high",
+      "title": "ARCO Beverage Group is a specialty division of ARCO National Construction / ARCO Holdings \u2014 enterprise SKIP",
+      "observation": "ARCO Beverage Group (Mark Turney, Director of Operations, mturney@arco1.com) appeared at backlog rank 542. Web research: ARCO Beverage Group is a 'specialty division' of ARCO National Construction (founded 2000), which itself is part of ARCO Holdings Company. The enterprise has built 230+ beverage distribution facilities nationwide and operates ARCO/Murray and other brands across hundreds of markets. Insurance program is virtually certain to live at parent (ARCO Holdings/ARCO Construction Group) level, not the Beverage Group division. SKIPPED at Stage 4 with priority=SKIP, score 1.85.",
+      "workaround": "Add ARCO National Construction / ARCO Holdings / ARCO Beverage Group / ARCO/Murray to the running enterprise-skip list alongside Apex Service Partners, PremiStar, Waldinger, TriplePoint, Redwood Group (ROOTS Logistics), KCN Companies (Sunflower Industrial), Lippert/PremiStar, Pro Electric, Centric Construction. When Apollo entity is a 'specialty division' or 'subsidiary' of a multi-state national-scale enterprise (especially construction holding companies), SKIP at Stage 4 regardless of revealed contact's title."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "stage4_scoring",
+      "severity": "medium",
+      "title": "Apollo segment 'Manufacturing' often miscategorizes electrical contractors \u2014 Baldi Electric and AMF Electrical both tagged Manufacturing",
+      "observation": "Two STL electrical contractors in this batch (Baldi Electric rank 526, AMF Electrical Contractors rank 527) were Apollo-tagged 'Manufacturing' but are clearly Construction-Artisan (electrical contractors with IECSTL membership, BBB profiles, on-site electrician services). Same drift as Core Communications / HC Sharp / Image Truck Partners noted 2026-04-23.",
+      "workaround": "When Apollo segment is 'Manufacturing' but the company name contains 'Electric', 'Electrical', 'HVAC', 'Plumbing', or similar trade keywords, treat as Construction-Artisan in Stage 4 scoring (multiplier 1.5-2, Hartford/Columbia carrier routing). Note the segment correction in stage4 notes column. Do not re-score later \u2014 this is a Stage 4-time correction."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "stage5_drafting",
+      "severity": "medium",
+      "title": "United Construction St. Louis website claims '$1 billion in revenue' \u2014 almost certainly cumulative project value, not annual revenue",
+      "observation": "Stage 5 research on United Construction (Dino Pappas, Principal Owner, rank 530) surfaced 'growing from a small team to 50 employees with over $1 billion in revenue'. In context (over 30 years of design-build projects) this reads as cumulative project value across the firm's history, not annual revenue. Annual revenue at 50 employees in commercial GC is more plausibly $30-50M. Treated as inside sweet-spot upper edge rather than auto-SKIP.",
+      "workaround": "When a GC website cites a large revenue figure ('$1 billion in revenue', '$500 million in projects', etc.) over a multi-decade history, default to 'cumulative project value' interpretation unless the page explicitly says annual. Triangulate with Apollo/ZoomInfo employee count: 50 emp at a commercial GC implies annual revenue $30-50M, not $1B. Flag size in stage4 notes but do not auto-SKIP unless ZoomInfo/RocketReach show $50M+ annual."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Six of fifteen draft contacts this run were non-DM titles (CIO, Dir Sales x2, VP Dev, VP Finance, VP Store Services) \u2014 drafts framed firm-level with explicit routing asks where appropriate",
+      "observation": "Of 15 stage5 drafts: U.S. Road Freight (CIO), AJ Adhesives (Dir Sales \u2014 not drafted this run, score 3.20 below cap), Apollo Express (Dir Sales \u2014 also below cap), Altman-Charter (VP Dev), Lynn Electric (VP Finance), Marc's Flooring (VP Store Services), Air Capitol (VP Ops, son), Atlas Building (VP Ops), Axis Worldwide (Principal/CEO per ZI). Only Altman-Charter explicitly asks for a routing intro (VP Development is biz-dev not insurance DM). VP Finance and VP Ops are insurance-adjacent enough to draft directly.",
+      "workaround": "Heuristic for non-DM revealed contacts: VP Finance / CFO / Controller \u2192 draft directly (often the policy owner). VP Operations \u2192 draft directly. VP Development / Director of Sales / CIO / Director of Marketing \u2192 include explicit routing intro request in the body and flag in stage5 notes. President/Owner/CEO \u2192 straight pitch, no routing language needed. This run only the Altman-Charter draft includes an explicit routing ask."
     }
   ]
 }
