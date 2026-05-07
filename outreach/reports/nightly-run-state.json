@@ -4,31 +4,26 @@
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 575
+    "stage2_completed_through_company_index": 600
   },
   "stage2": {
     "batch_files": [
-      "A2-stage2-batch{N}-verified.csv for N in 1..19"
+      "A2-stage2-batch{N}-verified.csv for N in 1..20"
     ],
-    "batches_processed": 19,
-    "total_verified": 575,
-    "next_batch_number": 20,
-    "note": "Batch 19 written 2026-05-06 (25 companies; 23 REVEAL, 2 MANUAL CHECK). MANUAL CHECK: Anthony Auto (1-truck DOT carrier, NXDOMAIN), Auto Motives (used-car dealer mistagged Manufacturing). Original master-rank-ordered candidates included KCBR Design and WLX (both already in batch4) - dedup logic improved to strip pipe character; Brda Electric and Broad Building Supply substituted in. Stage 3 partial: 15 revealed, 7 skipped, 3 pending (Boulder Construction, Brahms Construction, Broad Building Supply)."
+    "batches_processed": 20,
+    "total_verified": 600,
+    "next_batch_number": 21,
+    "note": "Batch 20 written 2026-05-07 (25 companies; 18 REVEAL, 5 SKIP, 2 MANUAL CHECK). SKIP reasons: Thai Binh + WANO geo-misclassified (.vn / .au), HBA of Greater KC + MCA of KC trade associations, Topeka Metro public transit. MANUAL CHECK: KC Streetcar Authority (gov entity), Columbia Group (generic name disambiguation needed - multiple unrelated Columbia Groups). Stage 3 ran on all 18 REVEAL: 11 reveals (1 pre-revealed Almighty Tow + 10 click reveals), 7 SKIP (Your Express OM red X, M&J both DMs red X, SFE Enterprises NO_DM, Custom Stone Tile + Capital Trucking cross-state merge no Topeka KS DM, SENNE & COMPANY NO_DM, Winston Brown both DMs red X)."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 334,
+    "total_revealed_to_date": 347,
     "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "Batch 19 partial - 3 companies awaiting Stage 3 reveals next run",
-      "batch19_pending": [
-        "Boulder Construction LLC (Cape Girardeau MO)",
-        "Brahms Construction LLC (St. Louis MO)",
-        "Broad Building Supply Company (Columbia MO)"
-      ],
-      "total_pending": 3
+      "description": "Batch 19 + 20 fully cleared this run. No carryover.",
+      "total_pending": 0
     },
-    "note": "2026-05-06 Run #1: Batch19 Stage 2 written (23 REVEAL, 2 MANUAL CHECK). Stage 3 partial: 15 revealed (1 pre-revealed Follow Me Construction Brian English EVP; 14 click-revealed). Wastes: 4 NO_EMAIL clicks (AAA Dave Moore - Apollo entity has 5 contacts spread across CA/MI/NJ/MA/OR none in Fenton MO; Air Capitol Louis Robelli Owner red X - VP son Justin fallback succeeded; Bingman Jennifer Owner red X - all DMs red X; Brda Zach CEO red X - both Brda DMs red X). Other skips: Air Services HVAC (Apex Service Partners PE-rollup confirmed via 'Market Area President - Apex Service Partners' Apollo title), Brewer Machine & Gear (NO_DM - 10 contacts all Sales/Accounting/Machinist), Anthony Auto + Auto Motives (Stage 2 MANUAL CHECK). 18 credits consumed this run. 3 batch19 companies pending next run."
+    "note": "2026-05-07 Run #1: Batch19 pending (3) cleared - Boulder Construction NO_DM cross-state merge SKIP, Brahms Construction Greg Rolando DoP profile-panel fallback REVEAL, Broad Building Supply Jon Lauer OM profile-panel fallback REVEAL. Batch20 Stage 2 written + Stage 3 ran on 18 REVEAL: 11 reveals (1 pre-revealed) + 7 SKIP (3 cross-state merges, 2 NO_DM, 2 all-red-X). 12 email-credits this run; 0 phone reveals (27 days remaining in cycle, normal pace). KEY PATTERNS: cross-state Apollo merge appeared 4 times this run (Boulder, Custom Stone Tile, Capital Trucking, Century - Lawrence Landscape - Kendall - all had merged state-mismatched entities); name/email mismatch pattern observed at Aegis Fire (Kevin \"Cet\" -> kstacy@aegisfirepro.com)."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -56,25 +51,25 @@
   "credit_cycle": {
     "cycle_start": "2026-05-02",
     "cycle_end": "2026-06-02",
-    "credits_remaining_apollo_ui": 2434,
-    "credits_used_this_cycle": 71,
-    "email_credits_spent_this_session": 18,
+    "credits_remaining_apollo_ui": 2376,
+    "credits_used_this_cycle": 129,
+    "email_credits_spent_this_session": 12,
     "phone_credits_spent_this_session": 0,
-    "note": "2026-05-06 Run #1: 18 credits this run (15 successful reveals + 4 NO_EMAIL waste click clusters: AAA Dave Moore, Air Capitol Louis, Bingman Jennifer, Brda Zach + 1 fallback success Air Capitol Justin). State estimate: 71 credits used / ~2429 remaining. NEXT-RUN-VERIFY: confirm via Apollo Settings > Credits Usage panel (authoritative). 27 days remaining in cycle (May 6 - Jun 2 2026)."
+    "note": "2026-05-07 Run #1: Apollo Settings > Credits Usage panel (authoritative per learning 2026-05-05) reads 129 used of 2505 cycle cap. Pre-run state estimate said 71; actual 129 - drift of 58 credits consistent with 2026-05-04 53-credit drift. Email usage 129, mobile 0. This run consumed 12 click-reveals (Brahms, Broad, Infiniti, Shaw, Truman, Aegis, Kendall, Lawrence, 221, KBS, Century, Shirley) - 12 credits documented; the additional ~46 credits between batch19 run and this run likely attributable to scoring/drafting task lookups, manual Edward usage, or pre-reveal trickle. 26 days remaining (May 7 - Jun 2 2026), 2376 credits / 26 days = 91/day budget - well within range."
   },
   "daily_runs": {
-    "date": "2026-05-06",
+    "date": "2026-05-07",
     "count": 1
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state file + pipeline-learnings.json - focus on 2026-05-06 entries (batch19 dedup miss on pipe character, Apex Service Partners PE-rollup add, AAA Remodeling cross-state contact spread, all-red-X skip-then-NO_EMAIL pattern at Bingman + Brda).",
-    "2. PRIORITY A: Clear 3 batch19_pending Stage 3 reveals: Boulder Construction LLC (Cape Girardeau MO), Brahms Construction LLC (St. Louis MO), Broad Building Supply Company (Columbia MO).",
-    "3. PRIORITY B: Stage 2 batch 20 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 575). Use the IMPROVED dedup that strips pipe character (added 2026-05-06 - critical fix).",
-    "4. PRIORITY C: Stage 3 reveals on batch 20 REVEAL companies.",
-    "5. PRIORITY D: Phase 2 phones - SKIP (still 27 days left in cycle, pace is normal). Re-evaluate when days_left <= 10.",
-    "6. KEY LEARNING 2026-05-06 (dedup fix): Original normalize() function did not strip the pipe character. KCBR Design | Remodel and WLX | Western Logistics Express both got selected for batch19 even though they were in batch4 already. Improved normalize now strips |/(){}[]\".'`!&,. Substring check (in either direction) saves the day when normalization is incomplete. Verify dedup output shows zero DUP-BATCH or DUP-STAGE3 hits before writing the next batch.",
-    "7. KEY LEARNING 2026-05-06 (Apex Service Partners PE-rollup): Air Services Heating Cooling (Springfield MO) is owned by Apex Service Partners. Add Apex Service Partners to the running PE-rollup skip list alongside Orion Group HoldCo, PremiStar, Waldinger, TriplePoint, Redwood Group (parent of ROOTS Logistics), KCN Companies (parent of Sunflower Industrial). When Apollo title contains 'Apex Service Partners' or 'Market Area President', SKIP without revealing.",
-    "8. KEY LEARNING 2026-05-06 (cross-state contact spread): AAA REMODELING COMPANY in Apollo has 5 contacts spread across CA/MI/NJ/MA/OR with zero in Fenton MO target state. Apollo entity may be merging multiple unrelated AAA Remodelings. Owner Dave Moore Grants Pass OR returned NO_EMAIL on click. When Apollo entity contacts have zero in target state but the entity name matches, expect NO_EMAIL or wrong-entity. Verify state-of-contact distribution before clicking the Owner/CEO."
+    "1. Read state + pipeline-learnings - focus on 2026-05-07 entries (Aegis name/email mismatch, 4 cross-state Apollo merges in single batch, Apollo enrichment toggle aria-checked stable across re-entries).",
+    "2. PRIORITY A: Stage 2 batch 21 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 600). Apply same dedup logic (strip pipe, fuzzy substring).",
+    "3. PRIORITY B: Stage 3 reveals on batch 21 REVEAL companies.",
+    "4. PRIORITY C: Phase 2 phones - SKIP (still 26 days left in cycle, pace is normal at 91/day budget). Re-evaluate when days_left <= 10.",
+    "5. KEY LEARNING 2026-05-07 (Apollo cross-state merge prevalence): 4 of batch20 (Boulder, Custom Stone Tile, Capital Trucking, Century) plus Lawrence Landscape and Kendall Construction had Apollo entities merging multiple unrelated same-named firms across states. Pattern dominant for generic 2-3-word names. Heuristic: when Apollo qOrganizationName returns 25+ contacts and target city is missing from first 25 visible rows, the target entity DM is likely not in Apollo regardless of name match - SKIP rather than burn credits.",
+    "6. KEY LEARNING 2026-05-07 (Aegis Fire name/email mismatch): Apollo contact \"Kevin Cet President\" revealed email kstacy@aegisfirepro.com (Stacy not Cet); VP Deanna Stacy pre-shows dbennett@aegisfirepro.com (Bennett not Stacy). Apollo data merged different employees inconsistently. Stage 5 should always cross-check contact-name <-> email-localpart consistency before drafting; flag for manual verification when localpart does not match name.",
+    "7. KEY LEARNING 2026-05-07 (profile-panel fallback continues to be the workhorse): 4 of 12 reveals this run (Brahms, Broad, Truman Habitat, Aegis Fire) hit \"Trying other sources...\" or \"Saving results...\" stuck cells and required clicking the contact name -> profile panel -> regex extract from body. Confirmed pattern from 2026-04-23 batch16. Mitigation rule: at 12s of stuck-cell, fall back to profile panel without retry on the table cell.",
+    "8. KEY LEARNING 2026-05-07 (state file vs Apollo authoritative drift): Pre-run state said 71 credits used; Apollo Settings panel said 129. Confirms 2026-05-05 high-severity learning. ALWAYS update state with authoritative panel reading at end of run."
   ]
 }
