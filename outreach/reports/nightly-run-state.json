@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
@@ -37,20 +37,20 @@
     "medium_priority": 166,
     "low_priority": 21,
     "skip": 25,
-    "scored_this_run": 29,
-    "last_run_date": "2026-05-06",
+    "scored_this_run": 0,
+    "last_run_date": "2026-05-07",
     "last_processed_email": "adam@bakerlandscaping.net",
-    "remaining_to_score": "Caught up - all 29 batch18+batch19 newly-revealed contacts scored 2026-05-06. Awaiting next apollo-reveals batch19-pending (Boulder/Brahms/Broad) + batch20."
+    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-07. Awaiting next apollo-reveals batch."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 164,
-    "drafted_this_run": 15,
+    "total_drafted": 181,
+    "drafted_this_run": 17,
     "skipped_no_hook": 0,
-    "skipped_data_issue": 0,
-    "total_skipped_other": 5,
-    "last_drafted_email": "steve@allseasonsconstruction.com",
-    "last_run_date": "2026-05-06",
+    "skipped_data_issue": 2,
+    "total_skipped_other": 7,
+    "last_drafted_email": "llang@4sightconstruction.com",
+    "last_run_date": "2026-05-07",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
