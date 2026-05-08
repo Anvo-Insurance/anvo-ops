@@ -4,26 +4,26 @@
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 600
+    "stage2_completed_through_company_index": 625
   },
   "stage2": {
     "batch_files": [
       "A2-stage2-batch{N}-verified.csv for N in 1..20"
     ],
-    "batches_processed": 20,
-    "total_verified": 600,
-    "next_batch_number": 21,
-    "note": "Batch 20 written 2026-05-07 (25 companies; 18 REVEAL, 5 SKIP, 2 MANUAL CHECK). SKIP reasons: Thai Binh + WANO geo-misclassified (.vn / .au), HBA of Greater KC + MCA of KC trade associations, Topeka Metro public transit. MANUAL CHECK: KC Streetcar Authority (gov entity), Columbia Group (generic name disambiguation needed - multiple unrelated Columbia Groups). Stage 3 ran on all 18 REVEAL: 11 reveals (1 pre-revealed Almighty Tow + 10 click reveals), 7 SKIP (Your Express OM red X, M&J both DMs red X, SFE Enterprises NO_DM, Custom Stone Tile + Capital Trucking cross-state merge no Topeka KS DM, SENNE & COMPANY NO_DM, Winston Brown both DMs red X)."
+    "batches_processed": 21,
+    "total_verified": 625,
+    "next_batch_number": 22,
+    "note": "Batch 21 written 2026-05-07 Run #2 (25 companies; 23 REVEAL, 2 SKIP, 0 MANUAL CHECK). SKIP reasons: Bullet Liner (Carlisle Polyurethane subsidiary, NYSE:CSL parent-level insurance) + Hall Technologies (Omya subsidiary acquired April 2022). Stage 3 ran on all 23 REVEAL: 14 reveals (12 click + 2 pre-revealed Hibbs+Heitkamp), 9 SKIP (Falcon Electric all-red-X cross-merge, Waterhout both-DM-red-X, Vogel no-DM, Triumph cross-state-merge, Damar no-DM, Dutch no-DM, Dryforce 0 MO contacts, Centrex 3-contacts no-DM, no 9th)."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 347,
+    "total_revealed_to_date": 361,
     "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "Batch 19 + 20 fully cleared this run. No carryover.",
+      "description": "Batch 21 fully cleared this run. No carryover.",
       "total_pending": 0
     },
-    "note": "2026-05-07 Run #1: Batch19 pending (3) cleared - Boulder Construction NO_DM cross-state merge SKIP, Brahms Construction Greg Rolando DoP profile-panel fallback REVEAL, Broad Building Supply Jon Lauer OM profile-panel fallback REVEAL. Batch20 Stage 2 written + Stage 3 ran on 18 REVEAL: 11 reveals (1 pre-revealed) + 7 SKIP (3 cross-state merges, 2 NO_DM, 2 all-red-X). 12 email-credits this run; 0 phone reveals (27 days remaining in cycle, normal pace). KEY PATTERNS: cross-state Apollo merge appeared 4 times this run (Boulder, Custom Stone Tile, Capital Trucking, Century - Lawrence Landscape - Kendall - all had merged state-mismatched entities); name/email mismatch pattern observed at Aegis Fire (Kevin \"Cet\" -> kstacy@aegisfirepro.com)."
+    "note": "2026-05-07 Run #2: Batch21 Stage 2 + Stage 3 in same run. 14 reveals (12 click + 2 pre-revealed): Williams (James Williams Owner), Warrenton Steel (Jennifer Grooms Owner profile-panel), Zickel (Justin Kilmer DirOps profile-panel), VISION Electric (Douglas Brewer Pres CEO profile-panel), Tri-State Water (Alex Windes GM profile-panel), Trendsetter (Ryan Cantrell Owner profile-panel), Tracy Electric (Mike Tracy President profile-panel), Eagle Specialty (Zach Thomas VP Ops profile-panel), D1 Resources (David Nelson Director Eng profile-panel), E.M. Harris (Jack Kinamore EVP profile-panel), Diversified Electrical (George Diebling Pres profile-panel), Cain Electric (Margaret Cain Owner profile-panel), Dean E. Norris (Mike Porch Pres profile-panel), plus pre-revealed Hibbs Luxury Homes (Kim Hibbs Owner&Pres) + Heitkamp Masonry (Dan Grass Pres). 9 SKIP: 4 cross-state merge, 4 no-DM, 1 stuck data. KEY PATTERN: profile-panel fallback used 12 of 12 click reveals - Apollo cell-stuck-on-Saving-results is now the dominant pattern. 12 email-credits this run."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -51,25 +51,26 @@
   "credit_cycle": {
     "cycle_start": "2026-05-02",
     "cycle_end": "2026-06-02",
-    "credits_remaining_apollo_ui": 2376,
-    "credits_used_this_cycle": 129,
+    "credits_remaining_apollo_ui": 2364,
+    "credits_used_this_cycle": 141,
     "email_credits_spent_this_session": 12,
     "phone_credits_spent_this_session": 0,
-    "note": "2026-05-07 Run #1: Apollo Settings > Credits Usage panel (authoritative per learning 2026-05-05) reads 129 used of 2505 cycle cap. Pre-run state estimate said 71; actual 129 - drift of 58 credits consistent with 2026-05-04 53-credit drift. Email usage 129, mobile 0. This run consumed 12 click-reveals (Brahms, Broad, Infiniti, Shaw, Truman, Aegis, Kendall, Lawrence, 221, KBS, Century, Shirley) - 12 credits documented; the additional ~46 credits between batch19 run and this run likely attributable to scoring/drafting task lookups, manual Edward usage, or pre-reveal trickle. 26 days remaining (May 7 - Jun 2 2026), 2376 credits / 26 days = 91/day budget - well within range."
+    "note": "2026-05-07 Run #2 estimated end-of-run: 141 used / 2364 remaining (start-of-run 129 + 12 email reveals batch21). Authoritative Apollo Settings > Credits Usage panel reading should be taken at end-of-run per learning 2026-05-05; pre-run state estimate often drifts from panel by 30-60 credits due to scoring/drafting task lookups + manual Edward usage. 26 days remaining (May 7 - Jun 2 2026), 2364 / 26 = 91/day budget - on track."
   },
   "daily_runs": {
     "date": "2026-05-07",
-    "count": 1
+    "count": 2
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state + pipeline-learnings - focus on 2026-05-07 entries (Aegis name/email mismatch, 4 cross-state Apollo merges in single batch, Apollo enrichment toggle aria-checked stable across re-entries).",
-    "2. PRIORITY A: Stage 2 batch 21 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after rank index 600). Apply same dedup logic (strip pipe, fuzzy substring).",
-    "3. PRIORITY B: Stage 3 reveals on batch 21 REVEAL companies.",
-    "4. PRIORITY C: Phase 2 phones - SKIP (still 26 days left in cycle, pace is normal at 91/day budget). Re-evaluate when days_left <= 10.",
-    "5. KEY LEARNING 2026-05-07 (Apollo cross-state merge prevalence): 4 of batch20 (Boulder, Custom Stone Tile, Capital Trucking, Century) plus Lawrence Landscape and Kendall Construction had Apollo entities merging multiple unrelated same-named firms across states. Pattern dominant for generic 2-3-word names. Heuristic: when Apollo qOrganizationName returns 25+ contacts and target city is missing from first 25 visible rows, the target entity DM is likely not in Apollo regardless of name match - SKIP rather than burn credits.",
-    "6. KEY LEARNING 2026-05-07 (Aegis Fire name/email mismatch): Apollo contact \"Kevin Cet President\" revealed email kstacy@aegisfirepro.com (Stacy not Cet); VP Deanna Stacy pre-shows dbennett@aegisfirepro.com (Bennett not Stacy). Apollo data merged different employees inconsistently. Stage 5 should always cross-check contact-name <-> email-localpart consistency before drafting; flag for manual verification when localpart does not match name.",
-    "7. KEY LEARNING 2026-05-07 (profile-panel fallback continues to be the workhorse): 4 of 12 reveals this run (Brahms, Broad, Truman Habitat, Aegis Fire) hit \"Trying other sources...\" or \"Saving results...\" stuck cells and required clicking the contact name -> profile panel -> regex extract from body. Confirmed pattern from 2026-04-23 batch16. Mitigation rule: at 12s of stuck-cell, fall back to profile panel without retry on the table cell.",
-    "8. KEY LEARNING 2026-05-07 (state file vs Apollo authoritative drift): Pre-run state said 71 credits used; Apollo Settings panel said 129. Confirms 2026-05-05 high-severity learning. ALWAYS update state with authoritative panel reading at end of run."
+    "1. Read state + pipeline-learnings - focus on 2026-05-07 Run #2 entries (profile-panel fallback now dominant - 12 of 12 click reveals required it; Triumph cross-state merge with NY entity drowning out small MO LLC; 4 SKIPs for no-DM small firms with only managerial titles).",
+    "2. PRIORITY A: Stage 2 batch 22 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after batch21 set). Start with FIVE STAR MECHANICAL INC (Wichita KS rank 299 - was incorrectly dedup'd by 'five star' 2-token prefix matching 'Five Star Trucking' from batch9; fuzzy logic should require 3+ token prefix or full-name match for 2-token candidates - see new learning).",
+    "3. PRIORITY B: Stage 3 reveals on batch 22 REVEAL companies.",
+    "4. PRIORITY C: Phase 2 phones - SKIP (still 26 days left in cycle, normal pace at 91/day). Re-evaluate when days_left <= 10.",
+    "5. KEY LEARNING 2026-05-07 Run #2 (profile-panel-as-default): Per-batch click-reveal pattern: 100% of click reveals (12 of 12) showed 'Saving results...' or 'Trying other sources...' for >12s, requiring profile-panel fallback. Mitigation: skip the wait, click profile name immediately after clicking email cell (single sequence: click cell -> click name -> wait 7-12s for profile load -> regex extract email).",
+    "6. KEY LEARNING 2026-05-07 Run #2 (no-DM small-firm SKIP heuristic): 4 SKIPs this batch driven by Apollo missing Owner/President/CEO at ~10-40 emp firms (Vogel Sheet Metal, Damar Worldwide, Dutch Enterprises, Centrex Electric). When Apollo top contact is Manager-level, even GM/Director may not be present. Don't burn credits clicking Manager-level - SKIP and rely on website-direct contact for these.",
+    "7. KEY LEARNING 2026-05-07 Run #2 (large-corp-subsidiary detection in batch verification): Bullet Liner (Carlisle/NYSE:CSL) + Hall Technologies (Omya CHE) detected during Stage 2 web verification. Pattern: target firm acquired by Fortune-500/multinational where insurance is bound at parent corporate level. Stage 2 should always check 'About' page + recent news for acquisition status.",
+    "8. KEY LEARNING 2026-05-07 Run #2 (fuzzy-prefix dedup over-broad match): batch21 candidate selection with 2-token prefix substring fuzzy excluded FIVE STAR MECHANICAL INC (rank 299) because 'five star' prefix matches 'Five Star Trucking LLC' (batch9). Fix: require 3+ token prefix OR full-string exact-substring match for 2-token candidates.",
+    "9. KEY LEARNING 2026-05-07 Run #2 (cross-state-merge prevalence steady): 4 merges this batch (Williams Construction merged FL/NC into MO; Falcon Electric merged Canada/NY/CA into MO; Triumph Construction merged NY entity drowning Chesterfield MO LLC; Dryforce merged AU/CA/SA into MO). Cross-state merge is now ~16% of batch (4 of 25) - confirms 2026-05-07 Run #1 trend."
   ]
 }
