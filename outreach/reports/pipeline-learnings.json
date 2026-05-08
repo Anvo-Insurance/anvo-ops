@@ -1613,6 +1613,48 @@
       "category": "performance",
       "learning": "Run #2 2026-05-07 throughput: Stage 2 batch21 (25 verifications including 4 WebSearch fallbacks for 403/404/SSL/empty-text sites) + Stage 3 on 23 REVEAL (12 click reveals + 9 SKIPs + 2 pre-reveals). Total 14 emails added to stage3_results.csv. 12 email-credits + 0 phone reveals = 12 credits this run. Time: ~70 min including 4 ambiguous-firm WebSearches, profile-panel fallbacks. Trending toward target throughput of 25 reveals/45-min cycle but stuck-cell pattern adds 10-20s/reveal.",
       "severity": "info"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage5_run",
+      "category": "style_guide",
+      "learning": "Google Drive search for 'Anvo Prospecting Style Guide (AI-Generated)' returned no results \u2014 style guide doc still does not exist as of 2026-05-08. Continue using default tone rules in INSTRUCTIONS-stage4-7.md and templates.md. Stage 7 (style learning) will only run after Edward has sent 10+ prospecting emails.",
+      "severity": "low"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "learning": "Two top-of-list batch candidates (Shaw Supply Company rank 584; Aegis Fire Protection LLC rank 588 \u2014 Kevin Cet contact) were initially scored HIGH on Apollo signals (KC owner, KC fire-sprinkler specialty), then web research surfaced acquisitions and downgraded to SKIP: (1) Shaw Supply \u2014 Sonepar (French multinational; KKR/Goldman backed) via subsidiary Echo Electric announced acquisition in March 2026 (distributionstrategy.com / inddist.com / tedmag.com / ewweb.com \u2014 all 2026 announcements). Insurance binds at parent level after close. (2) Aegis Fire Protection \u2014 acquired Dec 2020 by Century Fire Protection, subsidiary of FirstService Corporation (NASDAQ: FSV) per Mergr / GlobeNewswire (2020 announcement). Pattern: F500/PE-rollup detection MUST be done before scoring 'KC family-business' high. Specifically run 'COMPANY acquired' and 'Sonepar/FirstService/Century/EMCOR/Apex Service Partners/Ali Group/Berkshire/Comfort Systems COMPANY' Google queries on any owner-led trades or distribution prospect \u2014 these holdings are aggressively rolling up the KC mid-market. Should also check year-of-reveal: if Stage 2 was old, the company may have been acquired since.",
+      "severity": "high"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "learning": "Apollo segment tags are unreliable for 'building supply' / 'distribution' / 'electrical contractor' companies \u2014 saw multiple Construction-tagged rows that were actually Retail/Wholesale (Broad Building Supply, Shaw Supply) or Construction-electrical mistagged as Manufacturing (Cain Electric, Eagle Specialty Products borderline). Always cross-check segment against company name keyword + website ops before scoring. Apollo's NAICS->segment mapping is approximate, especially for hybrid distributor/contractor businesses.",
+      "severity": "medium"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "learning": "Tier-3 Nonprofit (Habitat for Humanity local affiliate \u2014 Truman Heritage Habitat for Humanity) tagged by Apollo as Construction segment. Per INSTRUCTIONS-stage4-7 Tier Rules, Tier 3 Nonprofit/Religious accounts should be marked SKIP regardless of score. Habitat affiliates have ~40 employees + sizable construction exposure but their insurance is typically routed through Habitat International or church-mutual-style nonprofit programs \u2014 not standard small-commercial appetite. Mark SKIP and flag for Edward manual review only if score >= 4.0 with clearly large premium signals.",
+      "severity": "medium"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "learning": "Top-15 candidate selection improvement: pre-build the 15-candidate list, then run 'COMPANY acquired' and 'COMPANY parent company' searches BEFORE drafting (not after). On 2026-05-08 we hit a 13% disqualification rate (2 of top 15 turned out to be F500-acquired) \u2014 wasted research budget on already-doomed candidates. Recommended order: (1) score 27 contacts; (2) build top-15 candidate list; (3) acquisition-screen all 15 (3-5s pacing); (4) replace any disqualified with the next-highest-scored candidate; (5) THEN do deep-research drafting on the verified survivors.",
+      "severity": "medium"
+    },
+    {
+      "date": "2026-05-08",
+      "batch": "stage5_run",
+      "category": "gmail_drafting",
+      "learning": "Gmail create_draft tool (mcp__4a80048c-...__create_draft) accepts both `body` (plaintext) and `htmlBody` (HTML). Tested 15 drafts in this run dispatched in two parallel batches of 5 and one of 5 \u2014 all returned draft IDs cleanly with no rate-limit issues. Recommended pattern: always pass BOTH body (plaintext fallback) and htmlBody (rendered version). Signature block from templates.md renders correctly when included in htmlBody.",
+      "severity": "info"
     }
   ]
 }
