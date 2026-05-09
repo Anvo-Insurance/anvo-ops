@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-09",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
@@ -27,25 +27,25 @@
   },
   "stage4": {
     "file": "stage4_scored.csv",
-    "total_scored": 308,
-    "high_priority": 72,
-    "medium_priority": 187,
-    "low_priority": 21,
-    "skip": 28,
-    "scored_this_run": 27,
-    "last_run_date": "2026-05-08",
-    "last_processed_email": "dgrass@heitkampmasonry.com",
-    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-08 Run #1. Awaiting next apollo-reveals batch."
+    "total_scored": 397,
+    "high_priority": 115,
+    "medium_priority": 224,
+    "low_priority": 22,
+    "skip": 36,
+    "scored_this_run": 9,
+    "last_run_date": "2026-05-09",
+    "last_processed_email": "jasont@hgbutzer.com",
+    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-09 Run #1. Awaiting next apollo-reveals batch."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 196,
+    "total_drafted": 211,
     "drafted_this_run": 15,
     "skipped_no_hook": 0,
     "skipped_data_issue": 0,
     "total_skipped_other": 7,
-    "last_drafted_email": "awindes@tristatewater.com",
-    "last_run_date": "2026-05-08",
+    "last_drafted_email": "nathanael@empoweredkc.com",
+    "last_run_date": "2026-05-09",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {

@@ -1655,6 +1655,93 @@
       "category": "gmail_drafting",
       "learning": "Gmail create_draft tool (mcp__4a80048c-...__create_draft) accepts both `body` (plaintext) and `htmlBody` (HTML). Tested 15 drafts in this run dispatched in two parallel batches of 5 and one of 5 \u2014 all returned draft IDs cleanly with no rate-limit issues. Recommended pattern: always pass BOTH body (plaintext fallback) and htmlBody (rendered version). Signature block from templates.md renders correctly when included in htmlBody.",
       "severity": "info"
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage5_run",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing - Drive title-contains 'Anvo Prospecting Style Guide' returned empty; fullText-contains for the bracketed-AI-generated phrase also empty. Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 15 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Re-emerges every run."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "high",
+      "title": "Buchheit Logistics SKIPPED - subsidiary of Buchheit Enterprises (850 emp parent)",
+      "observation": "Buchheit Logistics, Inc. (rank 631, Jeff Buchheit President) is the trucking/logistics arm of Buchheit Enterprises - a 850-employee multi-business family conglomerate (20 retail stores in MO/IL, ag division, cabinet+metal mfg, logistics). Founded 1934. Insurance is bound at parent corporate level - same pattern as ARCO Beverage Group (2026-05-06) and prior PE-rollup detections.",
+      "workaround": "Add Buchheit Logistics + Buchheit Enterprises (parent) to the running F500/conglomerate skip list. When the email domain is buchheits.com (the parent retail group's domain) on a logistics-named subsidiary, it's a near-certain signal of parent-level insurance ownership. Stage 4 SKIPped before Stage 5 research."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "medium",
+      "title": "FIVE STAR MECHANICAL borderline-oversize: Apollo emp=43 but ZoomInfo shows 100-120",
+      "observation": "Apollo lists FIVE STAR MECHANICAL INC (Wichita KS, rank 624) at 43 employees but ZoomInfo and Member Minute (Wichita Chamber 2022) show 100-120 employees with all in-house trades (HVAC techs, plumbers, pipefitters, fabricators, controls). At 100-120 emp commercial/industrial HVAC mechanical, revenue is plausibly $30-50M - close to but not crossing the >200 emp / >$50M skip threshold. Scored MEDIUM 3.45 with size caveat in notes.",
+      "workaround": "When Apollo emp >= 40 for HVAC/mechanical contractor, always cross-check ZoomInfo + chamber/local press for actual headcount before scoring HIGH. Apollo undercounts mechanical contractors with broad in-house trade rosters more than other contractor segments. MEDIUM 3.45 with size caveat is the right call here - upper-edge sweet spot, defer to Stage 6 conversation if Edward decides to send."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "low",
+      "title": "Hedlund Electric - Apollo location wrong (Wichita) vs actual (McPherson KS); contact is Safety Director (non-DM)",
+      "observation": "Apollo lists Hedlund Electric in Wichita KS at 17 emp but actual HQ is 1201 S Main St McPherson KS 67460 (since 1951, family-owned, niche refinery/pipeline/gas industrial). Apollo-revealed contact David Daughhetee is Safety Director - non-DM but adjacent to insurance file. Scored LOW 2.95.",
+      "workaround": "When Apollo location for KS firm is generic 'Wichita' but website shows a smaller-town HQ, treat the website address as authoritative for outreach context. Safety Director is one of the better non-DM contacts (typically owns the WC mod and certificate file) - consider a routing-style draft if score crosses the MEDIUM line. Here LOW score made it not worth drafting."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "low",
+      "title": "Mid-America Pump Apollo segment 'Manufacturing' is wrong - actually industrial distributor + on-site service",
+      "observation": "Mid-America Pump (rank 11, KCK) is Apollo-segmented as Manufacturing but they are actually an industrial pump DISTRIBUTOR (40 yrs, Cat Pumps + others) plus on-site repair/warranty service. Customer base: chemical, food processing, ethanol, meat packing, poultry, plating, cooling tower, biofuels, power gen, refining, mining. Same drift pattern as 2026-05-06 Baldi/AMF Electric (Manufacturing -> Construction) and 2026-04-23 HC Sharp.",
+      "workaround": "Per 2026-04-23 / 2026-05-06 segment-correction rule: don't re-score, but tailor the Stage 5 opening angle to the actual operations (distribution + on-site service). Distribution + service is a coverage line that gets mis-classed by carriers - the products liability + installation/maintenance + customer-pump inland marine combo is the real exposure profile."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Apollo title 'Director of Operations' for Empowered Electric / Nathanael Galbraith is stale - ZoomInfo and LinkedIn show Project Manager",
+      "observation": "Apollo-revealed contact Nathanael Galbraith at Empowered Electric (rank 145) was titled 'Director of Operations' in stage4_scored.csv, but ZoomInfo + LinkedIn show he progressed Field Director -> Project Manager. He is no longer the DM for insurance. Drafted with explicit routing ask ('if you can point me to whoever owns the insurance file at Empowered'). Same title-drift pattern as Bart's Electric/Cardinal Crest 2026-04-29.",
+      "workaround": "Continue applying the 2026-04-29 Cardinal Crest workaround: when Apollo title disagrees with current ZoomInfo/LinkedIn for revealed contact, draft to the Apollo email but tone the body firm-level and include a routing intro ask. Captured title drift in stage5 notes."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Cissell Mueller - Apollo names Dave Mueller as President but BBB shows Robert Cissell as owner; SKIPPED for upper-edge size",
+      "observation": "Apollo-revealed contact at Cissell Mueller Construction (rank 628, St. Peters MO) was Dave Mueller, President. BBB filing names Robert Cissell as owner. Co-owner/partnership pattern. Firm has done $150M+ in alt-energy LH2/CNG fueling projects + cannabis/student housing/medical. 39 emp Apollo with GC multiplier 2-3x = upper edge of sweet spot. Scored MEDIUM 3.45 but not selected for top-15 drafts this run.",
+      "workaround": "Same multi-owner pattern as 2026-04-23 Renovating KC (Kaleigh -> Ross brothers) and 2026-05-04 Schweiger (WBE owner not on Apollo). When backlog clears, draft Cissell Mueller with firm-level positioning rather than personal biography, and acknowledge the partnership in the body without explicitly routing - both Dave and Robert are partners."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Williams Construction SBJ '200 emp' growth target was forecast - ZoomInfo + Zippia confirm 98-100 emp / $23.5M rev (inside sweet spot)",
+      "observation": "Springfield Business Journal piece on James Williams (Williams Construction Co., rank 601) said the company grew from 30 to 200 emp since 2015. Cross-check: LinkedIn 51-200 range, ZoomInfo 98 emp, Zippia 100 emp, Kona Equity $23.5M revenue. The '200' was likely aspirational/forecast in the article, not current state. Within sweet spot - drafted normally.",
+      "workaround": "When a press article cites a large headcount or revenue figure for a GC, always triangulate against ZoomInfo + Zippia + Kona Equity / Datanyze. Press-cited growth numbers tend to be aspirational; ZoomInfo/Zippia are recent (within 6-12 months). Same pattern as 2026-05-06 United Construction '$1B revenue' which was cumulative project value."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage5_run",
+      "category": "gmail_drafting",
+      "severity": "info",
+      "learning": "15 drafts this run via mcp__4a80048c-...__create_draft, dispatched in 3 parallel batches of 5. All returned draft IDs cleanly with no rate-limit errors. Pattern from 2026-05-08 (parallel batches of 5, both body + htmlBody) continues to work reliably."
+    },
+    {
+      "date": "2026-05-09",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "info",
+      "title": "State file stage4 counts were stale - reconciled to CSV truth",
+      "observation": "nightly-run-state.json stage4 counts going into 2026-05-09 read HIGH=72/MEDIUM=187/LOW=21/SKIP=28 (total=308). Actual CSV count was 388 rows pre-run. After scoring 9 new contacts (1 HIGH, 6 MEDIUM, 1 LOW, 1 SKIP), CSV now totals 397. State numbers had drifted from CSV truth across multiple prior runs that updated state-counts incrementally without re-counting. Updated state to fresh CSV-derived totals: HIGH=115/MEDIUM=224/LOW=22/SKIP=36.",
+      "workaround": "Always recompute stage4 totals by streaming the CSV at end of run rather than incrementing prior counts. This is now the canonical pattern for state file updates."
     }
   ]
 }
