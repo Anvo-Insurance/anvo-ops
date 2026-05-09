@@ -1742,6 +1742,5 @@
       "title": "State file stage4 counts were stale - reconciled to CSV truth",
       "observation": "nightly-run-state.json stage4 counts going into 2026-05-09 read HIGH=72/MEDIUM=187/LOW=21/SKIP=28 (total=308). Actual CSV count was 388 rows pre-run. After scoring 9 new contacts (1 HIGH, 6 MEDIUM, 1 LOW, 1 SKIP), CSV now totals 397. State numbers had drifted from CSV truth across multiple prior runs that updated state-counts incrementally without re-counting. Updated state to fresh CSV-derived totals: HIGH=115/MEDIUM=224/LOW=22/SKIP=36.",
       "workaround": "Always recompute stage4 totals by streaming the CSV at end of run rather than incrementing prior counts. This is now the canonical pattern for state file updates."
-    }
-  ]
-}
+    },
+    
