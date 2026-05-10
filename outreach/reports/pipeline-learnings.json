@@ -1799,74 +1799,137 @@
       "learning": "Run #1 2026-05-09 throughput: 11 batch22 trailing entries processed (8 REVEALED + 3 SKIP), 8 email-credits, 0 phone reveals (per accelerate-mode rule, 24 days remaining > 10 day threshold). Run time approx 50-60 min wall-clock including the authoritative-credit-panel read at end. Three SKIP classes hit this run (red-X-DM-only / no-DM-small-firm / not-in-Apollo) - confirms Stage 2 verification correctly recommends REVEAL but Apollo-availability filters out ~25-30% even at the click stage; SKIP heuristics are doing real work in saving credits.",
       "severity": "info"
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "style_guide",
-        "severity": "low",
-        "observation": "style_guide_missing - Drive title-contains 'Anvo Prospecting Style Guide' returned empty; fullText-contains for the bracketed-AI-generated phrase also empty. Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 8 drafts this run.",
-        "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Re-emerges every run."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "style_guide",
+      "severity": "low",
+      "observation": "style_guide_missing - Drive title-contains 'Anvo Prospecting Style Guide' returned empty; fullText-contains for the bracketed-AI-generated phrase also empty. Default tone rules from INSTRUCTIONS-stage4-7.md and templates.md applied across all 8 drafts this run.",
+      "workaround": "Continue with default tone (4-7 sentence body, peer-to-peer, signature block from templates.md). Style guide should be created in Stage 7 once Edward has sent ~10+ emails. Re-emerges every run."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage4_run",
-        "category": "stage4_scoring",
-        "severity": "info",
-        "title": "Batch22 trailing-8 scoring complete - 6 HIGH / 2 MEDIUM",
-        "observation": "Scored ranks 633-640 from batch22 Stage 3 reveals: Sandifer (HIGH 4.00), Creech Horse Transportation (HIGH 4.75 - top of run, family equine specialty), CJC Transport (HIGH 4.40), CMW LLC (HIGH 4.40), CM3 (HIGH 4.40), CB Construction (HIGH 4.40), CFM Logistics (MEDIUM 3.80), SFP Landscaping (MEDIUM 3.80). Six of eight are Tier 1 Construction (mostly Wichita KS mechanical/controls + KS GC), two are Transport/Logistics, none triggered F500/PE-rollup or oversize SKIP after acquisition screening. State stage4 totals recomputed from CSV: HIGH=121 / MEDIUM=226 / LOW=22 / SKIP=36 / total=405.",
-        "workaround": "Acquisition screening (Sonepar/EMCOR/Apex/PremiStar/etc per 2026-05-08 learning) ran clean on all 8 - none of these batch22 entities are part of a F500 or PE rollup. Pattern reinforced: small KS/MO mechanical and family-trucking firms are still independent at this scale and rank range."
+    {
+      "date": "2026-05-10",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "info",
+      "title": "Batch22 trailing-8 scoring complete - 6 HIGH / 2 MEDIUM",
+      "observation": "Scored ranks 633-640 from batch22 Stage 3 reveals: Sandifer (HIGH 4.00), Creech Horse Transportation (HIGH 4.75 - top of run, family equine specialty), CJC Transport (HIGH 4.40), CMW LLC (HIGH 4.40), CM3 (HIGH 4.40), CB Construction (HIGH 4.40), CFM Logistics (MEDIUM 3.80), SFP Landscaping (MEDIUM 3.80). Six of eight are Tier 1 Construction (mostly Wichita KS mechanical/controls + KS GC), two are Transport/Logistics, none triggered F500/PE-rollup or oversize SKIP after acquisition screening. State stage4 totals recomputed from CSV: HIGH=121 / MEDIUM=226 / LOW=22 / SKIP=36 / total=405.",
+      "workaround": "Acquisition screening (Sonepar/EMCOR/Apex/PremiStar/etc per 2026-05-08 learning) ran clean on all 8 - none of these batch22 entities are part of a F500 or PE rollup. Pattern reinforced: small KS/MO mechanical and family-trucking firms are still independent at this scale and rank range."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "stage5_drafting",
-        "severity": "low",
-        "title": "Sandifer 'recently taken the helm' soft-cite applied per 2026-05-09 ownership-mismatch learning",
-        "observation": "Sandifer Engineering & Controls draft (Curtis Johnson, Owner) used the 'recently taken the helm' soft-cite phrasing recommended by the 2026-05-09 Sandifer ownership-mismatch learning. Avoided naming Curtis-vs-Bob-Sandifer-vs-Aaron-Rusher disagreement explicitly; framed the legacy as 45+ years of building automation that Curtis is stepping into. Worked cleanly as an opening hook without committing to facts that may be wrong.",
-        "workaround": "When Apollo Owner-of-record disagrees with website-listed President AND a third Business Owner row exists, lean into the 'recently took ownership' framing rather than try to reconcile - the recipient knows their own ownership picture, and the soft-cite is true regardless of which name is currently on the door."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "Sandifer 'recently taken the helm' soft-cite applied per 2026-05-09 ownership-mismatch learning",
+      "observation": "Sandifer Engineering & Controls draft (Curtis Johnson, Owner) used the 'recently taken the helm' soft-cite phrasing recommended by the 2026-05-09 Sandifer ownership-mismatch learning. Avoided naming Curtis-vs-Bob-Sandifer-vs-Aaron-Rusher disagreement explicitly; framed the legacy as 45+ years of building automation that Curtis is stepping into. Worked cleanly as an opening hook without committing to facts that may be wrong.",
+      "workaround": "When Apollo Owner-of-record disagrees with website-listed President AND a third Business Owner row exists, lean into the 'recently took ownership' framing rather than try to reconcile - the recipient knows their own ownership picture, and the soft-cite is true regardless of which name is currently on the door."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "stage5_drafting",
-        "severity": "low",
-        "title": "CFM Logistics drafted firm-level with light routing tone per cross-state-merge + title-drift handling",
-        "observation": "CFM Logistics (John Conti, Apollo VP Operations vs ZoomInfo Director of Sales) drafted at MEDIUM 3.80 with the runbook-recommended firm-level positioning. Body opened on the 30-year St. Louis 3PL legacy rather than personal biography, ended with 'if there's someone else there who handles the insurance file' as light routing acknowledgement. Avoids committing to Conti's exact title.",
-        "workaround": "Continue 2026-05-06 + 2026-05-07 heuristic for title-drift cases: VP Ops/Sales/Dev with disputed title -> firm-level body + light routing tail. Don't make explicit 'who handles insurance' the primary CTA - keep it as an or-fallback at the end of the soft-CTA so the email still reads as direct."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "low",
+      "title": "CFM Logistics drafted firm-level with light routing tone per cross-state-merge + title-drift handling",
+      "observation": "CFM Logistics (John Conti, Apollo VP Operations vs ZoomInfo Director of Sales) drafted at MEDIUM 3.80 with the runbook-recommended firm-level positioning. Body opened on the 30-year St. Louis 3PL legacy rather than personal biography, ended with 'if there's someone else there who handles the insurance file' as light routing acknowledgement. Avoids committing to Conti's exact title.",
+      "workaround": "Continue 2026-05-06 + 2026-05-07 heuristic for title-drift cases: VP Ops/Sales/Dev with disputed title -> firm-level body + light routing tail. Don't make explicit 'who handles insurance' the primary CTA - keep it as an or-fallback at the end of the soft-CTA so the email still reads as direct."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "stage5_drafting",
-        "severity": "medium",
-        "title": "SFP Landscaping non-DM revealed (Eric Labarge Business Manager per BBB; Mark Labarge is President)",
-        "observation": "Apollo revealed Eric Labarge titled 'Partner' but BBB filing names Mark Labarge as President and Eric as Business Manager. Same Labarge family but Eric is non-DM - drafted firm-level with 'whoever owns the insurance file at SFP' routing acknowledgement. Apollo-revealed family-business titles (Partner, Manager) often disagree with BBB-of-record - check BBB before assuming DM-status when the Apollo title is generic.",
-        "workaround": "Add to Stage 4 enrichment checklist: when Apollo title is 'Partner' or 'Manager' on a small family-owned firm with multiple same-surname contacts likely visible, run a quick BBB or Yelp owner check to confirm whether the revealed contact is the actual President/Owner. If not, draft firm-level with light routing tail. Same shape as 2026-05-07 Champion Floor (Kim Russ daughter of Ralph Kuehn) and 2026-04-23 Renovating KC (Kaleigh -> Ross brothers)."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "medium",
+      "title": "SFP Landscaping non-DM revealed (Eric Labarge Business Manager per BBB; Mark Labarge is President)",
+      "observation": "Apollo revealed Eric Labarge titled 'Partner' but BBB filing names Mark Labarge as President and Eric as Business Manager. Same Labarge family but Eric is non-DM - drafted firm-level with 'whoever owns the insurance file at SFP' routing acknowledgement. Apollo-revealed family-business titles (Partner, Manager) often disagree with BBB-of-record - check BBB before assuming DM-status when the Apollo title is generic.",
+      "workaround": "Add to Stage 4 enrichment checklist: when Apollo title is 'Partner' or 'Manager' on a small family-owned firm with multiple same-surname contacts likely visible, run a quick BBB or Yelp owner check to confirm whether the revealed contact is the actual President/Owner. If not, draft firm-level with light routing tail. Same shape as 2026-05-07 Champion Floor (Kim Russ daughter of Ralph Kuehn) and 2026-04-23 Renovating KC (Kaleigh -> Ross brothers)."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "gmail_drafting",
-        "severity": "info",
-        "learning": "8 drafts this run via mcp__4a80048c-...__create_draft, dispatched in 2 parallel batches (5 + 3). All 8 returned draft IDs cleanly with no rate-limit errors. Pattern from 2026-05-08/09 (parallel batches of 5, both body + htmlBody) continues to work reliably on a smaller 8-draft load."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "gmail_drafting",
+      "severity": "info",
+      "learning": "8 drafts this run via mcp__4a80048c-...__create_draft, dispatched in 2 parallel batches (5 + 3). All 8 returned draft IDs cleanly with no rate-limit errors. Pattern from 2026-05-08/09 (parallel batches of 5, both body + htmlBody) continues to work reliably on a smaller 8-draft load."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage4_run",
-        "category": "stage4_scoring",
-        "severity": "low",
-        "title": "Initial state file said 'Caught up' but stage3 vs stage4 diff returned 8 unscored - state.stage3.total_revealed_to_date is not authoritative",
-        "observation": "nightly-run-state.json stage4 entry from 2026-05-09 said 'Caught up - 0 unscored REVEALED contacts in stage3_results.csv'. Actual diff this run found 8 unscored REVEALED contacts (ranks 633-640 - the batch22 reveals). The state-file 'caught up' note appears to have been written before all batch22 stage3 writes landed, or the apollo-reveals task wrote the stage3 rows after the scoring task's prior diff. Same shape as 2026-05-04 'apollo-reveals task was mid-write when scoring task started' learning.",
-        "workaround": "Always re-run the stage3 vs stage4 diff at the start of every scoring/drafting run regardless of what state.stage4.remaining_to_score says. The diff is authoritative; the state file's 'caught up' note can be a snapshot from an earlier moment. This is now a confirmed-recurring pattern - the state's remaining_to_score field should be treated as informational, not gating."
+    {
+      "date": "2026-05-10",
+      "batch": "stage4_run",
+      "category": "stage4_scoring",
+      "severity": "low",
+      "title": "Initial state file said 'Caught up' but stage3 vs stage4 diff returned 8 unscored - state.stage3.total_revealed_to_date is not authoritative",
+      "observation": "nightly-run-state.json stage4 entry from 2026-05-09 said 'Caught up - 0 unscored REVEALED contacts in stage3_results.csv'. Actual diff this run found 8 unscored REVEALED contacts (ranks 633-640 - the batch22 reveals). The state-file 'caught up' note appears to have been written before all batch22 stage3 writes landed, or the apollo-reveals task wrote the stage3 rows after the scoring task's prior diff. Same shape as 2026-05-04 'apollo-reveals task was mid-write when scoring task started' learning.",
+      "workaround": "Always re-run the stage3 vs stage4 diff at the start of every scoring/drafting run regardless of what state.stage4.remaining_to_score says. The diff is authoritative; the state file's 'caught up' note can be a snapshot from an earlier moment. This is now a confirmed-recurring pattern - the state's remaining_to_score field should be treated as informational, not gating."
     },
-{
-        "date": "2026-05-10",
-        "batch": "stage5_run",
-        "category": "stage5_drafting",
-        "severity": "info",
-        "title": "Run summary: 8 scored / 8 drafted, no SKIPs at scoring or drafting, no F500 disqualifications",
-        "observation": "Smaller-than-typical run because batch22 trailing-8 was the only backlog. All 8 candidates passed F500/PE-rollup screening, all 8 generated specific opening hooks (no SKIPPED_NO_HOOK), all 8 reached DRAFTED. Two MEDIUMs (CFM Logistics, SFP Landscaping) drafted with deliberate firm-level/routing-tail positioning per the title-drift + non-DM heuristics. Cap of 15 drafts/run not approached. Run completed end-to-end in approximately 30-40 min wall clock including the 8 acquisition screens and the 8 deep-research+draft cycles.",
-        "workaround": "Confirms the 2026-05-08 'pre-build top-15 candidate list and acquisition-screen all before drafting' pattern works well at smaller batch sizes too - the 8 parallel acquisition WebSearches finished in <2 min and gave clean 'no acquisition' signals across all 8."
+    {
+      "date": "2026-05-10",
+      "batch": "stage5_run",
+      "category": "stage5_drafting",
+      "severity": "info",
+      "title": "Run summary: 8 scored / 8 drafted, no SKIPs at scoring or drafting, no F500 disqualifications",
+      "observation": "Smaller-than-typical run because batch22 trailing-8 was the only backlog. All 8 candidates passed F500/PE-rollup screening, all 8 generated specific opening hooks (no SKIPPED_NO_HOOK), all 8 reached DRAFTED. Two MEDIUMs (CFM Logistics, SFP Landscaping) drafted with deliberate firm-level/routing-tail positioning per the title-drift + non-DM heuristics. Cap of 15 drafts/run not approached. Run completed end-to-end in approximately 30-40 min wall clock including the 8 acquisition screens and the 8 deep-research+draft cycles.",
+      "workaround": "Confirms the 2026-05-08 'pre-build top-15 candidate list and acquisition-screen all before drafting' pattern works well at smaller batch sizes too - the 8 parallel acquisition WebSearches finished in <2 min and gave clean 'no acquisition' signals across all 8."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "credit_management",
+      "severity": "critical",
+      "learning": "Step 0.5 enrichment-disable runs TOO LATE when prior session left a search in URL + enrichment toggle ON. 2026-05-10 Run #1 lost ~25-27 credits to background enrichment that ran on stale SFP Landscaping search (17 contacts) before I clicked-disabled. Mitigation: Step 0.5 must FIRST navigate to https://app.apollo.io/#/people with NO query params (just /people), wait 3s, then disable toggle, THEN start work. Do NOT navigate directly to a qOrganizationName URL until toggle confirmed off."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "stage2_verification",
+      "severity": "high",
+      "learning": "JED Transportation acquired by Hoffmann Family of Companies (~2023) - missed at Stage 2 verification because website (jedlimousine.com) still shows JED as standalone. Per Bullet Liner/Hardesty batch21 precedent, Stage 2 must include 'COMPANY acquired' WebSearch as MANDATORY check. Hazzard Moving similarly merged into McGuire Moving - same miss-pattern. SKIP large-corp-subsidiary at Stage 3 wastes only 0 credits if Stage 2 catches; misses cost full reveal credit. ROI strongly favors web-search-acquisition step."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "apollo_navigation",
+      "severity": "high",
+      "learning": "Apollo company name search has special-char + name-collision failure modes. Two patterns this run: (1) Periods break query - 'R.E. Smith Construction' returns 0 results; even 'RE Smith Construction' returns 0. Domain-prefix 'resmithconst' works. (2) Generic names match wrong entities globally - 'K&S Associates' returned Baltimore MD / Santa Monica CA / Bengaluru India / Dedham MA accounting firms but not the St. Louis MO construction firm. Domain-prefix 'ksgcstl' (NOT full domain) worked. Generalized: if Apollo company query has special chars OR returns globally-diverse contacts, fall back to domain-prefix (no TLD) immediately."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "learning": "Stuck-cell extended-wait pattern: 5 of 16 click reveals this run resolved on extended-wait alone (no pagination cycle needed). Wait times: Andy Ross 13s, Noah Bradley 14s, Mark Dalton 17s, Harry Burdg 17s, Dustin Schwartz 19s, Josh Koehnemann 17s. Pagination-cycle workaround was NOT used this run. Extended-wait (~17-20s after click) is currently the simplest unstick pattern when 'Saving results...' or 'Trying other sources...' shown. Use pagination-cycle only if extended-wait > 20s still stuck."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "stage2_verification",
+      "severity": "medium",
+      "learning": "Direct Freight Services (Chillicothe MO) is a SaaS load-board similar to BulkLoads batch22 - NOT an actual freight carrier despite Apollo Transport/Logistics segment. Identifying signal: website is a B2B marketplace (Find Loads / Post Trucks / Quick Pay). Stage 2 SKIP per BulkLoads precedent. Continue using website-text 'load board / loads daily / freight brokers' detection as SaaS signal."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "stage5_drafting",
+      "severity": "medium",
+      "learning": "Multi-VP-no-Pres pattern (Rhodey Construction): 5 VPs in Apollo + family-owned-by-non-Apollo-contact (Pam Duffy daughter of founder John Rhodey 1972; women-owned firm). Picked senior VP Jim Imperiale (LEED AP DBIA credentials) as operational DM. Stage 5 personalization should reference Pam Duffy as president if drafting context allows; reach Imperiale because he's the project-pursuit decision-maker. Similar pattern likely with other multi-VP firms (e.g. RG Ross only-VP Dustin Schwartz)."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "learning": "Pre-revealed cached email pattern - Stanford Richardson Interface Construction CEO showed 'email-cell-verified' tour-id and revealed instantly post-click without going through Saving/Trying state (vs typical 5-7s reveal). Similar to Hibbs Luxury Homes pattern from batch21. Apollo flags some emails as cached/verified. Doesn't appear to charge less but resolves faster. No action needed."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "apollo_reveal",
+      "severity": "medium",
+      "learning": "NO_EMAIL outcomes (3 wasted credits this run): Karen Alessandro IC&E CEO (Pittsburgh PA personal location but real CEO of St Peters MO IC&E per Bloomberg/LeadIQ); Bill Giessing Brockmiller President; Michael Duffy Roanoke EVP+Owner. All three had 'Access email' click target which appeared revealable; Apollo charged 1 credit each then returned No-email after 8-15s. Pattern: cannot predict NO_EMAIL before click. Continue accepting ~10-20% NO_EMAIL waste rate as cost of doing business."
+    },
+    {
+      "date": "2026-05-10",
+      "batch": 23,
+      "category": "company_matching",
+      "severity": "low",
+      "learning": "no-DM-in-Apollo pattern recurrence: 4 SKIPs this run (Rock Hill Mechanical, RF Meeh, Hazzard Moving, R.E. Smith Construction) all had real CEOs/Pres/Owners documented on web (Stephen Schnitzer, Robert F. Meeh + Louis Troha Jr, Pat Hazzard, Smith family) but absent from Apollo. Apollo had only operational-layer contacts (Field Supt, Project Mgrs, Sales Mgr). Per Home Lumber/STUART batch22 precedent: SKIP rather than waste credit on rank-7+ contacts. SKIP rate this run: 5 of 24 = ~21% (within normal range; batch22 had 8 of 25 = 32%)."
     }
   ]
 }

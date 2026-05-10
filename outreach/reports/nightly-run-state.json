@@ -4,26 +4,26 @@
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 650
+    "stage2_completed_through_company_index": 675
   },
   "stage2": {
     "batch_files": [
-      "A2-stage2-batch{N}-verified.csv for N in 1..22"
+      "A2-stage2-batch{N}-verified.csv for N in 1..23"
     ],
-    "batches_processed": 22,
-    "total_verified": 650,
-    "next_batch_number": 23,
-    "note": "Batch 22 split across two runs: Stage 2 + first ~13 Stage 3 reveals completed 2026-05-08 (offline/orphan run that did not update state). 2026-05-09 Run #1 finished the trailing 11 entries plus an authoritative end-of-run credit reading. Final batch22 totals: 25 verified (24 REVEAL, 1 SKIP - BulkLoads SaaS misclassification); 17 REVEALED + 8 SKIP at Stage 3 (Cardoza/COBB/Shade/Satterlee from 5/8 + Home Lumber red-X-DM-only + STUART no-DM + CMT,LLC not-in-Apollo + BulkLoads Stage 2 SaaS). FIVE STAR MECHANICAL INC successfully revealed (Stacey Richards President page2)."
+    "batches_processed": 23,
+    "total_verified": 675,
+    "next_batch_number": 24,
+    "note": "Batch 23 complete 2026-05-10 Run #1: 25 verified (24 REVEAL + 1 SKIP - Direct Freight Services SaaS load-board misclassification per BulkLoads batch22 precedent). St. Louis MO heavy (16 of 25). Stage 3 reveals immediately followed in same run."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 477,
+    "total_revealed_to_date": 493,
     "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "Batch 22 fully cleared. No carryover.",
+      "description": "Batch 23 fully cleared. No carryover.",
       "total_pending": 0
     },
-    "note": "2026-05-09 Run #1: trailing 11 batch22 entries. 8 REVEALED (Sandifer Curtis Johnson Owner page-cycle / Creech Kyle Creech DVM Pres-Owner direct-cell / CJC Chris Connolly Pres pagination / CMW Matt Smith President pagination / CM3 Mike Strelow President direct-cell / CB Construction Joe Burch Pres&COO pagination / CFM John Conti VP Ops pagination / SFP Eric Labarge Partner direct-cell). 3 SKIP this run (Home Lumber - only DM red-X; STUART - no-DM small-firm; CMT,LLC - cross-state merge / not-in-Apollo). 8 email-credits this run. Pagination cycle (forward to page 2 + back to page 1) was the dominant unstuck pattern this run, replacing the profile-panel fallback that dominated batch21. KEY PATTERN: cell-stuck-on-Saving still dominant but pagination-cycle works as well as profile-panel fallback and avoids the contact-page navigation cost. Authoritative end-of-run credit reading: 191/2505 used; 2314 remaining (cycle 5/2-6/2 24 days left at ~96/day)."
+    "note": "2026-05-10 Run #1: Batch 23 reveals - 16 REVEALED + 3 NO_EMAIL + 5 SKIP. Reveals: Stanford Richardson Interface CEO (pre-revealed/cached), Andy Ross Ross Construction Co-Owner (stuck-Saving), Noah Bradley Doug Bradley VP (stuck-Saving), Dino Vainalis Dino's Logistics Pres (quick), Matthew Welker Day Transfer Business Partner (quick), Mark Dalton DALTON LOGISTICS Owner (stuck-Trying), Harry Burdg Burdg-Dunham Pres (stuck-Trying), Barb Shipman Risen Mech Pres (quick), Rich Kramer Pres (quick), Kelly Shrum JJ Smith Masonry VP-Estimating (quick - only DM), Michael Schulte Jay Henges COO (Schulte family pattern; email domain henges.com), Jim Imperiale Rhodey Construction Sr VP (real owner Pam Duffy not in Apollo), Jennifer Juan RJP Electric CEO (quick), Dustin Schwartz RG Ross VP (stuck-Trying), Josh Koehnemann KBUILD CEO (Koehnemann family; stuck-Saving), Thomas Kraska K&S Associates STL President (domain-search ksgcstl required - K&S name too generic). NO_EMAIL: Karen Alessandro IC&E CEO (Pittsburgh PA personal but St Peters MO firm per Bloomberg/LeadIQ; wasted credit), Bill Giessing Brockmiller Pres (wasted), Michael Duffy Roanoke EVP+Owner (wasted). SKIP: Rock Hill Mechanical (no-DM-in-Apollo + malformed Rock Corporation row), JED Transportation (large-corp-subsidiary - Hoffmann Family of Companies acquisition Stage 2 missed), Hazzard Moving (no-DM + recent McGuire merger), RF Meeh (no-DM-in-Apollo - real Pres Robert F. Meeh + Owner Louis Troha Jr not in Apollo), R.E. Smith Construction (no-DM - Smith family GC since 1952; Apollo only has Field Supt Dusty Smith)."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -35,7 +35,7 @@
     "scored_this_run": 8,
     "last_run_date": "2026-05-10",
     "last_processed_email": "eric@sfplandscapinginc.com",
-    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-10 scoring/drafting run. Awaiting next apollo-reveals batch (batch 23). Note: state.stage3 says total_revealed_to_date=477 but stage3_results.csv has 406 REVEALED rows with email + 199 SKIP — the 477 figure is the apollo-reveals task's running counter and may include older/dropped reveals. CSV-truth from this run: 405 stage4 scored rows, 396 unique non-empty emails. Counts recomputed from CSV per 2026-05-09 canonical pattern."
+    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-10 scoring/drafting run. Awaiting next apollo-reveals batch (batch 23). Note: state.stage3 says total_revealed_to_date=477 but stage3_results.csv has 406 REVEALED rows with email + 199 SKIP \u2014 the 477 figure is the apollo-reveals task's running counter and may include older/dropped reveals. CSV-truth from this run: 405 stage4 scored rows, 396 unique non-empty emails. Counts recomputed from CSV per 2026-05-09 canonical pattern."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
@@ -51,26 +51,28 @@
   "credit_cycle": {
     "cycle_start": "2026-05-02",
     "cycle_end": "2026-06-02",
-    "credits_remaining_apollo_ui": 2314,
-    "credits_used_this_cycle": 191,
-    "email_credits_spent_this_session": 8,
+    "credits_remaining_apollo_ui": 2268,
+    "credits_used_this_cycle": 237,
+    "email_credits_spent_this_session": 19,
     "phone_credits_spent_this_session": 0,
     "monthly_cap": 2505,
-    "note": "2026-05-09 Run #1 authoritative end-of-run reading from https://app.apollo.io/#/settings/credits/current: 191 credits used / 2505 cap / 2314 remaining (email 191, mobile 0, enrichment 0, AI 0). Cycle 5/2-6/2; 24 days left; daily budget ~96/day - on track. Drift since 2026-05-07 end-of-run state-estimate (141): +50 credits = 8 reveals this run + ~42 from scoring/drafting task lookups on 5/8+5/9 + drift. Confirms prior learning that state-file algebra is unreliable and authoritative Settings panel reading is required at end-of-run. Note: monthly_cap value 2505 from Apollo UI today is +5 above the 2500 base Basic-plan allocation - residual carry/comp from prior cycle."
+    "note": "2026-05-10 Run #1 authoritative end-of-run reading from https://app.apollo.io/#/settings/credits/current: 237 credits used / 2505 cap / 2268 remaining. Cycle 5/2-6/2; 23 days left; daily budget ~98/day - on track. Drift since 2026-05-09 end-of-run state (191 used): +46 credits = 19 click reveals (16 REVEALED + 3 NO_EMAIL) + ~25-27 background enrichment from leftover SFP Landscaping search loaded at session start (toggle was ON from prior session's end and ran enrichment on the 17 contacts before I disabled it). KEY LEARNING: Step 0.5 must navigate to /people with NO query params first to avoid auto-running prior-session search with enrichment ON."
   },
   "daily_runs": {
-    "date": "2026-05-09",
+    "date": "2026-05-10",
     "count": 1
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state + pipeline-learnings - 2026-05-10 scoring run cleared the batch22 backlog (8 scored: 6 HIGH/2 MEDIUM, 8 drafted by edward). Sandifer ownership-mismatch was applied via 'recently taken the helm' soft-cite; CFM Logistics drafted firm-level due to title drift; SFP Landscaping drafted with light routing tone (Eric is BBB Business Manager not President).",
-    "2. PRIORITY A: Stage 2 batch 23 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after batch22 set). Resume fuzzy-prefix 3+ token matching against batch1-22 to avoid false dedup.",
-    "3. PRIORITY B: Stage 3 reveals on batch 23 REVEAL companies.",
-    "4. PRIORITY C: Phase 2 phones - SKIP (still 24 days left in cycle, normal pace at 96/day). Re-evaluate when days_left <= 10.",
-    "5. KEY LEARNING 2026-05-09 Run #1 (pagination-cycle as stuck-cell fix): 5 of 8 click reveals this run unstuck via 'click page 2 -> click page 1' pagination cycle (CJC, CMW, CB Construction, CFM) or just navigating to page 2 to find the row (CMW, CFM). Profile-panel fallback was used 0 times this run (vs 12 of 12 in batch21). Pagination-cycle is faster (no contact-page nav) and avoids the rare double-charge risk seen on Sandifer.",
-    "6. KEY LEARNING 2026-05-09 Run #1 (red-X DM-only SKIP - Home Lumber pattern): 200-emp Home Lumber & Supply had only one DM in Apollo (CEO Hervey W) with email-cell-unavailable + 14 non-DM contacts. Per Sauerwein batch8 + DM-with-red-X-only heuristic: SKIP rather than burn 1 credit for likely NO_EMAIL. Distinguish from no-DM-small-firm pattern (no DM in Apollo at all): here a DM exists but is unrevealable.",
-    "7. KEY LEARNING 2026-05-09 Run #1 (not-in-Apollo SKIP - CMT,LLC pattern): Small St. Louis MWBE GC (cmtconstructiongroup.com) returned 0 results across all CMT search variants (CMT Construction Group / CMT LLC / CMT Construction / domain-search). Apollo simply does not have entity. Reach via website-direct contact form. This is a third SKIP class alongside cross-state-merge and no-DM-small-firm.",
-    "8. KEY LEARNING 2026-05-09 Run #1 (Sandifer ownership-mismatch): Stage 2 web verification said 'Bob Sandifer President' from website but Apollo Owner-of-record is Curtis Johnson (with a duplicate Aaron Rusher 'Business Owner' row). Likely ownership transition not reflected on website yet. Stage 5 drafting should mention 'recently took ownership' or check LinkedIn for confirmation before personalization."
+    "1. Read state + pipeline-learnings - focus on 2026-05-10 Run #1 entries (Step 0.5 enrichment-pre-disable risk; JED large-corp acquisition Stage 2 missed; K&S Associates name-too-generic domain-search workaround; multi-VP-no-Pres pattern at Rhodey).",
+    "2. PRIORITY A: Stage 2 batch 24 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after batch23 set). Resume fuzzy-prefix 3+ token matching against batch1-23 to avoid false dedup. Add web-search step for 'COMPANY acquired' before reveal to catch JED/Hazzard-style large-parent acquisitions.",
+    "3. PRIORITY B: Stage 3 reveals on batch 24 REVEAL companies.",
+    "4. PRIORITY C: Phase 2 phones - SKIP (still 23 days left in cycle, normal pace at 96/day). Re-evaluate when days_left <= 10.",
+    "5. KEY LEARNING 2026-05-10 Run #1 (Step 0.5 enrichment risk): When session starts with prior search params in URL (e.g. SFP Landscaping leftover from prior session) AND enrichment toggle is on from prior session's end, the page auto-runs the search with enrichment, burning ~25-27 credits silently before Step 0.5 toggle-disable runs. Mitigation: Step 0.5 must first navigate to https://app.apollo.io/#/people WITH NO query params (just /people), THEN check toggle, THEN navigate to first reveal target. This avoids auto-search on stale params.",
+    "6. KEY LEARNING 2026-05-10 Run #1 (large-corp-subsidiary missed at Stage 2): JED Transportation was acquired by Hoffmann Family of Companies (~2023) - this was missed at Stage 2 verification because the website still shows JED as standalone. Fix: Stage 2 must include 'COMPANY acquired' WebSearch as a mandatory check, not optional. Per Bullet Liner/Hardesty batch21 precedent, similar miss rate likely on Hazzard Moving (now part of McGuire family).",
+    "7. KEY LEARNING 2026-05-10 Run #1 (K&S Associates name-too-generic): Apollo company name search for 'K&S Associates' returned 4 different entities globally (Baltimore MD accounting / Santa Monica CA / Bengaluru India / Dedham MA). Searching by domain-prefix 'ksgcstl' (not full domain) immediately returned correct St. Louis K&S Associates LLC. Generalized: when Apollo name search returns globally diverse contacts at same company name, fall back to domain-prefix search.",
+    "8. KEY LEARNING 2026-05-10 Run #1 (multi-VP-no-Pres pattern at Rhodey): Rhodey Construction has 5 VPs (Imperiale, Feldmann, Unterreiner, Bernie+Mackenzie Seiffert) but no CEO/Pres/Owner in Apollo (real owner Pam Duffy + her late father John Rhodey founder 1972). Picked senior VP Jim Imperiale (LEED AP DBIA credentials) as operational DM. Stage 5 should mention Pam Duffy if relevant for personalization.",
+    "9. KEY LEARNING 2026-05-10 Run #1 (R.E. Smith Apollo search special-char): 'R.E. Smith Construction' query in Apollo returns 0 results because of periods. Stripping to 'RE Smith Construction' also fails. Domain-prefix 'resmithconst' worked. Generalized: any Apollo company query containing periods, ampersands, or hyphens should drop them OR fall back to domain-prefix immediately.",
+    "10. KEY LEARNING 2026-05-10 Run #1 (Saving-results stuck cells): 5 of 16 click reveals required >7s wait (Saving-results / Trying-other-sources stuck cells): Andy Ross 13s, Noah Bradley 14s, Mark Dalton 17s, Harry Burdg 17s, Dustin Schwartz 19s, Josh Koehnemann 17s. Pagination cycle workaround NOT needed this run - extended-wait alone resolved all stuck cells. Continues to support batch22 finding that pagination-cycle is one of several stuck-cell unsticking patterns alongside extended-wait."
   ]
 }
