@@ -4,26 +4,26 @@
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
     "total_rows": 1495,
-    "stage2_completed_through_company_index": 675
+    "stage2_completed_through_company_index": 700
   },
   "stage2": {
     "batch_files": [
-      "A2-stage2-batch{N}-verified.csv for N in 1..23"
+      "A2-stage2-batch{N}-verified.csv for N in 1..24"
     ],
-    "batches_processed": 23,
-    "total_verified": 675,
-    "next_batch_number": 24,
-    "note": "Batch 23 complete 2026-05-10 Run #1: 25 verified (24 REVEAL + 1 SKIP - Direct Freight Services SaaS load-board misclassification per BulkLoads batch22 precedent). St. Louis MO heavy (16 of 25). Stage 3 reveals immediately followed in same run."
+    "batches_processed": 24,
+    "total_verified": 700,
+    "next_batch_number": 25,
+    "note": "Batch 24 complete 2026-05-11 Run #1: 25 verified (23 REVEAL + 2 SKIP). SKIPs: Excellart (acquired by Ambrose Packaging - mandatory acquisition-check caught it per batch23 JED precedent); Suture Express (acquired by Medline Industries Nov 2019 post Diamond Castle PE 2010). All 25 KC metro HIGH-scored 4.5-4.6 (Construction 14 / Transport-Logistics 7 / Manufacturing 4). Acquisition-check learning from batch23 paid off immediately: 2 of 25 caught at Stage 2 saved 2 wasted reveal credits."
   },
   "stage3": {
     "results_file": "stage3_results.csv",
-    "total_revealed_to_date": 493,
+    "total_revealed_to_date": 508,
     "phones_added_this_session": 0,
     "pending_reveals": {
-      "description": "Batch 23 fully cleared. No carryover.",
+      "description": "Batch 24 fully cleared. No carryover.",
       "total_pending": 0
     },
-    "note": "2026-05-10 Run #1: Batch 23 reveals - 16 REVEALED + 3 NO_EMAIL + 5 SKIP. Reveals: Stanford Richardson Interface CEO (pre-revealed/cached), Andy Ross Ross Construction Co-Owner (stuck-Saving), Noah Bradley Doug Bradley VP (stuck-Saving), Dino Vainalis Dino's Logistics Pres (quick), Matthew Welker Day Transfer Business Partner (quick), Mark Dalton DALTON LOGISTICS Owner (stuck-Trying), Harry Burdg Burdg-Dunham Pres (stuck-Trying), Barb Shipman Risen Mech Pres (quick), Rich Kramer Pres (quick), Kelly Shrum JJ Smith Masonry VP-Estimating (quick - only DM), Michael Schulte Jay Henges COO (Schulte family pattern; email domain henges.com), Jim Imperiale Rhodey Construction Sr VP (real owner Pam Duffy not in Apollo), Jennifer Juan RJP Electric CEO (quick), Dustin Schwartz RG Ross VP (stuck-Trying), Josh Koehnemann KBUILD CEO (Koehnemann family; stuck-Saving), Thomas Kraska K&S Associates STL President (domain-search ksgcstl required - K&S name too generic). NO_EMAIL: Karen Alessandro IC&E CEO (Pittsburgh PA personal but St Peters MO firm per Bloomberg/LeadIQ; wasted credit), Bill Giessing Brockmiller Pres (wasted), Michael Duffy Roanoke EVP+Owner (wasted). SKIP: Rock Hill Mechanical (no-DM-in-Apollo + malformed Rock Corporation row), JED Transportation (large-corp-subsidiary - Hoffmann Family of Companies acquisition Stage 2 missed), Hazzard Moving (no-DM + recent McGuire merger), RF Meeh (no-DM-in-Apollo - real Pres Robert F. Meeh + Owner Louis Troha Jr not in Apollo), R.E. Smith Construction (no-DM - Smith family GC since 1952; Apollo only has Field Supt Dusty Smith)."
+    "note": "2026-05-11 Run #1: Batch 24 reveals - 15 REVEALED + 1 NO_EMAIL + 7 SKIP (no carryover). REVEALED: Jack Murphy McBee GM (only DM in Apollo; ~2 credit spend on single click flagged), Mack Colt Pres pre-revealed, Melody Warren TLSI Founder/Owner extended-wait, Anna Roberts GSC Owner pre-revealed, Gary Kerns Owner pre-revealed (phone +1-816-244-6205), Chris Ragland Homes-by-Chris Owner pre-revealed, Jason Wright Mgr (Pres per BBB; title-drift) pre-revealed, Dick Vaughan Owner pre-revealed (Vaughan family pattern Thomas Pres son), Marty Wessinger Design Materials Pres pre-revealed via dmifloors domain-search workaround (Wessinger family pattern), John Dignam J&J Sales Mgr (actually co-founder; title-drift), Ron Freund Midpoint Pres pre-revealed (Freund family pattern), Greg Coussens Signature Flooring Pres/Founder/Owner pre-revealed via sfikc domain-search, Douglas Obershaw SkuTouch CEO pre-revealed (phone +1-913-205-1292), Chris George Owner pre-revealed (phone +1-605-261-3456), Brian Bickford AgriLogistics Pres pre-revealed (phone +1-712-369-3493). NO_EMAIL: Tracy Pepe Pech Limo Business Manager (email-cell-verified was misleading; row dropped post-click; 1 wasted credit; no real Pech-family owner in Apollo). SKIP no-DM-in-Apollo (5): Deckscapes (Greg Schmidtberger Lenexa KS not findable; Apollo returns 19 wrong NC/AU entities), DESCO Coatings (only Canada DESCO has Pres), Insight Mechanical (only 2 contacts both unavailable; new-ownership statement on web), Strickland Construction Company (Olathe KS only Controller Karen Cunningham; Rogers Strickland owner not in Apollo), Mid-America Pump (only Sales reps + Office Mgr; no Pres). SKIP no-email-in-apollo (2): KC Water Heaters (Chase Thompson Owner identity match but email-cell-unavailable - small operation 1-contact), Diamond Polish Solutions (Clint Croucher Owner identity match but email-cell-unavailable - all 5 contacts unavailable). High pre-revealed cache rate (12 of 15 REVEALED = 80% pre-revealed/cached) - exceptional batch composition reflects Anvo prior Apollo activity on these KC-metro firms. Domain-prefix workaround used 3 times (dmifloors / sfikc / stricklandconstruction) per batch23 K&S learning - all succeeded."
   },
   "stage4": {
     "file": "stage4_scored.csv",
@@ -51,28 +51,27 @@
   "credit_cycle": {
     "cycle_start": "2026-05-02",
     "cycle_end": "2026-06-02",
-    "credits_remaining_apollo_ui": 2268,
-    "credits_used_this_cycle": 237,
-    "email_credits_spent_this_session": 19,
+    "credits_remaining_apollo_ui": 2257,
+    "credits_used_this_cycle": 248,
+    "email_credits_spent_this_session": 11,
     "phone_credits_spent_this_session": 0,
     "monthly_cap": 2505,
-    "note": "2026-05-10 Run #1 authoritative end-of-run reading from https://app.apollo.io/#/settings/credits/current: 237 credits used / 2505 cap / 2268 remaining. Cycle 5/2-6/2; 23 days left; daily budget ~98/day - on track. Drift since 2026-05-09 end-of-run state (191 used): +46 credits = 19 click reveals (16 REVEALED + 3 NO_EMAIL) + ~25-27 background enrichment from leftover SFP Landscaping search loaded at session start (toggle was ON from prior session's end and ran enrichment on the 17 contacts before I disabled it). KEY LEARNING: Step 0.5 must navigate to /people with NO query params first to avoid auto-running prior-session search with enrichment ON."
+    "note": "2026-05-11 Run #1 authoritative end-of-run reading from https://app.apollo.io/#/settings/credits/current: 248 used / 2505 cap / 2257 remaining. Cycle 5/2-6/2; 22 days left; daily budget ~103/day - on track (run spent 11 credits, well under daily budget). Drift since 2026-05-10 end-of-run state (237 used): +11 credits for ~4 click reveals (McBee Jack, TLSI Melody, Pech Tracy NO_EMAIL, J&J John Dignam). Expected ~4-5 credits at standard 1-credit-per-click rate; observed +11 = ~2.75/click avg. KEY LEARNING: McBee Jack Murphy single-click charged 2 credits (confirmed by pre-vs-post credit poll) and overall click-cost-per-reveal appears higher than 1-credit baseline. Hypothesis: some \"email-cell-verified\" contacts bundle email+phone reveal on a single click. Step 0.5 enrichment-disable confirmed off at session start; toggle was already off and credits stable at 237 before any work (no stale-search burn this session unlike 2026-05-10)."
   },
   "daily_runs": {
-    "date": "2026-05-10",
+    "date": "2026-05-11",
     "count": 1
   },
   "phone_reveal_candidates_deferred": [],
   "run_order_for_next_session": [
-    "1. Read state + pipeline-learnings - focus on 2026-05-10 Run #1 entries (Step 0.5 enrichment-pre-disable risk; JED large-corp acquisition Stage 2 missed; K&S Associates name-too-generic domain-search workaround; multi-VP-no-Pres pattern at Rhodey).",
-    "2. PRIORITY A: Stage 2 batch 24 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after batch23 set). Resume fuzzy-prefix 3+ token matching against batch1-23 to avoid false dedup. Add web-search step for 'COMPANY acquired' before reveal to catch JED/Hazzard-style large-parent acquisitions.",
-    "3. PRIORITY B: Stage 3 reveals on batch 24 REVEAL companies.",
-    "4. PRIORITY C: Phase 2 phones - SKIP (still 23 days left in cycle, normal pace at 96/day). Re-evaluate when days_left <= 10.",
-    "5. KEY LEARNING 2026-05-10 Run #1 (Step 0.5 enrichment risk): When session starts with prior search params in URL (e.g. SFP Landscaping leftover from prior session) AND enrichment toggle is on from prior session's end, the page auto-runs the search with enrichment, burning ~25-27 credits silently before Step 0.5 toggle-disable runs. Mitigation: Step 0.5 must first navigate to https://app.apollo.io/#/people WITH NO query params (just /people), THEN check toggle, THEN navigate to first reveal target. This avoids auto-search on stale params.",
-    "6. KEY LEARNING 2026-05-10 Run #1 (large-corp-subsidiary missed at Stage 2): JED Transportation was acquired by Hoffmann Family of Companies (~2023) - this was missed at Stage 2 verification because the website still shows JED as standalone. Fix: Stage 2 must include 'COMPANY acquired' WebSearch as a mandatory check, not optional. Per Bullet Liner/Hardesty batch21 precedent, similar miss rate likely on Hazzard Moving (now part of McGuire family).",
-    "7. KEY LEARNING 2026-05-10 Run #1 (K&S Associates name-too-generic): Apollo company name search for 'K&S Associates' returned 4 different entities globally (Baltimore MD accounting / Santa Monica CA / Bengaluru India / Dedham MA). Searching by domain-prefix 'ksgcstl' (not full domain) immediately returned correct St. Louis K&S Associates LLC. Generalized: when Apollo name search returns globally diverse contacts at same company name, fall back to domain-prefix search.",
-    "8. KEY LEARNING 2026-05-10 Run #1 (multi-VP-no-Pres pattern at Rhodey): Rhodey Construction has 5 VPs (Imperiale, Feldmann, Unterreiner, Bernie+Mackenzie Seiffert) but no CEO/Pres/Owner in Apollo (real owner Pam Duffy + her late father John Rhodey founder 1972). Picked senior VP Jim Imperiale (LEED AP DBIA credentials) as operational DM. Stage 5 should mention Pam Duffy if relevant for personalization.",
-    "9. KEY LEARNING 2026-05-10 Run #1 (R.E. Smith Apollo search special-char): 'R.E. Smith Construction' query in Apollo returns 0 results because of periods. Stripping to 'RE Smith Construction' also fails. Domain-prefix 'resmithconst' worked. Generalized: any Apollo company query containing periods, ampersands, or hyphens should drop them OR fall back to domain-prefix immediately.",
-    "10. KEY LEARNING 2026-05-10 Run #1 (Saving-results stuck cells): 5 of 16 click reveals required >7s wait (Saving-results / Trying-other-sources stuck cells): Andy Ross 13s, Noah Bradley 14s, Mark Dalton 17s, Harry Burdg 17s, Dustin Schwartz 19s, Josh Koehnemann 17s. Pagination cycle workaround NOT needed this run - extended-wait alone resolved all stuck cells. Continues to support batch22 finding that pagination-cycle is one of several stuck-cell unsticking patterns alongside extended-wait."
+    "1. Read state + pipeline-learnings - focus on 2026-05-11 Run #1 entries (click-cost-higher-than-1-credit observation; Excellart/Suture-Express acquisitions caught at Stage 2 per batch23 mandatory acquisition-check; high pre-revealed rate 12/15 = 80%).",
+    "2. PRIORITY A: Stage 2 batch 25 (next 25 HIGH-scored from A2-stage1-tier1-scored.csv after batch24 set). Continue fuzzy-prefix matching against batch1-24. Continue mandatory acquisition WebSearch per JED/Excellart/Suture Express precedent.",
+    "3. PRIORITY B: Stage 3 reveals on batch 25 REVEAL companies. Monitor click-cost-per-reveal - if again >1 credit/click avg, escalate.",
+    "4. PRIORITY C: Phase 2 phones - SKIP (still ~22 days left in cycle, normal pace at ~103/day). Re-evaluate when days_left <= 10.",
+    "5. KEY LEARNING 2026-05-11 Run #1 (click cost >1 credit observation): McBee Jack Murphy single email-cell-verified click charged 2 credits (pre=237 post=239). Run-level totals confirm: 4 click reveals + 11 credits spent = ~2.75/click avg vs expected 1.0. Several email-cell-verified contacts also showed pre-revealed phone numbers (Gary Kerns 816-244-6205, SkuTouch Doug 913-205-1292, Chris George 605-261-3456, AgriLogistics Brian 712-369-3493) - those phones may have been bundled on prior runs at +1 credit each. Going forward: monitor whether email-cell-verified clicks reveal phone too (bundling = OK, just higher cost per click).",
+    "6. KEY LEARNING 2026-05-11 Run #1 (Stage 2 mandatory acquisition-check paid off): Excellart Olathe KS acquired by Ambrose Packaging (operations moved to Ambrose HQ); Suture Express Overland Park KS acquired by Medline Industries Nov 2019 (post Diamond Castle PE 2010). Both caught at Stage 2 via WebSearch \"COMPANY acquired\" - saved 2 wasted reveal credits. Continue mandatory acquisition-check on every batch.",
+    "7. KEY LEARNING 2026-05-11 Run #1 (domain-prefix workaround now standard): Used 3 times this run - dmifloors (Design Materials had wrong CA-based Cal Elshoff Owner showing on name-search; KC entity surfaced via domain), sfikc (Signature Flooring had multiple unrelated entities on name-search; correct KC entity via domain), stricklandconstruction (narrowed from 23 results to 1 correct Olathe entity). Generalized: any time name-search returns multiple unrelated geographic entities, fall back to domain-prefix.",
+    "8. KEY LEARNING 2026-05-11 Run #1 (Pech Limousine NO_EMAIL on email-cell-verified): Tracy Pepe Business Manager had data-tour-id=email-cell-verified suggesting cached email, but click resulted in row drop with no email surfaced (1 wasted credit). Per batch22 SFP Landscaping precedent (email-cell-verified can still NO_EMAIL on click), email-cell-verified is NOT reliable as pre-revealed signal. Use only the row-text content (presence of revealed email like name@domain.com) as authoritative pre-revealed indicator.",
+    "9. KEY LEARNING 2026-05-11 Run #1 (no-DM-in-Apollo rate stable): 5 SKIP no-DM + 2 SKIP no-email this run = 7 of 23 = 30%. Batch23 had 5 of 24 SKIP = 21%; batch22 had 8 of 25 = 32%. Average across batches 22-24: ~28%. Pattern: family-owned operators (real owners with surname matching company) often absent from Apollo even when company is well-established. Reach via website contact form - secondary channel still high-ROI."
   ]
 }
