@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "description": "Tracks Anvo nightly Apollo prospecting pipeline progress.",
   "master_list": {
     "file": "A2-stage1-tier1-scored.csv",
@@ -27,25 +27,25 @@
   },
   "stage4": {
     "file": "stage4_scored.csv",
-    "total_scored": 405,
-    "high_priority": 121,
-    "medium_priority": 226,
+    "total_scored": 421,
+    "high_priority": 131,
+    "medium_priority": 230,
     "low_priority": 22,
-    "skip": 36,
-    "scored_this_run": 8,
-    "last_run_date": "2026-05-10",
-    "last_processed_email": "eric@sfplandscapinginc.com",
-    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv as of 2026-05-10 scoring/drafting run. Awaiting next apollo-reveals batch (batch 23). Note: state.stage3 says total_revealed_to_date=477 but stage3_results.csv has 406 REVEALED rows with email + 199 SKIP \u2014 the 477 figure is the apollo-reveals task's running counter and may include older/dropped reveals. CSV-truth from this run: 405 stage4 scored rows, 396 unique non-empty emails. Counts recomputed from CSV per 2026-05-09 canonical pattern."
+    "skip": 38,
+    "scored_this_run": 16,
+    "last_run_date": "2026-05-11",
+    "last_processed_email": "tkraska@ksgcstl.com",
+    "remaining_to_score": "Caught up - 0 unscored REVEALED contacts in stage3_results.csv after this run. 16 batch23 reveals (ranks 411-443) scored: 10 HIGH / 4 MEDIUM / 0 LOW / 2 SKIP. SKIPs: Doug Bradley Trucking (oversize: 150 trucks/600 trailers/7 terminals/est 200+ emp) and Jay Henges Enterprises (oversize: 325 FT teammates across Porta-King/Henges Interiors/Henges Insulation subsidiaries). State stage4 totals recomputed from CSV per 2026-05-09 canonical pattern: 421 total / 131 HIGH / 230 MEDIUM / 22 LOW / 38 SKIP."
   },
   "stage5": {
     "file": "stage5_outreach_log.csv",
-    "total_drafted": 219,
-    "drafted_this_run": 8,
+    "total_drafted": 233,
+    "drafted_this_run": 14,
     "skipped_no_hook": 0,
     "skipped_data_issue": 0,
     "total_skipped_other": 21,
-    "last_drafted_email": "eric@sfplandscapinginc.com",
-    "last_run_date": "2026-05-10",
+    "last_drafted_email": "josh@kbuildit.com",
+    "last_run_date": "2026-05-11",
     "send_from": "edward@anvoins.com"
   },
   "credit_cycle": {
