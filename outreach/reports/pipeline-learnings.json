@@ -1999,6 +1999,15 @@
       "title": "Run summary: 16 scored / 14 drafted / 2 SKIP at scoring / 0 SKIP-no-hook at drafting / 1 backlog slot unused",
       "observation": "All 14 HIGH/MEDIUM from this run drafted cleanly — no SKIPPED_NO_HOOK because each had specific researched hooks (recent transitions, family generational, unique project portfolios, multi-trade scaling, oversize-clarifying flags for Edward). Cap at 15 not approached (14 drafted; 1 slot left available but the 110-contact backlog is all MEDIUM at score 3.0-3.6 with thinner hooks — decided to keep run focused on freshly-researched this-run candidates rather than rush a backlog contact with stale or no research). Run completed end-to-end in approximately 35-45 min wall clock including the 16 web research cycles and 14 deep-research-then-draft cycles.",
       "workaround": "Stable run shape: when this-run cap (14 in this case from 16 scored = 14 HIGH+MEDIUM) is under 15 drafts, leaving the last 1-2 slots empty rather than backlog-tapping keeps draft quality high. Backlog MEDIUMs typically score 3.0-3.6 and need fresh research from scratch — if total draft volume permits, prefer this-run candidates with completed research."
+    },
+    {
+      "date": "2026-05-11",
+      "batch": "stage5_run",
+      "category": "git_push",
+      "severity": "medium",
+      "title": "/tmp/anvo-brain-push from prior session was owned by nobody:nogroup — couldn't reuse or delete; cloned to /tmp/anvo-brain-push-2026-05-11 instead",
+      "observation": "Runbook canonical Step 5.2 calls for cloning into /tmp/anvo-brain-push. On this 2026-05-11 run, the directory existed from a prior session but owned by uid 65534 (nobody:nogroup) — both `git fetch origin` and `rm -rf /tmp/anvo-brain-push` failed with Permission denied. Workaround: cloned into a fresh dated path /tmp/anvo-brain-push-2026-05-11 owned by the current sandbox user. git config + add + commit + push all worked normally from there.",
+      "workaround": "Step 5.2 needs to be defensive about stale /tmp/anvo-brain-push from prior sessions on the shared sandbox. Updated sequence: (1) try `cd /tmp/anvo-brain-push && git fetch origin && git reset --hard` first. (2) If that fails with Permission denied, do NOT try `rm -rf /tmp/anvo-brain-push` (it will partial-fail). Instead clone into a fresh dated path /tmp/anvo-brain-push-<YYYY-MM-DD> owned by the current user. (3) Once Edward (or sandbox cleanup) clears the stale /tmp dir, the canonical path can resume. Commit + push from the dated path worked fine — no other deviation needed."
     }
   ]
 }
